@@ -1,0 +1,73 @@
+# Decap CMS configuration
+# Docs: https://decapcms.org/docs/configuration-options/
+#
+# This backend uses Netlify's Git Gateway + Identity (recommended).
+# To use GitHub OAuth instead, replace the `backend` block with:
+#   backend:
+#     name: github
+#     repo: your-username/your-repo
+#     branch: main
+#
+# After deploying to Netlify:
+#   1. Site settings → Identity → Enable Identity
+#   2. Identity → Services → Git Gateway → Enable
+#   3. Identity → Invite users (or enable Open) to log in at /admin
+
+backend:
+  name: git-gateway
+  branch: main
+
+# Optional: restrict the CMS assets folder
+media_folder: "assets"
+public_folder: "assets"
+
+local_backend: false
+
+collections:
+  # ---- Site-wide contact & company info ----
+  - name: "site"
+    label: "Site Settings"
+    files:
+      - name: "site-info"
+        label: "Contact & Company Info"
+        file: "data/site.json"
+        fields:
+          - { name: company, label: "Company name", widget: string }
+          - { name: email, label: "Email", widget: string }
+          - { name: phone, label: "Phone", widget: string }
+          - { name: whatsapp, label: "WhatsApp number", widget: string }
+          - { name: whatsappLink, label: "WhatsApp link (wa.me/...)", widget: string }
+          - { name: wechat, label: "WeChat ID", widget: string }
+          - { name: linkedin, label: "LinkedIn URL", widget: string }
+          - { name: factory, label: "Factory / Address line", widget: string }
+          - { name: address, label: "Full address", widget: string }
+          - { name: slogan, label: "Footer slogan", widget: string }
+
+  # ---- Product catalog ----
+  - name: "products"
+    label: "Products"
+    files:
+      - name: "product-list"
+        label: "Product List"
+        file: "data/products.json"
+        fields:
+          - name: products
+            label: "Products"
+            widget: list
+            summary: "{{fields.name}} ({{fields.cat}})"
+            fields:
+              - { name: id, label: "ID (no spaces)", widget: string }
+              - { name: name, label: "Product name", widget: string }
+              - { name: cat, label: "Category", widget: select, options: ["Beds", "Walking", "Toys", "Feeding"] }
+              - { name: price, label: "Price (e.g. $18.90)", widget: string }
+              - { name: moq, label: "MOQ (e.g. MOQ 100)", widget: string }
+              - { name: img, label: "Image path", widget: string, hint: "Put files in /assets, e.g. assets/product-bed.png" }
+              - { name: featured, label: "Show on homepage?", widget: boolean, default: false }
+              - { name: short, label: "Short description", widget: text }
+              - { name: description, label: "Full description", widget: text }
+              - name: specs
+                label: "Specification rows"
+                widget: list
+                fields:
+                  - { name: k, label: "Label", widget: string }
+                  - { name: v, label: "Value", widget: string }

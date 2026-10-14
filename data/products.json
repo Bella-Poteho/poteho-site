@@ -1,0 +1,148 @@
+{
+  "products": [
+    {
+      "id": "bed-ortho",
+      "name": "Orthopedic Memory Foam Dog Bed",
+      "cat": "Beds",
+      "price": "$18.90",
+      "moq": "MOQ 100",
+      "img": "assets/product-bed.png",
+      "featured": true,
+      "short": "Joint-friendly support for senior and large dogs.",
+      "description": "Joint-friendly support for senior and large dogs, wrapped in a soft, machine-washable cover with a gentle bolster for resting heads.",
+      "specs": [
+        { "k": "Material", "v": "CertiPUR memory foam + plush cover" },
+        { "k": "Sizes", "v": "S / M / L / XL" },
+        { "k": "Cover", "v": "Removable, machine washable" },
+        { "k": "Custom", "v": "Color, logo, packaging" },
+        { "k": "Lead time", "v": "15–25 days after sample" }
+      ]
+    },
+    {
+      "id": "bed-donut",
+      "name": "Donut Calming Cat Bed",
+      "cat": "Beds",
+      "price": "$12.50",
+      "moq": "MOQ 100",
+      "img": "assets/product-bed.png",
+      "featured": true,
+      "short": "A cozy donut that helps anxious cats feel safe.",
+      "description": "A plush, self-warming donut shape that gives cats a sense of security. Lightly padded rim supports the head and neck during naps.",
+      "specs": [
+        { "k": "Material", "v": "Faux fur + PP cotton" },
+        { "k": "Sizes", "v": "S / M / L" },
+        { "k": "Care", "v": "Machine washable shell" },
+        { "k": "Custom", "v": "Color, logo, packaging" },
+        { "k": "Lead time", "v": "15–25 days after sample" }
+      ]
+    },
+    {
+      "id": "leash-reflect",
+      "name": "Reflective Nylon Dog Leash",
+      "cat": "Walking",
+      "price": "$3.20",
+      "moq": "MOQ 200",
+      "img": "assets/product-leash.png",
+      "featured": true,
+      "short": "High-visibility leash for safe night walks.",
+      "description": "A durable woven-nylon leash with reflective stitching for low-light safety. Padded handle and a rust-proof swivel clip keep walks comfortable.",
+      "specs": [
+        { "k": "Material", "v": "Nylon webbing + reflective thread" },
+        { "k": "Length", "v": "120 / 150 cm" },
+        { "k": "Hardware", "v": "Zinc alloy swivel clip" },
+        { "k": "Custom", "v": "Color, logo, packaging" },
+        { "k": "Lead time", "v": "12–20 days after sample" }
+      ]
+    },
+    {
+      "id": "harness-padded",
+      "name": "Soft Padded No-Pull Harness",
+      "cat": "Walking",
+      "price": "$4.80",
+      "moq": "MOQ 200",
+      "img": "assets/product-leash.png",
+      "featured": true,
+      "short": "Gentle control that protects the neck.",
+      "description": "A breathable mesh harness with soft padding and a front D-ring to reduce pulling. Adjustable straps fit most breeds from XS to XL.",
+      "specs": [
+        { "k": "Material", "v": "Mesh + padded oxford" },
+        { "k": "Sizes", "v": "XS / S / M / L / XL" },
+        { "k": "Hardware", "v": "Dual D-ring, quick-release buckle" },
+        { "k": "Custom", "v": "Color, logo, packaging" },
+        { "k": "Lead time", "v": "12–20 days after sample" }
+      ]
+    },
+    {
+      "id": "toy-rope",
+      "name": "Durable Rope Chew Toy",
+      "cat": "Toys",
+      "price": "$1.10",
+      "moq": "MOQ 500",
+      "img": "assets/product-fountain.png",
+      "featured": true,
+      "short": "Tough cotton rope that cleans teeth while playing.",
+      "description": "Braided natural-cotton rope that satisfies the urge to chew and helps reduce plaque. Knotted ends make tug-of-war easy on the hands.",
+      "specs": [
+        { "k": "Material", "v": "Natural cotton rope" },
+        { "k": "Sizes", "v": "S / M / L" },
+        { "k": "Care", "v": "Hand wash, air dry" },
+        { "k": "Custom", "v": "Color, logo, packaging" },
+        { "k": "Lead time", "v": "10–18 days after sample" }
+      ]
+    },
+    {
+      "id": "toy-plush",
+      "name": "Squeaky Plush Toy Set",
+      "cat": "Toys",
+      "price": "$2.30",
+      "moq": "MOQ 300",
+      "img": "assets/product-fountain.png",
+      "featured": false,
+      "short": "A 3-pack of soft squeaky friends.",
+      "description": "A value set of three soft plush toys with built-in squeakers. Varied shapes keep curious pets engaged and are gentle on teeth and gums.",
+      "specs": [
+        { "k": "Material", "v": "Plush + PP cotton" },
+        { "k": "Set", "v": "3 assorted toys" },
+        { "k": "Care", "v": "Surface clean" },
+        { "k": "Custom", "v": "Color, logo, packaging" },
+        { "k": "Lead time", "v": "10–18 days after sample" }
+      ]
+    },
+    {
+      "id": "fountain-auto",
+      "name": "Automatic Pet Water Fountain",
+      "cat": "Feeding",
+      "price": "$9.90",
+      "moq": "MOQ 100",
+      "img": "assets/product-fountain.png",
+      "featured": true,
+      "short": "Circulating filtered water that pets drink more.",
+      "description": "A quiet pump circulates water through a carbon filter, encouraging pets to stay hydrated. BPA-free reservoir with easy-disassemble parts.",
+      "specs": [
+        { "k": "Material", "v": "BPA-free ABS + ceramic option" },
+        { "k": "Capacity", "v": "1.5 / 2.0 L" },
+        { "k": "Filter", "v": "Carbon + sponge, replaceable" },
+        { "k": "Custom", "v": "Color, logo, packaging" },
+        { "k": "Lead time", "v": "15–25 days after sample" }
+      ]
+    },
+    {
+      "id": "bowl-double",
+      "name": "Stainless Double Feeder Bowl",
+      "cat": "Feeding",
+      "price": "$5.40",
+      "moq": "MOQ 200",
+      "img": "assets/product-fountain.png",
+      "featured": false,
+      "short": "Stable, rust-proof twin feeding station.",
+      "description": "A heavy non-slip base holds two removable stainless bowls for food and water. Dishwasher-safe and resistant to rust and odors.",
+      "specs": [
+        { "k": "Material", "v": "304 stainless + ABS base" },
+        { "k": "Capacity", "v": "350 / 600 ml per bowl" },
+        { "k": "Care", "v": "Bowls dishwasher safe" },
+        { "k": "Custom", "v": "Color, logo, packaging" },
+        { "k": "Lead time", "v": "12–20 days after sample" }
+      ]
+    }
+  ]
+}
