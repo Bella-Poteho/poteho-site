@@ -171,5 +171,15 @@
   </footer>
 
   <script src="js/main.js"></script>
+
+  <!-- Forward Netlify Identity links (invite / password reset) to /admin, which handles the token -->
+  <script>
+    (function () {
+      var h = window.location.hash || "";
+      if (/invite_token|recovery_token|confirmation_token|email_change_token/.test(h)) {
+        window.location.replace("/admin/" + h);
+      }
+    })();
+  </script>
 </body>
 </html>
