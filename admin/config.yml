@@ -63,7 +63,7 @@ collections:
               - { name: cat, label: "Category", widget: select, options: ["bags", "toys", "apparel", "leashes", "feeding", "others"] }
               - { name: price, label: "Price (e.g. $18.90)", widget: string }
               - { name: moq, label: "MOQ (e.g. MOQ 100)", widget: string }
-              - { name: img, label: "Cover image path", widget: string, hint: "Put files in /assets, e.g. assets/product-bed.png" }
+              - { name: img, label: "Cover image (upload or path)", widget: image, hint: "Upload a photo, or type assets/placeholder.svg" }
               - { name: featured, label: "Show on homepage?", widget: boolean, default: false }
               - name: name_en
                 label: "Name — English"
@@ -102,14 +102,14 @@ collections:
                 label: "Full description — Español"
                 widget: text
               - name: images
-                label: "Gallery images (8 slots)"
+                label: "Gallery images (up to 8)"
                 widget: list
                 summary: "{{fields.img}}"
                 field:
                   name: img
-                  label: "Image path"
-                  widget: string
-                  hint: "assets/... (e.g. assets/product-bed.png) or leave as assets/placeholder.svg"
+                  label: "Image"
+                  widget: image
+                  hint: "Upload a photo from your computer. Leave empty to show the placeholder."
               - name: specs
                 label: "Specification rows"
                 widget: list

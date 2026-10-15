@@ -90,6 +90,7 @@ ul { list-style: none; }
 .brand .paw { width: 34px; height: 34px; }
 .brand span { color: var(--coral); }
 .brand-img img { height: 38px; width: auto; display: block; }
+.site-footer .brand-img img { height: 54px; }
 .nav-links { display: flex; align-items: center; gap: 26px; }
 .nav-links a { font-family: var(--font-head); font-weight: 600; color: var(--ink); font-size: .98rem; }
 .nav-links a:hover, .nav-links a.active { color: var(--coral-dark); }
@@ -124,6 +125,7 @@ ul { list-style: none; }
 }
 .feature:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); }
 .feature .ic { width: 52px; height: 52px; border-radius: 14px; background: #fff1ea; display: grid; place-items: center; margin-bottom: 16px; font-size: 1.5rem; }
+.feature .ic svg { width: 26px; height: 26px; color: var(--coral-dark); }
 .feature h3 { margin-bottom: 8px; }
 .feature p { font-size: .96rem; }
 

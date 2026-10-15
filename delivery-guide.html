@@ -8,7 +8,7 @@
   :root { --coral:#ff7a59; --teal:#2bb3a3; --ink:#2b2730; --muted:#6b6573; --line:#ece6df; --paper:#fff; --cream:#fff9f4; }
   * { box-sizing:border-box; }
   body { font-family:"Segoe UI",system-ui,sans-serif; color:var(--ink); background:var(--cream); line-height:1.7; margin:0; padding:0; }
-  .wrap { max-width:880px; margin:0 auto; padding:48px 24px 80px; }
+  .wrap { max-width:900px; margin:0 auto; padding:48px 24px 80px; }
   h1 { font-size:2rem; margin:0 0 6px; }
   h2 { font-size:1.3rem; margin:38px 0 12px; color:var(--teal); border-bottom:2px solid var(--line); padding-bottom:6px; }
   p, li { color:var(--muted); }
@@ -19,78 +19,93 @@
   th { background:#faf6f1; color:var(--ink); }
   tr:last-child td { border-bottom:0; }
   .card { background:var(--paper); border:1px solid var(--line); border-radius:14px; padding:20px 22px; margin:14px 0; box-shadow:0 4px 16px rgba(0,0,0,.05); }
-  .num { color:var(--coral); font-weight:700; }
   strong { color:var(--ink); }
   a { color:var(--coral); }
-  ul { padding-left:20px; }
+  ul, ol { padding-left:20px; }
+  .ok { color:var(--teal); font-weight:700; }
 </style>
 </head>
 <body>
 <div class="wrap">
-  <p><span class="tag">交付说明</span></p>
-  <h1>Poteho 宠物用品站 — 本轮改动清单</h1>
-  <p>日期：2026-10-15 ｜ 范围：全站多语言、分类体系、产品详情页、品牌与文案</p>
+  <p><span class="tag">交付说明 · 第二轮</span></p>
+  <h1>Poteho 网站改动清单</h1>
+  <p>日期：2026-10-15 ｜ 范围：LOGO、品牌数据、文案、图标、分类名、Cookie 条、博客（30 篇）、产品图片</p>
 
   <div class="card">
-    <h2 style="margin-top:0;border:0">一、本次完成的核心改动</h2>
+    <h2 style="margin-top:0;border:0">一、本轮改动逐条对照</h2>
     <table>
-      <tr><th>项目</th><th>内容</th></tr>
-      <tr><td>Logo</td><td>首页与全站页眉/页脚统一替换为新 Logo（<code>assets/poteho-logo.png</code>，爪印图标）。</td></tr>
-      <tr><td>多语言</td><td>网站支持 <strong>英语 / 俄语 / 西班牙语 / 中文</strong> 四语，右上角新增语言切换按钮（<code>EN · RU · ES · 中文</code>），选择记忆在浏览器本地。</td></tr>
-      <tr><td>产品分类</td><td>由旧的 Beds/Walking/Toys/Feeding 重构为 <strong>6 大类</strong>：Bags &amp; Trolley（包和拉杆箱）、Toys（玩具）、Apparel（衣服）、Leashes（牵引绳）、Feeding（喂养）、Others（其他）。</td></tr>
-      <tr><td>分类页</td><td>新增 <code>category.html?cat=xxx</code> 分类列表页，首页分类卡片与页脚均跳转至此；全站分类筛选条由 JS 动态生成。</td></tr>
-      <tr><td>详情页</td><td><code>product.html?id=xxx</code> 重做：主图 + <strong>8 张图画廊</strong>（缩略图点击切换）、参数表（specs）、批发询价表单。</td></tr>
-      <tr><td>产品参数</td><td>每个产品支持参数表（材质、尺寸、承重、面料、特点等），标签已做四语翻译。</td></tr>
-      <tr><td>关于我们</td><td>移除全部 <strong>OEM / ODM</strong> 字样；成立年份由 2014 改为 <strong>2020</strong>（正文、数据墙、Schema 同步）。</td></tr>
-      <tr><td>示例产品</td><td>按 6 大类重建 11 个示例产品（包类 3、玩具 2、衣服 1、牵引 2、喂养 2、其他 1），字段含四语名称/简介/描述。</td></tr>
+      <tr><th>#</th><th>你的要求</th><th>完成情况</th></tr>
+      <tr><td>1</td><td>成立年份改 2020；中间 SKU 改「13 年出口经验」；60 国改 30 多国</td><td><span class="ok">已完成</span>　首页数据：<strong>2020 成立 · 13+ 年出口经验 · 30+ 出口国家</strong>；关于我们数据墙：2020 / 13+ / 30+ / 98% 准时交付（已去掉「500+ 服务品牌」）。四语标签同步。</td></tr>
+      <tr><td>2</td><td>换掉白底 LOGO，与网页底色融合</td><td><span class="ok">已完成</span>　页眉用透明底文字标（陶土色爪印 + 深色字），页脚跟同样透明、改为浅色字版本；两张图都已裁掉四周空白，不再有白框。</td></tr>
+      <tr><td>3</td><td>关于我们去掉「500 个品牌服务」</td><td><span class="ok">已完成</span>　该数字已移除，换成 13+ 年出口经验；页面 meta 描述同步更新。</td></tr>
+      <tr><td>4</td><td>博客旧文删除，新写 30 篇去 AI 化宠物文章</td><td><span class="ok">已完成</span>　30 篇全新英文长文（猫狗陪伴、行为、健康、出行、日常），每篇 280–430 词，2020–2025 每年 5 篇、间隔 2–3 个月、日期各不相同。</td></tr>
+      <tr><td>5</td><td>Cookie 条文字太大</td><td><span class="ok">已完成</span>　字号由 0.9rem 降到 0.78rem，按钮同步缩小。</td></tr>
+      <tr><td>6</td><td>那段话拗口，改成与宠物友好关系＋高质量＋好服务</td><td><span class="ok">已完成</span>　首页「为什么选择 Poteho」副标题改为：<em>Pets are family. We make quality products for them and back them with friendly, dependable service.</em>（中文：宠物是家人。我们为它们打造高品质的产品，也用心服务好每一位客户。）</td></tr>
+      <tr><td>7</td><td>没有证书，品质卡文案要改；四个图标太幼稚</td><td><span class="ok">已完成</span>　「Quality assured」改为「Quality checked」，文案去掉一切国际标准/认证表述，改成「每件产品出厂前由我们自己的质检团队逐件检查」；首页与关于页共 8 个 emoji 图标全部换成高级线性 SVG 图标。</td></tr>
+      <tr><td>8</td><td>「Bags &amp; Trolley」改成 Carrier</td><td><span class="ok">已完成</span>　分类名四语改为 Carrier / Transportines / Переноски / 外出包，首页卡片、页脚、筛选条、表单下拉全部同步。</td></tr>
+      <tr><td>9</td><td>产品图片全部去掉，后台能否上传图片</td><td><span class="ok">已完成并且可以上传</span>　11 个产品的 <code>images</code> 已清空，前台显示占位图；后台已把图片字段改成<strong>上传控件</strong>，可直接选本地照片上传（详见第五节）。</td></tr>
     </table>
   </div>
 
-  <h2>二、多语言是怎么工作的</h2>
+  <h2>二、LOGO 是怎么处理的</h2>
   <ul>
-    <li>界面文字（导航、按钮、表单、页脚、分类名）放在 <code>js/i18n.js</code> 的字典里，用 <code>data-i18n="key"</code> 标记的元素会自动切换。</li>
-    <li>产品文字（名称/简介/描述）采用<strong>扁平字段</strong>：<code>name_en / name_zh / name_ru / name_es</code> 等同结构，由 <code>tf()</code> 按当前语言读取。</li>
-    <li>默认语言为英文（利于 SEO），切换后即时刷新产品列表与详情。</li>
+    <li><code>assets/poteho-logo.png</code> —— 页眉用：你给的 terracotta 透明版，裁掉留白后的文字标，<strong>透明背景</strong>，直接与奶油色页面底色融合。</li>
+    <li><code>assets/poteho-logo-white.png</code> —— 页脚用：同一图形，深色字替换为浅米色（爪印仍是陶土色），背景同样透明，在深灰页脚上清晰可见。</li>
+    <li>说明：你给的 <code>poteho-logo-terracotta-white.png</code> 实测是<strong>白底不透明</strong>图片，放在深色页脚会出现一个白方块，所以没有直接使用，而是由透明版生成了页脚版本。</li>
+    <li>页眉显示高度 38px（手机 32px），页脚 54px（手机 46px），可在 <code>css/style.css</code> 的 <code>.brand-img img</code> 调整。</li>
   </ul>
 
-  <h2>三、如何替换产品图片（8 张）</h2>
-  <p>详情页始终显示 8 个图位，目前未提供照片的用占位图 <code>assets/placeholder.svg</code> 填充。把真实照片放进 <code>assets/</code> 后，到 <code>data/products.json</code> 修改对应产品的 <code>images</code> 数组（最多 8 个路径），覆盖占位图即可。少于 8 张会自动补占位图，多于 8 张只取前 8 张。</p>
-  <div class="card">
-    <strong>示例（bag-trolley-01）：</strong>
-    <pre style="margin:8px 0 0;white-space:pre-wrap;font-size:.85rem"><code>"images": [
-  "assets/bag-01-a.jpg",
-  "assets/bag-01-b.jpg",
-  "assets/bag-01-c.jpg"
-  /* 其余自动补 placeholder.svg */
-]</code></pre>
-  </div>
-
-  <h2>四、如何通过 CMS 后台编辑（/admin）</h2>
-  <p>Decap CMS 已更新为新的多语言字段与 6 大分类。登录 <code>/admin</code>（Netlify Identity）后：</p>
-  <ul>
-    <li><strong>Products</strong>：每个产品含 4 语名称、4 语简介、4 语描述、分类下拉、8 图位列表、参数表。</li>
-    <li><strong>Site Settings</strong>：公司名、邮箱、WhatsApp、LinkedIn、工厂地址、标语等。</li>
-    <li>保存即写入 <code>data/*.json</code> 并触发 Netlify 重新发布。</li>
-  </ul>
-
-  <h2>五、如何新增一个产品</h2>
-  <ol>
-    <li>后台 Products → 点列表右上角 “+” 新增一条。</li>
-    <li>填 ID（无空格，如 <code>toy-ball-04</code>）、选分类、价格、MOQ、封面图。</li>
-    <li>填写 4 种语言的名称/简介/描述。</li>
-    <li>在 <code>images</code> 里加图片路径（最多 8 张），<code>specs</code> 里加参数行（标签从下拉选，已含多语翻译）。</li>
-    <li>如需上首页，打开 “Show on homepage?”。保存即可。</li>
-  </ol>
-
-  <h2>六、需要您后续提供的内容</h2>
+  <h2>三、博客：30 篇文章</h2>
+  <p>旧 6 篇示例文章已全部删除。新文章放在 <code>data/posts.json</code>，由 <code>js/main.js</code> 动态渲染：</p>
   <table>
-    <tr><th>事项</th><th>说明</th></tr>
-    <tr><td>真实产品照片</td><td>每个产品最多 8 张，替换占位图（见第三节）。</td></tr>
-    <tr><td>公司真实信息</td><td><code>data/site.json</code> 中的邮箱、WhatsApp、LinkedIn、工厂地址目前为示例值。</td></tr>
-    <tr><td>示例文案核对</td><td>11 个产品的四语文案为示例文案，请按实际产品修改。</td></tr>
+    <tr><th>项目</th><th>说明</th></tr>
+    <tr><td>数量与时间</td><td>30 篇，2020 年起每年 5 篇，篇与篇间隔 2–3 个月，各年日期均不相同。</td></tr>
+    <tr><td>主题</td><td>以猫狗为主：陪伴、行为解读、健康养护、出行、居家日常，Poteho 只在文中自然提及（如产品试用、样品间故事）。</td></tr>
+    <tr><td>文风</td><td>第一人称、具体场景、长短句交错，避免模板化措辞，读起来像真人写的养护随笔。</td></tr>
+    <tr><td>列表页</td><td><code>blog.html</code> 显示全部 30 篇，按日期倒序，卡片显示分类 · 阅读时长 · 发布日期。</td></tr>
+    <tr><td>详情页</td><td><code>blog-post.html?slug=xxx</code>，标题、日期、正文、Article 结构化数据均由 JS 写入。</td></tr>
+    <tr><td>首页博客区</td><td>自动取最新 3 篇，以后加新文章无需改 HTML。</td></tr>
+    <tr><td>配图</td><td>暂用统一缩略图 <code>assets/blog-thumb.svg</code>；你有实拍图后告诉我，可按篇替换。</td></tr>
   </table>
 
-  <p style="margin-top:30px;font-size:.85rem;color:#9a93a0">提示：本说明页（delivery-guide.html）仅作交付文档，未加入导航菜单，不影响线上站点。可随时删除。</p>
+  <h2>四、首页与关于页的图标</h2>
+  <p>原来的 🐾 🎨 🚚 💬 等 emoji 已换成统一风格的线性 SVG 图标（盾牌勾选＝质检、标签＝品牌定制、地球＝全球发货、对话＝服务支持；关于页为铅笔、标签、工厂、货车）。颜色跟随主题的陶土色，线条 1.7px，视觉更克制、更高档。</p>
+
+  <h2>五、产品图片：怎么在后台自己上传</h2>
+  <p><strong>可以上传。</strong>已经为你在后台配置好了上传控件，操作路径：</p>
+  <ol>
+    <li>打开 <code>你的域名/admin</code>，用 Netlify Identity 账号登录。</li>
+    <li>左侧选 <strong>Products → Product List</strong>，点开要编辑的产品。</li>
+    <li><strong>Cover image</strong>：点字段里的图片图标 → 选择本地照片上传。</li>
+    <li><strong>Gallery images (up to 8)</strong>：点列表右下角 “+” 加一行，每行上传一张，最多 8 张（不足 8 张时前台自动补占位图）。</li>
+    <li>点右上角 <strong>Publish / Save</strong>。图片会存到站点 <code>assets/</code> 目录，数据写入 <code>data/products.json</code>，Netlify 自动重新发布。</li>
+  </ol>
+  <div class="card">
+    <strong>建议：</strong>照片统一用正方形或 4:3、单张 300KB 以内（JPG/WebP），首图建议白底或浅底产品图，这样分类页缩略图整齐好看。
+  </div>
+
+  <h2>六、站点文件对照</h2>
+  <table>
+    <tr><th>文件</th><th>作用</th></tr>
+    <tr><td><code>data/products.json</code></td><td>产品数据（四语字段、分类、参数、图片数组）</td></tr>
+    <tr><td><code>data/posts.json</code></td><td>博客 30 篇文章（标题、日期、分类、正文段落）</td></tr>
+    <tr><td><code>data/site.json</code></td><td>公司联系信息（邮箱 / WhatsApp / LinkedIn / 地址）</td></tr>
+    <tr><td><code>js/i18n.js</code></td><td>四语界面词典</td></tr>
+    <tr><td><code>js/main.js</code></td><td>产品、分类、详情、博客渲染与表单</td></tr>
+    <tr><td><code>admin/config.yml</code></td><td>后台字段配置（含图片上传）</td></tr>
+  </table>
+
+  <h2>七、还需要你提供的内容</h2>
+  <table>
+    <tr><th>事项</th><th>说明</th></tr>
+    <tr><td>产品照片</td><td>每个产品最多 8 张，后台直接上传即可（第五节）。</td></tr>
+    <tr><td>真实联系信息</td><td><code>data/site.json</code> 里的邮箱、WhatsApp、LinkedIn、工厂地址目前仍是示例值。</td></tr>
+    <tr><td>博客配图</td><td>可选：30 篇目前共用一张缩略图，有实拍图后可逐篇替换。</td></tr>
+    <tr><td>询盘收信</td><td><code>js/main.js</code> 的 <code>FORM_ENDPOINT</code> 仍为空（演示模式），填写你自己的 Formspree 地址后才能真正收到询盘邮件。</td></tr>
+    <tr><td>推送上线</td><td>改动已提交到本地 Git，需要在 GitHub Desktop 点 <strong>Push origin</strong>，Netlify 才会重新发布。</td></tr>
+  </table>
+
+  <p style="margin-top:30px;font-size:.85rem;color:#9a93a0">提示：本说明页仅作交付文档，未加入导航菜单，可随时删除，不影响线上站点。</p>
 </div>
 </body>
 </html>

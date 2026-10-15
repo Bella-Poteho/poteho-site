@@ -42,12 +42,14 @@ document.addEventListener("DOMContentLoaded", async function () {
   initChrome();
   i18nInitSwitcher();
   try {
-    const [pRes, sRes] = await Promise.all([
+    const [pRes, sRes, bRes] = await Promise.all([
       fetch(PRODUCTS_URL, { cache: "no-cache" }),
-      fetch(SITE_URL, { cache: "no-cache" })
+      fetch(SITE_URL, { cache: "no-cache" }),
+      fetch(POSTS_URL, { cache: "no-cache" })
     ]);
     PRODUCTS = (await pRes.json()).products || [];
     SITE = await sRes.json();
+    if (bRes.ok) POSTS_DATA = await bRes.json();
   } catch (e) {
     console.warn("Could not load site data:", e);
   }
@@ -62,6 +64,9 @@ function renderAll() {
   renderGrid();        // products.html full grid
   renderCategoryPage();// category.html
   renderDetail();      // product.html
+  renderHomeBlog();    // homepage latest 3 posts
+  renderBlogList();    // blog.html full list
+  renderPost();        // blog-post.html single article
 }
 
 /* ---------- Site info injection (footer + contact page) ---------- */
@@ -254,6 +259,89 @@ function injectProductJSONLD(p) {
       "price": String(p.price || "").replace(/[^0-9.]/g, "") || "0",
       "availability": "https://schema.org/InStock"
     }
+  });
+  document.head.appendChild(s);
+}
+
+/* ---------- Blog (data/posts.json) ---------- */
+function sortedPosts() {
+  return (POSTS_DATA.posts || []).slice().sort((a, b) => (a.date < b.date ? 1 : -1));
+}
+function postDateStr(iso) {
+  const d = new Date(iso + "T00:00:00");
+  return d.toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" });
+}
+function postCardHTML(post) {
+  return `
+    <a href="blog-post.html?slug=${post.slug}" class="blog-card">
+      <div class="thumb"><img src="${POSTS_DATA.thumb}" alt="${post.title}" loading="lazy" /></div>
+      <div class="body">
+        <div class="meta">${post.category} · ${post.minutes} min · ${postDateStr(post.date)}</div>
+        <h3>${post.title}</h3>
+        <p>${post.excerpt}</p>
+        <span class="read-more" data-i18n="bl.readmore">Read article →</span>
+      </div>
+    </a>`;
+}
+/* Homepage: latest 3 posts */
+function renderHomeBlog() {
+  const el = document.getElementById("homeBlog");
+  if (!el) return;
+  const list = sortedPosts().slice(0, 3);
+  el.innerHTML = list.map(postCardHTML).join("");
+  if (typeof i18nApply === "function") i18nApply();
+}
+/* Blog page: full list */
+function renderBlogList() {
+  const el = document.getElementById("blogGrid");
+  if (!el) return;
+  const list = sortedPosts();
+  el.innerHTML = list.length
+    ? list.map(postCardHTML).join("")
+    : `<p style="grid-column:1/-1;color:var(--muted)">More articles coming soon.</p>`;
+  if (typeof i18nApply === "function") i18nApply();
+}
+/* Single post (?slug=) */
+function renderPost() {
+  const body = document.getElementById("postBody");
+  if (!body) return;
+  const posts = sortedPosts();
+  const params = new URLSearchParams(location.search);
+  const slug = params.get("slug");
+  const post = posts.find(x => x.slug === slug) || posts[0];
+  if (!post) return;
+
+  document.title = post.title + " — Poteho";
+  const descEl = document.querySelector('meta[name="description"]');
+  if (descEl) descEl.setAttribute("content", post.excerpt);
+  const crumb = document.getElementById("postCrumb");
+  if (crumb) crumb.textContent = post.title;
+  const meta = document.getElementById("postMeta");
+  if (meta) meta.textContent = `${post.category} · ${post.minutes} min read · ${postDateStr(post.date)}`;
+  const h1 = document.getElementById("postTitle");
+  if (h1) h1.textContent = post.title;
+
+  body.innerHTML = post.body.map(b =>
+    b.startsWith("## ") ? `<h2>${b.slice(3)}</h2>` : `<p>${b}</p>`
+  ).join("");
+
+  injectPostJSONLD(post);
+}
+function injectPostJSONLD(post) {
+  const existing = document.getElementById("postJSONLD");
+  if (existing) existing.remove();
+  const s = document.createElement("script");
+  s.type = "application/ld+json";
+  s.id = "postJSONLD";
+  s.textContent = JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": post.title,
+    "image": "https://www.poteho.com/" + POSTS_DATA.thumb,
+    "author": { "@type": "Organization", "name": "Poteho" },
+    "publisher": { "@type": "Organization", "name": "Poteho", "logo": { "@type": "ImageObject", "url": "https://www.poteho.com/assets/poteho-logo.png" } },
+    "datePublished": post.date,
+    "description": post.excerpt
   });
   document.head.appendChild(s);
 }

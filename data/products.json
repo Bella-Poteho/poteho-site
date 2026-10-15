@@ -5,8 +5,7 @@
       "cat": "bags",
       "price": "$32.90",
       "moq": "MOQ 100",
-      "img": "assets/placeholder.svg",
-      "images": ["assets/placeholder.svg", "assets/placeholder.svg", "assets/placeholder.svg", "assets/placeholder.svg", "assets/placeholder.svg", "assets/placeholder.svg", "assets/placeholder.svg", "assets/placeholder.svg"],
+      "images": [],
       "featured": true,
       "name_en": "Foldable Pet Trolley Bag",
       "name_zh": "可折叠宠物拉杆车",
@@ -21,12 +20,30 @@
       "description_ru": "Тележка-переноска для питомцев до 15 кг. Телескопическая ручка и бесшумные колёса с поворотом 360° облегчают поездки, а в сложенном виде она почти не занимает места. Сетчатые панели обеспечивают вентиляцию и обзор.",
       "description_es": "Cabina de viaje con ruedas para mascotas de hasta 15 kg. El asa telescópica y las ruedas silenciosas de 360° facilitan los viajes, y se pliega completamente cuando no se usa. Paneles de malla para ventilación y visibilidad.",
       "specs": [
-        { "k": "Material", "v": "600D oxford fabric + steel frame" },
-        { "k": "Sizes", "v": "M / L" },
-        { "k": "Load", "v": "Up to 15 kg" },
-        { "k": "Wheels", "v": "360° silent universal wheels" },
-        { "k": "Custom", "v": "Color, logo, packaging" },
-        { "k": "Lead time", "v": "15–25 days after sample" }
+        {
+          "k": "Material",
+          "v": "600D oxford fabric + steel frame"
+        },
+        {
+          "k": "Sizes",
+          "v": "M / L"
+        },
+        {
+          "k": "Load",
+          "v": "Up to 15 kg"
+        },
+        {
+          "k": "Wheels",
+          "v": "360° silent universal wheels"
+        },
+        {
+          "k": "Custom",
+          "v": "Color, logo, packaging"
+        },
+        {
+          "k": "Lead time",
+          "v": "15–25 days after sample"
+        }
       ]
     },
     {
@@ -34,8 +51,7 @@
       "cat": "bags",
       "price": "$18.50",
       "moq": "MOQ 200",
-      "img": "assets/placeholder.svg",
-      "images": ["assets/placeholder.svg", "assets/placeholder.svg", "assets/placeholder.svg", "assets/placeholder.svg", "assets/placeholder.svg", "assets/placeholder.svg", "assets/placeholder.svg", "assets/placeholder.svg"],
+      "images": [],
       "featured": true,
       "name_en": "Breathable Pet Backpack Carrier",
       "name_zh": "透气宠物双肩背包",
@@ -50,11 +66,26 @@
       "description_ru": "Вентилируемый рюкзак для мелких собак и кошек до 8 кг. Полусферическое окно, дышащие сетчатые стенки и широкие мягкие лямки для комфортной переноски.",
       "description_es": "Mochila transportín ventilada para perros pequeños y gatos de hasta 8 kg. Ventila burbuja, laterales de malla transpirable y correas acolchadas ajustables.",
       "specs": [
-        { "k": "Material", "v": "Polyester + PC bubble window" },
-        { "k": "Load", "v": "Up to 8 kg" },
-        { "k": "Feature", "v": "Bubble window + mesh ventilation" },
-        { "k": "Custom", "v": "Color, logo, packaging" },
-        { "k": "Lead time", "v": "15–25 days after sample" }
+        {
+          "k": "Material",
+          "v": "Polyester + PC bubble window"
+        },
+        {
+          "k": "Load",
+          "v": "Up to 8 kg"
+        },
+        {
+          "k": "Feature",
+          "v": "Bubble window + mesh ventilation"
+        },
+        {
+          "k": "Custom",
+          "v": "Color, logo, packaging"
+        },
+        {
+          "k": "Lead time",
+          "v": "15–25 days after sample"
+        }
       ]
     },
     {
@@ -62,8 +93,7 @@
       "cat": "bags",
       "price": "$12.80",
       "moq": "MOQ 200",
-      "img": "assets/placeholder.svg",
-      "images": ["assets/placeholder.svg", "assets/placeholder.svg", "assets/placeholder.svg", "assets/placeholder.svg", "assets/placeholder.svg", "assets/placeholder.svg", "assets/placeholder.svg", "assets/placeholder.svg"],
+      "images": [],
       "featured": false,
       "name_en": "Soft-Sided Pet Travel Carrier",
       "name_zh": "宠物外出软包",
@@ -78,11 +108,26 @@
       "description_ru": "Лёгкая мягкая переноска, одобренная большинством авиакомпаний. Съёмное жёсткое дно держит форму, два входа упрощают посадку питомца, плечевой ремень мягкий.",
       "description_es": "Transportín blando y ligero, apto para la mayoría de aerolíneas. Base rígida extraíble, dos aberturas de entrada y correa de hombro acolchada.",
       "specs": [
-        { "k": "Material", "v": "Polyester + removable board" },
-        { "k": "Sizes", "v": "S / M / L" },
-        { "k": "Feature", "v": "Airline-friendly, dual entry" },
-        { "k": "Custom", "v": "Color, logo, packaging" },
-        { "k": "Lead time", "v": "15–25 days after sample" }
+        {
+          "k": "Material",
+          "v": "Polyester + removable board"
+        },
+        {
+          "k": "Sizes",
+          "v": "S / M / L"
+        },
+        {
+          "k": "Feature",
+          "v": "Airline-friendly, dual entry"
+        },
+        {
+          "k": "Custom",
+          "v": "Color, logo, packaging"
+        },
+        {
+          "k": "Lead time",
+          "v": "15–25 days after sample"
+        }
       ]
     },
     {
@@ -90,8 +135,7 @@
       "cat": "toys",
       "price": "$1.10",
       "moq": "MOQ 500",
-      "img": "assets/product-fountain.png",
-      "images": ["assets/product-fountain.png", "assets/placeholder.svg", "assets/placeholder.svg", "assets/placeholder.svg", "assets/placeholder.svg", "assets/placeholder.svg", "assets/placeholder.svg", "assets/placeholder.svg"],
+      "images": [],
       "featured": true,
       "name_en": "Durable Rope Chew Toy",
       "name_zh": "耐磨棉绳洁齿玩具",
@@ -106,11 +150,26 @@
       "description_ru": "Плетёный канат из натурального хлопка удовлетворяет потребность в жевании и помогает уменьшить зубной налёт. Узлы на концах удобны для перетягивания.",
       "description_es": "Cuerda trenzada de algodón natural que satisface el impulso de masticar y ayuda a reducir el sarro. Nudos en los extremos para jugar al tira y afloja.",
       "specs": [
-        { "k": "Material", "v": "Natural cotton rope" },
-        { "k": "Sizes", "v": "S / M / L" },
-        { "k": "Care", "v": "Hand wash, air dry" },
-        { "k": "Custom", "v": "Color, logo, packaging" },
-        { "k": "Lead time", "v": "10–18 days after sample" }
+        {
+          "k": "Material",
+          "v": "Natural cotton rope"
+        },
+        {
+          "k": "Sizes",
+          "v": "S / M / L"
+        },
+        {
+          "k": "Care",
+          "v": "Hand wash, air dry"
+        },
+        {
+          "k": "Custom",
+          "v": "Color, logo, packaging"
+        },
+        {
+          "k": "Lead time",
+          "v": "10–18 days after sample"
+        }
       ]
     },
     {
@@ -118,8 +177,7 @@
       "cat": "toys",
       "price": "$2.30",
       "moq": "MOQ 300",
-      "img": "assets/product-fountain.png",
-      "images": ["assets/product-fountain.png", "assets/placeholder.svg", "assets/placeholder.svg", "assets/placeholder.svg", "assets/placeholder.svg", "assets/placeholder.svg", "assets/placeholder.svg", "assets/placeholder.svg"],
+      "images": [],
       "featured": false,
       "name_en": "Squeaky Plush Toy Set",
       "name_zh": "发声毛绒玩具套装",
@@ -134,11 +192,26 @@
       "description_ru": "Набор из трёх мягких плюшевых игрушек со встроенными пищалками. Разные формы удерживают интерес питомца и бережны к зубам.",
       "description_es": "Set de tres juguetes de felpa con silbato integrado. Formas variadas que entretienen y cuidan dientes y encías.",
       "specs": [
-        { "k": "Material", "v": "Plush + PP cotton" },
-        { "k": "Set", "v": "3 assorted toys" },
-        { "k": "Care", "v": "Surface clean" },
-        { "k": "Custom", "v": "Color, logo, packaging" },
-        { "k": "Lead time", "v": "10–18 days after sample" }
+        {
+          "k": "Material",
+          "v": "Plush + PP cotton"
+        },
+        {
+          "k": "Set",
+          "v": "3 assorted toys"
+        },
+        {
+          "k": "Care",
+          "v": "Surface clean"
+        },
+        {
+          "k": "Custom",
+          "v": "Color, logo, packaging"
+        },
+        {
+          "k": "Lead time",
+          "v": "10–18 days after sample"
+        }
       ]
     },
     {
@@ -146,8 +219,7 @@
       "cat": "apparel",
       "price": "$7.90",
       "moq": "MOQ 200",
-      "img": "assets/placeholder.svg",
-      "images": ["assets/placeholder.svg", "assets/placeholder.svg", "assets/placeholder.svg", "assets/placeholder.svg", "assets/placeholder.svg", "assets/placeholder.svg", "assets/placeholder.svg", "assets/placeholder.svg"],
+      "images": [],
       "featured": true,
       "name_en": "Waterproof Winter Dog Jacket",
       "name_zh": "宠物防水冬装",
@@ -162,11 +234,26 @@
       "description_ru": "Стёганый зимний комбинезон: водонепроницаемый верх и тёплая флисовая подкладка. Светоотражающий кант повышает заметность в темноте, застёжка на животе упрощает надевание.",
       "description_es": "Abrigo acolchado de invierno con exterior impermeable y forro polar cálido. Vivos reflectantes para paseos nocturnos y cierre ventral de fácil colocación.",
       "specs": [
-        { "k": "Fabric", "v": "Waterproof shell + fleece lining" },
-        { "k": "Sizes", "v": "XS / S / M / L / XL" },
-        { "k": "Feature", "v": "Reflective piping, belly closure" },
-        { "k": "Custom", "v": "Color, logo, packaging" },
-        { "k": "Lead time", "v": "15–25 days after sample" }
+        {
+          "k": "Fabric",
+          "v": "Waterproof shell + fleece lining"
+        },
+        {
+          "k": "Sizes",
+          "v": "XS / S / M / L / XL"
+        },
+        {
+          "k": "Feature",
+          "v": "Reflective piping, belly closure"
+        },
+        {
+          "k": "Custom",
+          "v": "Color, logo, packaging"
+        },
+        {
+          "k": "Lead time",
+          "v": "15–25 days after sample"
+        }
       ]
     },
     {
@@ -174,8 +261,7 @@
       "cat": "leashes",
       "price": "$3.20",
       "moq": "MOQ 200",
-      "img": "assets/product-leash.png",
-      "images": ["assets/product-leash.png", "assets/placeholder.svg", "assets/placeholder.svg", "assets/placeholder.svg", "assets/placeholder.svg", "assets/placeholder.svg", "assets/placeholder.svg", "assets/placeholder.svg"],
+      "images": [],
       "featured": true,
       "name_en": "Reflective Nylon Dog Leash",
       "name_zh": "反光尼龙牵引绳",
@@ -190,11 +276,26 @@
       "description_ru": "Прочный нейлоновый поводок со светоотражающей строчкой для тёмного времени суток. Мягкая ручка и поворотный карабин из защищённого от ржавчины сплава.",
       "description_es": "Correa de nailon trenzado duradero con costuras reflectantes para la oscuridad. Asa acolchada y mosquetón giratorio anticorrosión.",
       "specs": [
-        { "k": "Material", "v": "Nylon webbing + reflective thread" },
-        { "k": "Length", "v": "120 / 150 cm" },
-        { "k": "Hardware", "v": "Zinc alloy swivel clip" },
-        { "k": "Custom", "v": "Color, logo, packaging" },
-        { "k": "Lead time", "v": "12–20 days after sample" }
+        {
+          "k": "Material",
+          "v": "Nylon webbing + reflective thread"
+        },
+        {
+          "k": "Length",
+          "v": "120 / 150 cm"
+        },
+        {
+          "k": "Hardware",
+          "v": "Zinc alloy swivel clip"
+        },
+        {
+          "k": "Custom",
+          "v": "Color, logo, packaging"
+        },
+        {
+          "k": "Lead time",
+          "v": "12–20 days after sample"
+        }
       ]
     },
     {
@@ -202,8 +303,7 @@
       "cat": "leashes",
       "price": "$4.80",
       "moq": "MOQ 200",
-      "img": "assets/product-leash.png",
-      "images": ["assets/product-leash.png", "assets/placeholder.svg", "assets/placeholder.svg", "assets/placeholder.svg", "assets/placeholder.svg", "assets/placeholder.svg", "assets/placeholder.svg", "assets/placeholder.svg"],
+      "images": [],
       "featured": false,
       "name_en": "Soft Padded No-Pull Harness",
       "name_zh": "软垫防冲爆胸背带",
@@ -218,11 +318,26 @@
       "description_ru": "Дышащая сетчатая шлейка с мягкой подкладкой и передним кольцом против рывков. Регулируется на большинство пород от XS до XL.",
       "description_es": "Arnés de malla transpirable con acolchado suave y anilla frontal que reduce los tirones. Correas ajustables para razas de XS a XL.",
       "specs": [
-        { "k": "Material", "v": "Mesh + padded oxford" },
-        { "k": "Sizes", "v": "XS / S / M / L / XL" },
-        { "k": "Hardware", "v": "Dual D-ring, quick-release buckle" },
-        { "k": "Custom", "v": "Color, logo, packaging" },
-        { "k": "Lead time", "v": "12–20 days after sample" }
+        {
+          "k": "Material",
+          "v": "Mesh + padded oxford"
+        },
+        {
+          "k": "Sizes",
+          "v": "XS / S / M / L / XL"
+        },
+        {
+          "k": "Hardware",
+          "v": "Dual D-ring, quick-release buckle"
+        },
+        {
+          "k": "Custom",
+          "v": "Color, logo, packaging"
+        },
+        {
+          "k": "Lead time",
+          "v": "12–20 days after sample"
+        }
       ]
     },
     {
@@ -230,8 +345,7 @@
       "cat": "feeding",
       "price": "$9.90",
       "moq": "MOQ 100",
-      "img": "assets/product-fountain.png",
-      "images": ["assets/product-fountain.png", "assets/placeholder.svg", "assets/placeholder.svg", "assets/placeholder.svg", "assets/placeholder.svg", "assets/placeholder.svg", "assets/placeholder.svg", "assets/placeholder.svg"],
+      "images": [],
       "featured": true,
       "name_en": "Automatic Pet Water Fountain",
       "name_zh": "宠物自动饮水机",
@@ -246,11 +360,26 @@
       "description_ru": "Тихий насос прогоняет воду через угольный фильтр, стимулируя питомца пить чаще. Бак без BPA, детали легко разбираются.",
       "description_es": "Una bomba silenciosa hace circular el agua por un filtro de carbón, animando a las mascotas a hidratarse. Depósito sin BPA y piezas fáciles de desmontar.",
       "specs": [
-        { "k": "Material", "v": "BPA-free ABS" },
-        { "k": "Capacity", "v": "1.5 / 2.0 L" },
-        { "k": "Filter", "v": "Carbon + sponge, replaceable" },
-        { "k": "Custom", "v": "Color, logo, packaging" },
-        { "k": "Lead time", "v": "15–25 days after sample" }
+        {
+          "k": "Material",
+          "v": "BPA-free ABS"
+        },
+        {
+          "k": "Capacity",
+          "v": "1.5 / 2.0 L"
+        },
+        {
+          "k": "Filter",
+          "v": "Carbon + sponge, replaceable"
+        },
+        {
+          "k": "Custom",
+          "v": "Color, logo, packaging"
+        },
+        {
+          "k": "Lead time",
+          "v": "15–25 days after sample"
+        }
       ]
     },
     {
@@ -258,8 +387,7 @@
       "cat": "feeding",
       "price": "$5.40",
       "moq": "MOQ 200",
-      "img": "assets/product-fountain.png",
-      "images": ["assets/product-fountain.png", "assets/placeholder.svg", "assets/placeholder.svg", "assets/placeholder.svg", "assets/placeholder.svg", "assets/placeholder.svg", "assets/placeholder.svg", "assets/placeholder.svg"],
+      "images": [],
       "featured": false,
       "name_en": "Stainless Double Feeder Bowl",
       "name_zh": "不锈钢双碗喂食器",
@@ -274,11 +402,26 @@
       "description_ru": "Тяжёлое нескользящее основание держит две съёмные стальные миски — для еды и воды. Можно мыть в посудомойке, не ржавеет.",
       "description_es": "Base pesada antideslizante con dos cuencos de acero extraíbles para comida y agua. Apto para lavavajillas, sin óxido ni olores.",
       "specs": [
-        { "k": "Material", "v": "304 stainless + ABS base" },
-        { "k": "Capacity", "v": "350 / 600 ml per bowl" },
-        { "k": "Care", "v": "Bowls dishwasher safe" },
-        { "k": "Custom", "v": "Color, logo, packaging" },
-        { "k": "Lead time", "v": "12–20 days after sample" }
+        {
+          "k": "Material",
+          "v": "304 stainless + ABS base"
+        },
+        {
+          "k": "Capacity",
+          "v": "350 / 600 ml per bowl"
+        },
+        {
+          "k": "Care",
+          "v": "Bowls dishwasher safe"
+        },
+        {
+          "k": "Custom",
+          "v": "Color, logo, packaging"
+        },
+        {
+          "k": "Lead time",
+          "v": "12–20 days after sample"
+        }
       ]
     },
     {
@@ -286,8 +429,7 @@
       "cat": "others",
       "price": "$1.60",
       "moq": "MOQ 500",
-      "img": "assets/placeholder.svg",
-      "images": ["assets/placeholder.svg", "assets/placeholder.svg", "assets/placeholder.svg", "assets/placeholder.svg", "assets/placeholder.svg", "assets/placeholder.svg", "assets/placeholder.svg", "assets/placeholder.svg"],
+      "images": [],
       "featured": false,
       "name_en": "Pet Grooming Glove",
       "name_zh": "宠物按摩梳毛手套",
@@ -302,11 +444,26 @@
       "description_ru": "Перчатка с мягкими силиконовыми зубчиками собирает выпавшую шерсть и ощущается как поглаживание. Работает на сухой и мокрой шерсти.",
       "description_es": "Guanto de puntas suaves de silicona que recoge el pelo suelto imitando una caricia. Funciona en seco y en húmedo.",
       "specs": [
-        { "k": "Material", "v": "Silicone tips + mesh back" },
-        { "k": "Sizes", "v": "One size, left / right" },
-        { "k": "Care", "v": "Rinse, air dry" },
-        { "k": "Custom", "v": "Color, logo, packaging" },
-        { "k": "Lead time", "v": "10–18 days after sample" }
+        {
+          "k": "Material",
+          "v": "Silicone tips + mesh back"
+        },
+        {
+          "k": "Sizes",
+          "v": "One size, left / right"
+        },
+        {
+          "k": "Care",
+          "v": "Rinse, air dry"
+        },
+        {
+          "k": "Custom",
+          "v": "Color, logo, packaging"
+        },
+        {
+          "k": "Lead time",
+          "v": "10–18 days after sample"
+        }
       ]
     }
   ]

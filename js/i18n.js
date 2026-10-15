@@ -24,7 +24,7 @@ const I18N = {
     "footer.rights": "Poteho. All rights reserved.",
     "footer.slogan": "Poteho — your pet's best friend",
 
-    "cat.all": "All", "cat.bags": "Bags & Trolley", "cat.toys": "Toys",
+    "cat.all": "All", "cat.bags": "Carrier", "cat.toys": "Toys",
     "cat.apparel": "Apparel", "cat.leashes": "Leashes", "cat.feeding": "Feeding",
     "cat.others": "Others", "opt.custom": "Custom project",
 
@@ -68,11 +68,11 @@ const I18N = {
     "hero.h1": "Premium pet products, built for happy homes",
     "hero.p": "From travel carriers to everyday essentials, Poteho helps retailers and brands source reliable pet gear with low MOQs, custom branding and worldwide shipping.",
     "hero.browse": "Browse Products", "hero.quote": "Request Wholesale Price",
-    "hero.stat1": "Years manufacturing", "hero.stat2": "SKUs available", "hero.stat3": "Countries served",
+    "hero.stat1": "Founded", "hero.stat2": "Years export experience", "hero.stat3": "Export countries",
 
     "why.eyebrow": "Why Poteho", "why.h2": "A sourcing partner, not just a supplier",
-    "why.p": "We keep the boring parts simple so you can focus on selling.",
-    "feat1t": "Quality assured", "feat1p": "Every batch is inspected and tested against international pet-safety standards.",
+    "why.p": "Pets are family. We make quality products for them and back them with friendly, dependable service.",
+    "feat1t": "Quality checked", "feat1p": "Every product is checked piece by piece by our own QC team before it leaves the factory.",
     "feat2t": "Custom branding", "feat2p": "Custom colors, packaging and logo. Bring your brand, we build the product.",
     "feat3t": "Global shipping", "feat3p": "Flexible by air or sea, with full documentation for smooth customs clearance.",
     "feat4t": "Real support", "feat4p": "A dedicated rep replies within one business day, from quote to delivery.",
@@ -81,7 +81,7 @@ const I18N = {
     "best.eyebrow": "Best sellers", "best.h2": "Featured products",
     "best.p": "Our most-requested items from retailers around the world.",
     "best.all": "View all products",
-    "blogsec.eyebrow": "From the blog", "blogsec.h2": "Pet care tips that help you sell",
+    "blogsec.eyebrow": "From the blog", "blogsec.h2": "Stories from life with pets",
 
     "homecta.h2": "Ready to stock premium pet gear?",
     "homecta.p": "Tell us what you need and get a tailored wholesale quote within one business day.",
@@ -101,7 +101,7 @@ const I18N = {
     "abf3t": "Manufacturing", "abf3p": "Reliable manufacturing with in-house QC at every stage of production.",
     "abf4t": "Logistics", "abf4p": "Air or sea, DDP or FOB, with paperwork handled for smooth clearance.",
     "abn.eyebrow": "By the numbers", "abn.h2": "A track record you can lean on",
-    "num.founded": "Founded", "num.brands": "Brands served",
+    "num.founded": "Founded", "num.brands": "Years export experience",
     "num.countries": "Export countries", "num.ontime": "On-time delivery",
     "abcta.h2": "Let's build your next product line",
     "abcta.p": "Tell us what you're planning — we'll show you how to get there.",
@@ -113,9 +113,9 @@ const I18N = {
     "ct.factory": "Factory", "ct.response": "Response time", "ct.within24": "Within 24 hours",
     "ct.prefer": "Prefer email? Just send your product interest, target quantity and market — we'll take it from there.",
 
-    "bl.eyebrow": "Journal", "bl.h2": "Guides, tips & sourcing notes",
-    "bl.p": "Content built to help pet parents and retailers make better choices.",
-    "bl.readmore": "Read article →"
+    "bl.eyebrow": "Journal", "bl.h2": "Stories and guides about life with pets",
+    "bl.p": "Notes on cats, dogs, and the everyday life we share with them.",
+    "bl.readmore": "Read article →", "bl.back": "← Back to all articles"
   },
 
   /* ---------------- Русский ---------------- */
@@ -131,7 +131,7 @@ const I18N = {
     "footer.rights": "Poteho. Все права защищены.",
     "footer.slogan": "Poteho — лучший друг вашего питомца",
 
-    "cat.all": "Все", "cat.bags": "Сумки и тележки", "cat.toys": "Игрушки",
+    "cat.all": "Все", "cat.bags": "Переноски", "cat.toys": "Игрушки",
     "cat.apparel": "Одежда", "cat.leashes": "Поводки", "cat.feeding": "Кормление",
     "cat.others": "Другое", "opt.custom": "Индивидуальный проект",
 
@@ -175,11 +175,11 @@ const I18N = {
     "hero.h1": "Премиальные товары для питомцев — для счастливых домов",
     "hero.p": "От переносок до товаров на каждый день: Poteho помогает ритейлерам и брендам закупать надёжные товары для животных с низким MOQ, кастомизацией под ваш бренд и доставкой по всему миру.",
     "hero.browse": "Смотреть продукцию", "hero.quote": "Запросить оптовую цену",
-    "hero.stat1": "лет производства", "hero.stat2": "доступных SKU", "hero.stat3": "стран поставки",
+    "hero.stat1": "год основания", "hero.stat2": "лет экспортного опыта", "hero.stat3": "стран экспорта",
 
     "why.eyebrow": "Почему Poteho", "why.h2": "Партнёр по закупкам, а не просто поставщик",
-    "why.p": "Мы берём на себя рутину, чтобы вы занимались продажами.",
-    "feat1t": "Гарантия качества", "feat1p": "Каждая партия проверяется по международным стандартам безопасности для животных.",
+    "why.p": "Питомцы — часть семьи. Мы делаем для них качественные товары и заботимся о тех, кто их покупает.",
+    "feat1t": "Проверка качества", "feat1p": "Каждое изделие перед отгрузкой проверяется нашей собственной службой контроля качества.",
     "feat2t": "Брендирование", "feat2p": "Цвета, упаковка и логотип под ваш бренд — вы приносите бренд, мы делаем продукт.",
     "feat3t": "Доставка по миру", "feat3p": "Авиа или море, с полным пакетом документов для таможни.",
     "feat4t": "Живая поддержка", "feat4p": "Персональный менеджер отвечает в течение одного рабочего дня — от расчёта до поставки.",
@@ -188,7 +188,7 @@ const I18N = {
     "best.eyebrow": "Хиты продаж", "best.h2": "Избранные товары",
     "best.p": "Самые востребованные позиции у ритейлеров по всему миру.",
     "best.all": "Смотреть все товары",
-    "blogsec.eyebrow": "Из блога", "blogsec.h2": "Советы, которые помогают продавать",
+    "blogsec.eyebrow": "Из блога", "blogsec.h2": "Истории из жизни с питомцами",
 
     "homecta.h2": "Готовы закупать премиальные товары?",
     "homecta.p": "Расскажите, что вам нужно, — и получите персональный оптовый расчёт в течение одного рабочего дня.",
@@ -208,7 +208,7 @@ const I18N = {
     "abf3t": "Производство", "abf3p": "Надёжное производство с собственным контролем качества на каждом этапе.",
     "abf4t": "Логистика", "abf4p": "Авиа или море, DDP или FOB, с полным пакетом документов для таможни.",
     "abn.eyebrow": "В цифрах", "abn.h2": "Результаты, на которые можно опереться",
-    "num.founded": "Год основания", "num.brands": "Брендов-клиентов",
+    "num.founded": "Год основания", "num.brands": "лет экспортного опыта",
     "num.countries": "Стран поставки", "num.ontime": "Поставок точно в срок",
     "abcta.h2": "Создадим вашу следующую линейку",
     "abcta.p": "Расскажите о планах — мы покажем, как их реализовать.",
@@ -220,9 +220,9 @@ const I18N = {
     "ct.factory": "Завод", "ct.response": "Время ответа", "ct.within24": "В течение 24 часов",
     "ct.prefer": "Удобнее по почте? Просто отправьте интересующий товар, количество и рынок — дальше мы всё сделаем сами.",
 
-    "bl.eyebrow": "Журнал", "bl.h2": "Гайды, советы и заметки о закупках",
-    "bl.p": "Контент, который помогает владельцам питомцев и ритейлерам выбирать лучше.",
-    "bl.readmore": "Читать статью →"
+    "bl.eyebrow": "Журнал", "bl.h2": "Истории и гайды о жизни с питомцами",
+    "bl.p": "О кошках, собаках и нашей повседневной жизни вместе с ними.",
+    "bl.readmore": "Читать статью →", "bl.back": "← Все статьи"
   },
 
   /* ---------------- Español ---------------- */
@@ -238,7 +238,7 @@ const I18N = {
     "footer.rights": "Poteho. Todos los derechos reservados.",
     "footer.slogan": "Poteho — el mejor amigo de tu mascota",
 
-    "cat.all": "Todos", "cat.bags": "Bolsos y carritos", "cat.toys": "Juguetes",
+    "cat.all": "Todos", "cat.bags": "Transportines", "cat.toys": "Juguetes",
     "cat.apparel": "Ropa", "cat.leashes": "Correas", "cat.feeding": "Alimentación",
     "cat.others": "Otros", "opt.custom": "Proyecto personalizado",
 
@@ -282,11 +282,11 @@ const I18N = {
     "hero.h1": "Productos premium para mascotas, pensados para hogares felices",
     "hero.p": "Desde transportines hasta artículos de diario, Poteho ayuda a minoristas y marcas a comprar productos fiables con MOQ bajos, marca personalizada y envío mundial.",
     "hero.browse": "Ver productos", "hero.quote": "Pedir precio mayorista",
-    "hero.stat1": "años fabricando", "hero.stat2": "SKUs disponibles", "hero.stat3": "países servidos",
+    "hero.stat1": "fundación", "hero.stat2": "años de experiencia exportando", "hero.stat3": "países de exportación",
 
     "why.eyebrow": "Por qué Poteho", "why.h2": "Un socio de abastecimiento, no solo un proveedor",
-    "why.p": "Simplificamos la parte aburrida para que te concentres en vender.",
-    "feat1t": "Calidad garantizada", "feat1p": "Cada lote se inspecciona según estándares internacionales de seguridad para mascotas.",
+    "why.p": "Las mascotas son familia. Hacemos productos de calidad para ellas y cuidamos a quienes las compran.",
+    "feat1t": "Control de calidad", "feat1p": "Cada producto se revisa pieza por pieza con nuestro propio equipo de calidad antes de salir de fábrica.",
     "feat2t": "Marca personalizada", "feat2p": "Colores, empaques y logotipo personalizados. Tú traes la marca, nosotros creamos el producto.",
     "feat3t": "Envío mundial", "feat3p": "Flexible por aire o mar, con documentación completa para un despacho aduanero sin problemas.",
     "feat4t": "Soporte real", "feat4p": "Un ejecutivo dedicado responde en un día laborable, desde la cotización hasta la entrega.",
@@ -295,7 +295,7 @@ const I18N = {
     "best.eyebrow": "Más vendidos", "best.h2": "Productos destacados",
     "best.p": "Los artículos más solicitados por minoristas de todo el mundo.",
     "best.all": "Ver todos los productos",
-    "blogsec.eyebrow": "Del blog", "blogsec.h2": "Consejos que te ayudan a vender",
+    "blogsec.eyebrow": "Del blog", "blogsec.h2": "Historias de la vida con mascotas",
 
     "homecta.h2": "¿Listo para surtirte con productos premium?",
     "homecta.p": "Cuéntanos qué necesitas y recibe una cotización mayorista a medida en un día laborable.",
@@ -315,7 +315,7 @@ const I18N = {
     "abf3t": "Fabricación", "abf3p": "Fabricación fiable con control de calidad propio en cada etapa.",
     "abf4t": "Logística", "abf4p": "Aéreo o marítimo, DDP o FOB, con papeleo resuelto para un despacho fluido.",
     "abn.eyebrow": "En cifras", "abn.h2": "Un historial en el que apoyarse",
-    "num.founded": "Fundación", "num.brands": "Marcas atendidas",
+    "num.founded": "Fundación", "num.brands": "años de experiencia exportando",
     "num.countries": "Países de exportación", "num.ontime": "Entregas a tiempo",
     "abcta.h2": "Creemos tu próxima línea de productos",
     "abcta.p": "Cuéntanos qué planeas — te mostraremos cómo lograrlo.",
@@ -327,9 +327,9 @@ const I18N = {
     "ct.factory": "Fábrica", "ct.response": "Tiempo de respuesta", "ct.within24": "En 24 horas",
     "ct.prefer": "¿Prefieres el correo? Envíanos el producto de interés, cantidad objetivo y mercado — nosotros nos encargamos del resto.",
 
-    "bl.eyebrow": "Revista", "bl.h2": "Guías, consejos y notas de abastecimiento",
-    "bl.p": "Contenido para ayudar a dueños de mascotas y minoristas a decidir mejor.",
-    "bl.readmore": "Leer artículo →"
+    "bl.eyebrow": "Revista", "bl.h2": "Historias y guías sobre la vida con mascotas",
+    "bl.p": "Notas sobre gatos, perros y el día a día que compartimos con ellos.",
+    "bl.readmore": "Leer artículo →", "bl.back": "← Volver a todos los artículos"
   },
 
   /* ---------------- 中文 ---------------- */
@@ -345,7 +345,7 @@ const I18N = {
     "footer.rights": "Poteho 版权所有。",
     "footer.slogan": "Poteho — 您宠物的最佳伙伴",
 
-    "cat.all": "全部", "cat.bags": "包和拉杆箱", "cat.toys": "玩具",
+    "cat.all": "全部", "cat.bags": "外出包", "cat.toys": "玩具",
     "cat.apparel": "衣服", "cat.leashes": "牵引绳", "cat.feeding": "喂养",
     "cat.others": "其他", "opt.custom": "定制项目",
 
@@ -389,11 +389,11 @@ const I18N = {
     "hero.h1": "优质宠物用品，为快乐的家庭而生",
     "hero.p": "从外出包到日常必需品，Poteho 帮助零售商和品牌以低起订量、定制品牌服务与全球配送，采购可靠的宠物用品。",
     "hero.browse": "浏览产品", "hero.quote": "获取批发价",
-    "hero.stat1": "年制造经验", "hero.stat2": "在售 SKU", "hero.stat3": "出口国家",
+    "hero.stat1": "成立年份", "hero.stat2": "年出口经验", "hero.stat3": "出口国家",
 
     "why.eyebrow": "为什么选择 Poteho", "why.h2": "采购伙伴，而不只是供应商",
-    "why.p": "我们把繁琐的环节变简单，让您专注于销售。",
-    "feat1t": "品质保障", "feat1p": "每一批货都按国际宠物安全标准检验测试。",
+    "why.p": "宠物是家人。我们为它们打造高品质的产品，也用心服务好每一位客户。",
+    "feat1t": "品质把关", "feat1p": "每件产品出厂前，都由我们自己的质检团队逐件检查。",
     "feat2t": "品牌定制", "feat2p": "定制颜色、包装和logo。您带来品牌，我们做出产品。",
     "feat3t": "全球发货", "feat3p": "空运海运灵活安排，单证齐全，清关顺畅。",
     "feat4t": "贴心服务", "feat4p": "专属业务员一个工作日内回复，从报价到交付全程跟进。",
@@ -402,7 +402,7 @@ const I18N = {
     "best.eyebrow": "热销爆款", "best.h2": "推荐产品",
     "best.p": "全球零售商最常采购的款式。",
     "best.all": "查看全部产品",
-    "blogsec.eyebrow": "来自博客", "blogsec.h2": "帮您卖货的宠物养护知识",
+    "blogsec.eyebrow": "来自博客", "blogsec.h2": "陪伴宠物的日常故事",
 
     "homecta.h2": "准备好采购优质宠物用品了吗？",
     "homecta.p": "告诉我们您的需求，一个工作日内获取专属批发报价。",
@@ -422,7 +422,7 @@ const I18N = {
     "abf3t": "生产制造", "abf3p": "可靠生产，每一道工序都有自品质检。",
     "abf4t": "物流运输", "abf4p": "空运海运、DDP 或 FOB，单证齐全清关顺畅。",
     "abn.eyebrow": "数据说话", "abn.h2": "值得信赖的业绩",
-    "num.founded": "创立年份", "num.brands": "服务品牌",
+    "num.founded": "创立年份", "num.brands": "年出口经验",
     "num.countries": "出口国家", "num.ontime": "准时交付率",
     "abcta.h2": "一起打造您的下一条产品线",
     "abcta.p": "说说您的计划 — 我们告诉您怎么实现。",
@@ -434,9 +434,9 @@ const I18N = {
     "ct.factory": "工厂", "ct.response": "响应时间", "ct.within24": "24 小时内",
     "ct.prefer": "更习惯发邮件？直接发送感兴趣的产品、目标数量和市场 — 剩下的交给我们。",
 
-    "bl.eyebrow": "专栏", "bl.h2": "指南、技巧与采购笔记",
-    "bl.p": "帮助宠物主人和零售商做出更好选择的内容。",
-    "bl.readmore": "阅读全文 →"
+    "bl.eyebrow": "专栏", "bl.h2": "关于与宠物相伴的故事与指南",
+    "bl.p": "关于猫、狗，以及我们与它们共同生活的日常。",
+    "bl.readmore": "阅读全文 →", "bl.back": "← 返回全部文章"
   }
 };
 
