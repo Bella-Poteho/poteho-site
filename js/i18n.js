@@ -71,7 +71,7 @@ const I18N = {
     "hero.stat1": "Founded", "hero.stat2": "Years export experience", "hero.stat3": "Export countries",
 
     "why.eyebrow": "Why Poteho", "why.h2": "A sourcing partner, not just a supplier",
-    "why.p": "Choosing a supplier comes down to trust. We've made pet supplies since 2020, ship to 30+ countries, and check every product piece by piece in our own factory. Order a sample or a full container — you'll get quality you can trust and friendly, dependable service.",
+    "why.p": "Choosing a supplier comes down to trust. We've made pet supplies since 2020, ship to 30+ countries, and check every product piece by piece. Order a sample or a full container — you'll get quality you can trust and friendly, dependable service.",
     "feat1t": "Quality checked", "feat1p": "Every product is checked piece by piece by our own QC team before it leaves the factory.",
     "feat2t": "Custom branding", "feat2p": "Custom colors, packaging and logo. Bring your brand, we build the product.",
     "feat3t": "Global shipping", "feat3p": "Flexible by air or sea, with full documentation for smooth customs clearance.",
@@ -178,7 +178,7 @@ const I18N = {
     "hero.stat1": "год основания", "hero.stat2": "лет экспортного опыта", "hero.stat3": "стран экспорта",
 
     "why.eyebrow": "Почему Poteho", "why.h2": "Партнёр по закупкам, а не просто поставщик",
-    "why.p": "Выбор поставщика — это вопрос доверия. Мы делаем товары для животных с 2020 года, поставляем в более чем 30 стран и проверяем каждое изделие поштучно на собственной фабрике. Закажите образец или целый контейнер — вы получите качество, которому можно доверять, и дружелюбный, надёжный сервис.",
+    "why.p": "Выбор поставщика — это вопрос доверия. Мы делаем товары для животных с 2020 года, поставляем в более чем 30 стран и проверяем каждое изделие поштучно. Закажите образец или целый контейнер — вы получите качество, которому можно доверять, и дружелюбный, надёжный сервис.",
     "feat1t": "Проверка качества", "feat1p": "Каждое изделие перед отгрузкой проверяется нашей собственной службой контроля качества.",
     "feat2t": "Брендирование", "feat2p": "Цвета, упаковка и логотип под ваш бренд — вы приносите бренд, мы делаем продукт.",
     "feat3t": "Доставка по миру", "feat3p": "Авиа или море, с полным пакетом документов для таможни.",
@@ -285,7 +285,7 @@ const I18N = {
     "hero.stat1": "fundación", "hero.stat2": "años de experiencia exportando", "hero.stat3": "países de exportación",
 
     "why.eyebrow": "Por qué Poteho", "why.h2": "Un socio de abastecimiento, no solo un proveedor",
-    "why.p": "Elegir un proveedor es cuestión de confianza. Fabricamos artículos para mascotas desde 2020, enviamos a más de 30 países y revisamos cada producto pieza por pieza en nuestra propia fábrica. Pide una muestra o un contenedor completo: tendrás calidad en la que confiar y un servicio cercano y fiable.",
+    "why.p": "Elegir un proveedor es cuestión de confianza. Fabricamos artículos para mascotas desde 2020, enviamos a más de 30 países y revisamos cada producto pieza por pieza. Pide una muestra o un contenedor completo: tendrás calidad en la que confiar y un servicio cercano y fiable.",
     "feat1t": "Control de calidad", "feat1p": "Cada producto se revisa pieza por pieza con nuestro propio equipo de calidad antes de salir de fábrica.",
     "feat2t": "Marca personalizada", "feat2p": "Colores, empaques y logotipo personalizados. Tú traes la marca, nosotros creamos el producto.",
     "feat3t": "Envío mundial", "feat3p": "Flexible por aire o mar, con documentación completa para un despacho aduanero sin problemas.",
@@ -392,7 +392,7 @@ const I18N = {
     "hero.stat1": "成立年份", "hero.stat2": "年出口经验", "hero.stat3": "出口国家",
 
     "why.eyebrow": "为什么选择 Poteho", "why.h2": "采购伙伴，而不只是供应商",
-    "why.p": "选择供应商，关键看信任。我们自 2020 年起生产宠物用品，产品出口 30 多个国家，每一件都在自己的工厂逐件检查。无论下样品单还是整柜订单，你都能得到值得信赖的品质，以及友好可靠的服务。",
+    "why.p": "选择供应商，关键看信任。我们自 2020 年起生产宠物用品，产品出口 30 多个国家，每一件都经我们逐件检查。无论下样品单还是整柜订单，你都能得到值得信赖的品质，以及友好可靠的服务。",
     "feat1t": "品质把关", "feat1p": "每件产品出厂前，都由我们自己的质检团队逐件检查。",
     "feat2t": "品牌定制", "feat2p": "定制颜色、包装和logo。您带来品牌，我们做出产品。",
     "feat3t": "全球发货", "feat3p": "空运海运灵活安排，单证齐全，清关顺畅。",
