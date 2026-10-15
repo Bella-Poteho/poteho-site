@@ -20,7 +20,17 @@
         "Milo tests every product that comes through our office. The ones she ignores go back to the drawing board. The ones she sleeps on, we ship.",
         "If you have just adopted a shy cat, my only advice is this: sit on the floor, read something out loud, and count the days in paws, not hours."
       ],
-      "image": "assets/blog/blog-01.jpg"
+      "image": "assets/blog/blog-01.jpg",
+      "faq": [
+        {
+          "q": "How long does it take a rescue cat to trust you?",
+          "a": "Every cat is different, but many shy rescues take one to four weeks to start relaxing and a couple of months to fully settle. Go at the cat's pace: sit nearby, speak softly, and let them come to you."
+        },
+        {
+          "q": "Should I force a scared rescue cat out of hiding?",
+          "a": "No. Forcing contact breaks trust. Keep food, water and a safe hiding spot available, visit quietly at the same times, and let the cat choose when to come out."
+        }
+      ]
     },
     {
       "slug": "first-night-new-puppy",
@@ -42,7 +52,17 @@
         "Night three was quiet. Night four, he slept through. Within two weeks the crate was his den and he walked in on his own when he was tired.",
         "I think about that first night a lot, because at Poteho we design bedding for exactly this moment. A bed a puppy can dig into, with walls that touch its back, does more for sleep than any expensive thing we could add. The puppy does not need luxury. It needs something that feels like the pile it left behind."
       ],
-      "image": "assets/blog/blog-02.jpg"
+      "image": "assets/blog/blog-02.jpg",
+      "faq": [
+        {
+          "q": "Is it normal for a puppy to cry on the first night?",
+          "a": "Yes. A puppy has never slept alone before, so crying is normal. Keep the crate near your bed, add a ticking clock and a scented toy, and most puppies settle within a few nights."
+        },
+        {
+          "q": "How can I help a new puppy sleep through the night?",
+          "a": "Move the crate next to your bed for the first nights, use a heartbeat-style comfort item and a familiar scented toy, and keep a calm, consistent bedtime routine."
+        }
+      ]
     },
     {
       "slug": "why-dogs-follow-you",
@@ -64,7 +84,17 @@
         "Our office dog, a beagle named Bao, follows the production manager on her entire morning rounds. When we test a new leash or harness sample, Bao's willingness to trot off happily at the end of it tells us more than any spec sheet. A dog that feels secure walks loose. A dog that does not, checks back every few steps.",
         "So next time the bathroom door will not shut properly because of a snout, take it as the compliment it is."
       ],
-      "image": "assets/blog/blog-03.jpg"
+      "image": "assets/blog/blog-03.jpg",
+      "faq": [
+        {
+          "q": "Why does my dog follow me everywhere?",
+          "a": "Dogs are pack animals and see you as their family and the source of good things like food and walks, so following keeps the group together and stays close to rewards."
+        },
+        {
+          "q": "When is following a sign of separation anxiety?",
+          "a": "If the following comes with distress when you are out of sight, pacing, whining or destruction, it may be separation anxiety. Build alone-time gradually and consult a trainer."
+        }
+      ]
     },
     {
       "slug": "do-cats-get-lonely",
@@ -86,7 +116,17 @@
         "This is a big part of why our design work starts with how a cat spends a solo day. A window perch at the right height, a scratcher it will actually use, toys that move like prey instead of like plastic. None of it replaces you. All of it makes the alone hours better.",
         "Cats do not ask for company loudly. They just do better when it is there."
       ],
-      "image": "assets/blog/blog-04.jpg"
+      "image": "assets/blog/blog-04.jpg",
+      "faq": [
+        {
+          "q": "Do cats get lonely if left alone all day?",
+          "a": "Many do, quietly. Long empty days can lead to over-grooming, less play and withdrawal. Window perches, puzzle feeders and a predictable play session help."
+        },
+        {
+          "q": "Will getting a second cat fix loneliness?",
+          "a": "Not always. Cats are territorial and a rushed introduction can backfire. A slow, scent-first introduction works best, but a second cat is not right for every home."
+        }
+      ]
     },
     {
       "slug": "winter-walks",
@@ -106,7 +146,17 @@
         "For reflective gear, winter is when it earns its price. Dark mornings and dark evenings mean your dog is far less visible than you think. A stitch of reflective thread on a harness catches headlights from much further away than a bright color does. We learned this the hard way in our early samples and now it is a standard detail on everything we make for winter markets.",
         "Give winter walks one honest try. Pick the coldest, clearest morning you can, take a thermos, and let the dog set the pace. You might find, as I did, that it becomes the best part of the day."
       ],
-      "image": "assets/blog/blog-05.jpg"
+      "image": "assets/blog/blog-05.jpg",
+      "faq": [
+        {
+          "q": "Is it safe to walk my dog in winter?",
+          "a": "Yes with the right gear. Protect paws from salt and ice with wax or booties, watch for shivering and paw-lifting, and add a jacket for short-coated, senior or small dogs."
+        },
+        {
+          "q": "What should my dog wear in cold weather?",
+          "a": "Short-coated, senior and small breeds often need a jacket; most dogs need paw protection from salt and ice. Use reflective gear on dark winter mornings and evenings."
+        }
+      ]
     },
     {
       "slug": "carrier-your-cat-wont-hate",
@@ -128,7 +178,17 @@
         "We tested a whole range before adding one to our line, and the results humbled us. Cats preferred carriers with a dark interior and one small window over the airy, bright designs the humans in the room liked best. The lesson stuck: we design for the animal, and the human gets a handle they like and a washable pad.",
         "If your cat already hates its carrier, do not throw it out. Leave it out for a month with the door open and feed near it, then in it. Fear fades when the object stops predicting bad days. Give it time. Cats are fair, once you speak their language."
       ],
-      "image": "assets/blog/blog-06.jpg"
+      "image": "assets/blog/blog-06.jpg",
+      "faq": [
+        {
+          "q": "How do I get my cat to like the carrier?",
+          "a": "Leave the carrier out as furniture with the door open and treats inside, weeks before any trip, so it becomes a safe, familiar space instead of a vet-day threat."
+        },
+        {
+          "q": "What features make a good cat carrier?",
+          "a": "Top loading, a solid non-sagging frame, mesh airflow panels, secure latches and a washable pad. Size should let the cat stand and turn around."
+        }
+      ]
     },
     {
       "slug": "how-long-leave-dog-alone",
@@ -150,7 +210,17 @@
         "At our office, dogs come to work with us, which is its own experiment. The thing we notice most is that tired dogs are calm dogs and busy-brained dogs are not. When we test a toy for the catalog, the question is never does the dog like it for five minutes. It is did the dog settle afterward. Products that wind a dog up fail. Products that give it a job pass.",
         "If your days are long, do not feel guilty. Feel practical. Meet the needs at both ends, buy the middle hours something to do, and watch your own dog, not the poster."
       ],
-      "image": "assets/blog/blog-07.jpg"
+      "image": "assets/blog/blog-07.jpg",
+      "faq": [
+        {
+          "q": "How long can I leave a dog alone?",
+          "a": "It depends on the dog's age and history. Puppies under six months manage only an hour or two, while a settled adult may handle a full workday if needs are met before and after."
+        },
+        {
+          "q": "How do I make a long workday easier for my dog?",
+          "a": "Give a real walk before leaving, leave something to do like a frozen stuffed toy or puzzle feeder, and add midday help such as a dog walker when possible."
+        }
+      ]
     },
     {
       "slug": "daily-walk-matters",
@@ -171,7 +241,17 @@
         "My friend started walking the collie twice a day, mostly to prove the vet wrong. The barking stopped in about two weeks. The iris bed recovered by spring.",
         "When we talk to retail buyers about why a simple leash still sells year after year, this is the reason. Nothing fancy replaces the daily ritual. The walk is the product the dog is actually buying. The leash just comes with it."
       ],
-      "image": "assets/blog/blog-08.jpg"
+      "image": "assets/blog/blog-08.jpg",
+      "faq": [
+        {
+          "q": "Why are daily dog walks important?",
+          "a": "Walks give dogs sensory novelty, sniffing time and routine bonding that a yard alone cannot replace. Even short, sniff-friendly walks reduce boredom and anxiety."
+        },
+        {
+          "q": "How long should a dog walk be?",
+          "a": "It varies by breed, age and energy, but most dogs benefit from at least one or two walks daily with time to sniff freely, not just marching at your pace."
+        }
+      ]
     },
     {
       "slug": "adopting-a-senior-dog",
@@ -192,7 +272,17 @@
         "This is where our product decisions have shifted over the years. We used to make beds that photographed well. Now we make beds a twelve-year-old dog can get into without a running start, with a lip that is a help rather than a hurdle, and covers that survive being washed twice a week.",
         "A senior adoption will end sooner than you want. Everything you love ends sooner than you want. What people who adopt old dogs tend to report is the same thing: the gratitude is different. Quieter, and somehow more obvious. The dog knows what a home is worth. It had one, it lost it, and now it has one again."
       ],
-      "image": "assets/blog/blog-09.jpg"
+      "image": "assets/blog/blog-09.jpg",
+      "faq": [
+        {
+          "q": "Is adopting a senior dog a good idea?",
+          "a": "Often yes. Senior dogs are usually calmer, already trained and settle quickly, giving you fewer years but often better years together."
+        },
+        {
+          "q": "What does a senior dog need?",
+          "a": "Comfort gear matters most: an orthopedic bed, non-slip floors, ramps and warmth, plus realistic vet budgeting for arthritis and dental care."
+        }
+      ]
     },
     {
       "slug": "two-cats-or-one",
@@ -215,7 +305,17 @@
         "Six months on, Nana and the kitten are not cuddly friends. They are colleagues. They share the sunny window in shifts, they play chase at 11pm, and Nana grooms his ears when she thinks nobody is watching. Would she have chosen this? Hard to say. Is the household better? Yes.",
         "If you do it, do it slowly. If you decide against it, add a window perch and daily play instead. Cats are flexible about how their social needs get met. People are the ones who like tidy answers."
       ],
-      "image": "assets/blog/blog-10.jpg"
+      "image": "assets/blog/blog-10.jpg",
+      "faq": [
+        {
+          "q": "Should I get a second cat?",
+          "a": "It depends on your resident cat. Kittens raised together bond easily, while adults need a slow, scent-first introduction; a second cat is not right for every home."
+        },
+        {
+          "q": "How do I introduce a new cat?",
+          "a": "Separate rooms first, swap scents via blankets, then short supervised meetings ending on a good note over weeks, not days. Provide one litter box per cat plus one."
+        }
+      ]
     },
     {
       "slug": "puppy-chewing-season",
@@ -237,7 +337,17 @@
         "Chewing season is also how we test. A sample that survives a teething lab puppy for a month has earned its place in the catalog. Several of our toughest toy designs exist because of that one winter, chosen by a puppy who was extremely good at his job.",
         "The season ends. The novel was replaced. The chair legs survived with minor scarring, and the dog, now grown, has not touched a slipper in years. Hang in there and hide the chargers."
       ],
-      "image": "assets/blog/blog-11.jpg"
+      "image": "assets/blog/blog-11.jpg",
+      "faq": [
+        {
+          "q": "Why does my puppy chew everything?",
+          "a": "Teething and mouth exploration drive it, usually between four and seven months. It is a phase, not bad behavior. Redirect chewing to appropriate toys."
+        },
+        {
+          "q": "How do I stop puppy chewing?",
+          "a": "Rotate a few toys, trade (do not chase) for something better, and use a puppy-proofed area when unsupervised. Frozen toys help sore gums."
+        }
+      ]
     },
     {
       "slug": "cats-and-noise",
@@ -256,7 +366,17 @@
         "Watch where the cat chooses to sleep. That spot is data about your home's acoustics from the resident expert.",
         "This sensitivity shaped more of our product line than almost anything else. The quietest wheel on our cat tree samples, the felt pads under every platform, the decision to skip bells on most toys, all trace back to watching cats avoid the loud versions. A quiet product is a used product. The louder alternative ends up in a closet, and the cat ends up in the box it shipped in, which is at least silent."
       ],
-      "image": "assets/blog/blog-12.jpg"
+      "image": "assets/blog/blog-12.jpg",
+      "faq": [
+        {
+          "q": "Are cats bothered by noise?",
+          "a": "Yes. Cats hear roughly two octaves above humans, so household noise arrives louder and can shrink their safe territory. Give them a quiet zone and soft furnishings."
+        },
+        {
+          "q": "How do I make my home calmer for a cat?",
+          "a": "Offer one quiet, enclosed space, keep the litter box away from loud appliances, add rugs and curtains to absorb sound, and run loud appliances when the cat is elsewhere."
+        }
+      ]
     },
     {
       "slug": "road-trips-with-your-dog",
@@ -279,7 +399,17 @@
         "Keep feeding times identical to home. Keep one walk ritual identical too. Dogs do not need the vacation to be exciting. They need it to be familiar, in a different place.",
         "By the third trip ours slept from the first minute of driving. Now the hard part of road trips is that the dog gets in the car every time we do, hopeful, for weeks afterward."
       ],
-      "image": "assets/blog/blog-13.jpg"
+      "image": "assets/blog/blog-13.jpg",
+      "faq": [
+        {
+          "q": "How do I travel with a dog by car?",
+          "a": "Use a crash-tested harness or secured carrier, take water breaks every two to three hours, never leave a dog in a parked car, and keep feeding times consistent at your destination."
+        },
+        {
+          "q": "How do I prepare a dog for a road trip?",
+          "a": "Do short practice drives first, pack food, water, a leash, a vaccination copy and any medication, and book dog-friendly stays in advance."
+        }
+      ]
     },
     {
       "slug": "why-cats-knead",
@@ -301,7 +431,17 @@
         "You can tell a lot about a product by whether it gets kneaded. In our sample room, the fabrics that survive a week of biscuit testing are the ones that go into production. Loose weaves pull apart under kneading claws within days; a tight, dense knit takes it for years. Cats are brutally honest QA engineers.",
         "So when your cat sets to work on you, slow and rhythmic and shameless, know what it is saying. It is saying you remind it of the very first safety it ever knew. Not bad for a Tuesday evening."
       ],
-      "image": "assets/blog/blog-14.jpg"
+      "image": "assets/blog/blog-14.jpg",
+      "faq": [
+        {
+          "q": "Why does my cat knead me?",
+          "a": "Kneading is a comfort behavior from kittenhood tied to safety and milk. Kneading you means you are filed next to those earliest good feelings: pure affection."
+        },
+        {
+          "q": "Why does kneading hurt?",
+          "a": "Cats have scent glands in their paws, so kneading also marks you. Trim nails on schedule and place a thick blanket over your lap to stay comfortable."
+        }
+      ]
     },
     {
       "slug": "lazy-guide-pet-health",
@@ -324,7 +464,17 @@
         "One visit a year buys baseline bloodwork and an early look at the things that are quiet until they are not. Cats especially are professional illness hiders; the annual exam is often the only way anything gets caught in time.",
         "That is the whole system. None of it takes talent, all of it takes five minutes, and together it covers maybe eighty percent of what determines whether your pet is thriving. Save the binder for people who enjoy binders. Your dog would rather you spend that time on the couch with them."
       ],
-      "image": "assets/blog/blog-15.jpg"
+      "image": "assets/blog/blog-15.jpg",
+      "faq": [
+        {
+          "q": "How can I keep my pet healthy without overthinking it?",
+          "a": "Five habits cover most of it: a monthly hands-on check, weighed (not scooped) food, dental chews, scheduled movement, and an annual vet visit."
+        },
+        {
+          "q": "How often should my pet see the vet?",
+          "a": "At least once a year when healthy; seniors benefit from twice-yearly visits because age-related issues move faster and cats hide illness well."
+        }
+      ]
     },
     {
       "slug": "reading-your-dogs-tail",
@@ -346,7 +496,17 @@
         "The rule for children is simple and safer than the old one: before petting any dog, ask the person, then let the dog choose. Hand low, let the dog come to you. If the body is loose and the dog pushes in, pet it. If it is stiff or turns away, thank it for the answer and move on.",
         "Dogs spend their lives being polite in a language we barely read. The tail is the loudest word in that language, and it has more meanings than hello. A few minutes of learning it buys a lifetime of better conversations, and keeps everybody's hands safe."
       ],
-      "image": "assets/blog/blog-16.jpg"
+      "image": "assets/blog/blog-16.jpg",
+      "faq": [
+        {
+          "q": "Does a wagging tail always mean a happy dog?",
+          "a": "No. A wag signals arousal, not always friendliness. Read the whole dog: loose body and wide mid-height sweeps mean joy, while a stiff, high, fast tick suggests tension."
+        },
+        {
+          "q": "How do I read dog body language safely?",
+          "a": "Watch the full body, not just the tail. A tucked tail signals fear. Teach kids to let the dog choose and to step back if the body is stiff."
+        }
+      ]
     },
     {
       "slug": "moving-house-with-pets",
@@ -370,7 +530,17 @@
         "Update the microchip registration the same week. It takes five minutes and it is the whole point of having a microchip.",
         "The second move, done this way, was almost boring. The cat claimed the new windowsill by evening. The dog had a nap mid-afternoon like it was any Tuesday. Pets do not need the move to be painless. They need it to be legible."
       ],
-      "image": "assets/blog/blog-17.jpg"
+      "image": "assets/blog/blog-17.jpg",
+      "faq": [
+        {
+          "q": "How do I move house with a cat or dog?",
+          "a": "Keep routines identical while packing, give pets one closed safe room on moving day, set up their bed and belongings first at the new home, and update the microchip."
+        },
+        {
+          "q": "How long does it take a pet to settle after moving?",
+          "a": "Expect a few weird weeks. Cats may eat less for a few days (vet if over two days); most dogs and cats adjust within two to three weeks with a stable routine."
+        }
+      ]
     },
     {
       "slug": "cat-slow-blink",
@@ -391,7 +561,17 @@
         "It sounds like nothing until it works on a cat that does not come to people. Then it feels like a key.",
         "We have a resident office cat who supervises sample arrivals, and new visitors are always surprised when she walks over to them and not the person waving toys at her. The ones she picks are almost always the quiet ones who happened to slow blink without knowing why. Cats keep their own census, and the slow blink is how you get counted as a friend."
       ],
-      "image": "assets/blog/blog-18.jpg"
+      "image": "assets/blog/blog-18.jpg",
+      "faq": [
+        {
+          "q": "What does a cat slow blink mean?",
+          "a": "A slow blink is a cat's way of saying it feels safe and trusts you: it deliberately drops its guard. You can slow blink back to return the sentiment."
+        },
+        {
+          "q": "How do I slow blink at my cat?",
+          "a": "Soften your face, close your eyes slowly, hold a beat, open slowly, then look away. Do not lean in or reach; many cats blink back or come closer."
+        }
+      ]
     },
     {
       "slug": "dogs-love-predictability",
@@ -412,7 +592,17 @@
         "A senior dog with a steady day is a calmer dog. An anxious dog with a steady day often becomes a different dog within weeks, no medication involved.",
         "When owners ask us why the same simple products sell for years, this is a lot of the answer. The mat, the bowl, the leash by the door at the same hour. The gear is not the point. The ritual the gear enables is. Your dog does not want a more exciting life. It wants a life where it knows what happens next, mostly, and knows who is holding the schedule. That is you, and the trust that builds is the whole relationship."
       ],
-      "image": "assets/blog/blog-19.jpg"
+      "image": "assets/blog/blog-19.jpg",
+      "faq": [
+        {
+          "q": "Why do dogs like routine?",
+          "a": "Predictability lowers a dog's background vigilance, so fixed meals, walks, sleep and your return help them feel safe and calmer."
+        },
+        {
+          "q": "How should I handle departures and returns?",
+          "a": "Keep them calm, consistent and short: no dramatic farewells or wild hellos. Steady transitions are what anxious dogs need most."
+        }
+      ]
     },
     {
       "slug": "case-for-boring-leash",
@@ -432,7 +622,17 @@
         "Reflective stitching is the one upgrade I would never skip for city dogs, because it costs nothing on the walk and can matter enormously on the one dark evening something goes wrong.",
         "When we designed our standard leash at Poteho, we argued about adding features for weeks and ended up cutting all of them. What stayed: tight-weave webbing, bar-tack stitching at every stress point, a tested swivel snap, and a reflective line stitched flat so it cannot rub off. It is a boring leash on purpose. Boring, in this category, is what reliability looks like."
       ],
-      "image": "assets/blog/blog-20.jpg"
+      "image": "assets/blog/blog-20.jpg",
+      "faq": [
+        {
+          "q": "What type of leash is best for most dogs?",
+          "a": "A simple fixed-length flat leash (about 1.5 m) with a solid swivel snap wins for most dogs; it teaches consistent communication better than retractables."
+        },
+        {
+          "q": "Are retractable leashes bad?",
+          "a": "They teach dogs to pull, the thin cord can injure hands, and the lock can fail. A fixed leash with reflective stitching is safer for everyday walks."
+        }
+      ]
     },
     {
       "slug": "cats-love-boxes",
@@ -454,7 +654,17 @@
         "Keep one box in circulation, rotated when it gets flattened. Put a soft pad in it. And if you are shopping for cat furniture, buy the principle, not the product: whatever you choose should offer enclosure and a clear vantage, or it will lose to the Amazon box forever.",
         "That finding runs through our whole cat line. Enclosed beds outsell open mats in every market we ship to, and the design brief for our covered beds started with an actual shipping box in the sample room that three cats refused to give back. We are not embarrassed about it. We hired the box as a consultant, and it was excellent."
       ],
-      "image": "assets/blog/blog-21.jpg"
+      "image": "assets/blog/blog-21.jpg",
+      "faq": [
+        {
+          "q": "Why does my cat prefer the box to the toy?",
+          "a": "A box is a hideout with one door: security, warmth and stress relief in one. Studies show even a taped box outline is enough to satisfy the enclosed-space urge."
+        },
+        {
+          "q": "How can I use this for cat furniture?",
+          "a": "Buy the principle: choose beds and trees that offer enclosure and a vantage point. Covered beds consistently outsell open mats because cats want to feel hidden."
+        }
+      ]
     },
     {
       "slug": "dogs-senior-years",
@@ -478,7 +688,17 @@
         "We redesigned our whole bed line around this stage a few years back, after watching our own dog struggle to stand from a bed with tall sides. The new ones have a lower entry, real support foam, and a washable cover, because senior dogs and senior bladders are a package deal.",
         "The senior years are not the sad epilogue people expect. Done thoughtfully, they are the years when the relationship is most settled, most wordless, and most mutually understood. Slower walks. Same dog. More gratitude per step."
       ],
-      "image": "assets/blog/blog-22.jpg"
+      "image": "assets/blog/blog-22.jpg",
+      "faq": [
+        {
+          "q": "When is a dog a senior?",
+          "a": "Around age seven the muzzle often goes gray and changes begin: joint stiffness, deeper sleep and slower senses. Most are manageable with small adjustments."
+        },
+        {
+          "q": "What helps a senior dog?",
+          "a": "An orthopedic bed, ramps, non-slip floors, raised bowls where needed, warmth, weight control and twice-yearly vet visits make senior years more comfortable."
+        }
+      ]
     },
     {
       "slug": "heat-safety-for-pets",
@@ -499,7 +719,17 @@
         "Multiple water stations, refreshed daily, because stagnant warm water goes undrunk. Shade in the yard, always. A paddling pool is genuine equipment, not a photo prop. And grooming matters: a matted coat traps heat against the skin. Keep double-coated breeds brushed and never shaved to the skin; the coat insulates against heat too.",
         "One product note we repeat every summer: cooling mats and elevated beds genuinely help, but only if the animal chooses to use them. Place them where the pet already naps, not where they photograph well. In our test homes, the elevated cots in the shade got used daily; the fancy ones in the sun got ignored all season. Location beats technology, as usual."
       ],
-      "image": "assets/blog/blog-23.jpg"
+      "image": "assets/blog/blog-23.jpg",
+      "faq": [
+        {
+          "q": "How hot is too hot to walk a dog?",
+          "a": "Use the pavement test: if you cannot hold the back of your hand on the asphalt for seven seconds, it burns paws. Walk early morning or late evening in summer."
+        },
+        {
+          "q": "What are signs of heatstroke in pets?",
+          "a": "Heavy panting that turns weak, bright red gums, wobbliness, vomiting or collapse mean heatstroke, a straight-to-vet emergency. Cool with lukewarm water on the way."
+        }
+      ]
     },
     {
       "slug": "how-pets-change-mornings",
@@ -520,7 +750,17 @@
         "There is research suggesting pet owners start the day with lower stress than non-owners, which my dog produced by standing on my bladder, but the finding holds. A creature that needs you before you have decided to need anything gets you moving, outdoors, on a rhythm.",
         "I still have slow Sunday mornings sometimes, when the family is away and the pets are boarding. I sleep until nine. I do not like it. The 6:31 face is better."
       ],
-      "image": "assets/blog/blog-24.jpg"
+      "image": "assets/blog/blog-24.jpg",
+      "faq": [
+        {
+          "q": "How do pets change your morning routine?",
+          "a": "Pets set a fixed schedule of feeding and walks at the same time daily, which gets you moving and outdoors before screens, often lowering morning stress."
+        },
+        {
+          "q": "Why do pets wake up so early?",
+          "a": "Their internal clocks are precise and they do not observe weekends. Consistent feeding times train their wake-up, so steady routines make mornings smoother."
+        }
+      ]
     },
     {
       "slug": "grooming-at-home",
@@ -543,7 +783,17 @@
         "The point of all this is not the coat. It is that your hands on the animal become routine and neutral, which makes every future vet visit, pill, and emergency check easier. Grooming is trust maintenance disguised as coat maintenance.",
         "When people ask why our grooming tools look plain, this is why. A slicker brush that does its job without yanking, a comb with rounded teeth, a nail clipper with a guard. Nobody needs seven tools. They need three boring ones and five calm minutes, most days of the week."
       ],
-      "image": "assets/blog/blog-25.jpg"
+      "image": "assets/blog/blog-25.jpg",
+      "faq": [
+        {
+          "q": "How do I groom my pet at home without stress?",
+          "a": "Build it into a routine, use the right brush for the coat, go slow with treats, and keep sessions short. Start young so it becomes normal."
+        },
+        {
+          "q": "How often should I groom my dog or cat?",
+          "a": "It depends on coat type: short coats need less frequent brushing, long or double coats need more. Regular brushing prevents mats, which trap heat and irritate skin."
+        }
+      ]
     },
     {
       "slug": "what-dogs-hear",
@@ -564,7 +814,17 @@
         "Pick one sound per concept, short and distinct, and defend it like a password. Keep your tone matched to your meaning. Talk as much as you like; dogs appear to enjoy the channel being open even when the content is beyond them. Narrating your day to a dog is a fine thing to do, and there is no evidence it hurts, and much that the dog likes the ritual of it.",
         "The famous finding that dogs process speech asymmetrically, familiar words to one ear, emotional charge to the other, matches what owners have always sensed. The dog is not listening to your sentences. It is listening to you. The sentence just rides along."
       ],
-      "image": "assets/blog/blog-26.jpg"
+      "image": "assets/blog/blog-26.jpg",
+      "faq": [
+        {
+          "q": "Do dogs understand the words we say?",
+          "a": "Dogs learn some words and read tone and body language strongly. They respond to how you say things as much as what you say, and pair words with routines."
+        },
+        {
+          "q": "Should I use a certain tone with my dog?",
+          "a": "Keep cues clear and consistent with a calm, upbeat tone. Dogs are sensitive to emotional tone, so harsh or inconsistent voices add stress."
+        }
+      ]
     },
     {
       "slug": "zoomies-explained",
@@ -585,7 +845,17 @@
         "If the zoomies are constant, that is information too. It usually means the dog's day is missing structured exercise or work, so the pressure valve opens hourly. More walk, more sniffing, a training session, and the eruption schedule calms down.",
         "There is no product that replaces a zoomie, and we have never tried to make one. The closest we came was watching which toy a dog grabs before starting its lap. It is almost always the one it can carry at full speed, which is why our rope toys are sized for a sprinting jaw and not for the shelf. The zoomie picks the inventory."
       ],
-      "image": "assets/blog/blog-27.jpg"
+      "image": "assets/blog/blog-27.jpg",
+      "faq": [
+        {
+          "q": "What are the zoomies?",
+          "a": "Zoomies (FRAPs) are sudden bursts of running and spinning, usually harmless releases of pent-up energy, often after baths, meals or excitement."
+        },
+        {
+          "q": "Should I stop my dog's zoomies?",
+          "a": "Usually not; they are normal and brief. Keep the space safe. If they are frequent or destructive, more exercise or mental enrichment may help."
+        }
+      ]
     },
     {
       "slug": "introducing-a-new-pet",
@@ -608,7 +878,17 @@
         "Watch for the good signs: parallel napping, play with role swaps, relaxed eating in shared space. Watch for the bad ones: the resident pet eating less, hiding more, or guarding spots it never guarded. Those mean slow down, not give up.",
         "Time does the rest. The introduction is not an event you attend. It is a season you get through, and the reward for going slowly is a household that settles for good."
       ],
-      "image": "assets/blog/blog-28.jpg"
+      "image": "assets/blog/blog-28.jpg",
+      "faq": [
+        {
+          "q": "How do I introduce a new pet to my current pet?",
+          "a": "Go slow: separate spaces first, swap scents, then short supervised meetings that end well. Species and personalities matter, so let relationships build over weeks."
+        },
+        {
+          "q": "What if my pets don't get along?",
+          "a": "Do not force it. Separate and restart the scent-swap process more gradually, keep resources (food, beds, litter) separate, and consider a professional trainer if tension persists."
+        }
+      ]
     },
     {
       "slug": "travel-with-cats",
@@ -633,7 +913,17 @@
         "And update the microchip details before any big move or trip. It costs nothing and it is the difference between a story with a bad afternoon in it and a story with a bad ending.",
         "Our most-traveled office cat logs a few hundred kilometers a year between our sample rooms, asleep in the same worn carrier the whole way. She is not a brave cat. She is a well-briefed one. That is the entire difference, and it is available to any cat with a patient human and a carrier that means good news."
       ],
-      "image": "assets/blog/blog-29.jpg"
+      "image": "assets/blog/blog-29.jpg",
+      "faq": [
+        {
+          "q": "How do I travel with a cat?",
+          "a": "Use a secure, familiar carrier with a soft pad, keep the cat indoors at stops, and acclimate it to the carrier and car with short practice trips beforehand."
+        },
+        {
+          "q": "Is traveling with a cat hard?",
+          "a": "It is easier than many expect if you plan: a comfortable carrier, pheromone wipes, a quiet hotel room, and consistent feeding times reduce stress for most cats."
+        }
+      ]
     },
     {
       "slug": "six-years-of-poteho",
@@ -657,7 +947,17 @@
         "We still test everything on our own animals before it ships. We still answer emails like a small company, because the day we stop is the day we become something else.",
         "To the shops, the brands, and the pet parents who trusted a young company over the last six years: thank you. Milo the office cat, who has approved every catalog since 2020, would say the same, but she is on the warmest sample bed in the building and will not be disturbed."
       ],
-      "image": "assets/blog/blog-30.jpg"
+      "image": "assets/blog/blog-30.jpg",
+      "faq": [
+        {
+          "q": "What does Poteho make and who do you serve?",
+          "a": "Poteho makes premium pet supplies: carriers, beds, apparel, leashes and feeding gear for retailers and brands in 30+ countries, with low MOQ and custom branding."
+        },
+        {
+          "q": "Why choose Poteho as a pet products supplier?",
+          "a": "Since 2020 we have combined in-house QC, flexible MOQs, OEM/ODM customization and worldwide shipping, treating every order, large or small, with care."
+        }
+      ]
     }
   ]
 }

@@ -310,3 +310,15 @@ html { scroll-behavior: smooth; }
   .brand-img img { height: 32px; }
   .lang-switch button { padding: 4px 7px; font-size: .72rem; }
 }
+
+/* ---------- FAQ (GEO: citable, structured answers) ---------- */
+.faq-section { background: var(--cream); }
+.faq-list { max-width: 820px; margin: 0 auto; }
+.faq-item {
+  background: var(--paper); border: 1px solid var(--line);
+  border-radius: var(--radius); padding: 18px 22px; margin-bottom: 14px;
+  box-shadow: var(--shadow-sm);
+}
+.faq-q { font-size: 1.12rem; margin-bottom: 8px; color: var(--ink); }
+.faq-a { color: var(--muted); line-height: 1.7; font-size: 1.0rem; }
+.faq-a p { margin: 0; }

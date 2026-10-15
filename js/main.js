@@ -69,6 +69,12 @@ function renderAll() {
   renderHomeBlog();    // homepage latest 3 posts
   renderBlogList();    // blog.html full list
   renderPost();        // blog-post.html single article
+
+  /* GEO: FAQ blocks + FAQPage schema (visible section filled by JS) */
+  renderFAQ(["faq.home1", "faq.home2", "faq.home3", "faq.home4", "faq.home5"], "faqHome");
+  renderFAQ(["faq.about1", "faq.about2", "faq.about3", "faq.about4", "faq.about5"], "faqAbout");
+  renderFAQ(["faq.wholesale1", "faq.wholesale2", "faq.wholesale3", "faq.wholesale4", "faq.wholesale5", "faq.wholesale6"], "faqProducts");
+  renderFAQ(["faq.wholesale1", "faq.wholesale2", "faq.wholesale3", "faq.wholesale4", "faq.wholesale5", "faq.wholesale6"], "faqCategory");
 }
 
 /* ---------- Site info injection (footer + contact page) ---------- */
@@ -163,6 +169,12 @@ function renderCategoryPage() {
   if (bcEl) bcEl.innerHTML = `<a href="index.html">${t("bc.home")}</a> / <a href="products.html">${t("bc.products")}</a> / <span>${catName(cat)}</span>`;
   if (countEl) countEl.textContent = `${list.length} ${t("cpage.count")}`;
 
+  injectBreadcrumbJSONLD([
+    { name: t("bc.home"), url: "https://www.poteho.com/index.html" },
+    { name: t("bc.products"), url: "https://www.poteho.com/products.html" },
+    { name: catName(cat), url: "https://www.poteho.com/category.html?cat=" + cat }
+  ]);
+
   grid.innerHTML = list.length
     ? list.map(cardHTML).join("")
     : `<p style="grid-column:1/-1;color:var(--muted)">${t("cpage.empty")}</p>`;
@@ -196,6 +208,13 @@ function renderDetail() {
   if (bc) bc.innerHTML =
     `<a href="index.html">${t("bc.home")}</a> / <a href="products.html">${t("bc.products")}</a>` +
     ` / <a href="category.html?cat=${p.cat}">${catName(p.cat)}</a> / <span>${name}</span>`;
+
+  injectBreadcrumbJSONLD([
+    { name: t("bc.home"), url: "https://www.poteho.com/index.html" },
+    { name: t("bc.products"), url: "https://www.poteho.com/products.html" },
+    { name: catName(p.cat), url: "https://www.poteho.com/category.html?cat=" + p.cat },
+    { name: name, url: "https://www.poteho.com/product.html?id=" + p.id }
+  ]);
 
   grid.innerHTML = `
     <div class="detail-media">
@@ -327,6 +346,12 @@ function renderPost() {
     post.body.map(b => b.startsWith("## ") ? `<h2>${b.slice(3)}</h2>` : `<p>${b}</p>`).join("");
 
   injectPostJSONLD(post);
+  renderPostFAQ(post);
+  injectBreadcrumbJSONLD([
+    { name: t("bc.home"), url: "https://www.poteho.com/index.html" },
+    { name: t("nav.blog"), url: "https://www.poteho.com/blog.html" },
+    { name: post.title, url: "https://www.poteho.com/blog-post.html?slug=" + slug }
+  ]);
 }
 function injectPostJSONLD(post) {
   const existing = document.getElementById("postJSONLD");
@@ -343,6 +368,85 @@ function injectPostJSONLD(post) {
     "publisher": { "@type": "Organization", "name": "Poteho", "logo": { "@type": "ImageObject", "url": "https://www.poteho.com/assets/poteho-logo.png" } },
     "datePublished": post.date,
     "description": post.excerpt
+  });
+  document.head.appendChild(s);
+}
+
+/* =========================================================
+   GEO helpers — FAQ blocks + structured data
+   FAQPage JSON-LD makes answers citable by AI assistants
+   (ChatGPT, Perplexity, Google AI Overviews). BreadcrumbList
+   helps engines understand page hierarchy & entity.
+   ========================================================= */
+function clearJSONLD(id) {
+  const e = document.getElementById(id);
+  if (e) e.remove();
+}
+
+/* Render a visible FAQ list AND inject a matching FAQPage JSON-LD
+   in the current page language. keys -> ["faq.home1", ...] */
+function renderFAQ(keys, containerId) {
+  const el = document.getElementById(containerId);
+  if (!el || !keys || !keys.length) return;
+  const lang = i18nGetLang();
+  const mainEntity = [];
+  let html = "";
+  keys.forEach(k => {
+    const q = t(k + ".q");
+    const a = t(k + ".a");
+    if (!q || q === k + ".q" || !a) return;
+    html += `<div class="faq-item"><h3 class="faq-q">${q}</h3><div class="faq-a">${a}</div></div>`;
+    mainEntity.push({ "@type": "Question", "name": q, "acceptedAnswer": { "@type": "Answer", "text": a } });
+  });
+  el.innerHTML = html;
+  if (mainEntity.length) {
+    clearJSONLD("faqJSONLD_" + containerId);
+    const s = document.createElement("script");
+    s.type = "application/ld+json";
+    s.id = "faqJSONLD_" + containerId;
+    s.textContent = JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "inLanguage": lang,
+      "mainEntity": mainEntity
+    });
+    document.head.appendChild(s);
+  }
+}
+
+/* FAQ for a single blog post (English, posts are EN-only) */
+function renderPostFAQ(post) {
+  const el = document.getElementById("faqPost");
+  if (!el) return;
+  const faq = (post && post.faq) || [];
+  if (!faq.length) { el.innerHTML = ""; return; }
+  const mainEntity = faq.map(f => ({
+    "@type": "Question", "name": f.q, "acceptedAnswer": { "@type": "Answer", "text": f.a }
+  }));
+  el.innerHTML = faq.map(f =>
+    `<div class="faq-item"><h3 class="faq-q">${f.q}</h3><div class="faq-a">${f.a}</div></div>`
+  ).join("");
+  clearJSONLD("postFaqJSONLD");
+  const s = document.createElement("script");
+  s.type = "application/ld+json";
+  s.id = "postFaqJSONLD";
+  s.textContent = JSON.stringify({ "@context": "https://schema.org", "@type": "FAQPage", "mainEntity": mainEntity });
+  document.head.appendChild(s);
+}
+
+/* BreadcrumbList JSON-LD for category / product / post pages */
+function injectBreadcrumbJSONLD(items) {
+  if (!items || !items.length) return;
+  clearJSONLD("breadcrumbJSONLD");
+  const s = document.createElement("script");
+  s.type = "application/ld+json";
+  s.id = "breadcrumbJSONLD";
+  s.textContent = JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": items.map((it, i) => ({
+      "@type": "ListItem", "position": i + 1, "name": it.name, "item": it.url
+    }))
   });
   document.head.appendChild(s);
 }

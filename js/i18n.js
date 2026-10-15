@@ -16,7 +16,7 @@ const I18N = {
     "nav.home": "Home", "nav.products": "Products", "nav.blog": "Blog",
     "nav.about": "About", "nav.contact": "Contact", "nav.quote": "Get a Quote",
 
-    "footer.desc": "We make premium pet supplies. We sell them wholesale to retailers and brands worldwide.",
+    "footer.desc": "Premium pet carriers and pet supplies, wholesale to retailers and brands worldwide. Low MOQ, custom branding and reliable shipping.",
     "footer.products": "Products", "footer.company": "Company", "footer.connect": "Connect",
     "footer.aboutus": "About us", "footer.blog": "Blog", "footer.contact": "Contact",
     "footer.getquote": "Get a quote", "footer.cookie": "Cookie Policy",
@@ -64,7 +64,7 @@ const I18N = {
     "spec.Wheels": "Wheels", "spec.Load": "Load capacity", "spec.Fabric": "Fabric",
     "spec.Feature": "Feature",
 
-    "hero.eyebrow": "Pet Supplies · Wholesale Manufacturer",
+    "hero.eyebrow": "Pet Supplies · Wholesale Supplier",
     "hero.h1": "Premium pet products, built for happy homes",
     "hero.p": "From travel carriers to everyday essentials, Poteho helps retailers and brands source reliable pet gear with low MOQs, custom branding and worldwide shipping.",
     "hero.browse": "Browse Products", "hero.quote": "Request Wholesale Price",
@@ -123,7 +123,7 @@ const I18N = {
     "nav.home": "Главная", "nav.products": "Продукция", "nav.blog": "Блог",
     "nav.about": "О нас", "nav.contact": "Контакты", "nav.quote": "Запросить цену",
 
-    "footer.desc": "Мы делаем качественные товары для животных. Продаём их оптом розничным магазинам и брендам по всему миру.",
+    "footer.desc": "Премиальные переноски и товары для животных — оптом для розничных магазинов и брендов по всему миру. Низкий минимальный заказ, брендирование и надёжная доставка.",
     "footer.products": "Продукция", "footer.company": "Компания", "footer.connect": "Контакты",
     "footer.aboutus": "О нас", "footer.blog": "Блог", "footer.contact": "Контакты",
     "footer.getquote": "Запросить цену", "footer.cookie": "Политика cookie",
@@ -171,7 +171,7 @@ const I18N = {
     "spec.Wheels": "Колёса", "spec.Load": "Нагрузка", "spec.Fabric": "Ткань",
     "spec.Feature": "Особенности",
 
-    "hero.eyebrow": "Товары для животных · Оптовый производитель",
+    "hero.eyebrow": "Товары для животных · Оптовый поставщик",
     "hero.h1": "Премиальные товары для питомцев — для счастливых домов",
     "hero.p": "От переносок до товаров на каждый день: Poteho помогает ритейлерам и брендам закупать надёжные товары для животных с низким MOQ, кастомизацией под ваш бренд и доставкой по всему миру.",
     "hero.browse": "Смотреть продукцию", "hero.quote": "Запросить оптовую цену",
@@ -230,7 +230,7 @@ const I18N = {
     "nav.home": "Inicio", "nav.products": "Productos", "nav.blog": "Blog",
     "nav.about": "Nosotros", "nav.contact": "Contacto", "nav.quote": "Pedir cotización",
 
-    "footer.desc": "Hacemos artículos de calidad para mascotas. Los vendemos al por mayor a minoristas y marcas de todo el mundo.",
+    "footer.desc": "Transportines y artículos premium para mascotas, al por mayor para minoristas y marcas de todo el mundo. Pedido mínimo bajo, marca personalizada y envío fiable.",
     "footer.products": "Productos", "footer.company": "Empresa", "footer.connect": "Conexión",
     "footer.aboutus": "Sobre nosotros", "footer.blog": "Blog", "footer.contact": "Contacto",
     "footer.getquote": "Pedir cotización", "footer.cookie": "Política de cookies",
@@ -278,7 +278,7 @@ const I18N = {
     "spec.Wheels": "Ruedas", "spec.Load": "Carga máxima", "spec.Fabric": "Tejido",
     "spec.Feature": "Característica",
 
-    "hero.eyebrow": "Artículos para mascotas · Fabricante mayorista",
+    "hero.eyebrow": "Artículos para mascotas · Proveedor mayorista",
     "hero.h1": "Productos premium para mascotas, pensados para hogares felices",
     "hero.p": "Desde transportines hasta artículos de diario, Poteho ayuda a minoristas y marcas a comprar productos fiables con MOQ bajos, marca personalizada y envío mundial.",
     "hero.browse": "Ver productos", "hero.quote": "Pedir precio mayorista",
@@ -337,7 +337,7 @@ const I18N = {
     "nav.home": "首页", "nav.products": "产品中心", "nav.blog": "博客",
     "nav.about": "关于我们", "nav.contact": "联系我们", "nav.quote": "获取报价",
 
-    "footer.desc": "我们生产优质宠物用品。面向全球零售商和品牌批发。",
+    "footer.desc": "优质宠物外出包与宠物用品，面向全球零售商和品牌批发。低起订量、支持定制品牌、发货可靠。",
     "footer.products": "产品分类", "footer.company": "公司", "footer.connect": "联系方式",
     "footer.aboutus": "关于我们", "footer.blog": "博客", "footer.contact": "联系我们",
     "footer.getquote": "获取报价", "footer.cookie": "Cookie 政策",
@@ -385,7 +385,7 @@ const I18N = {
     "spec.Wheels": "轮子", "spec.Load": "承重", "spec.Fabric": "面料",
     "spec.Feature": "特点",
 
-    "hero.eyebrow": "宠物用品 · 批发制造商",
+    "hero.eyebrow": "宠物用品 · 批发供应商",
     "hero.h1": "优质宠物用品，为快乐的家庭而生",
     "hero.p": "从外出包到日常必需品，Poteho 帮助零售商和品牌以低起订量、定制品牌服务与全球配送，采购可靠的宠物用品。",
     "hero.browse": "浏览产品", "hero.quote": "获取批发价",
@@ -440,6 +440,183 @@ const I18N = {
   }
 };
 
+/* =========================================================
+   Poteho — FAQ content (GEO / AI-search optimization)
+   Used by js/main.js renderFAQ(): visible FAQ blocks AND
+   FAQPage structured data so AI assistants (ChatGPT,
+   Perplexity, Google AI Overviews) can cite the answers.
+   Keys: faq.<page>N.q / faq.<page>N.a
+   ========================================================= */
+const FAQ = {
+  en: {
+    "faq.eyebrow": "FAQ",
+    "faq.h2.home": "Frequently asked questions",
+    "faq.h2.about": "More about Poteho",
+    "faq.h2.wholesale": "Wholesale & ordering FAQ",
+
+    "faq.home1.q": "What does Poteho make?",
+    "faq.home1.a": "Poteho designs and manufactures premium pet supplies — carriers, beds, apparel, leashes, feeding gear and more — for retailers and brands worldwide.",
+    "faq.home2.q": "What is your minimum order quantity (MOQ)?",
+    "faq.home2.a": "MOQs are flexible and set per product, typically from 200 to 500 units for most items. Tell us your target volume and we will confirm the exact MOQ for the products you need.",
+    "faq.home3.q": "Do you offer custom branding and private label (OEM/ODM)?",
+    "faq.home3.a": "Yes. We provide full custom branding — logo, colors, packaging and hangtags — and both OEM and ODM development, taking your product from a sketch to a finished, shelf-ready item.",
+    "faq.home4.q": "Which countries do you ship to?",
+    "faq.home4.a": "We ship to 30+ countries across North America, Europe, the Middle East, Oceania and Asia, by air or sea, with full export documentation for smooth customs clearance.",
+    "faq.home5.q": "Can I order samples before a bulk order?",
+    "faq.home5.a": "Absolutely. We encourage a sample order first so you can check quality, materials and branding before committing to a full production run.",
+
+    "faq.about1.q": "When was Poteho founded?",
+    "faq.about1.a": "Poteho was founded in 2020 and has served retailers and brands across 30+ countries since.",
+    "faq.about2.q": "Are you a manufacturer or a trading company?",
+    "faq.about2.a": "We are a pet products manufacturer with our own production and an in-house QC team that checks every item piece by piece before shipment.",
+    "faq.about3.q": "What quality control do you have?",
+    "faq.about3.a": "Every product passes piece-by-piece inspection by our QC team, and we support third-party inspections and relevant certifications on request.",
+    "faq.about4.q": "Where is Poteho located?",
+    "faq.about4.a": "Our team is based in Beijing, China, and we ship worldwide through major sea and air ports.",
+    "faq.about5.q": "Can you develop a custom product for my brand?",
+    "faq.about5.a": "Yes. From a sketch or an idea, our team handles structure, materials, sampling and packaging — taking your product from concept to container.",
+
+    "faq.wholesale1.q": "How do I request a wholesale quote?",
+    "faq.wholesale1.a": "Use the contact form or email info@poteho.com with the products, quantities and target market you have in mind. We reply with a tailored quote within one business day.",
+    "faq.wholesale2.q": "Do you support OEM, ODM and private label?",
+    "faq.wholesale2.a": "Yes — logo, colors, materials, packaging and hangtags can all be customized, and we develop new products from your ideas (ODM) or your specifications (OEM).",
+    "faq.wholesale3.q": "What are your typical lead times?",
+    "faq.wholesale3.a": "Sampling usually takes 7–14 days, and bulk production about 25–40 days depending on order size and customization. We confirm exact timelines with every quote.",
+    "faq.wholesale4.q": "What shipping terms and Incoterms do you offer?",
+    "faq.wholesale4.a": "We ship by air or sea and support common Incoterms including EXW, FOB, CIF and DDP, with full export documentation for smooth customs clearance.",
+    "faq.wholesale5.q": "What payment methods do you accept?",
+    "faq.wholesale5.a": "We commonly work with T/T (bank transfer) and can discuss terms such as a deposit plus balance against shipping documents, depending on the order.",
+    "faq.wholesale6.q": "Do you provide product certificates and testing?",
+    "faq.wholesale6.a": "Yes. We can supply material and safety documentation and arrange third-party testing (such as SGS) to meet your market's requirements."
+  },
+
+  zh: {
+    "faq.eyebrow": "常见问题",
+    "faq.h2.home": "常见问题",
+    "faq.h2.about": "更多关于 Poteho",
+    "faq.h2.wholesale": "批发与下单常见问题",
+
+    "faq.home1.q": "Poteho 生产哪些产品？",
+    "faq.home1.a": "Poteho 设计并生产优质宠物用品——外出包、宠物床、衣服、牵引绳、喂食用品等——面向全球零售商与品牌。",
+    "faq.home2.q": "起订量（MOQ）是多少？",
+    "faq.home2.a": "起订量按产品灵活设定，多数产品为 200–500 件。请告知您的目标数量，我们会确认具体产品的起订量。",
+    "faq.home3.q": "是否支持品牌定制与贴牌（OEM/ODM）？",
+    "faq.home3.a": "支持。我们提供完整的品牌定制——logo、配色、包装与吊牌——以及 OEM / ODM 开发，从草图到可直接上架的成品。",
+    "faq.home4.q": "你们发货到哪些国家？",
+    "faq.home4.a": "我们出口 30 多个国家，覆盖北美、欧洲、中东、大洋洲与亚洲，支持空运与海运，单证齐全。",
+    "faq.home5.q": "大货之前可以先拿样品吗？",
+    "faq.home5.a": "当然。我们建议先下样品单，确认品质、材料与定制效果后再下大货订单。",
+
+    "faq.about1.q": "Poteho 成立于哪一年？",
+    "faq.about1.a": "Poteho 创立于 2020 年，迄今已服务 30 多个国家的零售商与品牌。",
+    "faq.about2.q": "你们是工厂还是贸易公司？",
+    "faq.about2.a": "我们是宠物用品生产制造商，拥有自有产线与专属质检团队，每件产品出厂前逐件检查。",
+    "faq.about3.q": "你们有哪些品质管控？",
+    "faq.about3.a": "每件产品均由质检团队逐件检验，并可根据需求安排第三方验货及相关认证。",
+    "faq.about4.q": "Poteho 位于哪里？",
+    "faq.about4.a": "团队位于中国北京，通过主要海运与空运港口向全球发货。",
+    "faq.about5.q": "能否为我的品牌开发定制产品？",
+    "faq.about5.a": "可以。从草图或想法出发，我们的团队负责结构、材料、打样与包装，把您的产品从概念送到集装箱。",
+
+    "faq.wholesale1.q": "如何获取批发报价？",
+    "faq.wholesale1.a": "填写联系表单或发邮件至 info@poteho.com，说明产品、数量与目标市场，我们会在一个工作日内给出专属报价。",
+    "faq.wholesale2.q": "是否支持 OEM、ODM 与贴牌？",
+    "faq.wholesale2.a": "支持——logo、配色、材料、包装与吊牌均可定制，并可根据您的创意（ODM）或规格（OEM）开发新品。",
+    "faq.wholesale3.q": "生产周期大概多久？",
+    "faq.wholesale3.a": "打样通常 7–14 天，大货生产约 25–40 天，视订单量与定制程度而定。具体交期会在报价时确认。",
+    "faq.wholesale4.q": "提供哪些运输条款与 Incoterms？",
+    "faq.wholesale4.a": "支持空运与海运，提供 EXW、FOB、CIF、DDP 等常见贸易条款，单证齐全，清关顺畅。",
+    "faq.wholesale5.q": "接受哪些付款方式？",
+    "faq.wholesale5.a": "常用 T/T（电汇），可根据订单协商定金＋见单尾款等付款方式。",
+    "faq.wholesale6.q": "能否提供产品认证与检测？",
+    "faq.wholesale6.a": "可以。我们可提供材料与安全说明，并安排第三方检测（如 SGS）以满足目标市场要求。"
+  },
+
+  ru: {
+    "faq.eyebrow": "FAQ",
+    "faq.h2.home": "Часто задаваемые вопросы",
+    "faq.h2.about": "Подробнее о Poteho",
+    "faq.h2.wholesale": "Вопросы по опту и заказам",
+
+    "faq.home1.q": "Что производит Poteho?",
+    "faq.home1.a": "Poteho разрабатывает и производит премиальные товары для животных — переноски, лежанки, одежду, поводки, товары для кормления и многое другое — для розничных магазинов и брендов по всему миру.",
+    "faq.home2.q": "Каков ваш минимальный объём заказа (MOQ)?",
+    "faq.home2.a": "MOQ гибкий и устанавливается для каждого товара, обычно от 200 до 500 единиц. Сообщите нам нужный объём, и мы подтвердим точный MOQ.",
+    "faq.home3.q": "Предлагаете ли вы брендирование и частную марку (OEM/ODM)?",
+    "faq.home3.a": "Да. Мы предлагаем полное брендирование — логотип, цвета, упаковку и бирки — а также разработку OEM и ODM: от эскиза до готового товара.",
+    "faq.home4.q": "В какие страны вы поставляете?",
+    "faq.home4.a": "Мы поставляем в 30+ стран Северной Америки, Европы, Ближнего Востока, Океании и Азии авиа- или морским транспортом с полным пакетом документов.",
+    "faq.home5.q": "Можно ли заказать образцы до крупной партии?",
+    "faq.home5.a": "Конечно. Мы рекомендуем сначала заказать образцы, чтобы проверить качество, материалы и брендирование до крупной партии.",
+
+    "faq.about1.q": "Когда была основана Poteho?",
+    "faq.about1.a": "Poteho основана в 2020 году и с тех пор обслуживает розничные магазины и бренды в 30+ странах.",
+    "faq.about2.q": "Вы производитель или торговая компания?",
+    "faq.about2.a": "Мы — производитель товаров для животных с собственным производством и отделом контроля качества, который проверяет каждое изделие поштучно перед отгрузкой.",
+    "faq.about3.q": "Какой у вас контроль качества?",
+    "faq.about3.a": "Каждое изделие проходит поштучную проверку нашей командой ОТК, а по запросу — стороннюю инспекцию и необходимые сертификаты.",
+    "faq.about4.q": "Где находится Poteho?",
+    "faq.about4.a": "Наша команда базируется в Пекине, Китай, и мы отправляем товары по всему миру через основные морские и воздушные порты.",
+    "faq.about5.q": "Можете ли вы разработать товар для моего бренда?",
+    "faq.about5.a": "Да. От эскиза или идеи наша команда берёт на себя конструкцию, материалы, образцы и упаковку — от концепции до контейнера.",
+
+    "faq.wholesale1.q": "Как запросить оптовую котировку?",
+    "faq.wholesale1.a": "Заполните форму или напишите на info@poteho.com, указав товары, количество и рынок — ответим расчётом в течение одного рабочего дня.",
+    "faq.wholesale2.q": "Поддерживаете ли вы OEM, ODM и частную марку?",
+    "faq.wholesale2.a": "Да — логотип, цвета, материалы, упаковку и бирки можно настроить, а также разработать товары по вашей идее (ODM) или спецификации (OEM).",
+    "faq.wholesale3.q": "Какие у вас обычные сроки производства?",
+    "faq.wholesale3.a": "Образцы обычно 7–14 дней, серийное производство около 25–40 дней в зависимости от объёма и кастомизации. Точные сроки подтверждаем в расчёте.",
+    "faq.wholesale4.q": "Какие условия поставки и Incoterms вы предлагаете?",
+    "faq.wholesale4.a": "Отправляем авиа- или морским транспортом и поддерживаем условия EXW, FOB, CIF, DDP с полным пакетом документов для таможни.",
+    "faq.wholesale5.q": "Какие способы оплаты вы принимаете?",
+    "faq.wholesale5.a": "Обычно работаем по T/T (банковский перевод) и можем обсудить условия, например предоплата плюс остаток по документам.",
+    "faq.wholesale6.q": "Предоставляете ли вы сертификаты и тестирование?",
+    "faq.wholesale6.a": "Да. Мы можем предоставить документы по материалам и безопасности и организовать сторонние испытания (например, SGS) под требования вашего рынка."
+  },
+
+  es: {
+    "faq.eyebrow": "FAQ",
+    "faq.h2.home": "Preguntas frecuentes",
+    "faq.h2.about": "Más sobre Poteho",
+    "faq.h2.wholesale": "Preguntas de mayoreo y pedidos",
+
+    "faq.home1.q": "¿Qué fabrica Poteho?",
+    "faq.home1.a": "Poteho diseña y fabrica artículos premium para mascotas — transportines, camas, ropa, correas, utensilios de alimentación y más — para minoristas y marcas de todo el mundo.",
+    "faq.home2.q": "¿Cuál es su pedido mínimo (MOQ)?",
+    "faq.home2.a": "El MOQ es flexible y se fija por producto, normalmente de 200 a 500 unidades. Díganos su volumen objetivo y le confirmaremos el MOQ exacto.",
+    "faq.home3.q": "¿Ofrecen marca personalizada y marca privada (OEM/ODM)?",
+    "faq.home3.a": "Sí. Ofrecemos marca personalizada completa — logotipo, colores, embalaje y etiquetas — y desarrollo OEM/ODM, desde un boceto hasta un producto listo para la venta.",
+    "faq.home4.q": "¿A qué países envían?",
+    "faq.home4.a": "Enviamos a más de 30 países de Norteamérica, Europa, Oriente Medio, Oceanía y Asia, por aire o mar, con toda la documentación de exportación.",
+    "faq.home5.q": "¿Puedo pedir muestras antes del pedido grande?",
+    "faq.home5.a": "Por supuesto. Recomendamos pedir muestras primero para comprobar calidad, materiales y marca antes del pedido grande.",
+
+    "faq.about1.q": "¿Cuándo se fundó Poteho?",
+    "faq.about1.a": "Poteho se fundó en 2020 y desde entonces sirve a minoristas y marcas de más de 30 países.",
+    "faq.about2.q": "¿Son fabricantes o una empresa comercial?",
+    "faq.about2.a": "Somos fabricantes de artículos para mascotas con producción propia y un equipo de control de calidad interno que revisa cada producto pieza por pieza antes del envío.",
+    "faq.about3.q": "¿Qué control de calidad tienen?",
+    "faq.about3.a": "Cada producto pasa una inspección pieza por pieza de nuestro equipo de calidad, y bajo pedido gestionamos inspecciones de terceros y certificaciones.",
+    "faq.about4.q": "¿Dónde está Poteho?",
+    "faq.about4.a": "Nuestro equipo está en Pekín, China, y enviamos a todo el mundo por los principales puertos marítimos y aéreos.",
+    "faq.about5.q": "¿Pueden desarrollar un producto para mi marca?",
+    "faq.about5.a": "Sí. A partir de un boceto o una idea, nuestro equipo se encarga de la estructura, materiales, muestras y embalaje: de la concepción al contenedor.",
+
+    "faq.wholesale1.q": "¿Cómo solicito una cotización de mayoreo?",
+    "faq.wholesale1.a": "Use el formulario de contacto o escriba a info@poteho.com con los productos, cantidades y mercado; le respondemos con una cotización en un día laborable.",
+    "faq.wholesale2.q": "¿Apoyan OEM, ODM y marca privada?",
+    "faq.wholesale2.a": "Sí: logotipo, colores, materiales, embalaje y etiquetas se personalizan, y desarrollamos productos desde su idea (ODM) o especificación (OEM).",
+    "faq.wholesale3.q": "¿Cuáles son sus plazos habituales?",
+    "faq.wholesale3.a": "Las muestras suelen tardar 7–14 días y la producción en serie unos 25–40 días según el pedido. Confirmamos plazos exactos en cada cotización.",
+    "faq.wholesale4.q": "¿Qué términos de envío e Incoterms ofrecen?",
+    "faq.wholesale4.a": "Enviamos por aire o mar y admitimos Incoterms EXW, FOB, CIF y DDP, con toda la documentación para la aduana.",
+    "faq.wholesale5.q": "¿Qué métodos de pago aceptan?",
+    "faq.wholesale5.a": "Solemos trabajar con T/T (transferencia bancaria) y podemos acordar condiciones como depósito más saldo contra documentos.",
+    "faq.wholesale6.q": "¿Ofrecen certificados y pruebas de producto?",
+    "faq.wholesale6.a": "Sí. Podemos entregar documentación de materiales y seguridad y gestionar pruebas de terceros (como SGS) según su mercado."
+  }
+};
+
 /* ---------- Runtime helpers (shared with main.js) ---------- */
 function i18nGetLang() {
   const saved = localStorage.getItem("poteho-lang");
@@ -447,7 +624,11 @@ function i18nGetLang() {
 }
 function t(key) {
   const lang = i18nGetLang();
-  return (I18N[lang] && I18N[lang][key]) || I18N.en[key] || key;
+  return (I18N[lang] && I18N[lang][key])
+      || I18N.en[key]
+      || (FAQ[lang] && FAQ[lang][key])
+      || (FAQ.en && FAQ.en[key])
+      || key;
 }
 /* Translate a data field that may be {en,zh,ru,es} or a plain string */
 function tf(field) {
