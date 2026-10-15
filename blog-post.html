@@ -23,7 +23,7 @@
     "headline": "How to Choose the Right Dog Bed",
     "image": "https://www.poteho.com/assets/product-bed.png",
     "author": { "@type": "Organization", "name": "Poteho" },
-    "publisher": { "@type": "Organization", "name": "Poteho" },
+    "publisher": { "@type": "Organization", "name": "Poteho", "logo": { "@type": "ImageObject", "url": "https://www.poteho.com/assets/poteho-logo.png" } },
     "datePublished": "2026-01-10",
     "description": "A practical guide to picking a dog bed: sizing, fill types, washability and when an orthopedic bed is worth it."
   }
@@ -32,19 +32,19 @@
 <body>
   <header class="site-header">
     <div class="container nav">
-      <a href="index.html" class="brand">
-        <svg class="paw" viewBox="0 0 64 64"><ellipse cx="32" cy="42" rx="15" ry="13" fill="#ff7a59"/><ellipse cx="16" cy="26" rx="6" ry="8" fill="#ff7a59"/><ellipse cx="28" cy="18" rx="6" ry="8" fill="#ff7a59"/><ellipse cx="40" cy="18" rx="6" ry="8" fill="#ff7a59"/><ellipse cx="50" cy="28" rx="6" ry="8" fill="#ff7a59"/></svg>
-        Pote<span>ho</span>
+      <a href="index.html" class="brand brand-img">
+        <img src="assets/poteho-logo.png" alt="Poteho" />
       </a>
       <nav class="nav-links" id="navLinks">
-        <a href="index.html">Home</a>
-        <a href="products.html">Products</a>
-        <a href="blog.html" class="active">Blog</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
+        <a href="index.html" data-i18n="nav.home">Home</a>
+        <a href="products.html" data-i18n="nav.products">Products</a>
+        <a href="blog.html" class="active" data-i18n="nav.blog">Blog</a>
+        <a href="about.html" data-i18n="nav.about">About</a>
+        <a href="contact.html" data-i18n="nav.contact">Contact</a>
       </nav>
       <div class="nav-cta">
-        <a href="contact.html" class="btn btn-primary">Get a Quote</a>
+        <div class="lang-switch" id="langSwitch"></div>
+        <a href="contact.html" class="btn btn-primary" data-i18n="nav.quote">Get a Quote</a>
         <button class="nav-toggle" id="navToggle" aria-label="Menu"><span></span><span></span><span></span></button>
       </div>
     </div>
@@ -52,7 +52,7 @@
 
   <main class="section">
     <div class="container article">
-      <nav class="breadcrumb"><a href="index.html">Home</a> / <a href="blog.html">Blog</a> / <span>How to choose the right dog bed</span></nav>
+      <nav class="breadcrumb"><a href="index.html" data-i18n="bc.home">Home</a> / <a href="blog.html" data-i18n="nav.blog">Blog</a> / <span>How to choose the right dog bed</span></nav>
       <span class="eyebrow">Buying Guide · 8 min read</span>
       <h1>How to choose the right dog bed</h1>
       <p class="article" style="margin-top:10px">Dogs sleep somewhere between 12 and 14 hours a day. The bed they land on matters more than most people expect — for their joints, their cleanliness, and honestly, for how long the bed itself lasts in your home. Here's how to pick one without overthinking it.</p>
@@ -91,19 +91,27 @@
   <footer class="site-footer">
     <div class="container footer-grid">
       <div class="footer-brand">
-        <a href="index.html" class="brand" style="color:#fff"><svg class="paw" viewBox="0 0 64 64"><ellipse cx="32" cy="42" rx="15" ry="13" fill="#ff7a59"/><ellipse cx="16" cy="26" rx="6" ry="8" fill="#ff7a59"/><ellipse cx="28" cy="18" rx="6" ry="8" fill="#ff7a59"/><ellipse cx="40" cy="18" rx="6" ry="8" fill="#ff7a59"/><ellipse cx="50" cy="28" rx="6" ry="8" fill="#ff7a59"/></svg>Pote<span style="color:#ff7a59">ho</span></a>
-        <p>Premium pet supplies manufacturer & wholesale partner for retailers and brands worldwide.</p>
+        <a href="index.html" class="brand brand-img"><img src="assets/poteho-logo.png" alt="Poteho" /></a>
+        <p data-i18n="footer.desc">Premium pet supplies manufacturer & wholesale partner for retailers and brands worldwide.</p>
       </div>
-      <div><h4>Products</h4><a href="products.html">Beds & Furniture</a><a href="products.html">Collars & Leashes</a><a href="products.html">Toys</a><a href="products.html">Feeding</a></div>
-      <div><h4>Company</h4><a href="about.html">About us</a><a href="blog.html">Blog</a><a href="contact.html">Contact</a><a href="contact.html">Get a quote</a><a href="cookie.html">Cookie Policy</a></div>
-      <div><h4>Connect</h4><a id="fEmail" href="#">info@poteho.com</a><a id="fWhatsapp" href="#">WhatsApp / WeChat</a><a id="fLinkedin" href="#" target="_blank" rel="noopener">LinkedIn</a></div>
+      <div><h4 data-i18n="footer.products">Products</h4>
+        <a href="category.html?cat=bags" data-i18n="cat.bags">Bags & Trolley</a>
+        <a href="category.html?cat=toys" data-i18n="cat.toys">Toys</a>
+        <a href="category.html?cat=apparel" data-i18n="cat.apparel">Apparel</a>
+        <a href="category.html?cat=leashes" data-i18n="cat.leashes">Leashes</a>
+        <a href="category.html?cat=feeding" data-i18n="cat.feeding">Feeding</a>
+        <a href="category.html?cat=others" data-i18n="cat.others">Others</a>
+      </div>
+      <div><h4 data-i18n="footer.company">Company</h4><a href="about.html" data-i18n="footer.aboutus">About us</a><a href="blog.html" data-i18n="footer.blog">Blog</a><a href="contact.html" data-i18n="footer.contact">Contact</a><a href="contact.html" data-i18n="footer.getquote">Get a quote</a><a href="cookie.html" data-i18n="footer.cookie">Cookie Policy</a></div>
+      <div><h4 data-i18n="footer.connect">Connect</h4><a id="fEmail" href="#">info@poteho.com</a><a id="fWhatsapp" href="#" data-i18n="footer.whatsapp">WhatsApp / WeChat</a><a id="fLinkedin" href="#" target="_blank" rel="noopener">LinkedIn</a></div>
     </div>
     <div class="container footer-bottom">
-      <span>© <span id="year"></span> Poteho. All rights reserved.</span>
-      <span id="fSlogan">Poteho — your pet's best friend</span>
+      <span>© <span id="year"></span> <span data-i18n="footer.rights">Poteho. All rights reserved.</span></span>
+      <span id="fSlogan" data-i18n="footer.slogan">Poteho — your pet's best friend</span>
     </div>
   </footer>
 
+  <script src="js/i18n.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>

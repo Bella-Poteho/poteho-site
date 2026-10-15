@@ -44,6 +44,9 @@ collections:
           - { name: slogan, label: "Footer slogan", widget: string }
 
   # ---- Product catalog ----
+  # Multilingual product fields use flat keys: name_en / name_zh / name_ru / name_es,
+  # short_* and description_* (one field per language). The site's main.js reads
+  # these by the visitor's chosen language.
   - name: "products"
     label: "Products"
     files:
@@ -54,20 +57,65 @@ collections:
           - name: products
             label: "Products"
             widget: list
-            summary: "{{fields.name}} ({{fields.cat}})"
+            summary: "{{fields.name_en}} ({{fields.cat}})"
             fields:
               - { name: id, label: "ID (no spaces)", widget: string }
-              - { name: name, label: "Product name", widget: string }
-              - { name: cat, label: "Category", widget: select, options: ["Beds", "Walking", "Toys", "Feeding"] }
+              - { name: cat, label: "Category", widget: select, options: ["bags", "toys", "apparel", "leashes", "feeding", "others"] }
               - { name: price, label: "Price (e.g. $18.90)", widget: string }
               - { name: moq, label: "MOQ (e.g. MOQ 100)", widget: string }
-              - { name: img, label: "Image path", widget: string, hint: "Put files in /assets, e.g. assets/product-bed.png" }
+              - { name: img, label: "Cover image path", widget: string, hint: "Put files in /assets, e.g. assets/product-bed.png" }
               - { name: featured, label: "Show on homepage?", widget: boolean, default: false }
-              - { name: short, label: "Short description", widget: text }
-              - { name: description, label: "Full description", widget: text }
+              - name: name_en
+                label: "Name — English"
+                widget: string
+              - name: name_zh
+                label: "Name — 中文"
+                widget: string
+              - name: name_ru
+                label: "Name — Русский"
+                widget: string
+              - name: name_es
+                label: "Name — Español"
+                widget: string
+              - name: short_en
+                label: "Short description — English"
+                widget: text
+              - name: short_zh
+                label: "Short description — 中文"
+                widget: text
+              - name: short_ru
+                label: "Short description — Русский"
+                widget: text
+              - name: short_es
+                label: "Short description — Español"
+                widget: text
+              - name: description_en
+                label: "Full description — English"
+                widget: text
+              - name: description_zh
+                label: "Full description — 中文"
+                widget: text
+              - name: description_ru
+                label: "Full description — Русский"
+                widget: text
+              - name: description_es
+                label: "Full description — Español"
+                widget: text
+              - name: images
+                label: "Gallery images (8 slots)"
+                widget: list
+                summary: "{{fields.img}}"
+                field:
+                  name: img
+                  label: "Image path"
+                  widget: string
+                  hint: "assets/... (e.g. assets/product-bed.png) or leave as assets/placeholder.svg"
               - name: specs
                 label: "Specification rows"
                 widget: list
                 fields:
-                  - { name: k, label: "Label", widget: string }
+                  - name: k
+                    label: "Label"
+                    widget: select
+                    options: ["Material", "Sizes", "Size", "Cover", "Care", "Custom", "Lead time", "Hardware", "Capacity", "Filter", "Set", "Length", "Wheels", "Load", "Fabric", "Feature"]
                   - { name: v, label: "Value", widget: string }

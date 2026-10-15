@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600">
+  <rect width="600" height="600" fill="#f6f2ee"/>
+  <g transform="translate(300 260)">
+    <ellipse cx="0" cy="45" rx="52" ry="46" fill="#ff7a59"/>
+    <ellipse cx="-58" cy="-18" rx="21" ry="28" fill="#ff7a59"/>
+    <ellipse cx="-16" cy="-46" rx="21" ry="28" fill="#ff7a59"/>
+    <ellipse cx="26" cy="-46" rx="21" ry="28" fill="#ff7a59"/>
+    <ellipse cx="64" cy="-12" rx="21" ry="28" fill="#ff7a59"/>
+  </g>
+  <text x="300" y="505" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" fill="#b9aa9c">Poteho &#183; Product photo</text>
+</svg>

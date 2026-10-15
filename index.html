@@ -5,11 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Poteho — Premium Pet Supplies Manufacturer & Wholesale</title>
   <link rel="icon" href="assets/favicon.svg" />
-  <meta name="description" content="Poteho supplies premium pet beds, leashes, toys and feeding gear. OEM/ODM pet products with low MOQ, fast shipping and global delivery. Get a wholesale quote today." />
+  <meta name="description" content="Poteho supplies premium pet bags, toys, apparel, leashes and feeding gear. Pet products wholesale with low MOQ, custom branding and global delivery. Get a wholesale quote today." />
   <link rel="canonical" href="https://www.poteho.com/" />
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Poteho — Premium Pet Supplies Manufacturer & Wholesale" />
-  <meta property="og:description" content="OEM/ODM pet products with low MOQ, fast shipping and global delivery." />
+  <meta property="og:description" content="Pet products wholesale with low MOQ, custom branding and global delivery." />
   <meta property="og:image" content="https://www.poteho.com/assets/hero.png" />
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -23,8 +23,9 @@
     "@type": "Organization",
     "name": "Poteho",
     "url": "https://www.poteho.com/",
-    "logo": "https://www.poteho.com/assets/hero.png",
-    "description": "Premium pet supplies manufacturer offering OEM/ODM beds, leashes, toys and feeding products.",
+    "logo": "https://www.poteho.com/assets/poteho-logo.png",
+    "foundingDate": "2020",
+    "description": "Premium pet supplies manufacturer offering bags, toys, apparel, leashes and feeding products.",
     "sameAs": ["https://www.linkedin.com/company/poteho"]
   }
   </script>
@@ -32,19 +33,19 @@
 <body>
   <header class="site-header">
     <div class="container nav">
-      <a href="index.html" class="brand">
-        <svg class="paw" viewBox="0 0 64 64" fill="none"><ellipse cx="32" cy="42" rx="15" ry="13" fill="#ff7a59"/><ellipse cx="16" cy="26" rx="6" ry="8" fill="#ff7a59"/><ellipse cx="28" cy="18" rx="6" ry="8" fill="#ff7a59"/><ellipse cx="40" cy="18" rx="6" ry="8" fill="#ff7a59"/><ellipse cx="50" cy="28" rx="6" ry="8" fill="#ff7a59"/></svg>
-        Pote<span>ho</span>
+      <a href="index.html" class="brand brand-img">
+        <img src="assets/poteho-logo.png" alt="Poteho" />
       </a>
       <nav class="nav-links" id="navLinks">
-        <a href="index.html" class="active">Home</a>
-        <a href="products.html">Products</a>
-        <a href="blog.html">Blog</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
+        <a href="index.html" class="active" data-i18n="nav.home">Home</a>
+        <a href="products.html" data-i18n="nav.products">Products</a>
+        <a href="blog.html" data-i18n="nav.blog">Blog</a>
+        <a href="about.html" data-i18n="nav.about">About</a>
+        <a href="contact.html" data-i18n="nav.contact">Contact</a>
       </nav>
       <div class="nav-cta">
-        <a href="contact.html" class="btn btn-primary">Get a Quote</a>
+        <div class="lang-switch" id="langSwitch"></div>
+        <a href="contact.html" class="btn btn-primary" data-i18n="nav.quote">Get a Quote</a>
         <button class="nav-toggle" id="navToggle" aria-label="Menu"><span></span><span></span><span></span></button>
       </div>
     </div>
@@ -53,17 +54,17 @@
   <section class="hero section">
     <div class="container hero-grid">
       <div class="hero-copy">
-        <span class="eyebrow">Pet Supplies · OEM / ODM</span>
-        <h1>Premium pet products, built for happy homes</h1>
-        <p>From orthopedic beds to everyday essentials, Poteho helps retailers and brands source reliable pet gear with low MOQs, custom branding and worldwide shipping.</p>
+        <span class="eyebrow" data-i18n="hero.eyebrow">Pet Supplies · Wholesale Manufacturer</span>
+        <h1 data-i18n="hero.h1">Premium pet products, built for happy homes</h1>
+        <p data-i18n="hero.p">From travel carriers to everyday essentials, Poteho helps retailers and brands source reliable pet gear with low MOQs, custom branding and worldwide shipping.</p>
         <div class="hero-actions">
-          <a href="products.html" class="btn btn-primary">Browse Products</a>
-          <a href="contact.html" class="btn btn-outline">Request Wholesale Price</a>
+          <a href="products.html" class="btn btn-primary" data-i18n="hero.browse">Browse Products</a>
+          <a href="contact.html" class="btn btn-outline" data-i18n="hero.quote">Request Wholesale Price</a>
         </div>
         <div class="hero-stats">
-          <div><div class="num">12+</div><div class="lbl">Years manufacturing</div></div>
-          <div><div class="num">500+</div><div class="lbl">SKUs available</div></div>
-          <div><div class="num">60+</div><div class="lbl">Countries served</div></div>
+          <div><div class="num">6+</div><div class="lbl" data-i18n="hero.stat1">Years manufacturing</div></div>
+          <div><div class="num">500+</div><div class="lbl" data-i18n="hero.stat2">SKUs available</div></div>
+          <div><div class="num">60+</div><div class="lbl" data-i18n="hero.stat3">Countries served</div></div>
         </div>
       </div>
       <div class="hero-media">
@@ -74,22 +75,22 @@
 
   <div class="container">
     <div class="trust">
-      <div class="trust-tagline">Poteho — your pet's best friend</div>
+      <div class="trust-tagline" data-i18n="footer.slogan">Poteho — your pet's best friend</div>
     </div>
   </div>
 
   <section class="section">
     <div class="container">
       <div class="section-head">
-        <span class="eyebrow">Why Poteho</span>
-        <h2>A sourcing partner, not just a supplier</h2>
-        <p>We keep the boring parts simple so you can focus on selling.</p>
+        <span class="eyebrow" data-i18n="why.eyebrow">Why Poteho</span>
+        <h2 data-i18n="why.h2">A sourcing partner, not just a supplier</h2>
+        <p data-i18n="why.p">We keep the boring parts simple so you can focus on selling.</p>
       </div>
       <div class="grid-4">
-        <div class="feature"><div class="ic">🐾</div><h3>Quality assured</h3><p>Every batch is inspected and tested against international pet-safety standards.</p></div>
-        <div class="feature"><div class="ic">🎨</div><h3>OEM & ODM</h3><p>Custom colors, packaging and logo. Bring your brand, we build the product.</p></div>
-        <div class="feature"><div class="ic">🚚</div><h3>Global shipping</h3><p>Flexible by air or sea, with full documentation for smooth customs clearance.</p></div>
-        <div class="feature"><div class="ic">💬</div><h3>Real support</h3><p>A dedicated rep replies within one business day, from quote to delivery.</p></div>
+        <div class="feature"><div class="ic">🐾</div><h3 data-i18n="feat1t">Quality assured</h3><p data-i18n="feat1p">Every batch is inspected and tested against international pet-safety standards.</p></div>
+        <div class="feature"><div class="ic">🎨</div><h3 data-i18n="feat2t">Custom branding</h3><p data-i18n="feat2p">Custom colors, packaging and logo. Bring your brand, we build the product.</p></div>
+        <div class="feature"><div class="ic">🚚</div><h3 data-i18n="feat3t">Global shipping</h3><p data-i18n="feat3p">Flexible by air or sea, with full documentation for smooth customs clearance.</p></div>
+        <div class="feature"><div class="ic">💬</div><h3 data-i18n="feat4t">Real support</h3><p data-i18n="feat4p">A dedicated rep replies within one business day, from quote to delivery.</p></div>
       </div>
     </div>
   </section>
@@ -97,16 +98,16 @@
   <section class="section bg-paper">
     <div class="container">
       <div class="section-head">
-        <span class="eyebrow">Shop by category</span>
-        <h2>Everything your customers' pets need</h2>
+        <span class="eyebrow" data-i18n="shop.eyebrow">Shop by category</span>
+        <h2 data-i18n="shop.h2">Everything your customers' pets need</h2>
       </div>
       <div class="grid-3">
-        <a href="products.html" class="cat-tile"><h3>Beds & Furniture</h3><span>Restful comfort →</span></a>
-        <a href="products.html" class="cat-tile teal"><h3>Collars & Leashes</h3><span>Walk in style →</span></a>
-        <a href="products.html" class="cat-tile"><h3>Toys</h3><span>Play all day →</span></a>
-        <a href="products.html" class="cat-tile teal"><h3>Feeding & Watering</h3><span>Hydration & meals →</span></a>
-        <a href="products.html" class="cat-tile"><h3>Grooming</h3><span>Look their best →</span></a>
-        <a href="products.html" class="cat-tile teal"><h3>Travel & Carriers</h3><span>On the go →</span></a>
+        <a href="category.html?cat=bags" class="cat-tile"><h3 data-i18n="cat.bags">Bags & Trolley</h3><span>Travel in comfort →</span></a>
+        <a href="category.html?cat=toys" class="cat-tile teal"><h3 data-i18n="cat.toys">Toys</h3><span>Play all day →</span></a>
+        <a href="category.html?cat=apparel" class="cat-tile"><h3 data-i18n="cat.apparel">Apparel</h3><span>Dressed for any weather →</span></a>
+        <a href="category.html?cat=leashes" class="cat-tile teal"><h3 data-i18n="cat.leashes">Leashes</h3><span>Walk in style →</span></a>
+        <a href="category.html?cat=feeding" class="cat-tile"><h3 data-i18n="cat.feeding">Feeding</h3><span>Hydration & meals →</span></a>
+        <a href="category.html?cat=others" class="cat-tile teal"><h3 data-i18n="cat.others">Others</h3><span>Much more →</span></a>
       </div>
     </div>
   </section>
@@ -114,33 +115,33 @@
   <section class="section">
     <div class="container">
       <div class="section-head">
-        <span class="eyebrow">Best sellers</span>
-        <h2>Featured products</h2>
-        <p>Our most-requested items from retailers around the world.</p>
+        <span class="eyebrow" data-i18n="best.eyebrow">Best sellers</span>
+        <h2 data-i18n="best.h2">Featured products</h2>
+        <p data-i18n="best.p">Our most-requested items from retailers around the world.</p>
       </div>
       <div class="grid-4" id="featuredProducts"><!-- filled by JS from products data --></div>
-      <div style="text-align:center;margin-top:34px"><a href="products.html" class="btn btn-outline">View all products</a></div>
+      <div style="text-align:center;margin-top:34px"><a href="products.html" class="btn btn-outline" data-i18n="best.all">View all products</a></div>
     </div>
   </section>
 
   <section class="section bg-paper">
     <div class="container">
       <div class="section-head">
-        <span class="eyebrow">From the blog</span>
-        <h2>Pet care tips that help you sell</h2>
+        <span class="eyebrow" data-i18n="blogsec.eyebrow">From the blog</span>
+        <h2 data-i18n="blogsec.h2">Pet care tips that help you sell</h2>
       </div>
       <div class="grid-3">
         <a href="blog-post.html" class="blog-card">
           <div class="thumb"><img src="assets/product-bed.png" alt="Dog bed guide" loading="lazy" /></div>
-          <div class="body"><div class="meta">Buying Guide</div><h3>How to choose the right dog bed</h3><p>Size, filling and washability — what actually matters to pet owners.</p><span class="read-more">Read article →</span></div>
+          <div class="body"><div class="meta">Buying Guide</div><h3>How to choose the right dog bed</h3><p>Size, filling and washability — what actually matters to pet owners.</p><span class="read-more" data-i18n="bl.readmore">Read article →</span></div>
         </a>
         <a href="blog-post.html" class="blog-card">
           <div class="thumb"><img src="assets/product-leash.png" alt="Leash guide" loading="lazy" /></div>
-          <div class="body"><div class="meta">Safety</div><h3>Leash training without the struggle</h3><p>A calm, repeatable routine that works for puppies and rescues alike.</p><span class="read-more">Read article →</span></div>
+          <div class="body"><div class="meta">Safety</div><h3>Leash training without the struggle</h3><p>A calm, repeatable routine that works for puppies and rescues alike.</p><span class="read-more" data-i18n="bl.readmore">Read article →</span></div>
         </a>
         <a href="blog-post.html" class="blog-card">
           <div class="thumb"><img src="assets/product-fountain.png" alt="Hydration guide" loading="lazy" /></div>
-          <div class="body"><div class="meta">Health</div><h3>Why cats drink more from fountains</h3><p>The simple reason a running water source keeps them healthier.</p><span class="read-more">Read article →</span></div>
+          <div class="body"><div class="meta">Health</div><h3>Why cats drink more from fountains</h3><p>The simple reason a running water source keeps them healthier.</p><span class="read-more" data-i18n="bl.readmore">Read article →</span></div>
         </a>
       </div>
     </div>
@@ -148,38 +149,36 @@
 
   <section class="section bg-teal cta-band">
     <div class="container">
-      <h2>Ready to stock premium pet gear?</h2>
-      <p>Tell us what you need and get a tailored wholesale quote within one business day.</p>
-      <div class="hero-actions"><a href="contact.html" class="btn btn-light">Get a Free Quote</a><a href="products.html" class="btn btn-outline" style="border-color:#fff;color:#fff">Explore Catalog</a></div>
+      <h2 data-i18n="homecta.h2">Ready to stock premium pet gear?</h2>
+      <p data-i18n="homecta.p">Tell us what you need and get a tailored wholesale quote within one business day.</p>
+      <div class="hero-actions"><a href="contact.html" class="btn btn-light" data-i18n="homecta.btn1">Get a Free Quote</a><a href="products.html" class="btn btn-outline" style="border-color:#fff;color:#fff" data-i18n="homecta.btn2">Explore Catalog</a></div>
     </div>
   </section>
 
   <footer class="site-footer">
     <div class="container footer-grid">
       <div class="footer-brand">
-        <a href="index.html" class="brand" style="color:#fff"><svg class="paw" viewBox="0 0 64 64"><ellipse cx="32" cy="42" rx="15" ry="13" fill="#ff7a59"/><ellipse cx="16" cy="26" rx="6" ry="8" fill="#ff7a59"/><ellipse cx="28" cy="18" rx="6" ry="8" fill="#ff7a59"/><ellipse cx="40" cy="18" rx="6" ry="8" fill="#ff7a59"/><ellipse cx="50" cy="28" rx="6" ry="8" fill="#ff7a59"/></svg>Pote<span style="color:#ff7a59">ho</span></a>
-        <p>Premium pet supplies manufacturer & wholesale partner for retailers and brands worldwide.</p>
+        <a href="index.html" class="brand brand-img"><img src="assets/poteho-logo.png" alt="Poteho" /></a>
+        <p data-i18n="footer.desc">Premium pet supplies manufacturer & wholesale partner for retailers and brands worldwide.</p>
       </div>
-      <div><h4>Products</h4><a href="products.html">Beds & Furniture</a><a href="products.html">Collars & Leashes</a><a href="products.html">Toys</a><a href="products.html">Feeding</a></div>
-      <div><h4>Company</h4><a href="about.html">About us</a><a href="blog.html">Blog</a><a href="contact.html">Contact</a><a href="contact.html">Get a quote</a><a href="cookie.html">Cookie Policy</a></div>
-      <div><h4>Connect</h4><a id="fEmail" href="#">info@poteho.com</a><a id="fWhatsapp" href="#">WhatsApp / WeChat</a><a id="fLinkedin" href="#" target="_blank" rel="noopener">LinkedIn</a></div>
+      <div><h4 data-i18n="footer.products">Products</h4>
+        <a href="category.html?cat=bags" data-i18n="cat.bags">Bags & Trolley</a>
+        <a href="category.html?cat=toys" data-i18n="cat.toys">Toys</a>
+        <a href="category.html?cat=apparel" data-i18n="cat.apparel">Apparel</a>
+        <a href="category.html?cat=leashes" data-i18n="cat.leashes">Leashes</a>
+        <a href="category.html?cat=feeding" data-i18n="cat.feeding">Feeding</a>
+        <a href="category.html?cat=others" data-i18n="cat.others">Others</a>
+      </div>
+      <div><h4 data-i18n="footer.company">Company</h4><a href="about.html" data-i18n="footer.aboutus">About us</a><a href="blog.html" data-i18n="footer.blog">Blog</a><a href="contact.html" data-i18n="footer.contact">Contact</a><a href="contact.html" data-i18n="footer.getquote">Get a quote</a><a href="cookie.html" data-i18n="footer.cookie">Cookie Policy</a></div>
+      <div><h4 data-i18n="footer.connect">Connect</h4><a id="fEmail" href="#">info@poteho.com</a><a id="fWhatsapp" href="#" data-i18n="footer.whatsapp">WhatsApp / WeChat</a><a id="fLinkedin" href="#" target="_blank" rel="noopener">LinkedIn</a></div>
     </div>
     <div class="container footer-bottom">
-      <span>© <span id="year"></span> Poteho. All rights reserved.</span>
-      <span id="fSlogan">Poteho — your pet's best friend</span>
+      <span>© <span id="year"></span> <span data-i18n="footer.rights">Poteho. All rights reserved.</span></span>
+      <span id="fSlogan" data-i18n="footer.slogan">Poteho — your pet's best friend</span>
     </div>
   </footer>
 
+  <script src="js/i18n.js"></script>
   <script src="js/main.js"></script>
-
-  <!-- Forward Netlify Identity links (invite / password reset) to /admin, which handles the token -->
-  <script>
-    (function () {
-      var h = window.location.hash || "";
-      if (/invite_token|recovery_token|confirmation_token|email_change_token/.test(h)) {
-        window.location.replace("/admin/" + h);
-      }
-    })();
-  </script>
 </body>
 </html>

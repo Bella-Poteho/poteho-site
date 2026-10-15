@@ -2,6 +2,8 @@
    Poteho — site scripts
    Data-driven: products & site info are loaded from /data/*.json
    so they can be edited via the CMS at /admin (Decap CMS).
+   Multilingual: UI strings from js/i18n.js; product fields use
+   flat keys name_en / name_zh / name_ru / name_es (etc).
    ========================================================= */
 
 /* ---------- Config ----------
@@ -9,18 +11,21 @@
    Easiest path: create a FREE form at https://formspree.io
      1. Sign up, click "New form", copy its endpoint (looks like https://formspree.io/f/abcdwxyz)
      2. Paste it between the quotes on the line below.
-   Submissions then arrive in your Formspree inbox and can be forwarded to email.
    Leave as null to stay in demo mode (success message only, nothing is sent). */
 const FORM_ENDPOINT = null; // <- paste your Formspree URL here, e.g. "https://formspree.io/f/abcdwxyz"
 
 /* ---------- Data ---------- */
 const PRODUCTS_URL = "data/products.json";
 const SITE_URL = "data/site.json";
+const PLACEHOLDER_IMG = "assets/placeholder.svg";
+
+/* Categories (ids match products.json "cat" values) */
+const CATS = ["bags", "toys", "apparel", "leashes", "feeding", "others"];
 
 let PRODUCTS = [];
 let SITE = {};
 
-/* ---------- Mobile nav + misc (no data needed) ---------- */
+/* ---------- Mobile nav + misc ---------- */
 function initChrome() {
   const toggle = document.getElementById("navToggle");
   const links = document.getElementById("navLinks");
@@ -35,6 +40,7 @@ function initChrome() {
 /* ---------- Load data, then render ---------- */
 document.addEventListener("DOMContentLoaded", async function () {
   initChrome();
+  i18nInitSwitcher();
   try {
     const [pRes, sRes] = await Promise.all([
       fetch(PRODUCTS_URL, { cache: "no-cache" }),
@@ -45,32 +51,49 @@ document.addEventListener("DOMContentLoaded", async function () {
   } catch (e) {
     console.warn("Could not load site data:", e);
   }
-  injectSiteInfo();
-  renderFeatured();
-  renderGrid();
-  renderDetail();
+  renderAll();
 });
 
+/* Called on first load AND whenever the language changes */
+function renderAll() {
+  injectSiteInfo();
+  renderCats();        // category chips (products.html)
+  renderFeatured();    // homepage featured grid
+  renderGrid();        // products.html full grid
+  renderCategoryPage();// category.html
+  renderDetail();      // product.html
+}
+
 /* ---------- Site info injection (footer + contact page) ---------- */
-function setText(id, t) { const el = document.getElementById(id); if (el) el.textContent = t; }
+function setText(id, val) { const el = document.getElementById(id); if (el && val) el.textContent = val; }
 function setHref(id, h) { const el = document.getElementById(id); if (el && h) el.href = h; }
 
 function injectSiteInfo() {
   if (!SITE || Object.keys(SITE).length === 0) return;
-
-  // Footer
   if (SITE.email) {
     setText("fEmail", SITE.email);
     setHref("fEmail", "mailto:" + SITE.email);
   }
   if (SITE.whatsappLink) setHref("fWhatsapp", SITE.whatsappLink);
   if (SITE.linkedin) setHref("fLinkedin", SITE.linkedin);
-  if (SITE.slogan) setText("fSlogan", SITE.slogan);
+}
 
-  // Contact page info card
-  if (SITE.email) setText("cEmail", SITE.email);
-  if (SITE.whatsapp) setText("cWhatsapp", SITE.whatsapp);
-  if (SITE.factory) setText("cFactory", SITE.factory);
+/* ---------- Product helpers ---------- */
+function pName(p) { return tf(p.name_en || p.name || p); }
+function pShort(p) { return tf(p.short_en || p.short || ""); }
+function pDesc(p) { return tf(p.description_en || p.description || ""); }
+function catName(id) { return t("cat." + id); }
+
+/* Detail gallery: always show exactly 8 image slots.
+   Accepts images as a flat array of strings OR as CMS-written objects [{img}] */
+function productImages(p) {
+  let raw = Array.isArray(p.images) ? p.images : (p.img ? [p.img] : []);
+  let imgs = raw
+    .map(x => (x && typeof x === "object" ? (x.img || x.src || "") : x))
+    .filter(Boolean);
+  if (!imgs.length && p.img) imgs = [p.img];
+  while (imgs.length < 8) imgs.push(PLACEHOLDER_IMG);
+  return imgs.slice(0, 8);
 }
 
 /* ---------- Render product cards ---------- */
@@ -78,15 +101,15 @@ function cardHTML(p) {
   return `
     <div class="product-card">
       <a class="pc-link" href="product.html?id=${p.id}">
-        <div class="thumb"><img src="${p.img}" alt="${p.name}" loading="lazy" /></div>
+        <div class="thumb"><img src="${p.img || PLACEHOLDER_IMG}" alt="${pName(p)}" loading="lazy" /></div>
         <div class="body">
-          <span class="cat">${p.cat}</span>
-          <h3>${p.name}</h3>
-          <span class="moq">${p.moq}</span>
-          <span class="price">${p.price}</span>
+          <span class="cat">${catName(p.cat)}</span>
+          <h3>${pName(p)}</h3>
+          <span class="moq">${p.moq || ""}</span>
+          <span class="price">${p.price || ""}</span>
         </div>
       </a>
-      <a href="contact.html" class="btn btn-primary pc-quote">Request a Quote</a>
+      <a href="contact.html" class="btn btn-primary pc-quote">${t("card.quote")}</a>
     </div>`;
 }
 
@@ -95,22 +118,47 @@ function renderFeatured() {
   if (el) el.innerHTML = PRODUCTS.filter(p => p.featured).map(cardHTML).join("");
 }
 
+/* ---------- Category chips (products.html) ---------- */
+function renderCats() {
+  const filter = document.getElementById("catFilter");
+  if (!filter) return;
+  filter.innerHTML =
+    `<a class="btn btn-outline" href="products.html" style="padding:8px 18px">${t("cat.all")}</a>` +
+    CATS.map(c =>
+      `<a class="btn btn-outline" href="category.html?cat=${c}" style="padding:8px 18px">${catName(c)}</a>`
+    ).join("");
+}
+
+/* ---------- Full grid (products.html) ---------- */
 function renderGrid() {
   const gridEl = document.getElementById("productGrid");
   if (!gridEl) return;
   gridEl.innerHTML = PRODUCTS.map(cardHTML).join("");
-  const filter = document.getElementById("catFilter");
-  if (filter) {
-    filter.querySelectorAll("button").forEach(btn => {
-      btn.addEventListener("click", () => {
-        filter.querySelectorAll("button").forEach(b => { b.style.background = ""; b.style.color = ""; });
-        btn.style.background = "var(--coral)"; btn.style.color = "#fff";
-        const cat = btn.dataset.cat;
-        const list = cat === "all" ? PRODUCTS : PRODUCTS.filter(p => p.cat === cat);
-        gridEl.innerHTML = list.map(cardHTML).join("");
-      });
-    });
-  }
+}
+
+/* ---------- Category page (?cat=) ---------- */
+function renderCategoryPage() {
+  const grid = document.getElementById("catGrid");
+  if (!grid) return;
+  const params = new URLSearchParams(location.search);
+  const cat = params.get("cat");
+  if (!CATS.includes(cat)) { location.replace("products.html"); return; }
+
+  const list = PRODUCTS.filter(p => p.cat === cat);
+  document.title = catName(cat) + " — Poteho";
+
+  const nameEl = document.getElementById("catTitle");
+  const eyebrowEl = document.getElementById("catEyebrow");
+  const bcEl = document.getElementById("catBreadcrumb");
+  const countEl = document.getElementById("catCount");
+  if (eyebrowEl) eyebrowEl.textContent = t("cpage.eyebrow");
+  if (nameEl) nameEl.textContent = catName(cat);
+  if (bcEl) bcEl.innerHTML = `<a href="index.html">${t("bc.home")}</a> / <a href="products.html">${t("bc.products")}</a> / <span>${catName(cat)}</span>`;
+  if (countEl) countEl.textContent = `${list.length} ${t("cpage.count")}`;
+
+  grid.innerHTML = list.length
+    ? list.map(cardHTML).join("")
+    : `<p style="grid-column:1/-1;color:var(--muted)">${t("cpage.empty")}</p>`;
 }
 
 /* ---------- Product detail page (?id=) ---------- */
@@ -122,59 +170,88 @@ function renderDetail() {
   const p = PRODUCTS.find(x => x.id === id) || PRODUCTS.find(x => x.featured) || PRODUCTS[0];
   if (!p) return;
 
-  document.title = p.name + " — Poteho";
+  const name = pName(p);
+  const desc = pDesc(p) || pShort(p);
+  document.title = name + " — Poteho";
   const descEl = document.querySelector('meta[name="description"]');
-  if (descEl) descEl.setAttribute("content", p.short || p.description || "");
+  if (descEl) descEl.setAttribute("content", pShort(p) || desc);
+
+  const imgs = productImages(p);
+  const thumbs = imgs.map((src, i) =>
+    `<img src="${src}" alt="${name} photo ${i + 1}" class="${i === 0 ? "on" : ""}" data-i="${i}" loading="lazy" />`
+  ).join("");
+
+  const specs = (p.specs || []).map(s =>
+    `<li><span>${t("spec." + s.k) !== "spec." + s.k ? t("spec." + s.k) : s.k}</span><span>${s.v}</span></li>`
+  ).join("");
 
   const bc = document.getElementById("pBreadcrumb");
-  if (bc) bc.innerHTML = '<a href="index.html">Home</a> / <a href="products.html">Products</a> / <span>' + p.name + '</span>';
-
-  const specs = (p.specs || []).map(s => `<li><span>${s.k}</span><span>${s.v}</span></li>`).join("");
+  if (bc) bc.innerHTML =
+    `<a href="index.html">${t("bc.home")}</a> / <a href="products.html">${t("bc.products")}</a>` +
+    ` / <a href="category.html?cat=${p.cat}">${catName(p.cat)}</a> / <span>${name}</span>`;
 
   grid.innerHTML = `
-    <div class="detail-media"><img src="${p.img}" alt="${p.name} by Poteho" /></div>
+    <div class="detail-media">
+      <div class="gallery-main"><img id="galleryMain" src="${imgs[0]}" alt="${name} by Poteho" /></div>
+      <div class="gallery-thumbs" id="galleryThumbs">${thumbs}</div>
+    </div>
     <div class="detail-info">
-      <span class="eyebrow">${p.cat}</span>
-      <h1>${p.name}</h1>
-      <p>${p.description || p.short || ""}</p>
-      <div class="price">From ${p.price} / unit</div>
+      <span class="eyebrow">${catName(p.cat)}</span>
+      <h1>${name}</h1>
+      <p>${desc}</p>
+      <div class="price">${t("det.from").replace("{p}", p.price || "")}</div>
       <ul class="spec-list">
         ${specs}
-        <li><span>MOQ</span><span>${p.moq}</span></li>
+        <li><span>${t("det.moq")}</span><span>${p.moq || ""}</span></li>
       </ul>
-      <a href="contact.html" class="btn btn-primary">Request Wholesale Price</a>
+      <a href="contact.html" class="btn btn-primary">${t("det.quote")}</a>
 
       <form class="lead-form" onsubmit="return handleLeadForm(this)">
-        <h3>Quick quote on this item</h3>
-        <p>Leave your details and we'll reply within one business day.</p>
-        <input type="hidden" name="product" value="${p.name}" />
-        <div class="form-success" id="leadSuccess">Thanks! Your request has been received.</div>
-        <div class="field"><label>Name *</label><input type="text" name="name" required /></div>
-        <div class="field"><label>Email *</label><input type="email" name="email" required /></div>
-        <div class="field"><label>Quantity / MOQ</label><input type="text" name="qty" placeholder="e.g. 500 units" /></div>
-        <div class="field"><label>Message</label><textarea name="message" placeholder="Target market, customization needs..."></textarea></div>
-        <button type="submit" class="btn btn-primary" style="width:100%">Send Inquiry</button>
-        <p class="form-note">We never share your information.</p>
+        <h3>${t("lead.title")}</h3>
+        <p>${t("lead.sub")}</p>
+        <input type="hidden" name="product" value="${name}" />
+        <div class="form-success" id="leadSuccess">${t("lead.success")}</div>
+        <div class="field"><label>${t("form.name")}</label><input type="text" name="name" required /></div>
+        <div class="field"><label>${t("form.email")}</label><input type="email" name="email" required /></div>
+        <div class="field"><label>${t("lead.qty")}</label><input type="text" name="qty" placeholder="${t("lead.qtyPh")}" /></div>
+        <div class="field"><label>${t("form.message")}</label><textarea name="message" placeholder="${t("lead.msgPh")}"></textarea></div>
+        <button type="submit" class="btn btn-primary" style="width:100%">${t("form.send")}</button>
+        <p class="form-note">${t("lead.privacy")}</p>
       </form>
     </div>`;
+
+  // Gallery interaction
+  const thumbsBox = document.getElementById("galleryThumbs");
+  if (thumbsBox) {
+    thumbsBox.querySelectorAll("img").forEach(th => {
+      th.addEventListener("click", () => {
+        document.getElementById("galleryMain").src = th.src;
+        thumbsBox.querySelectorAll("img").forEach(x => x.classList.remove("on"));
+        th.classList.add("on");
+      });
+    });
+  }
 
   injectProductJSONLD(p);
 }
 
 function injectProductJSONLD(p) {
+  const existing = document.getElementById("productJSONLD");
+  if (existing) existing.remove();
   const s = document.createElement("script");
   s.type = "application/ld+json";
+  s.id = "productJSONLD";
   s.textContent = JSON.stringify({
     "@context": "https://schema.org",
     "@type": "Product",
-    "name": p.name,
-    "image": "https://www.poteho.com/" + p.img,
-    "description": p.description || p.short || "",
+    "name": tf(p.name_en || p.name),
+    "image": "https://www.poteho.com/" + (p.img || PLACEHOLDER_IMG),
+    "description": tf(p.description_en || p.description || p.short_en || p.short || ""),
     "brand": { "@type": "Brand", "name": (SITE.company || "Poteho") },
     "offers": {
       "@type": "Offer",
       "priceCurrency": "USD",
-      "price": String(p.price).replace(/[^0-9.]/g, "") || "0",
+      "price": String(p.price || "").replace(/[^0-9.]/g, "") || "0",
       "availability": "https://schema.org/InStock"
     }
   });
@@ -215,13 +292,14 @@ function initCookieBar() {
   const bar = document.createElement("div");
   bar.className = "cookie-bar";
   bar.innerHTML = `
-    <p>We use cookies to improve your experience and analyze traffic. See our <a href="cookie.html">Cookie Policy</a>.</p>
+    <p><span data-i18n="cookie.msg"></span> <a href="cookie.html" data-i18n="cookie.policy"></a>.</p>
     <div class="actions">
-      <button class="btn btn-outline" id="cookieDecline" style="border-color:#fff;color:#fff">Decline</button>
-      <button class="btn btn-light" id="cookieAccept">Accept</button>
+      <button class="btn btn-outline" id="cookieDecline" style="border-color:#fff;color:#fff" data-i18n="cookie.decline"></button>
+      <button class="btn btn-light" id="cookieAccept" data-i18n="cookie.accept"></button>
     </div>`;
   document.body.appendChild(bar);
   const done = (val) => { localStorage.setItem("cookie-consent", val); bar.remove(); };
   bar.querySelector("#cookieAccept").addEventListener("click", () => done("accepted"));
   bar.querySelector("#cookieDecline").addEventListener("click", () => done("declined"));
+  i18nApply();
 }

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Poteho 网站改动说明 · Delivery Guide</title>
+<style>
+  :root { --coral:#ff7a59; --teal:#2bb3a3; --ink:#2b2730; --muted:#6b6573; --line:#ece6df; --paper:#fff; --cream:#fff9f4; }
+  * { box-sizing:border-box; }
+  body { font-family:"Segoe UI",system-ui,sans-serif; color:var(--ink); background:var(--cream); line-height:1.7; margin:0; padding:0; }
+  .wrap { max-width:880px; margin:0 auto; padding:48px 24px 80px; }
+  h1 { font-size:2rem; margin:0 0 6px; }
+  h2 { font-size:1.3rem; margin:38px 0 12px; color:var(--teal); border-bottom:2px solid var(--line); padding-bottom:6px; }
+  p, li { color:var(--muted); }
+  code { background:#f3ede6; padding:2px 7px; border-radius:6px; font-size:.9em; color:var(--ink); }
+  .tag { display:inline-block; background:var(--coral); color:#fff; font-size:.78rem; font-weight:700; padding:4px 10px; border-radius:999px; }
+  table { width:100%; border-collapse:collapse; margin:14px 0; background:var(--paper); border-radius:12px; overflow:hidden; box-shadow:0 4px 16px rgba(0,0,0,.05); }
+  th, td { text-align:left; padding:11px 14px; border-bottom:1px solid var(--line); font-size:.92rem; }
+  th { background:#faf6f1; color:var(--ink); }
+  tr:last-child td { border-bottom:0; }
+  .card { background:var(--paper); border:1px solid var(--line); border-radius:14px; padding:20px 22px; margin:14px 0; box-shadow:0 4px 16px rgba(0,0,0,.05); }
+  .num { color:var(--coral); font-weight:700; }
+  strong { color:var(--ink); }
+  a { color:var(--coral); }
+  ul { padding-left:20px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <p><span class="tag">交付说明</span></p>
+  <h1>Poteho 宠物用品站 — 本轮改动清单</h1>
+  <p>日期：2026-10-15 ｜ 范围：全站多语言、分类体系、产品详情页、品牌与文案</p>
+
+  <div class="card">
+    <h2 style="margin-top:0;border:0">一、本次完成的核心改动</h2>
+    <table>
+      <tr><th>项目</th><th>内容</th></tr>
+      <tr><td>Logo</td><td>首页与全站页眉/页脚统一替换为新 Logo（<code>assets/poteho-logo.png</code>，爪印图标）。</td></tr>
+      <tr><td>多语言</td><td>网站支持 <strong>英语 / 俄语 / 西班牙语 / 中文</strong> 四语，右上角新增语言切换按钮（<code>EN · RU · ES · 中文</code>），选择记忆在浏览器本地。</td></tr>
+      <tr><td>产品分类</td><td>由旧的 Beds/Walking/Toys/Feeding 重构为 <strong>6 大类</strong>：Bags &amp; Trolley（包和拉杆箱）、Toys（玩具）、Apparel（衣服）、Leashes（牵引绳）、Feeding（喂养）、Others（其他）。</td></tr>
+      <tr><td>分类页</td><td>新增 <code>category.html?cat=xxx</code> 分类列表页，首页分类卡片与页脚均跳转至此；全站分类筛选条由 JS 动态生成。</td></tr>
+      <tr><td>详情页</td><td><code>product.html?id=xxx</code> 重做：主图 + <strong>8 张图画廊</strong>（缩略图点击切换）、参数表（specs）、批发询价表单。</td></tr>
+      <tr><td>产品参数</td><td>每个产品支持参数表（材质、尺寸、承重、面料、特点等），标签已做四语翻译。</td></tr>
+      <tr><td>关于我们</td><td>移除全部 <strong>OEM / ODM</strong> 字样；成立年份由 2014 改为 <strong>2020</strong>（正文、数据墙、Schema 同步）。</td></tr>
+      <tr><td>示例产品</td><td>按 6 大类重建 11 个示例产品（包类 3、玩具 2、衣服 1、牵引 2、喂养 2、其他 1），字段含四语名称/简介/描述。</td></tr>
+    </table>
+  </div>
+
+  <h2>二、多语言是怎么工作的</h2>
+  <ul>
+    <li>界面文字（导航、按钮、表单、页脚、分类名）放在 <code>js/i18n.js</code> 的字典里，用 <code>data-i18n="key"</code> 标记的元素会自动切换。</li>
+    <li>产品文字（名称/简介/描述）采用<strong>扁平字段</strong>：<code>name_en / name_zh / name_ru / name_es</code> 等同结构，由 <code>tf()</code> 按当前语言读取。</li>
+    <li>默认语言为英文（利于 SEO），切换后即时刷新产品列表与详情。</li>
+  </ul>
+
+  <h2>三、如何替换产品图片（8 张）</h2>
+  <p>详情页始终显示 8 个图位，目前未提供照片的用占位图 <code>assets/placeholder.svg</code> 填充。把真实照片放进 <code>assets/</code> 后，到 <code>data/products.json</code> 修改对应产品的 <code>images</code> 数组（最多 8 个路径），覆盖占位图即可。少于 8 张会自动补占位图，多于 8 张只取前 8 张。</p>
+  <div class="card">
+    <strong>示例（bag-trolley-01）：</strong>
+    <pre style="margin:8px 0 0;white-space:pre-wrap;font-size:.85rem"><code>"images": [
+  "assets/bag-01-a.jpg",
+  "assets/bag-01-b.jpg",
+  "assets/bag-01-c.jpg"
+  /* 其余自动补 placeholder.svg */
+]</code></pre>
+  </div>
+
+  <h2>四、如何通过 CMS 后台编辑（/admin）</h2>
+  <p>Decap CMS 已更新为新的多语言字段与 6 大分类。登录 <code>/admin</code>（Netlify Identity）后：</p>
+  <ul>
+    <li><strong>Products</strong>：每个产品含 4 语名称、4 语简介、4 语描述、分类下拉、8 图位列表、参数表。</li>
+    <li><strong>Site Settings</strong>：公司名、邮箱、WhatsApp、LinkedIn、工厂地址、标语等。</li>
+    <li>保存即写入 <code>data/*.json</code> 并触发 Netlify 重新发布。</li>
+  </ul>
+
+  <h2>五、如何新增一个产品</h2>
+  <ol>
+    <li>后台 Products → 点列表右上角 “+” 新增一条。</li>
+    <li>填 ID（无空格，如 <code>toy-ball-04</code>）、选分类、价格、MOQ、封面图。</li>
+    <li>填写 4 种语言的名称/简介/描述。</li>
+    <li>在 <code>images</code> 里加图片路径（最多 8 张），<code>specs</code> 里加参数行（标签从下拉选，已含多语翻译）。</li>
+    <li>如需上首页，打开 “Show on homepage?”。保存即可。</li>
+  </ol>
+
+  <h2>六、需要您后续提供的内容</h2>
+  <table>
+    <tr><th>事项</th><th>说明</th></tr>
+    <tr><td>真实产品照片</td><td>每个产品最多 8 张，替换占位图（见第三节）。</td></tr>
+    <tr><td>公司真实信息</td><td><code>data/site.json</code> 中的邮箱、WhatsApp、LinkedIn、工厂地址目前为示例值。</td></tr>
+    <tr><td>示例文案核对</td><td>11 个产品的四语文案为示例文案，请按实际产品修改。</td></tr>
+  </table>
+
+  <p style="margin-top:30px;font-size:.85rem;color:#9a93a0">提示：本说明页（delivery-guide.html）仅作交付文档，未加入导航菜单，不影响线上站点。可随时删除。</p>
+</div>
+</body>
+</html>

@@ -89,6 +89,7 @@ ul { list-style: none; }
 .brand { display: flex; align-items: center; gap: 10px; font-family: var(--font-head); font-weight: 700; font-size: 1.35rem; color: var(--ink); }
 .brand .paw { width: 34px; height: 34px; }
 .brand span { color: var(--coral); }
+.brand-img img { height: 38px; width: auto; display: block; }
 .nav-links { display: flex; align-items: center; gap: 26px; }
 .nav-links a { font-family: var(--font-head); font-weight: 600; color: var(--ink); font-size: .98rem; }
 .nav-links a:hover, .nav-links a.active { color: var(--coral-dark); }
@@ -271,3 +272,36 @@ html { scroll-behavior: smooth; }
 }
 .info-card a#cEmail:hover { color: var(--coral-dark); }
 #contactForm { scroll-margin-top: 90px; }
+
+/* ---------- Language switcher (top-right) ---------- */
+.lang-switch {
+  display: flex; gap: 3px; align-items: center;
+  background: var(--paper); border: 1px solid var(--line);
+  border-radius: 999px; padding: 3px; box-shadow: var(--shadow-sm);
+}
+.lang-switch button {
+  font-family: var(--font-head); font-weight: 600; font-size: .76rem;
+  border: 0; background: transparent; color: var(--muted);
+  padding: 5px 9px; border-radius: 999px; cursor: pointer;
+  line-height: 1; transition: background .2s, color .2s; white-space: nowrap;
+}
+.lang-switch button:hover { color: var(--coral-dark); }
+.lang-switch button.on { background: var(--coral); color: #fff; }
+
+/* ---------- Product detail gallery (8 images) ---------- */
+.gallery-main { margin-bottom: 12px; }
+.gallery-main img { width: 100%; border-radius: var(--radius); box-shadow: var(--shadow-md); aspect-ratio: 4/3; object-fit: cover; background: #f6f2ee; }
+.gallery-thumbs { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; }
+.gallery-thumbs img {
+  width: 100%; aspect-ratio: 1/1; object-fit: cover; border-radius: 10px;
+  cursor: pointer; border: 2px solid transparent; background: #f6f2ee;
+  transition: border-color .2s, transform .2s;
+}
+.gallery-thumbs img:hover { transform: translateY(-2px); }
+.gallery-thumbs img.on { border-color: var(--coral); }
+
+/* Keep the language switcher usable on small screens */
+@media (max-width: 720px) {
+  .brand-img img { height: 32px; }
+  .lang-switch button { padding: 4px 7px; font-size: .72rem; }
+}

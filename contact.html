@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contact & Wholesale Quote — Poteho</title>
   <link rel="icon" href="assets/favicon.svg" />
-  <meta name="description" content="Get a wholesale quote for pet supplies from Poteho. OEM/ODM, low MOQ, worldwide shipping. We reply within one business day." />
+  <meta name="description" content="Get a wholesale quote for pet supplies from Poteho. Low MOQ, custom branding, worldwide shipping. We reply within one business day." />
   <link rel="canonical" href="https://www.poteho.com/contact.html" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -18,6 +18,7 @@
     "name": "Poteho",
     "email": "info@poteho.com",
     "url": "https://www.poteho.com/",
+    "logo": "https://www.poteho.com/assets/poteho-logo.png",
     "areaServed": "Worldwide"
   }
   </script>
@@ -25,19 +26,19 @@
 <body>
   <header class="site-header">
     <div class="container nav">
-      <a href="index.html" class="brand">
-        <svg class="paw" viewBox="0 0 64 64"><ellipse cx="32" cy="42" rx="15" ry="13" fill="#ff7a59"/><ellipse cx="16" cy="26" rx="6" ry="8" fill="#ff7a59"/><ellipse cx="28" cy="18" rx="6" ry="8" fill="#ff7a59"/><ellipse cx="40" cy="18" rx="6" ry="8" fill="#ff7a59"/><ellipse cx="50" cy="28" rx="6" ry="8" fill="#ff7a59"/></svg>
-        Pote<span>ho</span>
+      <a href="index.html" class="brand brand-img">
+        <img src="assets/poteho-logo.png" alt="Poteho" />
       </a>
       <nav class="nav-links" id="navLinks">
-        <a href="index.html">Home</a>
-        <a href="products.html">Products</a>
-        <a href="blog.html">Blog</a>
-        <a href="about.html">About</a>
-        <a href="contact.html" class="active">Contact</a>
+        <a href="index.html" data-i18n="nav.home">Home</a>
+        <a href="products.html" data-i18n="nav.products">Products</a>
+        <a href="blog.html" data-i18n="nav.blog">Blog</a>
+        <a href="about.html" data-i18n="nav.about">About</a>
+        <a href="contact.html" class="active" data-i18n="nav.contact">Contact</a>
       </nav>
       <div class="nav-cta">
-        <a href="contact.html" class="btn btn-primary">Get a Quote</a>
+        <div class="lang-switch" id="langSwitch"></div>
+        <a href="contact.html" class="btn btn-primary" data-i18n="nav.quote">Get a Quote</a>
         <button class="nav-toggle" id="navToggle" aria-label="Menu"><span></span><span></span><span></span></button>
       </div>
     </div>
@@ -45,46 +46,46 @@
 
   <main class="section">
     <div class="container">
-      <nav class="breadcrumb"><a href="index.html">Home</a> / <span>Contact</span></nav>
+      <nav class="breadcrumb"><a href="index.html" data-i18n="bc.home">Home</a> / <span data-i18n="nav.contact">Contact</span></nav>
       <div class="section-head" style="text-align:left;margin:18px 0 30px">
-        <span class="eyebrow">Get a quote</span>
-        <h2>Tell us what you need</h2>
-        <p>Fill in the form and we'll send a tailored quote within one business day.</p>
+        <span class="eyebrow" data-i18n="ct.eyebrow">Get a quote</span>
+        <h2 data-i18n="ct.h2">Tell us what you need</h2>
+        <p data-i18n="ct.p">Fill in the form and we'll send a tailored quote within one business day.</p>
       </div>
 
       <div class="contact-grid">
         <div class="info-card">
-          <h3>Reach us directly</h3>
-          <div class="info-row"><div class="ic">✉️</div><div><span>Email</span><a id="cEmail" href="#contactForm" title="Jump to the inquiry form">info@poteho.com</a></div></div>
-          <div class="info-row"><div class="ic">💬</div><div><span>WhatsApp / WeChat</span><strong id="cWhatsapp">+86 138 0000 0000</strong></div></div>
-          <div class="info-row"><div class="ic">🏭</div><div><span>Factory</span><strong id="cFactory">Pet Industrial Zone, China</strong></div></div>
-          <div class="info-row"><div class="ic">🕘</div><div><span>Response time</span><strong>Within 24 hours</strong></div></div>
-          <p style="margin-top:18px;font-size:.92rem">Prefer email? Just send your product interest, target quantity and market — we'll take it from there.</p>
+          <h3 data-i18n="ct.reach">Reach us directly</h3>
+          <div class="info-row"><div class="ic">✉️</div><div><span data-i18n="ct.email">Email</span><a id="cEmail" href="#contactForm" title="Jump to the inquiry form">info@poteho.com</a></div></div>
+          <div class="info-row"><div class="ic">💬</div><div><span data-i18n="ct.wa">WhatsApp / WeChat</span><strong id="cWhatsapp">+86 138 0000 0000</strong></div></div>
+          <div class="info-row"><div class="ic">🏭</div><div><span data-i18n="ct.factory">Factory</span><strong id="cFactory">Pet Industrial Zone, China</strong></div></div>
+          <div class="info-row"><div class="ic">🕘</div><div><span data-i18n="ct.response">Response time</span><strong data-i18n="ct.within24">Within 24 hours</strong></div></div>
+          <p style="margin-top:18px;font-size:.92rem" data-i18n="ct.prefer">Prefer email? Just send your product interest, target quantity and market — we'll take it from there.</p>
         </div>
 
         <form class="lead-form" id="contactForm" onsubmit="return handleContactForm(this)" style="margin-top:0">
-          <h3>Wholesale inquiry</h3>
-          <p>Fields marked * are required.</p>
-          <div class="form-success" id="contactSuccess">Thanks! Your inquiry has been sent. We'll reply within one business day.</div>
-          <div class="field"><label>Name *</label><input type="text" name="name" required /></div>
-          <div class="field"><label>Company</label><input type="text" name="company" /></div>
-          <div class="field"><label>Email *</label><input type="email" name="email" required /></div>
-          <div class="field"><label>Product interest *</label>
+          <h3 data-i18n="form.wholesale">Wholesale inquiry</h3>
+          <p data-i18n="form.required">Fields marked * are required.</p>
+          <div class="form-success" id="contactSuccess" data-i18n="form.success">Thanks! Your inquiry has been sent. We'll reply within one business day.</div>
+          <div class="field"><label data-i18n="form.name">Name *</label><input type="text" name="name" required /></div>
+          <div class="field"><label data-i18n="form.company">Company</label><input type="text" name="company" /></div>
+          <div class="field"><label data-i18n="form.email">Email *</label><input type="email" name="email" required /></div>
+          <div class="field"><label data-i18n="form.interest">Product interest *</label>
             <select name="product" required>
-              <option value="">Select a category…</option>
-              <option>Beds & Furniture</option>
-              <option>Collars & Leashes</option>
-              <option>Toys</option>
-              <option>Feeding & Watering</option>
-              <option>Grooming</option>
-              <option>Travel & Carriers</option>
-              <option>Custom / OEM project</option>
+              <option value="" data-i18n="form.select">Select a category…</option>
+              <option value="bags" data-i18n="cat.bags">Bags & Trolley</option>
+              <option value="toys" data-i18n="cat.toys">Toys</option>
+              <option value="apparel" data-i18n="cat.apparel">Apparel</option>
+              <option value="leashes" data-i18n="cat.leashes">Leashes</option>
+              <option value="feeding" data-i18n="cat.feeding">Feeding</option>
+              <option value="others" data-i18n="cat.others">Others</option>
+              <option value="custom" data-i18n="opt.custom">Custom project</option>
             </select>
           </div>
-          <div class="field"><label>Estimated quantity</label><input type="text" name="qty" placeholder="e.g. 1,000 units" /></div>
-          <div class="field"><label>Message</label><textarea name="message" placeholder="Target market, customization, timeline..."></textarea></div>
-          <button type="submit" class="btn btn-primary" style="width:100%">Send Inquiry</button>
-          <p class="form-note">Demo form — connect it to your email/CRM by editing <code>FORM_ENDPOINT</code> in <code>js/main.js</code>.</p>
+          <div class="field"><label data-i18n="form.qty">Estimated quantity</label><input type="text" name="qty" data-i18n-ph="form.qtyPh" placeholder="e.g. 1,000 units" /></div>
+          <div class="field"><label data-i18n="form.message">Message</label><textarea name="message" data-i18n-ph="form.msgPh" placeholder="Target market, customization, timeline..."></textarea></div>
+          <button type="submit" class="btn btn-primary" style="width:100%" data-i18n="form.send">Send Inquiry</button>
+          <p class="form-note" data-i18n="form.note">Demo form — connect it to your email/CRM by editing FORM_ENDPOINT in js/main.js.</p>
         </form>
       </div>
     </div>
@@ -93,19 +94,27 @@
   <footer class="site-footer">
     <div class="container footer-grid">
       <div class="footer-brand">
-        <a href="index.html" class="brand" style="color:#fff"><svg class="paw" viewBox="0 0 64 64"><ellipse cx="32" cy="42" rx="15" ry="13" fill="#ff7a59"/><ellipse cx="16" cy="26" rx="6" ry="8" fill="#ff7a59"/><ellipse cx="28" cy="18" rx="6" ry="8" fill="#ff7a59"/><ellipse cx="40" cy="18" rx="6" ry="8" fill="#ff7a59"/><ellipse cx="50" cy="28" rx="6" ry="8" fill="#ff7a59"/></svg>Pote<span style="color:#ff7a59">ho</span></a>
-        <p>Premium pet supplies manufacturer & wholesale partner for retailers and brands worldwide.</p>
+        <a href="index.html" class="brand brand-img"><img src="assets/poteho-logo.png" alt="Poteho" /></a>
+        <p data-i18n="footer.desc">Premium pet supplies manufacturer & wholesale partner for retailers and brands worldwide.</p>
       </div>
-      <div><h4>Products</h4><a href="products.html">Beds & Furniture</a><a href="products.html">Collars & Leashes</a><a href="products.html">Toys</a><a href="products.html">Feeding</a></div>
-      <div><h4>Company</h4><a href="about.html">About us</a><a href="blog.html">Blog</a><a href="contact.html">Contact</a><a href="contact.html">Get a quote</a><a href="cookie.html">Cookie Policy</a></div>
-      <div><h4>Connect</h4><a id="fEmail" href="#">info@poteho.com</a><a id="fWhatsapp" href="#">WhatsApp / WeChat</a><a id="fLinkedin" href="#" target="_blank" rel="noopener">LinkedIn</a></div>
+      <div><h4 data-i18n="footer.products">Products</h4>
+        <a href="category.html?cat=bags" data-i18n="cat.bags">Bags & Trolley</a>
+        <a href="category.html?cat=toys" data-i18n="cat.toys">Toys</a>
+        <a href="category.html?cat=apparel" data-i18n="cat.apparel">Apparel</a>
+        <a href="category.html?cat=leashes" data-i18n="cat.leashes">Leashes</a>
+        <a href="category.html?cat=feeding" data-i18n="cat.feeding">Feeding</a>
+        <a href="category.html?cat=others" data-i18n="cat.others">Others</a>
+      </div>
+      <div><h4 data-i18n="footer.company">Company</h4><a href="about.html" data-i18n="footer.aboutus">About us</a><a href="blog.html" data-i18n="footer.blog">Blog</a><a href="contact.html" data-i18n="footer.contact">Contact</a><a href="contact.html" data-i18n="footer.getquote">Get a quote</a><a href="cookie.html" data-i18n="footer.cookie">Cookie Policy</a></div>
+      <div><h4 data-i18n="footer.connect">Connect</h4><a id="fEmail" href="#">info@poteho.com</a><a id="fWhatsapp" href="#" data-i18n="footer.whatsapp">WhatsApp / WeChat</a><a id="fLinkedin" href="#" target="_blank" rel="noopener">LinkedIn</a></div>
     </div>
     <div class="container footer-bottom">
-      <span>© <span id="year"></span> Poteho. All rights reserved.</span>
-      <span id="fSlogan">Poteho — your pet's best friend</span>
+      <span>© <span id="year"></span> <span data-i18n="footer.rights">Poteho. All rights reserved.</span></span>
+      <span id="fSlogan" data-i18n="footer.slogan">Poteho — your pet's best friend</span>
     </div>
   </footer>
 
+  <script src="js/i18n.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
