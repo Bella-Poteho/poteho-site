@@ -60,7 +60,7 @@ collections:
             summary: "{{fields.name_en}} ({{fields.cat}})"
             fields:
               - { name: id, label: "ID (no spaces)", widget: string }
-              - { name: cat, label: "Category", widget: select, options: ["bags", "toys", "apparel", "leashes", "feeding", "others"] }
+              - { name: cat, label: "Category", widget: select, options: ["bags", "bed", "apparel", "leashes", "feeding", "others"] }
               - { name: price, label: "Price (e.g. $18.90)", widget: string }
               - { name: moq, label: "MOQ (e.g. MOQ 100)", widget: string }
               - { name: img, label: "Cover image (upload or path)", widget: image, hint: "Upload a photo, or type assets/placeholder.svg" }

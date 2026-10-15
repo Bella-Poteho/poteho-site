@@ -21,7 +21,7 @@ const POSTS_URL = "data/posts.json";
 const PLACEHOLDER_IMG = "assets/placeholder.svg";
 
 /* Categories (ids match products.json "cat" values) */
-const CATS = ["bags", "toys", "apparel", "leashes", "feeding", "others"];
+const CATS = ["bags", "bed", "apparel", "leashes", "feeding", "others"];
 
 let PRODUCTS = [];
 let SITE = {};
@@ -276,7 +276,7 @@ function postDateStr(iso) {
 function postCardHTML(post) {
   return `
     <a href="blog-post.html?slug=${post.slug}" class="blog-card">
-      <div class="thumb"><img src="${POSTS_DATA.thumb}" alt="${post.title}" loading="lazy" /></div>
+      <div class="thumb"><img src="${post.image || POSTS_DATA.thumb}" alt="${post.title}" loading="lazy" /></div>
       <div class="body">
         <div class="meta">${post.category} · ${post.minutes} min · ${postDateStr(post.date)}</div>
         <h3>${post.title}</h3>
@@ -323,9 +323,8 @@ function renderPost() {
   const h1 = document.getElementById("postTitle");
   if (h1) h1.textContent = post.title;
 
-  body.innerHTML = post.body.map(b =>
-    b.startsWith("## ") ? `<h2>${b.slice(3)}</h2>` : `<p>${b}</p>`
-  ).join("");
+  body.innerHTML = `<img class="post-hero" src="${post.image || POSTS_DATA.thumb}" alt="${post.title}" loading="lazy" />` +
+    post.body.map(b => b.startsWith("## ") ? `<h2>${b.slice(3)}</h2>` : `<p>${b}</p>`).join("");
 
   injectPostJSONLD(post);
 }
@@ -339,7 +338,7 @@ function injectPostJSONLD(post) {
     "@context": "https://schema.org",
     "@type": "Article",
     "headline": post.title,
-    "image": "https://www.poteho.com/" + POSTS_DATA.thumb,
+    "image": "https://www.poteho.com/" + (post.image || POSTS_DATA.thumb),
     "author": { "@type": "Organization", "name": "Poteho" },
     "publisher": { "@type": "Organization", "name": "Poteho", "logo": { "@type": "ImageObject", "url": "https://www.poteho.com/assets/poteho-logo.png" } },
     "datePublished": post.date,

@@ -24,7 +24,7 @@ const I18N = {
     "footer.rights": "Poteho. All rights reserved.",
     "footer.slogan": "Poteho — your pet's best friend",
 
-    "cat.all": "All", "cat.bags": "Carrier", "cat.toys": "Toys",
+    "cat.all": "All", "cat.bags": "Carrier", "cat.bed": "Bed",
     "cat.apparel": "Apparel", "cat.leashes": "Leashes", "cat.feeding": "Feeding",
     "cat.others": "Others", "opt.custom": "Custom project",
 
@@ -131,7 +131,7 @@ const I18N = {
     "footer.rights": "Poteho. Все права защищены.",
     "footer.slogan": "Poteho — лучший друг вашего питомца",
 
-    "cat.all": "Все", "cat.bags": "Переноски", "cat.toys": "Игрушки",
+    "cat.all": "Все", "cat.bags": "Переноски", "cat.bed": "Лежанки",
     "cat.apparel": "Одежда", "cat.leashes": "Поводки", "cat.feeding": "Кормление",
     "cat.others": "Другое", "opt.custom": "Индивидуальный проект",
 
@@ -238,7 +238,7 @@ const I18N = {
     "footer.rights": "Poteho. Todos los derechos reservados.",
     "footer.slogan": "Poteho — el mejor amigo de tu mascota",
 
-    "cat.all": "Todos", "cat.bags": "Transportines", "cat.toys": "Juguetes",
+    "cat.all": "Todos", "cat.bags": "Transportines", "cat.bed": "Camas",
     "cat.apparel": "Ropa", "cat.leashes": "Correas", "cat.feeding": "Alimentación",
     "cat.others": "Otros", "opt.custom": "Proyecto personalizado",
 
@@ -345,7 +345,7 @@ const I18N = {
     "footer.rights": "Poteho 版权所有。",
     "footer.slogan": "Poteho — 您宠物的最佳伙伴",
 
-    "cat.all": "全部", "cat.bags": "外出包", "cat.toys": "玩具",
+    "cat.all": "全部", "cat.bags": "外出包", "cat.bed": "宠物床",
     "cat.apparel": "衣服", "cat.leashes": "牵引绳", "cat.feeding": "喂养",
     "cat.others": "其他", "opt.custom": "定制项目",
 

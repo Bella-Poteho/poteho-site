@@ -131,28 +131,28 @@
       ]
     },
     {
-      "id": "toy-rope",
-      "cat": "toys",
-      "price": "$1.10",
-      "moq": "MOQ 500",
+      "id": "bed-donut",
+      "cat": "bed",
+      "price": "$8.50",
+      "moq": "MOQ 300",
       "images": [],
       "featured": true,
-      "name_en": "Durable Rope Chew Toy",
-      "name_zh": "耐磨棉绳洁齿玩具",
-      "name_ru": "Прочный канат для жевания",
-      "name_es": "Cuerda duradera para masticar",
-      "short_en": "Tough cotton rope that cleans teeth while playing.",
-      "short_zh": "天然棉绳，边玩边洁齿。",
-      "short_ru": "Прочный хлопковый канат — чистит зубы во время игры.",
-      "short_es": "Cuerda de algodón resistente que limpia los dientes al jugar.",
-      "description_en": "Braided natural-cotton rope that satisfies the urge to chew and helps reduce plaque. Knotted ends make tug-of-war easy on the hands.",
-      "description_zh": "天然棉绳编织，满足啃咬天性，帮助减少牙菌斑。绳结两端设计，拔河游戏更顺手。",
-      "description_ru": "Плетёный канат из натурального хлопка удовлетворяет потребность в жевании и помогает уменьшить зубной налёт. Узлы на концах удобны для перетягивания.",
-      "description_es": "Cuerda trenzada de algodón natural que satisface el impulso de masticar y ayuda a reducir el sarro. Nudos en los extremos para jugar al tira y afloja.",
+      "name_en": "Calming Donut Pet Bed",
+      "name_zh": "安抚甜甜圈宠物窝",
+      "name_ru": "Уютная лежанка-пончик",
+      "name_es": "Cama donut calmante para mascotas",
+      "short_en": "A soft, self-warming bed that pets curl into.",
+      "short_zh": "柔软蓄暖，宠物爱蜷睡其中。",
+      "short_ru": "Мягкая тёплая лежанка, в которую питомцы сворачиваются.",
+      "short_es": "Cama suave y abrigada donde las mascotas se acurrucan.",
+      "description_en": "A plush donut bed with raised edges that gives pets a sense of security while they sleep. The self-warming inner layer keeps them cozy on cold days, and the removable cover is machine washable.",
+      "description_zh": "加高边缘的毛绒甜甜圈窝，给宠物安全感。内层蓄暖，冷天也舒适；外罩可拆卸机洗。",
+      "description_ru": "Плюшевая лежанка-пончик с высокими бортами даёт питомцу чувство защищённости. Тёплый внутренний слой сохраняет тепло, чехол снимается и стирается в машине.",
+      "description_es": "Cama de felpa tipo donut con bordes altos que da seguridad a la mascota. La capa interior conserva el calor y la funda es desmontable y lavable a máquina.",
       "specs": [
         {
           "k": "Material",
-          "v": "Natural cotton rope"
+          "v": "Plush + PP cotton"
         },
         {
           "k": "Sizes",
@@ -160,7 +160,7 @@
         },
         {
           "k": "Care",
-          "v": "Hand wash, air dry"
+          "v": "Machine-washable cover"
         },
         {
           "k": "Custom",
@@ -168,41 +168,41 @@
         },
         {
           "k": "Lead time",
-          "v": "10–18 days after sample"
+          "v": "15–25 days after sample"
         }
       ]
     },
     {
-      "id": "toy-plush",
-      "cat": "toys",
-      "price": "$2.30",
-      "moq": "MOQ 300",
+      "id": "bed-ortho",
+      "cat": "bed",
+      "price": "$12.90",
+      "moq": "MOQ 200",
       "images": [],
       "featured": false,
-      "name_en": "Squeaky Plush Toy Set",
-      "name_zh": "发声毛绒玩具套装",
-      "name_ru": "Набор пищащих плюшевых игрушек",
-      "name_es": "Set de juguetes de felpa con sonido",
-      "short_en": "A 3-pack of soft squeaky friends.",
-      "short_zh": "三只装柔软发声玩具。",
-      "short_ru": "Набор из 3 мягких пищащих игрушек.",
-      "short_es": "Pack de 3 juguetes suaves con silbato.",
-      "description_en": "A value set of three soft plush toys with built-in squeakers. Varied shapes keep curious pets engaged and are gentle on teeth and gums.",
-      "description_zh": "三只装毛绒发声玩具，内置发声器。造型各异，耐咬又护齿龈。",
-      "description_ru": "Набор из трёх мягких плюшевых игрушек со встроенными пищалками. Разные формы удерживают интерес питомца и бережны к зубам.",
-      "description_es": "Set de tres juguetes de felpa con silbato integrado. Formas variadas que entretienen y cuidan dientes y encías.",
+      "name_en": "Orthopedic Memory Foam Pet Bed",
+      "name_zh": "记忆棉护脊宠物床",
+      "name_ru": "Ортопедическая лежанка с эффектом памяти",
+      "name_es": "Cama ortopédica viscoelástica",
+      "short_en": "Supportive memory foam for joints and older pets.",
+      "short_zh": "记忆棉支撑，呵护关节与老年宠物。",
+      "short_ru": "Поддерживающая пена с эффектом памяти для суставов и пожилых питомцев.",
+      "short_es": "Espuma viscoelástica que cuida articulaciones y mascotas mayores.",
+      "description_en": "A supportive memory-foam bed that cushions hips and joints, ideal for senior dogs and cats. The cover unzips for easy washing and the non-slip base keeps it in place.",
+      "description_zh": "记忆棉床垫支撑髋部与关节，适合老年猫狗。外罩可拉链拆洗，防滑底保持稳固。",
+      "description_ru": "Ортопедическая лежанка из пены с эффектом памяти поддерживает бёдра и суставы, подходит пожилым собакам и кошкам. Чехол на молнии, нескользящее основание.",
+      "description_es": "Cama de espuma viscoelástica que protege caderas y articulaciones, ideal para perros y gatos mayores. Funda con cremallera y base antideslizante.",
       "specs": [
         {
           "k": "Material",
-          "v": "Plush + PP cotton"
+          "v": "Memory foam + fabric"
         },
         {
-          "k": "Set",
-          "v": "3 assorted toys"
+          "k": "Sizes",
+          "v": "M / L / XL"
         },
         {
           "k": "Care",
-          "v": "Surface clean"
+          "v": "Removable washable cover"
         },
         {
           "k": "Custom",
@@ -210,7 +210,7 @@
         },
         {
           "k": "Lead time",
-          "v": "10–18 days after sample"
+          "v": "20–30 days after sample"
         }
       ]
     },
