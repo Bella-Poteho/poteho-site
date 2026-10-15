@@ -17,6 +17,7 @@ const FORM_ENDPOINT = null; // <- paste your Formspree URL here, e.g. "https://f
 /* ---------- Data ---------- */
 const PRODUCTS_URL = "data/products.json";
 const SITE_URL = "data/site.json";
+const POSTS_URL = "data/posts.json";
 const PLACEHOLDER_IMG = "assets/placeholder.svg";
 
 /* Categories (ids match products.json "cat" values) */
@@ -24,6 +25,7 @@ const CATS = ["bags", "toys", "apparel", "leashes", "feeding", "others"];
 
 let PRODUCTS = [];
 let SITE = {};
+let POSTS_DATA = { posts: [], thumb: "assets/blog-thumb.svg" };
 
 /* ---------- Mobile nav + misc ---------- */
 function initChrome() {

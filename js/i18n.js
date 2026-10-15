@@ -16,7 +16,7 @@ const I18N = {
     "nav.home": "Home", "nav.products": "Products", "nav.blog": "Blog",
     "nav.about": "About", "nav.contact": "Contact", "nav.quote": "Get a Quote",
 
-    "footer.desc": "Premium pet supplies manufacturer & wholesale partner for retailers and brands worldwide.",
+    "footer.desc": "We make premium pet supplies. We sell them wholesale to retailers and brands worldwide.",
     "footer.products": "Products", "footer.company": "Company", "footer.connect": "Connect",
     "footer.aboutus": "About us", "footer.blog": "Blog", "footer.contact": "Contact",
     "footer.getquote": "Get a quote", "footer.cookie": "Cookie Policy",
@@ -123,7 +123,7 @@ const I18N = {
     "nav.home": "Главная", "nav.products": "Продукция", "nav.blog": "Блог",
     "nav.about": "О нас", "nav.contact": "Контакты", "nav.quote": "Запросить цену",
 
-    "footer.desc": "Производитель премиальных товаров для животных и оптовый партнёр розничных торговцев и брендов по всему миру.",
+    "footer.desc": "Мы делаем качественные товары для животных. Продаём их оптом розничным магазинам и брендам по всему миру.",
     "footer.products": "Продукция", "footer.company": "Компания", "footer.connect": "Контакты",
     "footer.aboutus": "О нас", "footer.blog": "Блог", "footer.contact": "Контакты",
     "footer.getquote": "Запросить цену", "footer.cookie": "Политика cookie",
@@ -230,7 +230,7 @@ const I18N = {
     "nav.home": "Inicio", "nav.products": "Productos", "nav.blog": "Blog",
     "nav.about": "Nosotros", "nav.contact": "Contacto", "nav.quote": "Pedir cotización",
 
-    "footer.desc": "Fabricante de artículos premium para mascotas y socio mayorista de minoristas y marcas de todo el mundo.",
+    "footer.desc": "Hacemos artículos de calidad para mascotas. Los vendemos al por mayor a minoristas y marcas de todo el mundo.",
     "footer.products": "Productos", "footer.company": "Empresa", "footer.connect": "Conexión",
     "footer.aboutus": "Sobre nosotros", "footer.blog": "Blog", "footer.contact": "Contacto",
     "footer.getquote": "Pedir cotización", "footer.cookie": "Política de cookies",
@@ -337,7 +337,7 @@ const I18N = {
     "nav.home": "首页", "nav.products": "产品中心", "nav.blog": "博客",
     "nav.about": "关于我们", "nav.contact": "联系我们", "nav.quote": "获取报价",
 
-    "footer.desc": "优质宠物用品制造商，全球零售商与品牌的批发合作伙伴。",
+    "footer.desc": "我们生产优质宠物用品。面向全球零售商和品牌批发。",
     "footer.products": "产品分类", "footer.company": "公司", "footer.connect": "联系方式",
     "footer.aboutus": "关于我们", "footer.blog": "博客", "footer.contact": "联系我们",
     "footer.getquote": "获取报价", "footer.cookie": "Cookie 政策",
