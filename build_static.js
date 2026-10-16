@@ -212,9 +212,11 @@ function renderProduct(p, lang) {
         <a href="/contact.html" class="btn btn-primary">${esc(
     t(lang, "det.quote")
   )}</a>
-        <form class="lead-form" onsubmit="return handleLeadForm(this)">
+        <form class="lead-form" name="lead" data-netlify="true" data-netlify-honeypot="bot-field" onsubmit="return handleLeadForm(this)">
           <h3>${esc(t(lang, "lead.title"))}</h3>
           <p>${esc(t(lang, "lead.sub"))}</p>
+          <p class="nf-hidden" style="display:none"><label>Leave this empty: <input name="bot-field" /></label></p>
+          <input type="hidden" name="form-name" value="lead" />
           <input type="hidden" name="product" value="${esc(name)}" />
           <div class="form-success" id="leadSuccess">${esc(
             t(lang, "lead.success")

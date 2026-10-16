@@ -23,12 +23,41 @@
     });
   }
 
-  var FORM_ENDPOINT = null; // demo mode: shows success, sends nothing
+  // Default delivery: Netlify Forms (same-page POST). Set FORM_ENDPOINT
+  // to a Formspree/Getform URL to route through that service instead.
+  var FORM_ENDPOINT = null;
 
   function submitForm(form, successId) {
     var success = document.getElementById(successId);
-    if (success) success.classList.add("show");
-    if (form) form.reset();
+    var formName = (form && form.getAttribute("name")) || "lead";
+    var fd = new FormData(form);
+    fd.set("form-name", formName);
+    var done = function () {
+      if (success) success.classList.add("show");
+      if (form) form.reset();
+      return false;
+    };
+    if (FORM_ENDPOINT) {
+      fetch(FORM_ENDPOINT, {
+        method: "POST",
+        headers: { "Content-Type": "application/json", "Accept": "application/json" },
+        body: JSON.stringify(Object.fromEntries(fd.entries()))
+      }).then(function (res) {
+        if (!res.ok) throw new Error("bad");
+        done();
+      }).catch(function () {
+        alert("Something went wrong. Please email info@poteho.com directly.");
+      });
+      return false;
+    }
+    // Netlify Forms
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams(fd).toString()
+    }).then(done).catch(function () {
+      alert("Something went wrong. Please email info@poteho.com directly.");
+    });
     return false;
   }
   function handleLeadForm(form) { return submitForm(form, "leadSuccess"); }

@@ -447,27 +447,50 @@ function injectBreadcrumbJSONLD(items) {
   document.head.appendChild(s);
 }
 
-/* ---------- Form handling ---------- */
+/* ---------- Form handling ----------
+   Default delivery: Netlify Forms (the site is hosted on Netlify).
+   Submissions are captured by Netlify and forwarded to info@poteho.com
+   once you add an "Email notification" in the Netlify dashboard
+   (Site configuration -> Forms -> Add notification -> Email -> info@poteho.com).
+   Optional: set FORM_ENDPOINT to a Formspree/Getform URL to route
+   submissions through that service instead. */
 async function submitForm(form, successId) {
   const success = document.getElementById(successId);
-  const data = Object.fromEntries(new FormData(form).entries());
+  const formName = (form && form.getAttribute("name")) || "contact";
+  const fd = new FormData(form);
+  fd.set("form-name", formName);
+  // drop the honeypot value if a bot left it (Netlify ignores empty anyway)
+  if (form && form.querySelector('[name="bot-field"]')) {
+    const hp = fd.get("bot-field");
+    if (hp) fd.set("bot-field", "");
+  }
   if (FORM_ENDPOINT) {
+    // Formspree / third-party endpoint (JSON)
     try {
       const res = await fetch(FORM_ENDPOINT, {
         method: "POST",
         headers: { "Content-Type": "application/json", "Accept": "application/json" },
-        body: JSON.stringify(data)
+        body: JSON.stringify(Object.fromEntries(fd.entries()))
       });
       if (!res.ok) throw new Error("Network response was not ok");
       if (success) success.classList.add("show");
       form.reset();
     } catch (e) {
-      alert("Something went wrong sending your message. Please email us directly.");
+      alert("Something went wrong sending your message. Please email info@poteho.com directly.");
     }
   } else {
-    console.log("Demo form submission:", data);
-    if (success) success.classList.add("show");
-    form.reset();
+    // Netlify Forms (application/x-www-form-urlencoded, same-page POST)
+    try {
+      await fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: new URLSearchParams(fd).toString()
+      });
+      if (success) success.classList.add("show");
+      form.reset();
+    } catch (e) {
+      alert("Something went wrong sending your message. Please email info@poteho.com directly.");
+    }
   }
   return false;
 }

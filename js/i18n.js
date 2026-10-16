@@ -33,7 +33,7 @@ const I18N = {
     "form.qty": "Estimated quantity", "form.qtyPh": "e.g. 1,000 units",
     "form.message": "Message", "form.msgPh": "Target market, customization, timeline...",
     "form.send": "Send Inquiry",
-    "form.note": "Demo form — connect it to your email/CRM by editing FORM_ENDPOINT in js/main.js.",
+    "form.note": "Your inquiry goes straight to our team. We'll reply within one business day.",
     "form.success": "Thanks! Your inquiry has been sent. We'll reply within one business day.",
     "form.required": "Fields marked * are required.", "form.wholesale": "Wholesale inquiry",
 
@@ -140,7 +140,7 @@ const I18N = {
     "form.qty": "Ориентировочное количество", "form.qtyPh": "напр. 1 000 шт.",
     "form.message": "Сообщение", "form.msgPh": "Рынок, кастомизация, сроки...",
     "form.send": "Отправить запрос",
-    "form.note": "Демо-форма — подключите её к своей почте/CRM, изменив FORM_ENDPOINT в js/main.js.",
+    "form.note": "Ваш запрос сразу поступает нашей команде. Ответим в течение одного рабочего дня.",
     "form.success": "Спасибо! Запрос отправлен. Ответим в течение одного рабочего дня.",
     "form.required": "Поля со звёздочкой * обязательны.", "form.wholesale": "Оптовый запрос",
 
@@ -247,7 +247,7 @@ const I18N = {
     "form.qty": "Cantidad estimada", "form.qtyPh": "p. ej. 1 000 unidades",
     "form.message": "Mensaje", "form.msgPh": "Mercado objetivo, personalización, plazos...",
     "form.send": "Enviar consulta",
-    "form.note": "Forma de demostración — conéctala a tu correo/CRM editando FORM_ENDPOINT en js/main.js.",
+    "form.note": "Tu consulta llega directamente a nuestro equipo. Responderemos en un día laborable.",
     "form.success": "¡Gracias! Tu consulta ha sido enviada. Responderemos en un día laborable.",
     "form.required": "Los campos marcados con * son obligatorios.", "form.wholesale": "Consulta mayorista",
 
@@ -354,7 +354,7 @@ const I18N = {
     "form.qty": "预计数量", "form.qtyPh": "如 1,000 个",
     "form.message": "留言", "form.msgPh": "目标市场、定制需求、时间安排...",
     "form.send": "发送询盘",
-    "form.note": "演示表单 — 在 js/main.js 中设置 FORM_ENDPOINT 即可接入您的邮箱/CRM。",
+    "form.note": "您的询盘会直接送达我们团队，我们会在一个工作日内回复。",
     "form.success": "感谢您的询盘！我们会在一个工作日内回复。",
     "form.required": "带 * 为必填项。", "form.wholesale": "批发询盘",
 

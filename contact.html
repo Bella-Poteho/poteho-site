@@ -71,10 +71,12 @@
           <p style="margin-top:18px;font-size:.92rem" data-i18n="ct.prefer">Prefer email? Just send your product interest, target quantity and market — we'll take it from there.</p>
         </div>
 
-        <form class="lead-form" id="contactForm" onsubmit="return handleContactForm(this)" style="margin-top:0">
+        <form class="lead-form" id="contactForm" name="contact" data-netlify="true" data-netlify-honeypot="bot-field" onsubmit="return handleContactForm(this)" style="margin-top:0">
           <h3 data-i18n="form.wholesale">Wholesale inquiry</h3>
           <p data-i18n="form.required">Fields marked * are required.</p>
           <div class="form-success" id="contactSuccess" data-i18n="form.success">Thanks! Your inquiry has been sent. We'll reply within one business day.</div>
+          <p class="nf-hidden" style="display:none"><label>Leave this empty: <input name="bot-field" /></label></p>
+          <input type="hidden" name="form-name" value="contact" />
           <div class="field"><label data-i18n="form.name">Name *</label><input type="text" name="name" required /></div>
           <div class="field"><label data-i18n="form.company">Company</label><input type="text" name="company" /></div>
           <div class="field"><label data-i18n="form.email">Email *</label><input type="email" name="email" required /></div>
