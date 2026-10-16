@@ -113,7 +113,7 @@ function productImages(p) {
 function cardHTML(p) {
   return `
     <div class="product-card">
-      <a class="pc-link" href="product.html?id=${p.id}">
+      <a class="pc-link" href="/products/${p.id}.html">
         <div class="thumb"><img src="${p.img || PLACEHOLDER_IMG}" alt="${pName(p)}" loading="lazy" /></div>
         <div class="body">
           <span class="cat">${catName(p.cat)}</span>
@@ -290,7 +290,7 @@ function postDateStr(iso) {
 }
 function postCardHTML(post) {
   return `
-    <a href="blog-post.html?slug=${post.slug}" class="blog-card">
+    <a href="/blog/${post.slug}.html" class="blog-card">
       <div class="thumb"><img src="${post.image || POSTS_DATA.thumb}" alt="${post.title}" loading="lazy" /></div>
       <div class="body">
         <div class="meta">${post.category} · ${post.minutes} min · ${postDateStr(post.date)}</div>

@@ -292,6 +292,15 @@ html { scroll-behavior: smooth; }
 }
 .lang-switch button:hover { color: var(--coral-dark); }
 .lang-switch button.on { background: var(--coral); color: #fff; }
+/* Static detail pages use <a> links (no JS) for the language switcher */
+.lang-switch a {
+  font-family: var(--font-head); font-weight: 600; font-size: .76rem;
+  border: 0; background: transparent; color: var(--muted);
+  padding: 5px 9px; border-radius: 999px; cursor: pointer; line-height: 1;
+  text-decoration: none; white-space: nowrap;
+}
+.lang-switch a:hover { color: var(--coral-dark); }
+.lang-switch a.on { background: var(--coral); color: #fff; }
 
 /* ---------- Product detail gallery (8 images) ---------- */
 .gallery-main { margin-bottom: 12px; }
