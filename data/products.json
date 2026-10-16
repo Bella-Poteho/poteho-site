@@ -3,8 +3,7 @@
     {
       "id": "bag-trolley-01",
       "cat": "bags",
-      "price": "$32.90",
-      "moq": "MOQ 100",
+      "moq": "10",
       "images": [],
       "featured": true,
       "name_en": "Foldable Pet Trolley Bag",
@@ -49,8 +48,7 @@
     {
       "id": "bag-backpack-02",
       "cat": "bags",
-      "price": "$18.50",
-      "moq": "MOQ 200",
+      "moq": "10",
       "images": [],
       "featured": true,
       "name_en": "Breathable Pet Backpack Carrier",
@@ -91,8 +89,7 @@
     {
       "id": "bag-carrier-03",
       "cat": "bags",
-      "price": "$12.80",
-      "moq": "MOQ 200",
+      "moq": "10",
       "images": [],
       "featured": false,
       "name_en": "Soft-Sided Pet Travel Carrier",
@@ -133,8 +130,7 @@
     {
       "id": "bed-donut",
       "cat": "bed",
-      "price": "$8.50",
-      "moq": "MOQ 300",
+      "moq": "10",
       "images": [],
       "featured": true,
       "name_en": "Calming Donut Pet Bed",
@@ -175,8 +171,7 @@
     {
       "id": "bed-ortho",
       "cat": "bed",
-      "price": "$12.90",
-      "moq": "MOQ 200",
+      "moq": "10",
       "images": [],
       "featured": false,
       "name_en": "Orthopedic Memory Foam Pet Bed",
@@ -217,8 +212,7 @@
     {
       "id": "apparel-jacket-01",
       "cat": "apparel",
-      "price": "$7.90",
-      "moq": "MOQ 200",
+      "moq": "10",
       "images": [],
       "featured": true,
       "name_en": "Waterproof Winter Dog Jacket",
@@ -259,8 +253,7 @@
     {
       "id": "leash-reflect",
       "cat": "leashes",
-      "price": "$3.20",
-      "moq": "MOQ 200",
+      "moq": "10",
       "images": [],
       "featured": true,
       "name_en": "Reflective Nylon Dog Leash",
@@ -301,8 +294,7 @@
     {
       "id": "harness-padded",
       "cat": "leashes",
-      "price": "$4.80",
-      "moq": "MOQ 200",
+      "moq": "10",
       "images": [],
       "featured": false,
       "name_en": "Soft Padded No-Pull Harness",
@@ -343,8 +335,7 @@
     {
       "id": "fountain-auto",
       "cat": "feeding",
-      "price": "$9.90",
-      "moq": "MOQ 100",
+      "moq": "10",
       "images": [],
       "featured": true,
       "name_en": "Automatic Pet Water Fountain",
@@ -385,8 +376,7 @@
     {
       "id": "bowl-double",
       "cat": "feeding",
-      "price": "$5.40",
-      "moq": "MOQ 200",
+      "moq": "10",
       "images": [],
       "featured": false,
       "name_en": "Stainless Double Feeder Bowl",
@@ -427,8 +417,7 @@
     {
       "id": "other-glove-01",
       "cat": "others",
-      "price": "$1.60",
-      "moq": "MOQ 500",
+      "moq": "10",
       "images": [],
       "featured": false,
       "name_en": "Pet Grooming Glove",
@@ -463,6 +452,390 @@
         {
           "k": "Lead time",
           "v": "10–18 days after sample"
+        }
+      ]
+    },
+    {
+      "id": "carrier-classic-01",
+      "cat": "bags",
+      "moq": "10",
+      "img": "assets/products/pet-carrier-01.jpg",
+      "images": [
+        "assets/products/pet-carrier-01.jpg"
+      ],
+      "featured": true,
+      "name_en": "Pet Carrier",
+      "name_zh": "宠物外出包",
+      "name_ru": "Переноска для питомцев",
+      "name_es": "Transportín para mascotas",
+      "short_en": "Soft-sided carrier with mesh windows and a padded strap.",
+      "short_zh": "软质外出包，网面透气，背带加厚。",
+      "short_ru": "Мягкая переноска с сетчатыми окнами и мягким ремнём.",
+      "short_es": "Transportín blando con ventanas de malla y correa acolchada.",
+      "description_en": "A soft-sided pet carrier for small dogs and cats. Breathable mesh panels on the sides and top keep air flowing and let pets see out, while a rigid base stops the bag from sagging. Carry it by the padded handle or the detachable shoulder strap.",
+      "description_zh": "适合小型犬猫的软质外出包。侧边与顶部网面透气，宠物视野好；底板硬质不塌陷。可手提，也可用可拆卸肩带斜挎。",
+      "description_ru": "Мягкая переноска для мелких собак и кошек. Сетчатые панели по бокам и сверху обеспечивают вентиляцию и обзор, жёсткое дно не даёт сумке провисать. Носится за мягкую ручку или на съёмном ремне.",
+      "description_es": "Transportín blando para perros pequeños y gatos. Los paneles de malla transpirable laterales y superiores dan ventilación y visibilidad, y la base rígida evita que se hunda. Se lleva con el asa acolchada o con la correa de hombro desmontable.",
+      "specs": [
+        {
+          "k": "Material",
+          "v": "600D oxford + breathable mesh"
+        },
+        {
+          "k": "Sizes",
+          "v": "S / M / L"
+        },
+        {
+          "k": "Load",
+          "v": "Up to 8 kg"
+        },
+        {
+          "k": "Feature",
+          "v": "Mesh windows, rigid base"
+        },
+        {
+          "k": "Custom",
+          "v": "Color, logo, packaging"
+        },
+        {
+          "k": "Lead time",
+          "v": "15–25 days after sample"
+        }
+      ]
+    },
+    {
+      "id": "backpack-expandable-02",
+      "cat": "bags",
+      "moq": "10",
+      "img": "assets/products/pet-backpack-expandable-02.jpg",
+      "images": [
+        "assets/products/pet-backpack-expandable-02.jpg"
+      ],
+      "featured": false,
+      "name_en": "Expandable Pet Backpack",
+      "name_zh": "可扩容宠物双肩背包",
+      "name_ru": "Раскладной рюкзак-переноска",
+      "name_es": "Mochila transportín expandible",
+      "short_en": "Backpack with an expandable mesh side that adds space.",
+      "short_zh": "侧面可拉开扩容，空间更大。",
+      "short_ru": "Рюкзак с раскладной сетчатой боковиной — больше места.",
+      "short_es": "Mochila con lateral de malla expandible que añade espacio.",
+      "description_en": "A pet backpack that expands: unzip the mesh side and the compartment grows, giving pets room to stretch on longer trips. Padded shoulder straps and a chest clip spread the weight, and breathable panels keep the air moving.",
+      "description_zh": "可扩容双肩外出包：拉开侧面网布，空间随之变大，长途出行宠物能舒展身体。加厚肩带与胸扣分散重量，网面透气。",
+      "description_ru": "Рюкзак-переноска с расширением: расстегните сетчатую боковину, и отделение увеличивается, давая питомцу больше места в долгой дороге. Мягкие лямки и нагрудная застёжка распределяют вес, сетка обеспечивает вентиляцию.",
+      "description_es": "Mochila transportín expandible: abre la cremallera del lateral de malla y el compartimento crece para que la mascota estire las patas. Las correas acolchadas y el clip pectoral reparten el peso y los paneles transpirables ventilan.",
+      "specs": [
+        {
+          "k": "Material",
+          "v": "Oxford + breathable mesh"
+        },
+        {
+          "k": "Load",
+          "v": "Up to 7 kg"
+        },
+        {
+          "k": "Feature",
+          "v": "Expandable mesh side panel"
+        },
+        {
+          "k": "Sizes",
+          "v": "One size"
+        },
+        {
+          "k": "Custom",
+          "v": "Color, logo, packaging"
+        },
+        {
+          "k": "Lead time",
+          "v": "15–25 days after sample"
+        }
+      ]
+    },
+    {
+      "id": "backpack-transparent-03",
+      "cat": "bags",
+      "moq": "10",
+      "img": "assets/products/pet-backpack-transparent-03.jpg",
+      "images": [
+        "assets/products/pet-backpack-transparent-03.jpg"
+      ],
+      "featured": true,
+      "name_en": "Transparent Pet Backpack",
+      "name_zh": "透明宠物双肩背包",
+      "name_ru": "Прозрачный рюкзак-переноска",
+      "name_es": "Mochila transportín transparente",
+      "short_en": "Clear bubble backpack with ventilation holes.",
+      "short_zh": "全透明太空舱，带透气孔。",
+      "short_ru": "Прозрачный рюкзак-купол с вентиляционными отверстиями.",
+      "short_es": "Mochila burbuja transparente con orificios de ventilación.",
+      "description_en": "A transparent pet backpack with a panoramic clear window so pets can watch the world go by. Ventilation holes and side mesh keep the air fresh, and the padded straps make it comfortable to carry for hours.",
+      "description_zh": "全透明双肩外出包，全景视窗让宠物一路看风景。透气孔加侧面网布保持空气流通，加厚肩带久背不累。",
+      "description_ru": "Прозрачный рюкзак с панорамным окном, через которое питомец наблюдает за миром. Отверстия и сетка по бокам обеспечивают свежий воздух, мягкие лямки делают носку комфортной.",
+      "description_es": "Mochila transportín transparente con ventana panorámica para que la mascota lo vea todo. Los orificios de ventilación y la malla lateral mantienen el aire fresco y las correas acolchadas la hacen cómoda durante horas.",
+      "specs": [
+        {
+          "k": "Material",
+          "v": "PC shell + oxford"
+        },
+        {
+          "k": "Load",
+          "v": "Up to 6 kg"
+        },
+        {
+          "k": "Feature",
+          "v": "Transparent window, ventilation holes"
+        },
+        {
+          "k": "Sizes",
+          "v": "One size"
+        },
+        {
+          "k": "Custom",
+          "v": "Color, logo, packaging"
+        },
+        {
+          "k": "Lead time",
+          "v": "15–25 days after sample"
+        }
+      ]
+    },
+    {
+      "id": "carrier-car-04",
+      "cat": "bags",
+      "moq": "10",
+      "img": "assets/products/pet-carrier-car-04.jpg",
+      "images": [
+        "assets/products/pet-carrier-car-04.jpg"
+      ],
+      "featured": true,
+      "name_en": "Car-mounted Dual-compartment Pet Carrier",
+      "name_zh": "车载双仓宠物包",
+      "name_ru": "Автомобильная переноска с двумя отделениями",
+      "name_es": "Transportín doble para coche",
+      "short_en": "Two-compartment carrier that doubles as a car seat.",
+      "short_zh": "双仓设计，可当车载宠物座椅。",
+      "short_ru": "Переноска с двумя отделениями, служит и автокреслом.",
+      "short_es": "Transportín de dos compartimentos que también sirve de asiento de coche.",
+      "description_en": "A dual-compartment pet carrier designed to sit on a car seat, keeping two pets separate and secure on the road. Mesh panels give airflow and visibility, and the fold-flat design makes it easy to store between trips.",
+      "description_zh": "双仓宠物包，可放在汽车座椅上，让两只宠物各占一仓、安全互不打扰。网面透气又能看护，不用时可折叠收纳。",
+      "description_ru": "Двухсекционная переноска для автомобильного сиденья: два питомца едут отдельно и безопасно. Сетчатые панели дают вентиляцию и обзор, а в сложенном виде переноска легко хранится.",
+      "description_es": "Transportín de dos compartimentos pensado para el asiento del coche, manteniendo a dos mascotas separadas y seguras. Los paneles de malla dan ventilación y visibilidad, y se pliega para guardarlo.",
+      "specs": [
+        {
+          "k": "Material",
+          "v": "Oxford + breathable mesh"
+        },
+        {
+          "k": "Load",
+          "v": "Up to 12 kg total"
+        },
+        {
+          "k": "Feature",
+          "v": "Dual compartments, car-seat friendly, foldable"
+        },
+        {
+          "k": "Sizes",
+          "v": "One size"
+        },
+        {
+          "k": "Custom",
+          "v": "Color, logo, packaging"
+        },
+        {
+          "k": "Lead time",
+          "v": "15–25 days after sample"
+        }
+      ]
+    },
+    {
+      "id": "carrier-wheels-05",
+      "cat": "bags",
+      "moq": "10",
+      "img": "assets/products/pet-carrier-wheels-05.jpg",
+      "images": [
+        "assets/products/pet-carrier-wheels-05.jpg"
+      ],
+      "featured": false,
+      "name_en": "Transparent Pet Carrier with Rolling Wheels",
+      "name_zh": "透明拉杆宠物箱",
+      "name_ru": "Прозрачная переноска на колёсах",
+      "name_es": "Transportín transparente con ruedas",
+      "short_en": "Clear rolling carrier with a telescopic handle.",
+      "short_zh": "透明箱体，拉杆拖行。",
+      "short_ru": "Прозрачная переноска на колёсах с телескопической ручкой.",
+      "short_es": "Transportín transparente con ruedas y asa telescópica.",
+      "description_en": "A transparent rolling carrier with 360° wheels and a telescopic handle, so you can pull it instead of carrying it. The clear shell gives pets a full view while the openings keep the compartment ventilated.",
+      "description_zh": "透明拉杆猫箱，底部 360° 静音轮配伸缩拉杆，拖着走更省力。透明外壳让宠物视野开阔，开口设计保持通风。",
+      "description_ru": "Прозрачная переноска с колёсами 360° и телескопической ручкой: её удобно катить, а не нести. Прозрачный корпус даёт полный обзор, а проёмы обеспечивают вентиляцию.",
+      "description_es": "Transportín transparente con ruedas de 360° y asa telescópica: se arrastra en lugar de cargarlo. La carcasa transparente da visibilidad total y las aberturas mantienen ventilado el compartimento.",
+      "specs": [
+        {
+          "k": "Material",
+          "v": "PC + aluminium frame"
+        },
+        {
+          "k": "Wheels",
+          "v": "360° silent universal wheels"
+        },
+        {
+          "k": "Load",
+          "v": "Up to 10 kg"
+        },
+        {
+          "k": "Feature",
+          "v": "Transparent shell, telescopic handle"
+        },
+        {
+          "k": "Custom",
+          "v": "Color, logo, packaging"
+        },
+        {
+          "k": "Lead time",
+          "v": "15–25 days after sample"
+        }
+      ]
+    },
+    {
+      "id": "carrier-rattan-06",
+      "cat": "bags",
+      "moq": "10",
+      "img": "assets/products/pet-carrier-rattan-06.jpg",
+      "images": [
+        "assets/products/pet-carrier-rattan-06.jpg"
+      ],
+      "featured": true,
+      "name_en": "Rattan Plaited Articles Pet Carrier with Rolling Wheels",
+      "name_zh": "藤编拉杆宠物箱",
+      "name_ru": "Плетёная переноска из ротанга на колёсах",
+      "name_es": "Transportín de ratán trenzado con ruedas",
+      "short_en": "Hand-woven rattan carrier on silent wheels.",
+      "short_zh": "手工藤编箱体，配静音万向轮。",
+      "short_ru": "Плетёная переноска из ротанга на бесшумных колёсах.",
+      "short_es": "Transportín de ratán tejido a mano con ruedas silenciosas.",
+      "description_en": "A hand-woven rattan carrier that doubles as a piece of home décor. The breathable weave keeps pets cool, the soft cushion inside adds comfort, and the rolling base with a telescopic handle makes travel easy.",
+      "description_zh": "手工藤编宠物箱，居家也像一件装饰品。藤编透气凉爽，内配软垫更舒适；拉杆底座配万向轮，出行更轻松。",
+      "description_ru": "Плетёная из ротанга переноска, которая служит и элементом декора. Дышащее плетение сохраняет прохладу, мягкая подушка добавляет комфорта, а колёсная база с телескопической ручкой облегчает дорогу.",
+      "description_es": "Transportín de ratán tejido a mano que también decora el hogar. El tejido transpirable mantiene fresca a la mascota, el cojín interior aporta comodidad y la base con ruedas y asa telescópica facilita el viaje.",
+      "specs": [
+        {
+          "k": "Material",
+          "v": "Hand-woven rattan + fabric lining"
+        },
+        {
+          "k": "Wheels",
+          "v": "360° silent universal wheels"
+        },
+        {
+          "k": "Load",
+          "v": "Up to 8 kg"
+        },
+        {
+          "k": "Feature",
+          "v": "Hand-woven, removable cushion"
+        },
+        {
+          "k": "Custom",
+          "v": "Color, logo, packaging"
+        },
+        {
+          "k": "Lead time",
+          "v": "20–30 days after sample"
+        }
+      ]
+    },
+    {
+      "id": "carrier-hardsided-07",
+      "cat": "bags",
+      "moq": "10",
+      "img": "assets/products/pet-carrier-hardsided-07.jpg",
+      "images": [
+        "assets/products/pet-carrier-hardsided-07.jpg"
+      ],
+      "featured": true,
+      "name_en": "Hard-Sided Pet Carrier",
+      "name_zh": "硬壳宠物箱",
+      "name_ru": "Жёсткая переноска-контейнер",
+      "name_es": "Transportín rígido para mascotas",
+      "short_en": "Ventilated hard-shell crate for safe transport.",
+      "short_zh": "硬壳箱体，四面通风，运输更安全。",
+      "short_ru": "Вентилируемый жёсткий контейнер для безопасной перевозки.",
+      "short_es": "Transportín rígido ventilado para un traslado seguro.",
+      "description_en": "A hard-sided carrier with a steel-mesh door and cross-ventilation on all sides, built for safe car and air travel. The two-part shell clips together for quick assembly and easy cleaning.",
+      "description_zh": "硬壳宠物箱，钢网门配四面通风，适合汽车与航空托运。上下两片卡扣拼装，拆装清洗都快。",
+      "description_ru": "Жёсткая переноска со стальной сетчатой дверцей и сквозной вентиляцией со всех сторон — для безопасной поездки в машине и самолёте. Две части корпуса соединяются защёлками: быстро собрать и легко мыть.",
+      "description_es": "Transportín rígido con puerta de malla de acero y ventilación cruzada por todos los lados, pensado para viajar en coche y en avión con seguridad. Las dos piezas de la carcasa se encajan para montarlo y limpiarlo rápido.",
+      "specs": [
+        {
+          "k": "Material",
+          "v": "PP hard shell + steel mesh door"
+        },
+        {
+          "k": "Sizes",
+          "v": "S / M / L"
+        },
+        {
+          "k": "Load",
+          "v": "Up to 12 kg"
+        },
+        {
+          "k": "Feature",
+          "v": "Ventilated, quick-assembly shell"
+        },
+        {
+          "k": "Custom",
+          "v": "Color, logo, packaging"
+        },
+        {
+          "k": "Lead time",
+          "v": "20–30 days after sample"
+        }
+      ]
+    },
+    {
+      "id": "carrier-hardshell-08",
+      "cat": "bags",
+      "moq": "10",
+      "img": "assets/products/pet-carrier-hardshell-08.jpg",
+      "images": [
+        "assets/products/pet-carrier-hardshell-08.jpg"
+      ],
+      "featured": true,
+      "name_en": "Large Hard Shell Pet Carrier with Wheels",
+      "name_zh": "大号带轮硬壳宠物箱",
+      "name_ru": "Большая жёсткая переноска на колёсах",
+      "name_es": "Transportín rígido grande con ruedas",
+      "short_en": "Large wheeled hard shell for bigger pets.",
+      "short_zh": "大容量硬壳箱，带轮拖行。",
+      "short_ru": "Большой жёсткий корпус на колёсах для крупных питомцев.",
+      "short_es": "Carcasa rígida grande con ruedas para mascotas más grandes.",
+      "description_en": "A large hard-shell carrier on wheels, sized for medium pets. The reinforced shell protects your pet in transit, ventilation slots keep air moving, and the telescopic handle and wheels take the strain off your back.",
+      "description_zh": "大号硬壳带轮宠物箱，适合中型宠物。加厚壳体在途中提供保护，通风孔保持空气流通；伸缩拉杆配万向轮，拖着走不费腰。",
+      "description_ru": "Большая жёсткая переноска на колёсах для питомцев среднего размера. Усиленный корпус защищает в дороге, вентиляционные прорези обеспечивают циркуляцию воздуха, а телескопическая ручка и колёса снимают нагрузку со спины.",
+      "description_es": "Transportín rígido grande con ruedas, para mascotas medianas. La carcasa reforzada protege durante el viaje, las ranuras de ventilación mantienen el aire en movimiento y el asa telescópica con ruedas alivian la espalda.",
+      "specs": [
+        {
+          "k": "Material",
+          "v": "PP hard shell + steel mesh"
+        },
+        {
+          "k": "Wheels",
+          "v": "360° silent universal wheels"
+        },
+        {
+          "k": "Load",
+          "v": "Up to 15 kg"
+        },
+        {
+          "k": "Feature",
+          "v": "Reinforced shell, telescopic handle"
+        },
+        {
+          "k": "Custom",
+          "v": "Color, logo, packaging"
+        },
+        {
+          "k": "Lead time",
+          "v": "20–30 days after sample"
         }
       ]
     }

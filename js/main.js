@@ -105,7 +105,7 @@ function productImages(p) {
     .map(x => (x && typeof x === "object" ? (x.img || x.src || "") : x))
     .filter(Boolean);
   if (!imgs.length && p.img) imgs = [p.img];
-  while (imgs.length < 8) imgs.push(PLACEHOLDER_IMG);
+  if (!imgs.length) imgs = [PLACEHOLDER_IMG];
   return imgs.slice(0, 8);
 }
 
@@ -118,8 +118,7 @@ function cardHTML(p) {
         <div class="body">
           <span class="cat">${catName(p.cat)}</span>
           <h3>${pName(p)}</h3>
-          <span class="moq">${p.moq || ""}</span>
-          <span class="price">${p.price || ""}</span>
+          <span class="moq">${t("det.moq")} ${p.moq || ""}</span>
         </div>
       </a>
       <a href="contact.html" class="btn btn-primary pc-quote">${t("card.quote")}</a>
@@ -225,7 +224,6 @@ function renderDetail() {
       <span class="eyebrow">${catName(p.cat)}</span>
       <h1>${name}</h1>
       <p>${desc}</p>
-      <div class="price">${t("det.from").replace("{p}", p.price || "")}</div>
       <ul class="spec-list">
         ${specs}
         <li><span>${t("det.moq")}</span><span>${p.moq || ""}</span></li>
@@ -276,8 +274,6 @@ function injectProductJSONLD(p) {
     "brand": { "@type": "Brand", "name": (SITE.company || "Poteho") },
     "offers": {
       "@type": "Offer",
-      "priceCurrency": "USD",
-      "price": String(p.price || "").replace(/[^0-9.]/g, "") || "0",
       "availability": "https://schema.org/InStock"
     }
   });
