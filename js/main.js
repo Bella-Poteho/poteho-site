@@ -230,9 +230,10 @@ function renderDetail() {
       </ul>
       <a href="contact.html" class="btn btn-primary">${t("det.quote")}</a>
 
-      <form class="lead-form" onsubmit="return handleLeadForm(this)">
+      <form class="lead-form" name="lead" onsubmit="return handleLeadForm(this)">
         <h3>${t("lead.title")}</h3>
         <p>${t("lead.sub")}</p>
+        <input type="hidden" name="form-name" value="lead" />
         <input type="hidden" name="product" value="${name}" />
         <div class="form-success" id="leadSuccess">${t("lead.success")}</div>
         <div class="field"><label>${t("form.name")}</label><input type="text" name="name" required /></div>
@@ -464,6 +465,9 @@ async function submitForm(form, successId) {
     const hp = fd.get("bot-field");
     if (hp) fd.set("bot-field", "");
   }
+  // Where to POST: the endpoint can be a third-party service, otherwise we
+  // send to the current page so Netlify matches the form that lives here.
+  const postUrl = FORM_ENDPOINT || (form && form.getAttribute("action")) || location.pathname;
   if (FORM_ENDPOINT) {
     // Formspree / third-party endpoint (JSON)
     try {
@@ -479,17 +483,20 @@ async function submitForm(form, successId) {
       alert("Something went wrong sending your message. Please email info@poteho.com directly.");
     }
   } else {
-    // Netlify Forms (application/x-www-form-urlencoded, same-page POST)
+    // Netlify Forms (application/x-www-form-urlencoded). We POST to the page
+    // that contains the form and check the response so a failed submit is
+    // reported to the visitor instead of showing a fake success message.
     try {
-      await fetch("/", {
+      const res = await fetch(postUrl, {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
         body: new URLSearchParams(fd).toString()
       });
+      if (!res.ok) throw new Error("Form submit returned " + res.status);
       if (success) success.classList.add("show");
       form.reset();
     } catch (e) {
-      alert("Something went wrong sending your message. Please email info@poteho.com directly.");
+      alert("Your message could not be sent (the form service returned an error). Please email info@poteho.com directly and we'll get back to you.");
     }
   }
   return false;

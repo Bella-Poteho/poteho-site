@@ -37,6 +37,13 @@
       if (form) form.reset();
       return false;
     };
+    var fail = function () {
+      alert("Your message could not be sent (the form service returned an error). Please email info@poteho.com directly and we'll get back to you.");
+      return false;
+    };
+    // Where to POST: third-party endpoint, otherwise the page that contains
+    // the form (so Netlify matches the registered form on this page).
+    var postUrl = FORM_ENDPOINT || (form && form.getAttribute("action")) || location.pathname;
     if (FORM_ENDPOINT) {
       fetch(FORM_ENDPOINT, {
         method: "POST",
@@ -45,19 +52,19 @@
       }).then(function (res) {
         if (!res.ok) throw new Error("bad");
         done();
-      }).catch(function () {
-        alert("Something went wrong. Please email info@poteho.com directly.");
-      });
+      }).catch(fail);
       return false;
     }
-    // Netlify Forms
-    fetch("/", {
+    // Netlify Forms — check the response so a failed submit is reported
+    // instead of showing a fake success message.
+    fetch(postUrl, {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: new URLSearchParams(fd).toString()
-    }).then(done).catch(function () {
-      alert("Something went wrong. Please email info@poteho.com directly.");
-    });
+    }).then(function (res) {
+      if (!res.ok) throw new Error("bad");
+      done();
+    }).catch(fail);
     return false;
   }
   function handleLeadForm(form) { return submitForm(form, "leadSuccess"); }
