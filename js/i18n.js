@@ -7,8 +7,8 @@
    - Language choice is saved in localStorage ("poteho-lang").
    ========================================================= */
 
-const I18N_LANGS = ["en", "ru", "es", "zh"];
-const I18N_LABELS = { en: "EN", ru: "RU", es: "ES", zh: "中文" };
+const I18N_LANGS = ["en", "ru", "zh"];
+const I18N_LABELS = { en: "EN", ru: "RU", zh: "中文" };
 
 const I18N = {
   /* ---------------- English ---------------- */

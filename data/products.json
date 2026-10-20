@@ -838,6 +838,66 @@
           "v": "20–30 days after sample"
         }
       ]
+    },
+    {
+      "id": "bed-bear",
+      "cat": "bed",
+      "moq": "",
+      "img": "assets/products/bed-bear.jpg",
+      "images": [
+        "assets/products/bed-bear.jpg"
+      ],
+      "featured": false,
+      "name_en": "Bear Hug Round Pet Bed",
+      "name_zh": "熊头抱抱圆形宠物窝",
+      "name_ru": "Круглая лежанка «Медвежонок»",
+      "short_en": "A plush round bed with a bear-shaped bolster to lean on.",
+      "short_zh": "毛绒圆形宠物窝，熊形围边可以当枕头靠。",
+      "short_ru": "Круглая плюшевая лежанка с бортиком-медвежонком, на который можно положить голову.",
+      "description_en": "A round plush bed with a bear-shaped bolster wrapped along one side, so cats and small dogs have something to rest their head against instead of the floor. The centre is striped sherpa-style fleece, the base is finished with a stitched, non-slip edge, and the cover can be washed.",
+      "description_zh": "圆形毛绒宠物窝，一侧做成熊形围边，猫和小型犬可以把头枕在上面。中间是条纹绒面垫，底部缝线包边、不易打滑，外套可拆洗。",
+      "description_ru": "Круглая плюшевая лежанка с бортиком в виде медвежонка: кошка или небольшая собака может положить на него голову. В центре — полосатый флис, основание с прошитым нескользящим краем, чехол можно стирать.",
+      "specs": []
+    },
+    {
+      "id": "bed-mat",
+      "cat": "bed",
+      "moq": "",
+      "img": "assets/products/bed-mat.jpg",
+      "images": [
+        "assets/products/bed-mat.jpg"
+      ],
+      "featured": false,
+      "name_en": "Bunny Print Fleece Pet Mat",
+      "name_zh": "卡通兔印花绒面宠物垫",
+      "name_ru": "Флисовый коврик с принтом «Зайчики»",
+      "short_en": "A soft fleece mat for crates, sofas and car seats.",
+      "short_zh": "柔软绒面宠物垫，笼内、沙发、车座都能用。",
+      "short_ru": "Мягкий флисовый коврик для клетки, дивана и сиденья автомобиля.",
+      "description_en": "A soft plush fleece mat with a quilted centre panel and a bunny-and-carrot print. It works as a crate liner, a sofa cover or a car-seat mat, and the PU backing keeps it from sliding on smooth floors.",
+      "description_zh": "绒面宠物垫，中间绗缝分区，印着兔子和胡萝卜图案。可以铺在笼子里、沙发上或车座上，背面 PU 防滑，不容易在光滑地面滑动。",
+      "description_ru": "Мягкий флисовый коврик со стёганой центральной частью и принтом с зайчиками и морковками. Подходит для клетки, дивана и сиденья автомобиля, а покрытие PU не даёт ему скользить по гладкому полу.",
+      "specs": []
+    },
+    {
+      "id": "bed-rattan",
+      "cat": "bed",
+      "moq": "",
+      "img": "assets/products/bed-rattan.jpg",
+      "images": [
+        "assets/products/bed-rattan.jpg"
+      ],
+      "featured": false,
+      "name_en": "Woven Rope Cat Basket",
+      "name_zh": "手工绳编猫窝",
+      "name_ru": "Плетёная корзина-лежанка для кошек",
+      "short_en": "A hand-woven rope basket with two handles and a hanging toy.",
+      "short_zh": "手工绳编猫窝，两侧提手，附悬挂逗猫球。",
+      "short_ru": "Плетёная корзина с двумя ручками и подвесной игрушкой.",
+      "description_en": "A hand-woven cotton-rope basket with a two-tone rim and a leather label on the front. Two side handles make it easy to move from room to room, and the knotted ball on a cord gives cats something to bat at. The cushion inside is reversible.",
+      "description_zh": "棉绳手工编织猫窝，双色围边，正面一块皮质标牌。两侧提手方便搬动，绳子末端系着编织球，猫可以拨着玩。内垫可翻面使用。",
+      "description_ru": "Корзина ручной работы из хлопкового шнура с двухцветным краем и кожаной биркой. Две ручки позволяют легко переносить её из комнаты в комнату, а плетёный шарик на шнуре займёт кошку. Подушка внутри двусторонняя.",
+      "specs": []
     }
   ]
 }

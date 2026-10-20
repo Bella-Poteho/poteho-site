@@ -182,6 +182,13 @@ function renderProduct(p, lang) {
     })
     .join("");
 
+  const moqLi = p.moq
+    ? `<li><span>${esc(t(lang, "det.moq"))}</span><span>${esc(p.moq)}</span></li>`
+    : "";
+  const specList = specs || moqLi
+    ? `<ul class="spec-list">${specs}${moqLi}</ul>`
+    : "";
+
   const breadcrumb = `<nav class="breadcrumb">
       <a href="/index.html">${esc(t(lang, "bc.home"))}</a> / <a href="/products.html">${esc(
     t(lang, "bc.products")
@@ -203,12 +210,7 @@ function renderProduct(p, lang) {
         <span class="eyebrow">${esc(catName)}</span>
         <h1>${esc(name)}</h1>
         <p>${esc(desc)}</p>
-        <ul class="spec-list">
-          ${specs}
-          <li><span>${esc(t(lang, "det.moq"))}</span><span>${esc(
-    p.moq || ""
-  )}</span></li>
-        </ul>
+        ${specList}
         <a href="/contact.html" class="btn btn-primary">${esc(
     t(lang, "det.quote")
   )}</a>
@@ -278,7 +280,6 @@ function renderProduct(p, lang) {
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="alternate" hreflang="en" href="${SITE}/products/${p.id}.html" />
   <link rel="alternate" hreflang="ru" href="${SITE}/products/${p.id}.ru.html" />
-  <link rel="alternate" hreflang="es" href="${SITE}/products/${p.id}.es.html" />
   <link rel="alternate" hreflang="zh" href="${SITE}/products/${p.id}.zh.html" />
   <link rel="alternate" hreflang="x-default" href="${SITE}/products/${p.id}.html" />`;
 
@@ -293,7 +294,6 @@ function blogLangSwitch(slug) {
   return (
     `<a href="/blog/${slug}.html" class="on" hreflang="en">EN</a>` +
     `<a href="/index.html" hreflang="ru">RU</a>` +
-    `<a href="/index.html" hreflang="es">ES</a>` +
     `<a href="/index.html" hreflang="zh">中文</a>`
   );
 }
