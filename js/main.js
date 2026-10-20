@@ -63,6 +63,7 @@ function renderAll() {
   injectSiteInfo();
   renderCats();        // category chips (products.html)
   renderFeatured();    // homepage featured grid
+  renderCategoryShowcase(); // homepage category cards (3 products each)
   renderGrid();        // products.html full grid
   renderCategoryPage();// category.html
   renderDetail();      // product.html
@@ -114,7 +115,7 @@ function cardHTML(p) {
   return `
     <div class="product-card">
       <a class="pc-link" href="/products/${p.id}.html">
-        <div class="thumb"><img src="${p.img || PLACEHOLDER_IMG}" alt="${pName(p)}" loading="lazy" /></div>
+        <div class="thumb"><img src="${productImages(p)[0]}" alt="${pName(p)}" loading="lazy" /></div>
         <div class="body">
           <span class="cat">${catName(p.cat)}</span>
           <h3>${pName(p)}</h3>
@@ -128,6 +129,36 @@ function cardHTML(p) {
 function renderFeatured() {
   const el = document.getElementById("featuredProducts");
   if (el) el.innerHTML = PRODUCTS.filter(p => p.featured).map(cardHTML).join("");
+}
+
+/* ---------- Homepage category showcase (3 products per category) ---------- */
+const PAW_SVG = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="16.2" rx="4.9" ry="4.1"/><ellipse cx="6" cy="10" rx="2.2" ry="2.9"/><ellipse cx="10.5" cy="7.2" rx="2.2" ry="2.9"/><ellipse cx="15.5" cy="7.2" rx="2.2" ry="2.9"/><ellipse cx="20" cy="10" rx="2.2" ry="2.9"/></svg>';
+
+function catProdBits(p) {
+  const src = productImages(p)[0];
+  const hasPhoto = src && src !== PLACEHOLDER_IMG;
+  const thumb = hasPhoto
+    ? `<span class="cp-thumb"><img src="${src}" alt="${pName(p)}" loading="lazy" /></span>`
+    : `<span class="cp-thumb">${PAW_SVG}</span>`;
+  return `<a class="cat-prod" href="/products/${p.id}.html">${thumb}<span>${pName(p)}</span></a>`;
+}
+
+/* Fills every .cat-products[data-cat] container with up to 3 products. */
+function renderCategoryShowcase() {
+  const boxes = document.querySelectorAll(".cat-products[data-cat]");
+  if (!boxes.length) return;
+  boxes.forEach(box => {
+    const cat = box.getAttribute("data-cat");
+    /* Prefer products that actually have a photo, then keep the original order. */
+    const hasPhoto = p => productImages(p)[0] !== PLACEHOLDER_IMG ? 1 : 0;
+    const list = PRODUCTS.filter(p => p.cat === cat)
+      .slice()
+      .sort((a, b) => hasPhoto(b) - hasPhoto(a))
+      .slice(0, 3);
+    box.innerHTML = list.length
+      ? list.map(catProdBits).join("")
+      : `<span class="cat-empty">${t("cat.soon")}</span>`;
+  });
 }
 
 /* ---------- Category chips (products.html) ---------- */
@@ -270,7 +301,7 @@ function injectProductJSONLD(p) {
     "@context": "https://schema.org",
     "@type": "Product",
     "name": tf(p.name_en || p.name),
-    "image": "https://www.poteho.com/" + (p.img || PLACEHOLDER_IMG),
+    "image": "https://www.poteho.com/" + productImages(p)[0].replace(/^\//, ""),
     "description": tf(p.description_en || p.description || p.short_en || p.short || ""),
     "brand": { "@type": "Brand", "name": (SITE.company || "Poteho") },
     "offers": {

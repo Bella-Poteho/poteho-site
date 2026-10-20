@@ -17,7 +17,7 @@ const I18N = {
     "nav.about": "About", "nav.contact": "Contact", "nav.quote": "Get a Quote",
 
     "footer.desc": "Premium pet carriers and pet supplies, wholesale to retailers and brands worldwide. Low MOQ, custom branding and reliable shipping.",
-    "footer.products": "Products", "footer.company": "Company", "footer.connect": "Connect",
+    "footer.products": "Products", "footer.company": "Company", "footer.connect": "Contact",
     "footer.aboutus": "About us", "footer.blog": "Blog", "footer.contact": "Contact",
     "footer.getquote": "Get a quote", "footer.cookie": "Cookie Policy",
     "footer.email": "Email", "footer.whatsapp": "WhatsApp / WeChat",
@@ -27,6 +27,10 @@ const I18N = {
     "cat.all": "All", "cat.bags": "Carrier", "cat.bed": "Bed",
     "cat.apparel": "Apparel", "cat.leashes": "Leashes", "cat.feeding": "Feeding",
     "cat.others": "Others", "opt.custom": "Custom project",
+    "cat.bags.sub": "Travel in comfort →", "cat.bed.sub": "Rest in comfort →",
+    "cat.apparel.sub": "Dressed for any weather →", "cat.leashes.sub": "Walk in style →",
+    "cat.feeding.sub": "Hydration & meals →", "cat.others.sub": "Much more →",
+    "cat.viewall": "View all products →", "cat.soon": "Coming soon",
 
     "form.name": "Name *", "form.company": "Company", "form.email": "Email *",
     "form.interest": "Product interest *", "form.select": "Select a category…",
@@ -231,7 +235,7 @@ const I18N = {
     "nav.about": "Nosotros", "nav.contact": "Contacto", "nav.quote": "Pedir cotización",
 
     "footer.desc": "Transportines y artículos premium para mascotas, al por mayor para minoristas y marcas de todo el mundo. Pedido mínimo bajo, marca personalizada y envío fiable.",
-    "footer.products": "Productos", "footer.company": "Empresa", "footer.connect": "Conexión",
+    "footer.products": "Productos", "footer.company": "Empresa", "footer.connect": "Contacto",
     "footer.aboutus": "Sobre nosotros", "footer.blog": "Blog", "footer.contact": "Contacto",
     "footer.getquote": "Pedir cotización", "footer.cookie": "Política de cookies",
     "footer.email": "Correo", "footer.whatsapp": "WhatsApp / WeChat",
@@ -348,6 +352,10 @@ const I18N = {
     "cat.all": "全部", "cat.bags": "外出包", "cat.bed": "宠物床",
     "cat.apparel": "衣服", "cat.leashes": "牵引绳", "cat.feeding": "喂养",
     "cat.others": "其他", "opt.custom": "定制项目",
+    "cat.bags.sub": "舒适出行 →", "cat.bed.sub": "安心休憩 →",
+    "cat.apparel.sub": "四季有衣 →", "cat.leashes.sub": "遛宠有型 →",
+    "cat.feeding.sub": "饮水喂食 →", "cat.others.sub": "更多品类 →",
+    "cat.viewall": "查看全部产品 →", "cat.soon": "即将上线",
 
     "form.name": "姓名 *", "form.company": "公司", "form.email": "邮箱 *",
     "form.interest": "感兴趣的产品 *", "form.select": "请选择分类…",

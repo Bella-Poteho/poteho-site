@@ -133,13 +133,60 @@
         <span class="eyebrow" data-i18n="shop.eyebrow">Shop by category</span>
         <h2 data-i18n="shop.h2">Everything your customers' pets need</h2>
       </div>
-      <div class="grid-3">
-        <a href="category.html?cat=bags" class="cat-tile"><h3 data-i18n="cat.bags">Carrier</h3><span>Travel in comfort →</span></a>
-        <a href="category.html?cat=bed" class="cat-tile teal"><h3 data-i18n="cat.bed">Bed</h3><span>Rest in comfort →</span></a>
-        <a href="category.html?cat=apparel" class="cat-tile"><h3 data-i18n="cat.apparel">Apparel</h3><span>Dressed for any weather →</span></a>
-        <a href="category.html?cat=leashes" class="cat-tile teal"><h3 data-i18n="cat.leashes">Leashes</h3><span>Walk in style →</span></a>
-        <a href="category.html?cat=feeding" class="cat-tile"><h3 data-i18n="cat.feeding">Feeding</h3><span>Hydration & meals →</span></a>
-        <a href="category.html?cat=others" class="cat-tile teal"><h3 data-i18n="cat.others">Others</h3><span>Much more →</span></a>
+      <div class="cat-grid">
+        <article class="cat-card">
+          <a class="cat-head" href="category.html?cat=bags">
+            <h3 data-i18n="cat.bags">Carrier</h3>
+            <span data-i18n="cat.bags.sub">Travel in comfort →</span>
+          </a>
+          <div class="cat-products" data-cat="bags"><!-- filled by JS --></div>
+          <a class="cat-all" href="category.html?cat=bags" data-i18n="cat.viewall">View all products →</a>
+        </article>
+
+        <article class="cat-card">
+          <a class="cat-head" href="category.html?cat=bed">
+            <h3 data-i18n="cat.bed">Bed</h3>
+            <span data-i18n="cat.bed.sub">Rest in comfort →</span>
+          </a>
+          <div class="cat-products" data-cat="bed"></div>
+          <a class="cat-all" href="category.html?cat=bed" data-i18n="cat.viewall">View all products →</a>
+        </article>
+
+        <article class="cat-card">
+          <a class="cat-head" href="category.html?cat=apparel">
+            <h3 data-i18n="cat.apparel">Apparel</h3>
+            <span data-i18n="cat.apparel.sub">Dressed for any weather →</span>
+          </a>
+          <div class="cat-products" data-cat="apparel"></div>
+          <a class="cat-all" href="category.html?cat=apparel" data-i18n="cat.viewall">View all products →</a>
+        </article>
+
+        <article class="cat-card">
+          <a class="cat-head" href="category.html?cat=leashes">
+            <h3 data-i18n="cat.leashes">Leashes</h3>
+            <span data-i18n="cat.leashes.sub">Walk in style →</span>
+          </a>
+          <div class="cat-products" data-cat="leashes"></div>
+          <a class="cat-all" href="category.html?cat=leashes" data-i18n="cat.viewall">View all products →</a>
+        </article>
+
+        <article class="cat-card">
+          <a class="cat-head" href="category.html?cat=feeding">
+            <h3 data-i18n="cat.feeding">Feeding</h3>
+            <span data-i18n="cat.feeding.sub">Hydration &amp; meals →</span>
+          </a>
+          <div class="cat-products" data-cat="feeding"></div>
+          <a class="cat-all" href="category.html?cat=feeding" data-i18n="cat.viewall">View all products →</a>
+        </article>
+
+        <article class="cat-card">
+          <a class="cat-head" href="category.html?cat=others">
+            <h3 data-i18n="cat.others">Others</h3>
+            <span data-i18n="cat.others.sub">Much more →</span>
+          </a>
+          <div class="cat-products" data-cat="others"></div>
+          <a class="cat-all" href="category.html?cat=others" data-i18n="cat.viewall">View all products →</a>
+        </article>
       </div>
     </div>
   </section>
@@ -199,7 +246,7 @@
         <a href="category.html?cat=others" data-i18n="cat.others">Others</a>
       </div>
       <div><h4 data-i18n="footer.company">Company</h4><a href="about.html" data-i18n="footer.aboutus">About us</a><a href="blog.html" data-i18n="footer.blog">Blog</a><a href="contact.html" data-i18n="footer.contact">Contact</a><a href="contact.html" data-i18n="footer.getquote">Get a quote</a><a href="cookie.html" data-i18n="footer.cookie">Cookie Policy</a></div>
-      <div><h4 data-i18n="footer.connect">Connect</h4><a id="fEmail" href="#">info@poteho.com</a><a id="fWhatsapp" href="#" data-i18n="footer.whatsapp">WhatsApp / WeChat</a><a id="fLinkedin" href="#" target="_blank" rel="noopener">LinkedIn</a></div>
+      <div><h4 data-i18n="footer.connect">Contact</h4><a id="fEmail" href="#">info@poteho.com</a><a id="fWhatsapp" href="#" data-i18n="footer.whatsapp">WhatsApp / WeChat</a><a id="fLinkedin" href="#" target="_blank" rel="noopener">LinkedIn</a></div>
     </div>
     <div class="container footer-bottom">
       <span>© <span id="year"></span> <span data-i18n="footer.rights">Poteho. All rights reserved.</span></span>
