@@ -1,481 +1,21 @@
 {
   "products": [
     {
-      "id": "bag-trolley-01",
-      "cat": "bags",
-      "moq": "10",
-      "images": [],
-      "featured": false,
-      "name_en": "Foldable Pet Trolley Bag",
-      "name_zh": "可折叠宠物拉杆车",
-      "name_ru": "Складная тележка-переноска для питомцев",
-      "name_es": "Carrito plegable para mascotas",
-      "short_en": "A rolling travel cabin that folds flat for storage.",
-      "short_zh": "可折叠收纳的拉杆外出包，出行省力。",
-      "short_ru": "Тележка для путешествий, складывается для хранения.",
-      "short_es": "Cabina de viaje con ruedas que se pliega para guardar.",
-      "description_en": "A rolling travel cabin for pets up to 15 kg. Telescopic handle and silent 360° wheels make airport and mall trips easy, and the whole unit folds flat when not in use. Mesh panels keep pets cool and let them see out.",
-      "description_zh": "承重 15 公斤以内的拉杆外出包。伸缩拉杆配合 360° 静音轮，逛商场、赶飞机都轻松；不用时整体可折叠收纳。网面透气，宠物视野开阔。",
-      "description_ru": "Тележка-переноска для питомцев до 15 кг. Телескопическая ручка и бесшумные колёса с поворотом 360° облегчают поездки, а в сложенном виде она почти не занимает места. Сетчатые панели обеспечивают вентиляцию и обзор.",
-      "description_es": "Cabina de viaje con ruedas para mascotas de hasta 15 kg. El asa telescópica y las ruedas silenciosas de 360° facilitan los viajes, y se pliega completamente cuando no se usa. Paneles de malla para ventilación y visibilidad.",
-      "specs": [
-        {
-          "k": "Material",
-          "v": "600D oxford fabric + steel frame"
-        },
-        {
-          "k": "Sizes",
-          "v": "M / L"
-        },
-        {
-          "k": "Load",
-          "v": "Up to 15 kg"
-        },
-        {
-          "k": "Wheels",
-          "v": "360° silent universal wheels"
-        },
-        {
-          "k": "Custom",
-          "v": "Color, logo, packaging"
-        },
-        {
-          "k": "Lead time",
-          "v": "15–25 days after sample"
-        }
-      ]
-    },
-    {
-      "id": "bag-backpack-02",
-      "cat": "bags",
-      "moq": "10",
-      "images": [],
-      "featured": false,
-      "name_en": "Breathable Pet Backpack Carrier",
-      "name_zh": "透气宠物双肩背包",
-      "name_ru": "Вентилируемый рюкзак-переноска",
-      "name_es": "Mochila transportín transpirable",
-      "short_en": "Front or back carry, with a bubble window cats love.",
-      "short_zh": "前背后背都行，猫咪喜欢的太空舱视窗。",
-      "short_ru": "Носится спереди или сзади, с прозрачным окном.",
-      "short_es": "Se lleva delante o detrás, con ventana transparente.",
-      "description_en": "A ventilated backpack carrier for small dogs and cats up to 8 kg. Semi-sphere bubble window, breathable mesh sides and an adjustable, padded harness-style strap system for comfortable carrying.",
-      "description_zh": "适合 8 公斤以内小型犬猫的透气双肩外出包。半球形太空舱视窗，两侧网面透气，宽肩带减压设计，背起来更轻松。",
-      "description_ru": "Вентилируемый рюкзак для мелких собак и кошек до 8 кг. Полусферическое окно, дышащие сетчатые стенки и широкие мягкие лямки для комфортной переноски.",
-      "description_es": "Mochila transportín ventilada para perros pequeños y gatos de hasta 8 kg. Ventila burbuja, laterales de malla transpirable y correas acolchadas ajustables.",
-      "specs": [
-        {
-          "k": "Material",
-          "v": "Polyester + PC bubble window"
-        },
-        {
-          "k": "Load",
-          "v": "Up to 8 kg"
-        },
-        {
-          "k": "Feature",
-          "v": "Bubble window + mesh ventilation"
-        },
-        {
-          "k": "Custom",
-          "v": "Color, logo, packaging"
-        },
-        {
-          "k": "Lead time",
-          "v": "15–25 days after sample"
-        }
-      ]
-    },
-    {
-      "id": "bag-carrier-03",
-      "cat": "bags",
-      "moq": "10",
-      "images": [],
-      "featured": false,
-      "name_en": "Soft-Sided Pet Travel Carrier",
-      "name_zh": "宠物外出软包",
-      "name_ru": "Мягкая сумка-переноска",
-      "name_es": "Transportín blando de viaje",
-      "short_en": "Airline-friendly soft carrier with a rigid base.",
-      "short_zh": "符合航空标准的软包，底部硬质防塌。",
-      "short_ru": "Мягкая переноска с жёстким дном, подходит для авиаперелётов.",
-      "short_es": "Transportín blando apto para avión, con base rígida.",
-      "description_en": "A lightweight soft carrier approved by most airlines. Rigid removable base keeps its shape, two entry points make loading easy, and the shoulder strap is padded for comfort.",
-      "description_zh": "轻便软包，符合大多数航空公司的登机要求。可拆硬底板保持包型，双开口设计方便放入宠物，肩带加粗减压。",
-      "description_ru": "Лёгкая мягкая переноска, одобренная большинством авиакомпаний. Съёмное жёсткое дно держит форму, два входа упрощают посадку питомца, плечевой ремень мягкий.",
-      "description_es": "Transportín blando y ligero, apto para la mayoría de aerolíneas. Base rígida extraíble, dos aberturas de entrada y correa de hombro acolchada.",
-      "specs": [
-        {
-          "k": "Material",
-          "v": "Polyester + removable board"
-        },
-        {
-          "k": "Sizes",
-          "v": "S / M / L"
-        },
-        {
-          "k": "Feature",
-          "v": "Airline-friendly, dual entry"
-        },
-        {
-          "k": "Custom",
-          "v": "Color, logo, packaging"
-        },
-        {
-          "k": "Lead time",
-          "v": "15–25 days after sample"
-        }
-      ]
-    },
-    {
-      "id": "bed-donut",
-      "cat": "bed",
-      "moq": "10",
-      "images": [],
-      "featured": false,
-      "name_en": "Calming Donut Pet Bed",
-      "name_zh": "安抚甜甜圈宠物窝",
-      "name_ru": "Уютная лежанка-пончик",
-      "name_es": "Cama donut calmante para mascotas",
-      "short_en": "A soft, self-warming bed that pets curl into.",
-      "short_zh": "柔软蓄暖，宠物爱蜷睡其中。",
-      "short_ru": "Мягкая тёплая лежанка, в которую питомцы сворачиваются.",
-      "short_es": "Cama suave y abrigada donde las mascotas se acurrucan.",
-      "description_en": "A plush donut bed with raised edges that gives pets a sense of security while they sleep. The self-warming inner layer keeps them cozy on cold days, and the removable cover is machine washable.",
-      "description_zh": "加高边缘的毛绒甜甜圈窝，给宠物安全感。内层蓄暖，冷天也舒适；外罩可拆卸机洗。",
-      "description_ru": "Плюшевая лежанка-пончик с высокими бортами даёт питомцу чувство защищённости. Тёплый внутренний слой сохраняет тепло, чехол снимается и стирается в машине.",
-      "description_es": "Cama de felpa tipo donut con bordes altos que da seguridad a la mascota. La capa interior conserva el calor y la funda es desmontable y lavable a máquina.",
-      "specs": [
-        {
-          "k": "Material",
-          "v": "Plush + PP cotton"
-        },
-        {
-          "k": "Sizes",
-          "v": "S / M / L"
-        },
-        {
-          "k": "Care",
-          "v": "Machine-washable cover"
-        },
-        {
-          "k": "Custom",
-          "v": "Color, logo, packaging"
-        },
-        {
-          "k": "Lead time",
-          "v": "15–25 days after sample"
-        }
-      ]
-    },
-    {
-      "id": "bed-ortho",
-      "cat": "bed",
-      "moq": "10",
-      "images": [],
-      "featured": false,
-      "name_en": "Orthopedic Memory Foam Pet Bed",
-      "name_zh": "记忆棉护脊宠物床",
-      "name_ru": "Ортопедическая лежанка с эффектом памяти",
-      "name_es": "Cama ortopédica viscoelástica",
-      "short_en": "Supportive memory foam for joints and older pets.",
-      "short_zh": "记忆棉支撑，呵护关节与老年宠物。",
-      "short_ru": "Поддерживающая пена с эффектом памяти для суставов и пожилых питомцев.",
-      "short_es": "Espuma viscoelástica que cuida articulaciones y mascotas mayores.",
-      "description_en": "A supportive memory-foam bed that cushions hips and joints, ideal for senior dogs and cats. The cover unzips for easy washing and the non-slip base keeps it in place.",
-      "description_zh": "记忆棉床垫支撑髋部与关节，适合老年猫狗。外罩可拉链拆洗，防滑底保持稳固。",
-      "description_ru": "Ортопедическая лежанка из пены с эффектом памяти поддерживает бёдра и суставы, подходит пожилым собакам и кошкам. Чехол на молнии, нескользящее основание.",
-      "description_es": "Cama de espuma viscoelástica que protege caderas y articulaciones, ideal para perros y gatos mayores. Funda con cremallera y base antideslizante.",
-      "specs": [
-        {
-          "k": "Material",
-          "v": "Memory foam + fabric"
-        },
-        {
-          "k": "Sizes",
-          "v": "M / L / XL"
-        },
-        {
-          "k": "Care",
-          "v": "Removable washable cover"
-        },
-        {
-          "k": "Custom",
-          "v": "Color, logo, packaging"
-        },
-        {
-          "k": "Lead time",
-          "v": "20–30 days after sample"
-        }
-      ]
-    },
-    {
-      "id": "apparel-jacket-01",
-      "cat": "apparel",
-      "moq": "10",
-      "images": [],
-      "featured": false,
-      "name_en": "Waterproof Winter Dog Jacket",
-      "name_zh": "宠物防水冬装",
-      "name_ru": "Зимний водонепроницаемый комбинезон",
-      "name_es": "Abrigo impermeable para perros",
-      "short_en": "Warm, dry and reflective — made for cold walks.",
-      "short_zh": "保暖防水又反光，冷天遛狗必备。",
-      "short_ru": "Тёплый, непромокаемый, со светоотражающими полосами.",
-      "short_es": "Abrigo, impermeable y reflectante — ideal para paseos en frío.",
-      "description_en": "A quilted winter jacket with a waterproof shell and warm fleece lining. Reflective piping improves visibility on dark walks, and the belly closure makes dressing quick.",
-      "description_zh": "夹棉冬装，外层防水、内里摇粒绒保暖。反光滚边提升夜间可见度，腹部魔术贴穿脱方便。",
-      "description_ru": "Стёганый зимний комбинезон: водонепроницаемый верх и тёплая флисовая подкладка. Светоотражающий кант повышает заметность в темноте, застёжка на животе упрощает надевание.",
-      "description_es": "Abrigo acolchado de invierno con exterior impermeable y forro polar cálido. Vivos reflectantes para paseos nocturnos y cierre ventral de fácil colocación.",
-      "specs": [
-        {
-          "k": "Fabric",
-          "v": "Waterproof shell + fleece lining"
-        },
-        {
-          "k": "Sizes",
-          "v": "XS / S / M / L / XL"
-        },
-        {
-          "k": "Feature",
-          "v": "Reflective piping, belly closure"
-        },
-        {
-          "k": "Custom",
-          "v": "Color, logo, packaging"
-        },
-        {
-          "k": "Lead time",
-          "v": "15–25 days after sample"
-        }
-      ]
-    },
-    {
-      "id": "leash-reflect",
-      "cat": "leashes",
-      "moq": "10",
-      "images": [],
-      "featured": false,
-      "name_en": "Reflective Nylon Dog Leash",
-      "name_zh": "反光尼龙牵引绳",
-      "name_ru": "Светоотражающий нейлоновый поводок",
-      "name_es": "Correa reflectante de nailon",
-      "short_en": "High-visibility leash for safe night walks.",
-      "short_zh": "高可视度，夜间遛狗更安全。",
-      "short_ru": "Поводок с высокой заметностью для безопасных прогулок.",
-      "short_es": "Correa de alta visibilidad para paseos nocturnos.",
-      "description_en": "A durable woven-nylon leash with reflective stitching for low-light safety. Padded handle and a rust-proof swivel clip keep walks comfortable.",
-      "description_zh": "耐磨编织尼龙绳身，反光缝线夜间醒目。加棉手柄，防锈旋转扣，遛狗更舒适。",
-      "description_ru": "Прочный нейлоновый поводок со светоотражающей строчкой для тёмного времени суток. Мягкая ручка и поворотный карабин из защищённого от ржавчины сплава.",
-      "description_es": "Correa de nailon trenzado duradero con costuras reflectantes para la oscuridad. Asa acolchada y mosquetón giratorio anticorrosión.",
-      "specs": [
-        {
-          "k": "Material",
-          "v": "Nylon webbing + reflective thread"
-        },
-        {
-          "k": "Length",
-          "v": "120 / 150 cm"
-        },
-        {
-          "k": "Hardware",
-          "v": "Zinc alloy swivel clip"
-        },
-        {
-          "k": "Custom",
-          "v": "Color, logo, packaging"
-        },
-        {
-          "k": "Lead time",
-          "v": "12–20 days after sample"
-        }
-      ]
-    },
-    {
-      "id": "harness-padded",
-      "cat": "leashes",
-      "moq": "10",
-      "images": [],
-      "featured": false,
-      "name_en": "Soft Padded No-Pull Harness",
-      "name_zh": "软垫防冲爆胸背带",
-      "name_ru": "Мягкая шлейка анти-рывок",
-      "name_es": "Arnés acolchado antitirones",
-      "short_en": "Gentle control that protects the neck.",
-      "short_zh": "温柔控狗，保护颈椎。",
-      "short_ru": "Бережный контроль без нагрузки на шею.",
-      "short_es": "Control suave que protege el cuello.",
-      "description_en": "A breathable mesh harness with soft padding and a front D-ring to reduce pulling. Adjustable straps fit most breeds from XS to XL.",
-      "description_zh": "透气网布加软垫，胸前 D 环有效减少爆冲。多档可调，XS–XL 犬种通用。",
-      "description_ru": "Дышащая сетчатая шлейка с мягкой подкладкой и передним кольцом против рывков. Регулируется на большинство пород от XS до XL.",
-      "description_es": "Arnés de malla transpirable con acolchado suave y anilla frontal que reduce los tirones. Correas ajustables para razas de XS a XL.",
-      "specs": [
-        {
-          "k": "Material",
-          "v": "Mesh + padded oxford"
-        },
-        {
-          "k": "Sizes",
-          "v": "XS / S / M / L / XL"
-        },
-        {
-          "k": "Hardware",
-          "v": "Dual D-ring, quick-release buckle"
-        },
-        {
-          "k": "Custom",
-          "v": "Color, logo, packaging"
-        },
-        {
-          "k": "Lead time",
-          "v": "12–20 days after sample"
-        }
-      ]
-    },
-    {
-      "id": "fountain-auto",
-      "cat": "feeding",
-      "moq": "10",
-      "images": [],
-      "featured": false,
-      "name_en": "Automatic Pet Water Fountain",
-      "name_zh": "宠物自动饮水机",
-      "name_ru": "Автоматическая поилка-фонтан",
-      "name_es": "Fuente de agua automática",
-      "short_en": "Circulating filtered water that pets drink more.",
-      "short_zh": "循环过滤活水，宠物更爱喝水。",
-      "short_ru": "Фильтрованная проточная вода — питомцы пьют больше.",
-      "short_es": "Agua filtrada en circulación: beben más.",
-      "description_en": "A quiet pump circulates water through a carbon filter, encouraging pets to stay hydrated. BPA-free reservoir with easy-disassemble parts.",
-      "description_zh": "静音水泵循环过滤活水，吸引宠物多喝水。水箱不含 BPA，部件易拆易清洗。",
-      "description_ru": "Тихий насос прогоняет воду через угольный фильтр, стимулируя питомца пить чаще. Бак без BPA, детали легко разбираются.",
-      "description_es": "Una bomba silenciosa hace circular el agua por un filtro de carbón, animando a las mascotas a hidratarse. Depósito sin BPA y piezas fáciles de desmontar.",
-      "specs": [
-        {
-          "k": "Material",
-          "v": "BPA-free ABS"
-        },
-        {
-          "k": "Capacity",
-          "v": "1.5 / 2.0 L"
-        },
-        {
-          "k": "Filter",
-          "v": "Carbon + sponge, replaceable"
-        },
-        {
-          "k": "Custom",
-          "v": "Color, logo, packaging"
-        },
-        {
-          "k": "Lead time",
-          "v": "15–25 days after sample"
-        }
-      ]
-    },
-    {
-      "id": "bowl-double",
-      "cat": "feeding",
-      "moq": "10",
-      "images": [],
-      "featured": false,
-      "name_en": "Stainless Double Feeder Bowl",
-      "name_zh": "不锈钢双碗喂食器",
-      "name_ru": "Двойная миска из нержавеющей стали",
-      "name_es": "Comedero doble de acero inoxidable",
-      "short_en": "Stable, rust-proof twin feeding station.",
-      "short_zh": "防滑稳固，双碗设计。",
-      "short_ru": "Устойчивая двойная миска, не ржавеет.",
-      "short_es": "Estación doble estable y antioxidante.",
-      "description_en": "A heavy non-slip base holds two removable stainless bowls for food and water. Dishwasher-safe and resistant to rust and odors.",
-      "description_zh": "加重防滑底座，配两只可拆不锈钢碗，吃喝分开。可用洗碗机清洗，防锈无异味。",
-      "description_ru": "Тяжёлое нескользящее основание держит две съёмные стальные миски — для еды и воды. Можно мыть в посудомойке, не ржавеет.",
-      "description_es": "Base pesada antideslizante con dos cuencos de acero extraíbles para comida y agua. Apto para lavavajillas, sin óxido ni olores.",
-      "specs": [
-        {
-          "k": "Material",
-          "v": "304 stainless + ABS base"
-        },
-        {
-          "k": "Capacity",
-          "v": "350 / 600 ml per bowl"
-        },
-        {
-          "k": "Care",
-          "v": "Bowls dishwasher safe"
-        },
-        {
-          "k": "Custom",
-          "v": "Color, logo, packaging"
-        },
-        {
-          "k": "Lead time",
-          "v": "12–20 days after sample"
-        }
-      ]
-    },
-    {
-      "id": "other-glove-01",
-      "cat": "others",
-      "moq": "10",
-      "images": [],
-      "featured": false,
-      "name_en": "Pet Grooming Glove",
-      "name_zh": "宠物按摩梳毛手套",
-      "name_ru": "Перчатка для груминга",
-      "name_es": "Guante de aseo para mascotas",
-      "short_en": "Brush like you pet — fur lifts right off.",
-      "short_zh": "像抚摸一样梳毛，浮毛轻松带走。",
-      "short_ru": "Расчёсывайте, как будто гладите — шерсть легко снимается.",
-      "short_es": "Cepilla como si acariciaras: el pelo se levanta fácil.",
-      "description_en": "A soft silicone-tip glove that collects loose fur while mimicking the feeling of being petted. Works wet or dry and pets genuinely enjoy it.",
-      "description_zh": "软胶梳齿手套，梳毛像抚摸一样舒服，干湿两用，浮毛一撸即净。",
-      "description_ru": "Перчатка с мягкими силиконовыми зубчиками собирает выпавшую шерсть и ощущается как поглаживание. Работает на сухой и мокрой шерсти.",
-      "description_es": "Guanto de puntas suaves de silicona que recoge el pelo suelto imitando una caricia. Funciona en seco y en húmedo.",
-      "specs": [
-        {
-          "k": "Material",
-          "v": "Silicone tips + mesh back"
-        },
-        {
-          "k": "Sizes",
-          "v": "One size, left / right"
-        },
-        {
-          "k": "Care",
-          "v": "Rinse, air dry"
-        },
-        {
-          "k": "Custom",
-          "v": "Color, logo, packaging"
-        },
-        {
-          "k": "Lead time",
-          "v": "10–18 days after sample"
-        }
-      ]
-    },
-    {
-      "id": "carrier-classic-01",
-      "cat": "bags",
-      "moq": "10",
-      "img": "assets/products/pet-carrier-01.jpg",
-      "images": [
-        "assets/products/pet-carrier-01.jpg"
-      ],
-      "featured": true,
-      "name_en": "Pet Carrier",
       "name_zh": "宠物外出包",
-      "name_ru": "Переноска для питомцев",
       "name_es": "Transportín para mascotas",
-      "short_en": "Soft-sided carrier with mesh windows and a padded strap.",
-      "short_zh": "软质外出包，网面透气，背带加厚。",
+      "img": "assets/products/pet-carrier-01.jpg",
       "short_ru": "Мягкая переноска с сетчатыми окнами и мягким ремнём.",
-      "short_es": "Transportín blando con ventanas de malla y correa acolchada.",
-      "description_en": "A soft-sided pet carrier for small dogs and cats. Breathable mesh panels on the sides and top keep air flowing and let pets see out, while a rigid base stops the bag from sagging. Carry it by the padded handle or the detachable shoulder strap.",
-      "description_zh": "适合小型犬猫的软质外出包。侧边与顶部网面透气，宠物视野好；底板硬质不塌陷。可手提，也可用可拆卸肩带斜挎。",
       "description_ru": "Мягкая переноска для мелких собак и кошек. Сетчатые панели по бокам и сверху обеспечивают вентиляцию и обзор, жёсткое дно не даёт сумке провисать. Носится за мягкую ручку или на съёмном ремне.",
+      "short_en": "Soft-sided carrier with mesh windows and a padded strap.",
+      "description_en": "A soft-sided pet carrier for small dogs and cats. Breathable mesh panels on the sides and top keep air flowing and let pets see out, while a rigid base stops the bag from sagging. Carry it by the padded handle or the detachable shoulder strap.",
+      "featured": true,
+      "moq": "10",
+      "short_zh": "软质外出包，网面透气，背带加厚。",
+      "description_zh": "适合小型犬猫的软质外出包。侧边与顶部网面透气，宠物视野好；底板硬质不塌陷。可手提，也可用可拆卸肩带斜挎。",
+      "short_es": "Transportín blando con ventanas de malla y correa acolchada.",
       "description_es": "Transportín blando para perros pequeños y gatos. Los paneles de malla transpirable laterales y superiores dan ventilación y visibilidad, y la base rígida evita que se hunda. Se lleva con el asa acolchada o con la correa de hombro desmontable.",
+      "cat": "bags",
+      "name_ru": "Переноска для питомцев",
       "specs": [
         {
           "k": "Material",
@@ -501,29 +41,29 @@
           "k": "Lead time",
           "v": "15–25 days after sample"
         }
-      ]
+      ],
+      "images": [
+        "assets/products/pet-carrier-01.jpg"
+      ],
+      "id": "carrier-classic-01",
+      "name_en": "Pet Carrier"
     },
     {
-      "id": "backpack-expandable-02",
-      "cat": "bags",
-      "moq": "10",
-      "img": "assets/products/pet-backpack-expandable-02.jpg",
-      "images": [
-        "assets/products/pet-backpack-expandable-02.jpg"
-      ],
-      "featured": false,
-      "name_en": "Expandable Pet Backpack",
       "name_zh": "可扩容宠物双肩背包",
-      "name_ru": "Раскладной рюкзак-переноска",
       "name_es": "Mochila transportín expandible",
-      "short_en": "Backpack with an expandable mesh side that adds space.",
-      "short_zh": "侧面可拉开扩容，空间更大。",
+      "img": "assets/products/pet-backpack-expandable-02.jpg",
       "short_ru": "Рюкзак с раскладной сетчатой боковиной — больше места.",
-      "short_es": "Mochila con lateral de malla expandible que añade espacio.",
-      "description_en": "A pet backpack that expands: unzip the mesh side and the compartment grows, giving pets room to stretch on longer trips. Padded shoulder straps and a chest clip spread the weight, and breathable panels keep the air moving.",
-      "description_zh": "可扩容双肩外出包：拉开侧面网布，空间随之变大，长途出行宠物能舒展身体。加厚肩带与胸扣分散重量，网面透气。",
       "description_ru": "Рюкзак-переноска с расширением: расстегните сетчатую боковину, и отделение увеличивается, давая питомцу больше места в долгой дороге. Мягкие лямки и нагрудная застёжка распределяют вес, сетка обеспечивает вентиляцию.",
+      "short_en": "Backpack with an expandable mesh side that adds space.",
+      "description_en": "A pet backpack that expands: unzip the mesh side and the compartment grows, giving pets room to stretch on longer trips. Padded shoulder straps and a chest clip spread the weight, and breathable panels keep the air moving.",
+      "featured": false,
+      "moq": "10",
+      "short_zh": "侧面可拉开扩容，空间更大。",
+      "description_zh": "可扩容双肩外出包：拉开侧面网布，空间随之变大，长途出行宠物能舒展身体。加厚肩带与胸扣分散重量，网面透气。",
+      "short_es": "Mochila con lateral de malla expandible que añade espacio.",
       "description_es": "Mochila transportín expandible: abre la cremallera del lateral de malla y el compartimento crece para que la mascota estire las patas. Las correas acolchadas y el clip pectoral reparten el peso y los paneles transpirables ventilan.",
+      "cat": "bags",
+      "name_ru": "Раскладной рюкзак-переноска",
       "specs": [
         {
           "k": "Material",
@@ -549,29 +89,29 @@
           "k": "Lead time",
           "v": "15–25 days after sample"
         }
-      ]
+      ],
+      "images": [
+        "assets/products/pet-backpack-expandable-02.jpg"
+      ],
+      "id": "backpack-expandable-02",
+      "name_en": "Expandable Pet Backpack"
     },
     {
-      "id": "backpack-transparent-03",
-      "cat": "bags",
-      "moq": "10",
-      "img": "assets/products/pet-backpack-transparent-03.jpg",
-      "images": [
-        "assets/products/pet-backpack-transparent-03.jpg"
-      ],
-      "featured": true,
-      "name_en": "Transparent Pet Backpack",
       "name_zh": "透明宠物双肩背包",
-      "name_ru": "Прозрачный рюкзак-переноска",
       "name_es": "Mochila transportín transparente",
-      "short_en": "Clear bubble backpack with ventilation holes.",
-      "short_zh": "全透明太空舱，带透气孔。",
+      "img": "assets/products/pet-backpack-transparent-03.jpg",
       "short_ru": "Прозрачный рюкзак-купол с вентиляционными отверстиями.",
-      "short_es": "Mochila burbuja transparente con orificios de ventilación.",
-      "description_en": "A transparent pet backpack with a panoramic clear window so pets can watch the world go by. Ventilation holes and side mesh keep the air fresh, and the padded straps make it comfortable to carry for hours.",
-      "description_zh": "全透明双肩外出包，全景视窗让宠物一路看风景。透气孔加侧面网布保持空气流通，加厚肩带久背不累。",
       "description_ru": "Прозрачный рюкзак с панорамным окном, через которое питомец наблюдает за миром. Отверстия и сетка по бокам обеспечивают свежий воздух, мягкие лямки делают носку комфортной.",
+      "short_en": "Clear bubble backpack with ventilation holes.",
+      "description_en": "A transparent pet backpack with a panoramic clear window so pets can watch the world go by. Ventilation holes and side mesh keep the air fresh, and the padded straps make it comfortable to carry for hours.",
+      "featured": true,
+      "moq": "10",
+      "short_zh": "全透明太空舱，带透气孔。",
+      "description_zh": "全透明双肩外出包，全景视窗让宠物一路看风景。透气孔加侧面网布保持空气流通，加厚肩带久背不累。",
+      "short_es": "Mochila burbuja transparente con orificios de ventilación.",
       "description_es": "Mochila transportín transparente con ventana panorámica para que la mascota lo vea todo. Los orificios de ventilación y la malla lateral mantienen el aire fresco y las correas acolchadas la hacen cómoda durante horas.",
+      "cat": "bags",
+      "name_ru": "Прозрачный рюкзак-переноска",
       "specs": [
         {
           "k": "Material",
@@ -597,29 +137,29 @@
           "k": "Lead time",
           "v": "15–25 days after sample"
         }
-      ]
+      ],
+      "images": [
+        "assets/products/pet-backpack-transparent-03.jpg"
+      ],
+      "id": "backpack-transparent-03",
+      "name_en": "Transparent Pet Backpack"
     },
     {
-      "id": "carrier-car-04",
-      "cat": "bags",
-      "moq": "10",
-      "img": "assets/products/pet-carrier-car-04.jpg",
-      "images": [
-        "assets/products/pet-carrier-car-04.jpg"
-      ],
-      "featured": true,
-      "name_en": "Car-mounted Dual-compartment Pet Carrier",
       "name_zh": "车载双仓宠物包",
-      "name_ru": "Автомобильная переноска с двумя отделениями",
       "name_es": "Transportín doble para coche",
-      "short_en": "Two-compartment carrier that doubles as a car seat.",
-      "short_zh": "双仓设计，可当车载宠物座椅。",
+      "img": "assets/products/pet-carrier-car-04.jpg",
       "short_ru": "Переноска с двумя отделениями, служит и автокреслом.",
-      "short_es": "Transportín de dos compartimentos que también sirve de asiento de coche.",
-      "description_en": "A dual-compartment pet carrier designed to sit on a car seat, keeping two pets separate and secure on the road. Mesh panels give airflow and visibility, and the fold-flat design makes it easy to store between trips.",
-      "description_zh": "双仓宠物包，可放在汽车座椅上，让两只宠物各占一仓、安全互不打扰。网面透气又能看护，不用时可折叠收纳。",
       "description_ru": "Двухсекционная переноска для автомобильного сиденья: два питомца едут отдельно и безопасно. Сетчатые панели дают вентиляцию и обзор, а в сложенном виде переноска легко хранится.",
+      "short_en": "Two-compartment carrier that doubles as a car seat.",
+      "description_en": "A dual-compartment pet carrier designed to sit on a car seat, keeping two pets separate and secure on the road. Mesh panels give airflow and visibility, and the fold-flat design makes it easy to store between trips.",
+      "featured": true,
+      "moq": "10",
+      "short_zh": "双仓设计，可当车载宠物座椅。",
+      "description_zh": "双仓宠物包，可放在汽车座椅上，让两只宠物各占一仓、安全互不打扰。网面透气又能看护，不用时可折叠收纳。",
+      "short_es": "Transportín de dos compartimentos que también sirve de asiento de coche.",
       "description_es": "Transportín de dos compartimentos pensado para el asiento del coche, manteniendo a dos mascotas separadas y seguras. Los paneles de malla dan ventilación y visibilidad, y se pliega para guardarlo.",
+      "cat": "bags",
+      "name_ru": "Автомобильная переноска с двумя отделениями",
       "specs": [
         {
           "k": "Material",
@@ -645,29 +185,29 @@
           "k": "Lead time",
           "v": "15–25 days after sample"
         }
-      ]
+      ],
+      "images": [
+        "assets/products/pet-carrier-car-04.jpg"
+      ],
+      "id": "carrier-car-04",
+      "name_en": "Car-mounted Dual-compartment Pet Carrier"
     },
     {
-      "id": "carrier-wheels-05",
-      "cat": "bags",
-      "moq": "10",
-      "img": "assets/products/pet-carrier-wheels-05.jpg",
-      "images": [
-        "assets/products/pet-carrier-wheels-05.jpg"
-      ],
-      "featured": false,
-      "name_en": "Transparent Pet Carrier with Rolling Wheels",
       "name_zh": "透明拉杆宠物箱",
-      "name_ru": "Прозрачная переноска на колёсах",
       "name_es": "Transportín transparente con ruedas",
-      "short_en": "Clear rolling carrier with a telescopic handle.",
-      "short_zh": "透明箱体，拉杆拖行。",
+      "img": "assets/products/pet-carrier-wheels-05.jpg",
       "short_ru": "Прозрачная переноска на колёсах с телескопической ручкой.",
-      "short_es": "Transportín transparente con ruedas y asa telescópica.",
-      "description_en": "A transparent rolling carrier with 360° wheels and a telescopic handle, so you can pull it instead of carrying it. The clear shell gives pets a full view while the openings keep the compartment ventilated.",
-      "description_zh": "透明拉杆猫箱，底部 360° 静音轮配伸缩拉杆，拖着走更省力。透明外壳让宠物视野开阔，开口设计保持通风。",
       "description_ru": "Прозрачная переноска с колёсами 360° и телескопической ручкой: её удобно катить, а не нести. Прозрачный корпус даёт полный обзор, а проёмы обеспечивают вентиляцию.",
+      "short_en": "Clear rolling carrier with a telescopic handle.",
+      "description_en": "A transparent rolling carrier with 360° wheels and a telescopic handle, so you can pull it instead of carrying it. The clear shell gives pets a full view while the openings keep the compartment ventilated.",
+      "featured": false,
+      "moq": "10",
+      "short_zh": "透明箱体，拉杆拖行。",
+      "description_zh": "透明拉杆猫箱，底部 360° 静音轮配伸缩拉杆，拖着走更省力。透明外壳让宠物视野开阔，开口设计保持通风。",
+      "short_es": "Transportín transparente con ruedas y asa telescópica.",
       "description_es": "Transportín transparente con ruedas de 360° y asa telescópica: se arrastra en lugar de cargarlo. La carcasa transparente da visibilidad total y las aberturas mantienen ventilado el compartimento.",
+      "cat": "bags",
+      "name_ru": "Прозрачная переноска на колёсах",
       "specs": [
         {
           "k": "Material",
@@ -693,29 +233,29 @@
           "k": "Lead time",
           "v": "15–25 days after sample"
         }
-      ]
+      ],
+      "images": [
+        "assets/products/pet-carrier-wheels-05.jpg"
+      ],
+      "id": "carrier-wheels-05",
+      "name_en": "Transparent Pet Carrier with Rolling Wheels"
     },
     {
-      "id": "carrier-rattan-06",
-      "cat": "bags",
-      "moq": "10",
-      "img": "assets/products/pet-carrier-rattan-06.jpg",
-      "images": [
-        "assets/products/pet-carrier-rattan-06.jpg"
-      ],
-      "featured": true,
-      "name_en": "Rattan Plaited Articles Pet Carrier with Rolling Wheels",
       "name_zh": "藤编拉杆宠物箱",
-      "name_ru": "Плетёная переноска из ротанга на колёсах",
       "name_es": "Transportín de ratán trenzado con ruedas",
-      "short_en": "Hand-woven rattan carrier on silent wheels.",
-      "short_zh": "手工藤编箱体，配静音万向轮。",
+      "img": "assets/products/pet-carrier-rattan-06.jpg",
       "short_ru": "Плетёная переноска из ротанга на бесшумных колёсах.",
-      "short_es": "Transportín de ratán tejido a mano con ruedas silenciosas.",
-      "description_en": "A hand-woven rattan carrier that doubles as a piece of home décor. The breathable weave keeps pets cool, the soft cushion inside adds comfort, and the rolling base with a telescopic handle makes travel easy.",
-      "description_zh": "手工藤编宠物箱，居家也像一件装饰品。藤编透气凉爽，内配软垫更舒适；拉杆底座配万向轮，出行更轻松。",
       "description_ru": "Плетёная из ротанга переноска, которая служит и элементом декора. Дышащее плетение сохраняет прохладу, мягкая подушка добавляет комфорта, а колёсная база с телескопической ручкой облегчает дорогу.",
+      "short_en": "Hand-woven rattan carrier on silent wheels.",
+      "description_en": "A hand-woven rattan carrier that doubles as a piece of home décor. The breathable weave keeps pets cool, the soft cushion inside adds comfort, and the rolling base with a telescopic handle makes travel easy.",
+      "featured": true,
+      "moq": "10",
+      "short_zh": "手工藤编箱体，配静音万向轮。",
+      "description_zh": "手工藤编宠物箱，居家也像一件装饰品。藤编透气凉爽，内配软垫更舒适；拉杆底座配万向轮，出行更轻松。",
+      "short_es": "Transportín de ratán tejido a mano con ruedas silenciosas.",
       "description_es": "Transportín de ratán tejido a mano que también decora el hogar. El tejido transpirable mantiene fresca a la mascota, el cojín interior aporta comodidad y la base con ruedas y asa telescópica facilita el viaje.",
+      "cat": "bags",
+      "name_ru": "Плетёная переноска из ротанга на колёсах",
       "specs": [
         {
           "k": "Material",
@@ -741,29 +281,29 @@
           "k": "Lead time",
           "v": "20–30 days after sample"
         }
-      ]
+      ],
+      "images": [
+        "assets/products/pet-carrier-rattan-06.jpg"
+      ],
+      "id": "carrier-rattan-06",
+      "name_en": "Rattan Plaited Articles Pet Carrier with Rolling Wheels"
     },
     {
-      "id": "carrier-hardsided-07",
-      "cat": "bags",
-      "moq": "10",
-      "img": "assets/products/pet-carrier-hardsided-07.jpg",
-      "images": [
-        "assets/products/pet-carrier-hardsided-07.jpg"
-      ],
-      "featured": true,
-      "name_en": "Hard-Sided Pet Carrier",
       "name_zh": "硬壳宠物箱",
-      "name_ru": "Жёсткая переноска-контейнер",
       "name_es": "Transportín rígido para mascotas",
-      "short_en": "Ventilated hard-shell crate for safe transport.",
-      "short_zh": "硬壳箱体，四面通风，运输更安全。",
+      "img": "assets/products/pet-carrier-hardsided-07.jpg",
       "short_ru": "Вентилируемый жёсткий контейнер для безопасной перевозки.",
-      "short_es": "Transportín rígido ventilado para un traslado seguro.",
-      "description_en": "A hard-sided carrier with a steel-mesh door and cross-ventilation on all sides, built for safe car and air travel. The two-part shell clips together for quick assembly and easy cleaning.",
-      "description_zh": "硬壳宠物箱，钢网门配四面通风，适合汽车与航空托运。上下两片卡扣拼装，拆装清洗都快。",
       "description_ru": "Жёсткая переноска со стальной сетчатой дверцей и сквозной вентиляцией со всех сторон — для безопасной поездки в машине и самолёте. Две части корпуса соединяются защёлками: быстро собрать и легко мыть.",
+      "short_en": "Ventilated hard-shell crate for safe transport.",
+      "description_en": "A hard-sided carrier with a steel-mesh door and cross-ventilation on all sides, built for safe car and air travel. The two-part shell clips together for quick assembly and easy cleaning.",
+      "featured": true,
+      "moq": "10",
+      "short_zh": "硬壳箱体，四面通风，运输更安全。",
+      "description_zh": "硬壳宠物箱，钢网门配四面通风，适合汽车与航空托运。上下两片卡扣拼装，拆装清洗都快。",
+      "short_es": "Transportín rígido ventilado para un traslado seguro.",
       "description_es": "Transportín rígido con puerta de malla de acero y ventilación cruzada por todos los lados, pensado para viajar en coche y en avión con seguridad. Las dos piezas de la carcasa se encajan para montarlo y limpiarlo rápido.",
+      "cat": "bags",
+      "name_ru": "Жёсткая переноска-контейнер",
       "specs": [
         {
           "k": "Material",
@@ -789,29 +329,29 @@
           "k": "Lead time",
           "v": "20–30 days after sample"
         }
-      ]
+      ],
+      "images": [
+        "assets/products/pet-carrier-hardsided-07.jpg"
+      ],
+      "id": "carrier-hardsided-07",
+      "name_en": "Hard-Sided Pet Carrier"
     },
     {
-      "id": "carrier-hardshell-08",
-      "cat": "bags",
-      "moq": "10",
-      "img": "assets/products/pet-carrier-hardshell-08.jpg",
-      "images": [
-        "assets/products/pet-carrier-hardshell-08.jpg"
-      ],
-      "featured": true,
-      "name_en": "Large Hard Shell Pet Carrier with Wheels",
       "name_zh": "大号带轮硬壳宠物箱",
-      "name_ru": "Большая жёсткая переноска на колёсах",
       "name_es": "Transportín rígido grande con ruedas",
-      "short_en": "Large wheeled hard shell for bigger pets.",
-      "short_zh": "大容量硬壳箱，带轮拖行。",
+      "img": "assets/products/pet-carrier-hardshell-08.jpg",
       "short_ru": "Большой жёсткий корпус на колёсах для крупных питомцев.",
-      "short_es": "Carcasa rígida grande con ruedas para mascotas más grandes.",
-      "description_en": "A large hard-shell carrier on wheels, sized for medium pets. The reinforced shell protects your pet in transit, ventilation slots keep air moving, and the telescopic handle and wheels take the strain off your back.",
-      "description_zh": "大号硬壳带轮宠物箱，适合中型宠物。加厚壳体在途中提供保护，通风孔保持空气流通；伸缩拉杆配万向轮，拖着走不费腰。",
       "description_ru": "Большая жёсткая переноска на колёсах для питомцев среднего размера. Усиленный корпус защищает в дороге, вентиляционные прорези обеспечивают циркуляцию воздуха, а телескопическая ручка и колёса снимают нагрузку со спины.",
+      "short_en": "Large wheeled hard shell for bigger pets.",
+      "description_en": "A large hard-shell carrier on wheels, sized for medium pets. The reinforced shell protects your pet in transit, ventilation slots keep air moving, and the telescopic handle and wheels take the strain off your back.",
+      "featured": true,
+      "moq": "10",
+      "short_zh": "大容量硬壳箱，带轮拖行。",
+      "description_zh": "大号硬壳带轮宠物箱，适合中型宠物。加厚壳体在途中提供保护，通风孔保持空气流通；伸缩拉杆配万向轮，拖着走不费腰。",
+      "short_es": "Carcasa rígida grande con ruedas para mascotas más grandes.",
       "description_es": "Transportín rígido grande con ruedas, para mascotas medianas. La carcasa reforzada protege durante el viaje, las ranuras de ventilación mantienen el aire en movimiento y el asa telescópica con ruedas alivian la espalda.",
+      "cat": "bags",
+      "name_ru": "Большая жёсткая переноска на колёсах",
       "specs": [
         {
           "k": "Material",
@@ -837,67 +377,81 @@
           "k": "Lead time",
           "v": "20–30 days after sample"
         }
-      ]
+      ],
+      "images": [
+        "assets/products/pet-carrier-hardshell-08.jpg"
+      ],
+      "id": "carrier-hardshell-08",
+      "name_en": "Large Hard Shell Pet Carrier with Wheels"
     },
     {
-      "id": "bed-bear",
+      "name_zh": "熊头抱抱圆形宠物窝",
+      "name_es": "Cama redonda para mascotas con diseño de cabeza de oso",
+      "img": "assets/pet-bed.jpg",
+      "short_ru": "Круглая плюшевая лежанка с бортиком-медвежонком, на который можно положить голову.",
+      "description_ru": "Круглая плюшевая лежанка с бортиком в виде медвежонка: кошка или небольшая собака может положить на него голову. В центре — полосатый флис, основание с прошитым нескользящим краем, чехол можно стирать.",
+      "short_en": "A plush round bed with a bear-shaped bolster to lean on.",
+      "description_en": "A round plush bed with a bear-shaped bolster wrapped along one side, so cats and small dogs have something to rest their head against instead of the floor. The centre is striped sherpa-style fleece, the base is finished with a stitched, non-slip edge, and the cover can be washed.",
+      "featured": true,
+      "moq": "10",
+      "short_zh": "毛绒圆形宠物窝，熊形围边可以当枕头靠。",
+      "description_zh": "圆形毛绒宠物窝，一侧做成熊形围边，猫和小型犬可以把头枕在上面。中间是条纹绒面垫，底部缝线包边、不易打滑，外套可拆洗。",
+      "short_es": "Cama redonda y mullida para mascotas, con un borde en forma de oso que funciona también como almohada.",
+      "description_es": "Esta cama redonda y mullida para mascotas cuenta con un borde elevado en forma de oso a lo largo de uno de sus lados, lo que ofrece un apoyo ideal para la cabeza de gatos y perros pequeños. La parte central consiste en un cojín a rayas de textura suave, mientras que la base presenta bordes cosidos que ayudan a evitar que la cama se deslice. La funda es extraíble y apta para lavar a máquina.",
       "cat": "bed",
-      "moq": "",
-      "img": "assets/products/bed-bear.jpg",
+      "name_ru": "Круглая лежанка «Медвежонок»",
+      "specs": [],
       "images": [
         "assets/products/bed-bear.jpg"
       ],
-      "featured": false,
-      "name_en": "Bear Hug Round Pet Bed",
-      "name_zh": "熊头抱抱圆形宠物窝",
-      "name_ru": "Круглая лежанка «Медвежонок»",
-      "short_en": "A plush round bed with a bear-shaped bolster to lean on.",
-      "short_zh": "毛绒圆形宠物窝，熊形围边可以当枕头靠。",
-      "short_ru": "Круглая плюшевая лежанка с бортиком-медвежонком, на который можно положить голову.",
-      "description_en": "A round plush bed with a bear-shaped bolster wrapped along one side, so cats and small dogs have something to rest their head against instead of the floor. The centre is striped sherpa-style fleece, the base is finished with a stitched, non-slip edge, and the cover can be washed.",
-      "description_zh": "圆形毛绒宠物窝，一侧做成熊形围边，猫和小型犬可以把头枕在上面。中间是条纹绒面垫，底部缝线包边、不易打滑，外套可拆洗。",
-      "description_ru": "Круглая плюшевая лежанка с бортиком в виде медвежонка: кошка или небольшая собака может положить на него голову. В центре — полосатый флис, основание с прошитым нескользящим краем, чехол можно стирать.",
-      "specs": []
+      "id": "bed-bear",
+      "name_en": "Bear Hug Round Pet Bed"
     },
     {
-      "id": "bed-mat",
+      "name_zh": "卡通法兰绒宠物垫",
+      "name_es": "Alfombrilla de franela para mascotas",
+      "img": "assets/pet-mat.jpg",
+      "short_ru": "Мягкий флисовый коврик для клетки, дивана и сиденья автомобиля.",
+      "description_ru": "Мягкий флисовый коврик со стёганой центральной частью и принтом с зайчиками и морковками. Подходит для клетки, дивана и сиденья автомобиля, а покрытие PU не даёт ему скользить по гладкому полу.",
+      "short_en": "A soft fleece mat for crates, sofas and car seats.",
+      "description_en": "A soft plush fleece mat with a quilted centre panel and a bunny-and-carrot print. It works as a crate liner, a sofa cover or a car-seat mat, and the PU backing keeps it from sliding on smooth floors.",
+      "featured": false,
+      "moq": "10",
+      "short_zh": "柔软绒面宠物垫，笼内、沙发、车座都能用。",
+      "description_zh": "绒面宠物垫，中间绗缝分区，印着兔子和胡萝卜图案。可以铺在笼子里、沙发上或车座上，背面 PU 防滑，不容易在光滑地面滑动。",
+      "short_es": "Alfombrilla suave y mullida para mascotas; ideal para usar en transportines, sofás o asientos de coche.",
+      "description_es": "Una suave alfombrilla de tejido polar que cuenta con una sección central acolchada y un estampado de conejitos y zanahorias. Es apta para usar en una jaula, sobre un sofá o en el asiento de un coche; su base de poliuretano (PU) evita que se deslice sobre superficies lisas.",
       "cat": "bed",
-      "moq": "",
-      "img": "assets/products/bed-mat.jpg",
+      "name_ru": "Фланелевый коврик для питомца",
+      "specs": [],
       "images": [
         "assets/products/bed-mat.jpg"
       ],
-      "featured": false,
-      "name_en": "Bunny Print Fleece Pet Mat",
-      "name_zh": "卡通兔印花绒面宠物垫",
-      "name_ru": "Флисовый коврик с принтом «Зайчики»",
-      "short_en": "A soft fleece mat for crates, sofas and car seats.",
-      "short_zh": "柔软绒面宠物垫，笼内、沙发、车座都能用。",
-      "short_ru": "Мягкий флисовый коврик для клетки, дивана и сиденья автомобиля.",
-      "description_en": "A soft plush fleece mat with a quilted centre panel and a bunny-and-carrot print. It works as a crate liner, a sofa cover or a car-seat mat, and the PU backing keeps it from sliding on smooth floors.",
-      "description_zh": "绒面宠物垫，中间绗缝分区，印着兔子和胡萝卜图案。可以铺在笼子里、沙发上或车座上，背面 PU 防滑，不容易在光滑地面滑动。",
-      "description_ru": "Мягкий флисовый коврик со стёганой центральной частью и принтом с зайчиками и морковками. Подходит для клетки, дивана и сиденья автомобиля, а покрытие PU не даёт ему скользить по гладкому полу.",
-      "specs": []
+      "id": "bed-mat",
+      "name_en": "Flannel Pet Mat"
     },
     {
-      "id": "bed-rattan",
+      "name_zh": "手工绳编猫窝",
+      "name_es": "Cesta de cuerda tejida para mascotas, cama para mascotas",
+      "img": "assets/pet-bed.jpg",
+      "short_ru": "Плетёная корзина с двумя ручками и подвесной игрушкой.",
+      "description_ru": "Корзина ручной работы из хлопкового шнура с двухцветным краем и кожаной биркой. Две ручки позволяют легко переносить её из комнаты в комнату, а плетёный шарик на шнуре займёт кошку. Подушка внутри двусторонняя.",
+      "short_en": "A hand-woven rope basket with two handles and a hanging toy.",
+      "description_en": "A hand-woven cotton-rope basket with a two-tone rim and a leather label on the front. Two side handles make it easy to move from room to room, and the knotted ball on a cord gives cats something to bat at. The cushion inside is reversible.",
+      "featured": true,
+      "moq": "10",
+      "short_zh": "手工绳编猫窝，两侧提手，附悬挂逗猫球。",
+      "description_zh": "棉绳手工编织猫窝，双色围边，正面一块皮质标牌。两侧提手方便搬动，绳子末端系着编织球，猫可以拨着玩。内垫可翻面使用。",
+      "short_es": "Cama para gatos tejida a mano con cuerda, que cuenta con asas laterales y una bola de juego colgante incorporada.",
+      "description_es": "Cama para gatos hecha de cuerda de algodón tejida a mano, con un borde bicolor y una etiqueta de aspecto de cuero en la parte frontal. Cuenta con asas a ambos lados que facilitan su traslado, además de una bola tejida sujeta a un cordón, que sirve como un divertido juguete para que tu gato golpee y juegue. El cojín interior es reversible.",
       "cat": "bed",
-      "moq": "",
-      "img": "assets/products/bed-rattan.jpg",
+      "name_ru": "Плетёная корзина-лежанка для кошек",
+      "specs": [],
       "images": [
         "assets/products/bed-rattan.jpg"
       ],
-      "featured": false,
-      "name_en": "Woven Rope Cat Basket",
-      "name_zh": "手工绳编猫窝",
-      "name_ru": "Плетёная корзина-лежанка для кошек",
-      "short_en": "A hand-woven rope basket with two handles and a hanging toy.",
-      "short_zh": "手工绳编猫窝，两侧提手，附悬挂逗猫球。",
-      "short_ru": "Плетёная корзина с двумя ручками и подвесной игрушкой.",
-      "description_en": "A hand-woven cotton-rope basket with a two-tone rim and a leather label on the front. Two side handles make it easy to move from room to room, and the knotted ball on a cord gives cats something to bat at. The cushion inside is reversible.",
-      "description_zh": "棉绳手工编织猫窝，双色围边，正面一块皮质标牌。两侧提手方便搬动，绳子末端系着编织球，猫可以拨着玩。内垫可翻面使用。",
-      "description_ru": "Корзина ручной работы из хлопкового шнура с двухцветным краем и кожаной биркой. Две ручки позволяют легко переносить её из комнаты в комнату, а плетёный шарик на шнуре займёт кошку. Подушка внутри двусторонняя.",
-      "specs": []
+      "id": "bed-rattan",
+      "name_en": "Woven Rope Pet Basket Pet Bed"
     }
   ]
 }
