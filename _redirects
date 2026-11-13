@@ -77,5 +77,16 @@
 /products/other-glove-01.ru.html  /products.html  301
 /products/other-glove-01.zh.html  /products.html  301
 
+# Bed products shipped in an earlier build (never indexed, kept for completeness)
+/products/bed-bear.html  /products.html  301
+/products/bed-bear.ru.html  /products.html  301
+/products/bed-bear.zh.html  /products.html  301
+/products/bed-mat.html  /products.html  301
+/products/bed-mat.ru.html  /products.html  301
+/products/bed-mat.zh.html  /products.html  301
+/products/bed-rattan.html  /products.html  301
+/products/bed-rattan.ru.html  /products.html  301
+/products/bed-rattan.zh.html  /products.html  301
+
 # Legacy Spanish variants (site is EN / RU / ZH only)
 /products/*.es.html  /products.html  301
