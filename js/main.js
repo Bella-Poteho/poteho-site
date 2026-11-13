@@ -21,7 +21,7 @@ const POSTS_URL = "data/posts.json";
 const PLACEHOLDER_IMG = "assets/placeholder.svg";
 
 /* Categories (ids match products.json "cat" values) */
-const CATS = ["bags", "bed", "apparel", "leashes", "feeding", "others"];
+const CATS = ["carriers", "beds", "fences", "apparel", "rehab"];
 
 let PRODUCTS = [];
 let SITE = {};
@@ -119,7 +119,7 @@ function cardHTML(p) {
         <div class="body">
           <span class="cat">${catName(p.cat)}</span>
           <h3>${pName(p)}</h3>
-          <span class="moq">${t("det.moq")} ${p.moq || ""}</span>
+          ${p.moq ? `<span class="moq">${t("det.moq")} ${p.moq}</span>` : ""}
         </div>
       </a>
       <a href="contact.html" class="btn btn-primary pc-quote">${t("card.quote")}</a>
@@ -200,9 +200,9 @@ function renderCategoryPage() {
   if (countEl) countEl.textContent = `${list.length} ${t("cpage.count")}`;
 
   injectBreadcrumbJSONLD([
-    { name: t("bc.home"), url: "https://www.poteho.com/index.html" },
-    { name: t("bc.products"), url: "https://www.poteho.com/products.html" },
-    { name: catName(cat), url: "https://www.poteho.com/category.html?cat=" + cat }
+    { name: t("bc.home"), url: "https://poteho.com/index.html" },
+    { name: t("bc.products"), url: "https://poteho.com/products.html" },
+    { name: catName(cat), url: "https://poteho.com/category.html?cat=" + cat }
   ]);
 
   grid.innerHTML = list.length
@@ -240,10 +240,10 @@ function renderDetail() {
     ` / <a href="category.html?cat=${p.cat}">${catName(p.cat)}</a> / <span>${name}</span>`;
 
   injectBreadcrumbJSONLD([
-    { name: t("bc.home"), url: "https://www.poteho.com/index.html" },
-    { name: t("bc.products"), url: "https://www.poteho.com/products.html" },
-    { name: catName(p.cat), url: "https://www.poteho.com/category.html?cat=" + p.cat },
-    { name: name, url: "https://www.poteho.com/product.html?id=" + p.id }
+    { name: t("bc.home"), url: "https://poteho.com/index.html" },
+    { name: t("bc.products"), url: "https://poteho.com/products.html" },
+    { name: catName(p.cat), url: "https://poteho.com/category.html?cat=" + p.cat },
+    { name: name, url: "https://poteho.com/product.html?id=" + p.id }
   ]);
 
   grid.innerHTML = `
@@ -255,10 +255,10 @@ function renderDetail() {
       <span class="eyebrow">${catName(p.cat)}</span>
       <h1>${name}</h1>
       <p>${desc}</p>
-      <ul class="spec-list">
+      ${(specs || p.moq) ? `<ul class="spec-list">
         ${specs}
-        <li><span>${t("det.moq")}</span><span>${p.moq || ""}</span></li>
-      </ul>
+        ${p.moq ? `<li><span>${t("det.moq")}</span><span>${p.moq}</span></li>` : ""}
+      </ul>` : ""}
       <a href="contact.html" class="btn btn-primary">${t("det.quote")}</a>
 
       <form class="lead-form" name="lead" onsubmit="return handleLeadForm(this)">
@@ -301,7 +301,7 @@ function injectProductJSONLD(p) {
     "@context": "https://schema.org",
     "@type": "Product",
     "name": tf(p.name_en || p.name),
-    "image": "https://www.poteho.com/" + productImages(p)[0].replace(/^\//, ""),
+    "image": "https://poteho.com/" + productImages(p)[0].replace(/^\//, ""),
     "description": tf(p.description_en || p.description || p.short_en || p.short || ""),
     "brand": { "@type": "Brand", "name": (SITE.company || "Poteho") },
     "offers": {
@@ -376,9 +376,9 @@ function renderPost() {
   injectPostJSONLD(post);
   renderPostFAQ(post);
   injectBreadcrumbJSONLD([
-    { name: t("bc.home"), url: "https://www.poteho.com/index.html" },
-    { name: t("nav.blog"), url: "https://www.poteho.com/blog.html" },
-    { name: post.title, url: "https://www.poteho.com/blog-post.html?slug=" + slug }
+    { name: t("bc.home"), url: "https://poteho.com/index.html" },
+    { name: t("nav.blog"), url: "https://poteho.com/blog.html" },
+    { name: post.title, url: "https://poteho.com/blog-post.html?slug=" + slug }
   ]);
 }
 function injectPostJSONLD(post) {
@@ -391,9 +391,9 @@ function injectPostJSONLD(post) {
     "@context": "https://schema.org",
     "@type": "Article",
     "headline": post.title,
-    "image": "https://www.poteho.com/" + (post.image || POSTS_DATA.thumb),
+    "image": "https://poteho.com/" + (post.image || POSTS_DATA.thumb),
     "author": { "@type": "Organization", "name": "Poteho" },
-    "publisher": { "@type": "Organization", "name": "Poteho", "logo": { "@type": "ImageObject", "url": "https://www.poteho.com/assets/poteho-logo.png" } },
+    "publisher": { "@type": "Organization", "name": "Poteho", "logo": { "@type": "ImageObject", "url": "https://poteho.com/assets/poteho-logo.png" } },
     "datePublished": post.date,
     "description": post.excerpt
   });

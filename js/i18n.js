@@ -16,7 +16,7 @@ const I18N = {
     "nav.home": "Home", "nav.products": "Products", "nav.blog": "Blog",
     "nav.about": "About", "nav.contact": "Contact", "nav.quote": "Get a Quote",
 
-    "footer.desc": "Premium pet carriers and pet supplies, wholesale to retailers and brands worldwide. Low MOQ, custom branding and reliable shipping.",
+    "footer.desc": "Poteho supplies pet carriers, beds & mats, fences & leashes, apparel and rehabilitation products. Wholesale worldwide with low MOQ, custom branding and reliable shipping.",
     "footer.products": "Products", "footer.company": "Company", "footer.connect": "Contact",
     "footer.aboutus": "About us", "footer.blog": "Blog", "footer.contact": "Contact",
     "footer.getquote": "Get a quote", "footer.cookie": "Cookie Policy",
@@ -24,12 +24,11 @@ const I18N = {
     "footer.rights": "Poteho. All rights reserved.",
     "footer.slogan": "Poteho — your pet's best friend",
 
-    "cat.all": "All", "cat.bags": "Carrier", "cat.bed": "Bed",
-    "cat.apparel": "Apparel", "cat.leashes": "Leashes", "cat.feeding": "Feeding",
-    "cat.others": "Others", "opt.custom": "Custom project",
-    "cat.bags.sub": "Travel in comfort →", "cat.bed.sub": "Rest in comfort →",
-    "cat.apparel.sub": "Dressed for any weather →", "cat.leashes.sub": "Walk in style →",
-    "cat.feeding.sub": "Hydration & meals →", "cat.others.sub": "Much more →",
+    "cat.all": "All", "cat.carriers": "Pet Carriers", "cat.beds": "Pet Beds & Mats",
+    "cat.fences": "Pet Fences & Leashes", "cat.apparel": "Pet Apparel", "cat.rehab": "Pet Rehabilitation", "opt.custom": "Custom project",
+    "cat.carriers.sub": "Travel in comfort →", "cat.beds.sub": "Rest in comfort →",
+    "cat.fences.sub": "Safe walks & boundaries →", "cat.apparel.sub": "Dressed for any weather →",
+    "cat.rehab.sub": "Care & recovery →",
     "cat.viewall": "View all products →", "cat.soon": "Coming soon",
 
     "form.name": "Name *", "form.company": "Company", "form.email": "Email *",
@@ -70,12 +69,12 @@ const I18N = {
 
     "hero.eyebrow": "Pet Supplies · Wholesale Supplier",
     "hero.h1": "Premium pet products, built for happy homes",
-    "hero.p": "From travel carriers to everyday essentials, Poteho helps retailers and brands source reliable pet gear with low MOQs, custom branding and worldwide shipping.",
+    "hero.p": "From travel carriers and beds to apparel, leashes and rehabilitation aids, Poteho helps retailers and brands source the full catalogue with low MOQs, custom branding and worldwide shipping.",
     "hero.browse": "Browse Products", "hero.quote": "Request Wholesale Price",
     "hero.stat1": "Founded", "hero.stat2": "Years export experience", "hero.stat3": "Export countries",
 
     "why.eyebrow": "Why Poteho", "why.h2": "A sourcing partner, not just a supplier",
-    "why.p": "Choosing a supplier comes down to trust. We've made pet supplies since 2020, ship to 30+ countries, and check every product piece by piece. Order a sample or a full container — you'll get quality you can trust and friendly, dependable service.",
+    "why.p": "Choosing a supplier comes down to trust. Beijing PTH International Co., Ltd has made pet supplies since 2020, ships to 30+ countries, and checks every product piece by piece. Order a sample or a full container — you'll get quality you can trust and friendly, dependable service.",
     "feat1t": "Quality checked", "feat1p": "Every product is checked piece by piece by our own QC team before it leaves the factory.",
     "feat2t": "Custom branding", "feat2p": "Custom colors, packaging and logo. Bring your brand, we build the product.",
     "feat3t": "Global shipping", "feat3p": "Flexible by air or sea, with full documentation for smooth customs clearance.",
@@ -114,7 +113,7 @@ const I18N = {
     "ct.eyebrow": "Get a quote", "ct.h2": "Tell us what you need",
     "ct.p": "Fill in the form and we'll send a tailored quote within one business day.",
     "ct.reach": "Reach us directly", "ct.email": "Email", "ct.wa": "WhatsApp / WeChat",
-    "ct.factory": "Factory", "ct.response": "Response time", "ct.within24": "Within 24 hours",
+    "ct.address": "Address", "ct.response": "Response time", "ct.within24": "Within 24 hours",
     "ct.prefer": "Prefer email? Just send your product interest, target quantity and market — we'll take it from there.",
 
     "bl.eyebrow": "Journal", "bl.h2": "Stories and guides about life with pets",
@@ -135,9 +134,12 @@ const I18N = {
     "footer.rights": "Poteho. Все права защищены.",
     "footer.slogan": "Poteho — лучший друг вашего питомца",
 
-    "cat.all": "Все", "cat.bags": "Переноски", "cat.bed": "Лежанки",
-    "cat.apparel": "Одежда", "cat.leashes": "Поводки", "cat.feeding": "Кормление",
-    "cat.others": "Другое", "opt.custom": "Индивидуальный проект",
+    "cat.all": "Все", "cat.carriers": "Переноски", "cat.beds": "Лежанки и коврики",
+    "cat.fences": "Ограждения и поводки", "cat.apparel": "Одежда", "cat.rehab": "Реабилитация", "opt.custom": "Индивидуальный проект",
+    "cat.carriers.sub": "Комфорт в пути →", "cat.beds.sub": "Уютный отдых →",
+    "cat.fences.sub": "Безопасные прогулки →", "cat.apparel.sub": "Одежда на любую погоду →",
+    "cat.rehab.sub": "Уход и восстановление →",
+    "cat.viewall": "Все товары →", "cat.soon": "Скоро в продаже",
 
     "form.name": "Имя *", "form.company": "Компания", "form.email": "Email *",
     "form.interest": "Интересующий товар *", "form.select": "Выберите категорию…",
@@ -221,7 +223,7 @@ const I18N = {
     "ct.eyebrow": "Запросить цену", "ct.h2": "Расскажите, что вам нужно",
     "ct.p": "Заполните форму — мы пришлём персональный расчёт в течение одного рабочего дня.",
     "ct.reach": "Свяжитесь с нами напрямую", "ct.email": "Email", "ct.wa": "WhatsApp / WeChat",
-    "ct.factory": "Завод", "ct.response": "Время ответа", "ct.within24": "В течение 24 часов",
+    "ct.address": "Адрес", "ct.response": "Время ответа", "ct.within24": "В течение 24 часов",
     "ct.prefer": "Удобнее по почте? Просто отправьте интересующий товар, количество и рынок — дальше мы всё сделаем сами.",
 
     "bl.eyebrow": "Журнал", "bl.h2": "Истории и гайды о жизни с питомцами",
@@ -242,9 +244,12 @@ const I18N = {
     "footer.rights": "Poteho. Todos los derechos reservados.",
     "footer.slogan": "Poteho — el mejor amigo de tu mascota",
 
-    "cat.all": "Todos", "cat.bags": "Transportines", "cat.bed": "Camas",
-    "cat.apparel": "Ropa", "cat.leashes": "Correas", "cat.feeding": "Alimentación",
-    "cat.others": "Otros", "opt.custom": "Proyecto personalizado",
+    "cat.all": "Todos", "cat.carriers": "Transportines", "cat.beds": "Camas y mantas",
+    "cat.fences": "Vallas y correas", "cat.apparel": "Ropa", "cat.rehab": "Rehabilitación", "opt.custom": "Proyecto personalizado",
+    "cat.carriers.sub": "Viaja cómodo →", "cat.beds.sub": "Descansa a gusto →",
+    "cat.fences.sub": "Paseos seguros →", "cat.apparel.sub": "Vestido para cualquier clima →",
+    "cat.rehab.sub": "Cuidado y recuperación →",
+    "cat.viewall": "Ver todos los productos →", "cat.soon": "Próximamente",
 
     "form.name": "Nombre *", "form.company": "Empresa", "form.email": "Correo *",
     "form.interest": "Producto de interés *", "form.select": "Selecciona una categoría…",
@@ -328,7 +333,7 @@ const I18N = {
     "ct.eyebrow": "Pedir cotización", "ct.h2": "Cuéntanos qué necesitas",
     "ct.p": "Rellena el formulario y te enviaremos una cotización a medida en un día laborable.",
     "ct.reach": "Contacta directamente", "ct.email": "Correo", "ct.wa": "WhatsApp / WeChat",
-    "ct.factory": "Fábrica", "ct.response": "Tiempo de respuesta", "ct.within24": "En 24 horas",
+    "ct.address": "Dirección", "ct.response": "Tiempo de respuesta", "ct.within24": "En 24 horas",
     "ct.prefer": "¿Prefieres el correo? Envíanos el producto de interés, cantidad objetivo y mercado — nosotros nos encargamos del resto.",
 
     "bl.eyebrow": "Revista", "bl.h2": "Historias y guías sobre la vida con mascotas",
@@ -349,12 +354,11 @@ const I18N = {
     "footer.rights": "Poteho 版权所有。",
     "footer.slogan": "Poteho — 您宠物的最佳伙伴",
 
-    "cat.all": "全部", "cat.bags": "外出包", "cat.bed": "宠物床",
-    "cat.apparel": "衣服", "cat.leashes": "牵引绳", "cat.feeding": "喂养",
-    "cat.others": "其他", "opt.custom": "定制项目",
-    "cat.bags.sub": "舒适出行 →", "cat.bed.sub": "安心休憩 →",
-    "cat.apparel.sub": "四季有衣 →", "cat.leashes.sub": "遛宠有型 →",
-    "cat.feeding.sub": "饮水喂食 →", "cat.others.sub": "更多品类 →",
+    "cat.all": "全部", "cat.carriers": "宠物外出包", "cat.beds": "宠物窝垫",
+    "cat.fences": "围栏与牵引", "cat.apparel": "宠物服饰", "cat.rehab": "宠物康复", "opt.custom": "定制项目",
+    "cat.carriers.sub": "舒适出行 →", "cat.beds.sub": "安心休憩 →",
+    "cat.fences.sub": "安全随行 →", "cat.apparel.sub": "四季有衣 →",
+    "cat.rehab.sub": "护理与康复 →",
     "cat.viewall": "查看全部产品 →", "cat.soon": "即将上线",
 
     "form.name": "姓名 *", "form.company": "公司", "form.email": "邮箱 *",
@@ -439,7 +443,7 @@ const I18N = {
     "ct.eyebrow": "获取报价", "ct.h2": "告诉我们您的需求",
     "ct.p": "填写表单，我们会在一个工作日内发送专属报价。",
     "ct.reach": "直接联系我们", "ct.email": "邮箱", "ct.wa": "WhatsApp / 微信",
-    "ct.factory": "工厂", "ct.response": "响应时间", "ct.within24": "24 小时内",
+    "ct.address": "公司地址", "ct.response": "响应时间", "ct.within24": "24 小时内",
     "ct.prefer": "更习惯发邮件？直接发送感兴趣的产品、目标数量和市场 — 剩下的交给我们。",
 
     "bl.eyebrow": "专栏", "bl.h2": "关于与宠物相伴的故事与指南",

@@ -1,457 +1,1162 @@
 {
   "products": [
     {
-      "name_zh": "宠物外出包",
-      "name_es": "Transportín para mascotas",
-      "img": "assets/products/pet-carrier-01.jpg",
-      "short_ru": "Мягкая переноска с сетчатыми окнами и мягким ремнём.",
-      "description_ru": "Мягкая переноска для мелких собак и кошек. Сетчатые панели по бокам и сверху обеспечивают вентиляцию и обзор, жёсткое дно не даёт сумке провисать. Носится за мягкую ручку или на съёмном ремне.",
-      "short_en": "Soft-sided carrier with mesh windows and a padded strap.",
-      "description_en": "A soft-sided pet carrier for small dogs and cats. Breathable mesh panels on the sides and top keep air flowing and let pets see out, while a rigid base stops the bag from sagging. Carry it by the padded handle or the detachable shoulder strap.",
-      "featured": true,
-      "moq": "10",
-      "short_zh": "软质外出包，网面透气，背带加厚。",
-      "description_zh": "适合小型犬猫的软质外出包。侧边与顶部网面透气，宠物视野好；底板硬质不塌陷。可手提，也可用可拆卸肩带斜挎。",
-      "short_es": "Transportín blando con ventanas de malla y correa acolchada.",
-      "description_es": "Transportín blando para perros pequeños y gatos. Los paneles de malla transpirable laterales y superiores dan ventilación y visibilidad, y la base rígida evita que se hunda. Se lleva con el asa acolchada o con la correa de hombro desmontable.",
-      "cat": "bags",
-      "name_ru": "Переноска для питомцев",
+      "id": "pth-1101",
+      "sku": "PTH-1101",
+      "cat": "carriers",
+      "name_en": "Pet Carrier Backpack",
+      "name_zh": "宠物外出双肩包",
+      "name_ru": "Сумка-рюкзак для питомца",
+      "short_en": "Khaki and grey backpack carrier in oxford cloth with a fold-flat body.",
+      "short_zh": "卡其/灰色牛津布双肩外出包，可折叠收纳。",
+      "short_ru": "Рюкзак-переноска из оксфорда, хаки и серый, складывается плоско.",
+      "description_en": "A soft backpack carrier made from oxford cloth with a polyester lining. The body folds down to 36 x 32 x 7 cm for easy storage and shipping. Supplied in khaki and grey.",
+      "description_zh": "牛津布面料、涤纶内里的软质双肩外出包，可折叠至 36×32×7cm，便于收纳与运输。提供卡其、灰两色。",
+      "description_ru": "Мягкая сумка-рюкзак из оксфордской ткани на полиэстеровой подкладке. Складывается до 36 x 32 x 7 см. Цвета: хаки и серый.",
       "specs": [
         {
-          "k": "Material",
-          "v": "600D oxford + breathable mesh"
+          "k": "Model",
+          "v": "PTH-1101"
         },
         {
-          "k": "Sizes",
-          "v": "S / M / L"
+          "k": "Color",
+          "v": "Khaki / Gray"
         },
         {
-          "k": "Load",
-          "v": "Up to 8 kg"
+          "k": "Fabric",
+          "v": "oxford cloth (inside polyester)"
         },
         {
-          "k": "Feature",
-          "v": "Mesh windows, rigid base"
+          "k": "Bag size",
+          "v": "36×25×32cm"
         },
         {
-          "k": "Custom",
-          "v": "Color, logo, packaging"
+          "k": "Folded size",
+          "v": "36×32×7cm"
         },
         {
-          "k": "Lead time",
-          "v": "15–25 days after sample"
+          "k": "N.W.",
+          "v": "1KG"
         }
       ],
+      "moq": "",
+      "img": "assets/products/pth-1101.jpg",
       "images": [
-        "assets/products/pet-carrier-01.jpg"
+        "assets/products/pth-1101.jpg"
       ],
-      "id": "carrier-classic-01",
-      "name_en": "Pet Carrier"
+      "featured": true
     },
     {
-      "name_zh": "可扩容宠物双肩背包",
-      "name_es": "Mochila transportín expandible",
-      "img": "assets/products/pet-backpack-expandable-02.jpg",
-      "short_ru": "Рюкзак с раскладной сетчатой боковиной — больше места.",
-      "description_ru": "Рюкзак-переноска с расширением: расстегните сетчатую боковину, и отделение увеличивается, давая питомцу больше места в долгой дороге. Мягкие лямки и нагрудная застёжка распределяют вес, сетка обеспечивает вентиляцию.",
-      "short_en": "Backpack with an expandable mesh side that adds space.",
-      "description_en": "A pet backpack that expands: unzip the mesh side and the compartment grows, giving pets room to stretch on longer trips. Padded shoulder straps and a chest clip spread the weight, and breathable panels keep the air moving.",
-      "featured": false,
-      "moq": "10",
-      "short_zh": "侧面可拉开扩容，空间更大。",
-      "description_zh": "可扩容双肩外出包：拉开侧面网布，空间随之变大，长途出行宠物能舒展身体。加厚肩带与胸扣分散重量，网面透气。",
-      "short_es": "Mochila con lateral de malla expandible que añade espacio.",
-      "description_es": "Mochila transportín expandible: abre la cremallera del lateral de malla y el compartimento crece para que la mascota estire las patas. Las correas acolchadas y el clip pectoral reparten el peso y los paneles transpirables ventilan.",
-      "cat": "bags",
-      "name_ru": "Раскладной рюкзак-переноска",
+      "id": "pth-1102",
+      "sku": "PTH-1102",
+      "cat": "carriers",
+      "name_en": "Foldable Pet Carrier",
+      "name_zh": "可折叠宠物手提包",
+      "name_ru": "Складная переноска",
+      "short_en": "Beige and coffee PU leather carrier that folds flat.",
+      "short_zh": "米色配咖啡色 PU 皮革手提包，可折叠。",
+      "short_ru": "Складная переноска из PU-кожи, бежевая с кофейным.",
+      "description_en": "A foldable pet carrier in PU leather, finished in a beige and coffee two-tone combination. Clean seams and a structured shape make it a smart retail line.",
+      "description_zh": "PU 皮革可折叠宠物手提包，米色与咖啡色拼色，走线工整、版型挺括，适合门店零售陈列。",
+      "description_ru": "Складная переноска из PU-кожи в бежево-кофейной расцветке. Аккуратные швы и жёсткая форма для розничной витрины.",
       "specs": [
         {
+          "k": "Model",
+          "v": "PTH-1102"
+        },
+        {
+          "k": "Color",
+          "v": "Beige+Coffee"
+        },
+        {
           "k": "Material",
-          "v": "Oxford + breathable mesh"
+          "v": "PU leather"
         },
         {
-          "k": "Load",
-          "v": "Up to 7 kg"
+          "k": "Bag size",
+          "v": "40×33×30cm"
         },
         {
-          "k": "Feature",
-          "v": "Expandable mesh side panel"
-        },
-        {
-          "k": "Sizes",
-          "v": "One size"
-        },
-        {
-          "k": "Custom",
-          "v": "Color, logo, packaging"
-        },
-        {
-          "k": "Lead time",
-          "v": "15–25 days after sample"
+          "k": "N.W.",
+          "v": "1.1KG"
         }
       ],
+      "moq": "",
+      "img": "assets/products/pth-1102.jpg",
       "images": [
-        "assets/products/pet-backpack-expandable-02.jpg"
+        "assets/products/pth-1102.jpg"
       ],
-      "id": "backpack-expandable-02",
-      "name_en": "Expandable Pet Backpack"
+      "featured": false
     },
     {
-      "name_zh": "透明宠物双肩背包",
-      "name_es": "Mochila transportín transparente",
-      "img": "assets/products/pet-backpack-transparent-03.jpg",
-      "short_ru": "Прозрачный рюкзак-купол с вентиляционными отверстиями.",
-      "description_ru": "Прозрачный рюкзак с панорамным окном, через которое питомец наблюдает за миром. Отверстия и сетка по бокам обеспечивают свежий воздух, мягкие лямки делают носку комфортной.",
-      "short_en": "Clear bubble backpack with ventilation holes.",
-      "description_en": "A transparent pet backpack with a panoramic clear window so pets can watch the world go by. Ventilation holes and side mesh keep the air fresh, and the padded straps make it comfortable to carry for hours.",
-      "featured": true,
-      "moq": "10",
-      "short_zh": "全透明太空舱，带透气孔。",
-      "description_zh": "全透明双肩外出包，全景视窗让宠物一路看风景。透气孔加侧面网布保持空气流通，加厚肩带久背不累。",
-      "short_es": "Mochila burbuja transparente con orificios de ventilación.",
-      "description_es": "Mochila transportín transparente con ventana panorámica para que la mascota lo vea todo. Los orificios de ventilación y la malla lateral mantienen el aire fresco y las correas acolchadas la hacen cómoda durante horas.",
-      "cat": "bags",
+      "id": "pth-1103",
+      "sku": "PTH-1103",
+      "cat": "carriers",
+      "name_en": "Expandable Pet Backpack",
+      "name_zh": "可扩容宠物双肩包",
+      "name_ru": "Расширяемый рюкзак-переноска",
+      "short_en": "Expandable shell backpack with a zip-out mesh section.",
+      "short_zh": "带拉链式网布扩容仓的硬壳双肩包。",
+      "short_ru": "Рюкзак-переноска с раскладным сетчатым отсеком на молнии.",
+      "description_en": "An expandable pet backpack built from eco-friendly PC and oxford cloth. Unzip the side to open out a mesh extension that gives the pet more room, then zip it flat for transport.",
+      "description_zh": "环保 PC 与牛津布打造的可扩容双肩包，拉开侧边拉链即可展开网布扩容仓，增加宠物活动空间；收起后便于携带运输。",
+      "description_ru": "Расширяемый рюкзак из экологичного PC и оксфорда. Боковой отсек на молнии раскрывается в сетчатое расширение.",
+      "specs": [
+        {
+          "k": "Model",
+          "v": "PTH-1103"
+        },
+        {
+          "k": "Color",
+          "v": "Gray / Black / Pink"
+        },
+        {
+          "k": "Material",
+          "v": "Eco-friendly PC + oxford cloth"
+        },
+        {
+          "k": "Bag size",
+          "v": "32×82×44cm"
+        },
+        {
+          "k": "Package size",
+          "v": "44×32×18cm"
+        },
+        {
+          "k": "N.W.",
+          "v": "1KG"
+        }
+      ],
+      "moq": "",
+      "img": "assets/products/pth-1103.jpg",
+      "images": [
+        "assets/products/pth-1103.jpg"
+      ],
+      "featured": false
+    },
+    {
+      "id": "pth-1104",
+      "sku": "PTH-1104",
+      "cat": "carriers",
+      "name_en": "Transparent Pet Backpack",
+      "name_zh": "透明宠物双肩包",
       "name_ru": "Прозрачный рюкзак-переноска",
+      "short_en": "Clear-window backpack with ventilation holes, four colours.",
+      "short_zh": "全景透明视窗双肩包，带透气孔，四色可选。",
+      "short_ru": "Рюкзак с прозрачным окном и вентиляцией, четыре цвета.",
+      "description_en": "A transparent pet backpack made from eco-friendly PC and oxford cloth. The clear front panel gives pets a full view out while ventilation holes keep air moving inside.",
+      "description_zh": "环保 PC 与牛津布透明双肩包，全景视窗让宠物视野开阔，透气孔保持仓内空气流通。",
+      "description_ru": "Прозрачный рюкзак из экологичного PC и оксфорда. Панорамное окно и вентиляционные отверстия.",
       "specs": [
         {
+          "k": "Model",
+          "v": "PTH-1104"
+        },
+        {
+          "k": "Color",
+          "v": "Gray / Black / Red / Pink"
+        },
+        {
           "k": "Material",
-          "v": "PC shell + oxford"
+          "v": "Eco-friendly PC + oxford cloth"
         },
         {
-          "k": "Load",
-          "v": "Up to 6 kg"
+          "k": "Bag size",
+          "v": "31×28×42cm"
         },
         {
-          "k": "Feature",
-          "v": "Transparent window, ventilation holes"
+          "k": "Package size",
+          "v": "32×43×17cm"
         },
         {
-          "k": "Sizes",
-          "v": "One size"
-        },
-        {
-          "k": "Custom",
-          "v": "Color, logo, packaging"
-        },
-        {
-          "k": "Lead time",
-          "v": "15–25 days after sample"
+          "k": "N.W.",
+          "v": "1.3KG"
         }
       ],
+      "moq": "",
+      "img": "assets/products/pth-1104.jpg",
       "images": [
-        "assets/products/pet-backpack-transparent-03.jpg"
+        "assets/products/pth-1104.jpg"
       ],
-      "id": "backpack-transparent-03",
-      "name_en": "Transparent Pet Backpack"
+      "featured": false
     },
     {
-      "name_zh": "车载双仓宠物包",
-      "name_es": "Transportín doble para coche",
-      "img": "assets/products/pet-carrier-car-04.jpg",
-      "short_ru": "Переноска с двумя отделениями, служит и автокреслом.",
-      "description_ru": "Двухсекционная переноска для автомобильного сиденья: два питомца едут отдельно и безопасно. Сетчатые панели дают вентиляцию и обзор, а в сложенном виде переноска легко хранится.",
-      "short_en": "Two-compartment carrier that doubles as a car seat.",
-      "description_en": "A dual-compartment pet carrier designed to sit on a car seat, keeping two pets separate and secure on the road. Mesh panels give airflow and visibility, and the fold-flat design makes it easy to store between trips.",
-      "featured": true,
-      "moq": "10",
-      "short_zh": "双仓设计，可当车载宠物座椅。",
-      "description_zh": "双仓宠物包，可放在汽车座椅上，让两只宠物各占一仓、安全互不打扰。网面透气又能看护，不用时可折叠收纳。",
-      "short_es": "Transportín de dos compartimentos que también sirve de asiento de coche.",
-      "description_es": "Transportín de dos compartimentos pensado para el asiento del coche, manteniendo a dos mascotas separadas y seguras. Los paneles de malla dan ventilación y visibilidad, y se pliega para guardarlo.",
-      "cat": "bags",
-      "name_ru": "Автомобильная переноска с двумя отделениями",
+      "id": "pth-1105",
+      "sku": "PTH-1105",
+      "cat": "carriers",
+      "name_en": "Car-mounted Dual-compartment Pet Carrier",
+      "name_zh": "车载双舱宠物包",
+      "name_ru": "Автомобильная переноска на 2 отделения",
+      "short_en": "Two-compartment car carrier, 100 x 50 x 50 cm, folds flat.",
+      "short_zh": "车载双舱宠物包，100×50×50cm，可折叠。",
+      "short_ru": "Автопереноска с двумя отделениями 100 x 50 x 50 см, складная.",
+      "description_en": "A car-mounted carrier with two separate compartments, built from oxford cloth with a polyester lining. It opens to 100 x 50 x 50 cm and folds down to just 8 cm thick.",
+      "description_zh": "牛津布（涤纶内里）车载双舱宠物包，展开 100×50×50cm，可分隔两只宠物；折叠后仅 8cm 厚。",
+      "description_ru": "Автомобильная переноска с двумя отделениями из оксфорда на полиэстере. Раскладывается до 100 x 50 x 50 см, складывается до 8 см.",
       "specs": [
         {
-          "k": "Material",
-          "v": "Oxford + breathable mesh"
+          "k": "Model",
+          "v": "PTH-1105"
         },
         {
-          "k": "Load",
-          "v": "Up to 12 kg total"
+          "k": "Color",
+          "v": "Black"
         },
         {
-          "k": "Feature",
-          "v": "Dual compartments, car-seat friendly, foldable"
+          "k": "Fabric",
+          "v": "oxford cloth (inside polyester)"
         },
         {
-          "k": "Sizes",
-          "v": "One size"
+          "k": "Carrier size",
+          "v": "100×50×50cm"
         },
         {
-          "k": "Custom",
-          "v": "Color, logo, packaging"
+          "k": "Folded size",
+          "v": "50×50×8cm"
         },
         {
-          "k": "Lead time",
-          "v": "15–25 days after sample"
+          "k": "N.W.",
+          "v": "3.4KG"
         }
       ],
+      "moq": "",
+      "img": "assets/products/pth-1105.jpg",
       "images": [
-        "assets/products/pet-carrier-car-04.jpg"
+        "assets/products/pth-1105.jpg"
       ],
-      "id": "carrier-car-04",
-      "name_en": "Car-mounted Dual-compartment Pet Carrier"
+      "featured": false
     },
     {
-      "name_zh": "透明拉杆宠物箱",
-      "name_es": "Transportín transparente con ruedas",
-      "img": "assets/products/pet-carrier-wheels-05.jpg",
-      "short_ru": "Прозрачная переноска на колёсах с телескопической ручкой.",
-      "description_ru": "Прозрачная переноска с колёсами 360° и телескопической ручкой: её удобно катить, а не нести. Прозрачный корпус даёт полный обзор, а проёмы обеспечивают вентиляцию.",
-      "short_en": "Clear rolling carrier with a telescopic handle.",
-      "description_en": "A transparent rolling carrier with 360° wheels and a telescopic handle, so you can pull it instead of carrying it. The clear shell gives pets a full view while the openings keep the compartment ventilated.",
-      "featured": false,
-      "moq": "10",
-      "short_zh": "透明箱体，拉杆拖行。",
-      "description_zh": "透明拉杆猫箱，底部 360° 静音轮配伸缩拉杆，拖着走更省力。透明外壳让宠物视野开阔，开口设计保持通风。",
-      "short_es": "Transportín transparente con ruedas y asa telescópica.",
-      "description_es": "Transportín transparente con ruedas de 360° y asa telescópica: se arrastra en lugar de cargarlo. La carcasa transparente da visibilidad total y las aberturas mantienen ventilado el compartimento.",
-      "cat": "bags",
+      "id": "pth-1106",
+      "sku": "PTH-1106",
+      "cat": "carriers",
+      "name_en": "Hard-Sided Pet Carrier",
+      "name_zh": "硬壳宠物航空箱",
+      "name_ru": "Жёсткая переноска",
+      "short_en": "PP + ABS hard-sided carrier in three two-tone colourways.",
+      "short_zh": "PP+ABS 硬壳航空箱，三种拼色可选。",
+      "short_ru": "Жёсткая переноска из PP+ABS в трёх двухцветных расцветках.",
+      "description_en": "A hard-sided pet carrier moulded from PP and ABS plastic, with a rigid shell, ventilation grille and carry handle. Rated for pets under 6 kg.",
+      "description_zh": "PP+ABS 注塑硬壳宠物航空箱，结构坚固，带通风栅格与提手，适用 6kg 以下宠物。",
+      "description_ru": "Жёсткая переноска из PP и ABS с вентиляционной решёткой и ручкой. Для питомцев до 6 кг.",
+      "specs": [
+        {
+          "k": "Model",
+          "v": "PTH-1106"
+        },
+        {
+          "k": "Color",
+          "v": "white+gray / white+green / yellow+blue"
+        },
+        {
+          "k": "Material",
+          "v": "PP+ABS Plastic"
+        },
+        {
+          "k": "Carrier size",
+          "v": "49×32×32cm"
+        },
+        {
+          "k": "Package size",
+          "v": "50×21×34cm"
+        },
+        {
+          "k": "N.W./G.W.",
+          "v": "2.1KG/2.2KG"
+        },
+        {
+          "k": "Pet",
+          "v": "<6KG pet"
+        }
+      ],
+      "moq": "",
+      "img": "assets/products/pth-1106.jpg",
+      "images": [
+        "assets/products/pth-1106.jpg"
+      ],
+      "featured": true
+    },
+    {
+      "id": "pth-1107",
+      "sku": "PTH-1107",
+      "cat": "carriers",
+      "name_en": "Hard-Sided Pet Carrier (Creamy Yellow)",
+      "name_zh": "硬壳宠物航空箱（奶油黄）",
+      "name_ru": "Жёсткая переноска (кремово-жёлтая)",
+      "short_en": "Creamy-yellow PP hard-sided carrier for pets under 6 kg.",
+      "short_zh": "奶油黄色 PP 硬壳航空箱，适用 6kg 以下宠物。",
+      "short_ru": "Кремово-жёлтая жёсткая переноска из PP для питомцев до 6 кг.",
+      "description_en": "A lightweight PP hard-sided carrier in creamy yellow, with a vented grille and a top carry handle. Its lower 1.1 kg net weight makes it economical to ship.",
+      "description_zh": "奶油黄色 PP 硬壳航空箱，带通风栅格与顶部提手，净重仅 1.1kg，运输成本更低。",
+      "description_ru": "Лёгкая жёсткая переноска из PP кремово-жёлтого цвета с вентиляцией и верхней ручкой. Вес нетто 1,1 кг.",
+      "specs": [
+        {
+          "k": "Model",
+          "v": "PTH-1107"
+        },
+        {
+          "k": "Color",
+          "v": "Creamy Yellow"
+        },
+        {
+          "k": "Material",
+          "v": "PP"
+        },
+        {
+          "k": "Carrier size",
+          "v": "48×30×30cm"
+        },
+        {
+          "k": "Package size",
+          "v": "50×21×34cm"
+        },
+        {
+          "k": "N.W./G.W.",
+          "v": "1.1KG/1.8KG"
+        },
+        {
+          "k": "Pet",
+          "v": "<6KG pet"
+        }
+      ],
+      "moq": "",
+      "img": "assets/products/pth-1107.jpg",
+      "images": [
+        "assets/products/pth-1107.jpg"
+      ],
+      "featured": false
+    },
+    {
+      "id": "pth-1108",
+      "sku": "PTH-1108",
+      "cat": "carriers",
+      "name_en": "Transparent Pet Carrier with Rolling Wheels",
+      "name_zh": "透明带轮宠物拉杆箱",
       "name_ru": "Прозрачная переноска на колёсах",
+      "short_en": "Clear dome carrier on wheels with a telescopic handle.",
+      "short_zh": "全景透明穹顶拉杆箱，带伸缩拉杆与滚轮。",
+      "short_ru": "Прозрачная переноска-купол на колёсах с выдвижной ручкой.",
+      "description_en": "A rolling transparent carrier built from eco-friendly PC and PP. The clear dome gives pets a panoramic view, while the telescopic handle and wheels take the weight off your shoulder.",
+      "description_zh": "环保 PC+PP 全景透明拉杆箱，穹顶视窗视野开阔，伸缩拉杆配滚轮，出行更省力。",
+      "description_ru": "Прозрачная переноска из экологичного PC и PP на колёсах, с выдвижной ручкой и панорамным куполом.",
       "specs": [
         {
+          "k": "Model",
+          "v": "PTH-1108"
+        },
+        {
+          "k": "Color",
+          "v": "Orange / Black / Green"
+        },
+        {
           "k": "Material",
-          "v": "PC + aluminium frame"
+          "v": "Eco-friendly PC + PP"
         },
         {
-          "k": "Wheels",
-          "v": "360° silent universal wheels"
+          "k": "Carrier size",
+          "v": "43×24×42cm"
         },
         {
-          "k": "Load",
-          "v": "Up to 10 kg"
+          "k": "Package size",
+          "v": "50×30×40cm"
         },
         {
-          "k": "Feature",
-          "v": "Transparent shell, telescopic handle"
-        },
-        {
-          "k": "Custom",
-          "v": "Color, logo, packaging"
-        },
-        {
-          "k": "Lead time",
-          "v": "15–25 days after sample"
+          "k": "N.W./G.W.",
+          "v": "2.7KG/3.9KG"
         }
       ],
+      "moq": "",
+      "img": "assets/products/pth-1108.jpg",
       "images": [
-        "assets/products/pet-carrier-wheels-05.jpg"
+        "assets/products/pth-1108.jpg"
       ],
-      "id": "carrier-wheels-05",
-      "name_en": "Transparent Pet Carrier with Rolling Wheels"
+      "featured": false
     },
     {
-      "name_zh": "藤编拉杆宠物箱",
-      "name_es": "Transportín de ratán trenzado con ruedas",
-      "img": "assets/products/pet-carrier-rattan-06.jpg",
-      "short_ru": "Плетёная переноска из ротанга на бесшумных колёсах.",
-      "description_ru": "Плетёная из ротанга переноска, которая служит и элементом декора. Дышащее плетение сохраняет прохладу, мягкая подушка добавляет комфорта, а колёсная база с телескопической ручкой облегчает дорогу.",
-      "short_en": "Hand-woven rattan carrier on silent wheels.",
-      "description_en": "A hand-woven rattan carrier that doubles as a piece of home décor. The breathable weave keeps pets cool, the soft cushion inside adds comfort, and the rolling base with a telescopic handle makes travel easy.",
-      "featured": true,
-      "moq": "10",
-      "short_zh": "手工藤编箱体，配静音万向轮。",
-      "description_zh": "手工藤编宠物箱，居家也像一件装饰品。藤编透气凉爽，内配软垫更舒适；拉杆底座配万向轮，出行更轻松。",
-      "short_es": "Transportín de ratán tejido a mano con ruedas silenciosas.",
-      "description_es": "Transportín de ratán tejido a mano que también decora el hogar. El tejido transpirable mantiene fresca a la mascota, el cojín interior aporta comodidad y la base con ruedas y asa telescópica facilita el viaje.",
-      "cat": "bags",
-      "name_ru": "Плетёная переноска из ротанга на колёсах",
+      "id": "pth-1109",
+      "sku": "PTH-1109",
+      "cat": "carriers",
+      "name_en": "Rattan Plaited Pet Carrier with Rolling Wheels",
+      "name_zh": "藤编带轮宠物拉杆箱",
+      "name_ru": "Плетёная переноска на колёсах",
+      "short_en": "Hand-plaited PE rattan carrier with wheels and pull handle.",
+      "short_zh": "PE 藤编手工编织拉杆箱，带滚轮与拉杆。",
+      "short_ru": "Плетёная из PE-ротанга переноска на колёсах с ручкой.",
+      "description_en": "A rolling carrier woven from PE rattan, with a distinctive cat-ear silhouette and a telescopic handle. A decorative piece that works as furniture as well as transport.",
+      "description_zh": "PE 藤编手工编织拉杆箱，猫耳造型别致，配伸缩拉杆与滚轮，既可出行使用也可作家居摆件。",
+      "description_ru": "Переноска из PE-ротанга с силуэтом кошачьих ушек, колёсами и выдвижной ручкой.",
       "specs": [
         {
+          "k": "Model",
+          "v": "PTH-1109"
+        },
+        {
+          "k": "Color",
+          "v": "Rattan"
+        },
+        {
           "k": "Material",
-          "v": "Hand-woven rattan + fabric lining"
+          "v": "PE rattan"
         },
         {
-          "k": "Wheels",
-          "v": "360° silent universal wheels"
+          "k": "Carrier size",
+          "v": "45×48×30cm"
         },
         {
-          "k": "Load",
-          "v": "Up to 8 kg"
+          "k": "Package size",
+          "v": "45×50×35cm"
         },
         {
-          "k": "Feature",
-          "v": "Hand-woven, removable cushion"
-        },
-        {
-          "k": "Custom",
-          "v": "Color, logo, packaging"
-        },
-        {
-          "k": "Lead time",
-          "v": "20–30 days after sample"
+          "k": "N.W./G.W.",
+          "v": "4KG/4.5KG"
         }
       ],
+      "moq": "",
+      "img": "assets/products/pth-1109.jpg",
       "images": [
-        "assets/products/pet-carrier-rattan-06.jpg"
+        "assets/products/pth-1109.jpg"
       ],
-      "id": "carrier-rattan-06",
-      "name_en": "Rattan Plaited Articles Pet Carrier with Rolling Wheels"
+      "featured": false
     },
     {
-      "name_zh": "硬壳宠物箱",
-      "name_es": "Transportín rígido para mascotas",
-      "img": "assets/products/pet-carrier-hardsided-07.jpg",
-      "short_ru": "Вентилируемый жёсткий контейнер для безопасной перевозки.",
-      "description_ru": "Жёсткая переноска со стальной сетчатой дверцей и сквозной вентиляцией со всех сторон — для безопасной поездки в машине и самолёте. Две части корпуса соединяются защёлками: быстро собрать и легко мыть.",
-      "short_en": "Ventilated hard-shell crate for safe transport.",
-      "description_en": "A hard-sided carrier with a steel-mesh door and cross-ventilation on all sides, built for safe car and air travel. The two-part shell clips together for quick assembly and easy cleaning.",
-      "featured": true,
-      "moq": "10",
-      "short_zh": "硬壳箱体，四面通风，运输更安全。",
-      "description_zh": "硬壳宠物箱，钢网门配四面通风，适合汽车与航空托运。上下两片卡扣拼装，拆装清洗都快。",
-      "short_es": "Transportín rígido ventilado para un traslado seguro.",
-      "description_es": "Transportín rígido con puerta de malla de acero y ventilación cruzada por todos los lados, pensado para viajar en coche y en avión con seguridad. Las dos piezas de la carcasa se encajan para montarlo y limpiarlo rápido.",
-      "cat": "bags",
-      "name_ru": "Жёсткая переноска-контейнер",
+      "id": "pth-1110",
+      "sku": "PTH-1110",
+      "cat": "carriers",
+      "name_en": "Hard Shell Pet Carrier with Wheels",
+      "name_zh": "硬壳带轮宠物拉杆箱",
+      "name_ru": "Жёсткая переноска на колёсах",
+      "short_en": "Off-white ABS trolley carrier with an alloy pull rod.",
+      "short_zh": "米白色 ABS 硬壳拉杆箱，配铝合金拉杆。",
+      "short_ru": "Жёсткая переноска-тележка из ABS с алюминиевой ручкой.",
+      "description_en": "A hard shell trolley carrier moulded from ABS with an alloy pull rod that extends to 94.5 cm. Rated for dogs under 7.5 kg or cats under 10 kg.",
+      "description_zh": "ABS 硬壳拉杆箱配铝合金拉杆（最大高度 94.5cm），适用 7.5kg 以下犬或 10kg 以下猫。",
+      "description_ru": "Жёсткая переноска из ABS с выдвижной ручкой до 94,5 см. Для собак до 7,5 кг или кошек до 10 кг.",
       "specs": [
         {
-          "k": "Material",
-          "v": "PP hard shell + steel mesh door"
+          "k": "Model",
+          "v": "PTH-1110"
         },
         {
-          "k": "Sizes",
+          "k": "Color",
+          "v": "Off White"
+        },
+        {
+          "k": "Material",
+          "v": "ABS Plastic+Alloy pull rod"
+        },
+        {
+          "k": "Carrier size",
+          "v": "51×29.5×51cm (Max height 94.5cm)"
+        },
+        {
+          "k": "Package size",
+          "v": "50×21×34cm"
+        },
+        {
+          "k": "G.W.",
+          "v": "5.3KG"
+        },
+        {
+          "k": "Pet",
+          "v": "<7.5KG dog or <10KG cat"
+        }
+      ],
+      "moq": "",
+      "img": "assets/products/pth-1110.jpg",
+      "images": [
+        "assets/products/pth-1110.jpg"
+      ],
+      "featured": false
+    },
+    {
+      "id": "pth-1111",
+      "sku": "PTH-1111",
+      "cat": "carriers",
+      "name_en": "Foldable Pet Carrier with Wheels",
+      "name_zh": "可折叠带轮宠物拉杆包",
+      "name_ru": "Складная переноска на колёсах",
+      "short_en": "Foldable wheeled carrier with aluminium and steel frame.",
+      "short_zh": "可折叠带轮宠物包，铝合金管与钢丝框架。",
+      "short_ru": "Складная переноска на колёсах с алюминиевым и стальным каркасом.",
+      "description_en": "A foldable carrier on wheels, built from oxford cloth and PVC over a steel wire and aluminium pipe frame. Soft-sided for storage yet stiff enough to roll.",
+      "description_zh": "牛津布+PVC 软箱配钢丝与铝合金管框架，可折叠收纳，展开后挺括可拖行。",
+      "description_ru": "Складная переноска из оксфорда и ПВХ на каркасе из стальной проволоки и алюминиевых труб.",
+      "specs": [
+        {
+          "k": "Model",
+          "v": "PTH-1111"
+        },
+        {
+          "k": "Material",
+          "v": "Oxford Cloth, PVC, Steel Wire, Aluminum Pipe"
+        },
+        {
+          "k": "Carrier size",
+          "v": "61×33×35cm"
+        },
+        {
+          "k": "N.W.",
+          "v": "3.2KG"
+        }
+      ],
+      "moq": "",
+      "img": "assets/products/pth-1111.jpg",
+      "images": [
+        "assets/products/pth-1111.jpg"
+      ],
+      "featured": false
+    },
+    {
+      "id": "pth-1112",
+      "sku": "PTH-1112",
+      "cat": "carriers",
+      "name_en": "Pet Chest Bag",
+      "name_zh": "宠物胸前背包",
+      "name_ru": "Нагрудная сумка для питомца",
+      "short_en": "Pink and blue canvas chest bag in three sizes.",
+      "short_zh": "粉蓝拼色帆布胸前背包，三种尺码。",
+      "short_ru": "Розово-голубая нагрудная сумка из холста, три размера.",
+      "description_en": "A canvas chest bag for carrying small pets hands-free, in a pink and blue colourway. Three sizes cover pets from 2 kg to 9 kg.",
+      "description_zh": "粉蓝拼色帆布胸前背包，解放双手携带小型宠物；三种尺码覆盖 2–9kg 宠物。",
+      "description_ru": "Нагрудная сумка из холста розово-голубого цвета. Три размера для питомцев от 2 до 9 кг.",
+      "specs": [
+        {
+          "k": "Model",
+          "v": "PTH-1112"
+        },
+        {
+          "k": "Color",
+          "v": "pink+blue"
+        },
+        {
+          "k": "Size",
+          "v": "M / L / XL"
+        },
+        {
+          "k": "Material",
+          "v": "Canvas"
+        },
+        {
+          "k": "M",
+          "v": "52×32cm (2kg-3kg pet)"
+        },
+        {
+          "k": "L",
+          "v": "56×37cm (3kg-6kg pet)"
+        },
+        {
+          "k": "XL",
+          "v": "64×42cm (6kg-9kg pet)"
+        }
+      ],
+      "moq": "",
+      "img": "assets/products/pth-1112.jpg",
+      "images": [
+        "assets/products/pth-1112.jpg"
+      ],
+      "featured": false
+    },
+    {
+      "id": "pth-1201",
+      "sku": "PTH-1201",
+      "cat": "beds",
+      "name_en": "Pet Bed",
+      "name_zh": "熊形宠物窝",
+      "name_ru": "Лежанка для питомца",
+      "short_en": "Round hooded bed with a bear-shaped bolster, 52 x 52 x 22 cm.",
+      "short_zh": "圆形半包围熊形宠物窝，52×52×22cm。",
+      "short_ru": "Круглая лежанка с бортиком в виде медведя, 52 x 52 x 22 см.",
+      "description_en": "A round bed with a plush bear-shaped bolster wrapping a striped cushioned base. Filled with polyester, PP cotton and sponge for a soft, supportive rest.",
+      "description_zh": "条纹软垫配毛绒熊形围边，半包围设计带来安全感；聚酯纤维+PP棉+海绵填充，柔软有支撑。",
+      "description_ru": "Круглая лежанка с плюшевым бортиком-медведем и полосатой подушкой. Наполнитель: полиэстер, ПП-вата и поролон.",
+      "specs": [
+        {
+          "k": "Model",
+          "v": "PTH-1201"
+        },
+        {
+          "k": "Material",
+          "v": "Polyester+PP cotton+Sponge"
+        },
+        {
+          "k": "Bed size",
+          "v": "52×52×22cm"
+        },
+        {
+          "k": "G.W.",
+          "v": "0.65kg"
+        },
+        {
+          "k": "Pet",
+          "v": "<6.5KG"
+        }
+      ],
+      "moq": "",
+      "img": "assets/products/pth-1201.jpg",
+      "images": [
+        "assets/products/pth-1201.jpg"
+      ],
+      "featured": true
+    },
+    {
+      "id": "pth-1202",
+      "sku": "PTH-1202",
+      "cat": "beds",
+      "name_en": "Rattan Plaited Pet Bed",
+      "name_zh": "藤编宠物床",
+      "name_ru": "Плетёная лежанка",
+      "short_en": "Rattan-plaited round bed with a cotton and linen cushion.",
+      "short_zh": "藤编圆形宠物床，配棉麻软垫。",
+      "short_ru": "Круглая плетёная лежанка с подушкой из хлопка и льна.",
+      "description_en": "A raised round bed woven from PE rattan with a removable cotton and linen cushion. Available in three diameters and two colourways.",
+      "description_zh": "PE 藤编架高圆床，配可拆洗棉麻软垫，三种直径、两色可选。",
+      "description_ru": "Приподнятая круглая лежанка из PE-ротанга со съёмной подушкой из хлопка и льна. Три диаметра.",
+      "specs": [
+        {
+          "k": "Model",
+          "v": "PTH-1202"
+        },
+        {
+          "k": "Color",
+          "v": "Karch / Gray"
+        },
+        {
+          "k": "Size",
+          "v": "M / L / XL"
+        },
+        {
+          "k": "Material",
+          "v": "Cotton&Linen"
+        },
+        {
+          "k": "Size detail",
+          "v": "M(35cm) / L(42cm) / XL(48cm)"
+        },
+        {
+          "k": "Weight",
+          "v": "0.45KG/0.6KG/0.7KG"
+        }
+      ],
+      "moq": "",
+      "img": "assets/products/pth-1202.jpg",
+      "images": [
+        "assets/products/pth-1202.jpg"
+      ],
+      "featured": false
+    },
+    {
+      "id": "pth-1203",
+      "sku": "PTH-1203",
+      "cat": "beds",
+      "name_en": "Pet Mat",
+      "name_zh": "宠物垫",
+      "name_ru": "Коврик для питомца",
+      "short_en": "Yellow flannel and faux lambswool mat in three sizes.",
+      "short_zh": "黄色法兰绒+仿羊羔绒宠物垫，三种尺寸。",
+      "short_ru": "Жёлтый коврик из фланели и искусственной овчины, три размера.",
+      "description_en": "A quilted pet mat with a flannel top and faux lambswool reverse, printed with a biscuit pattern. Three sizes from 50 x 35 cm up to 105 x 70 cm.",
+      "description_zh": "法兰绒面+仿羊羔绒底绗缝宠物垫，饼干图案，三种尺寸 50×35cm 至 105×70cm。",
+      "description_ru": "Стёганый коврик: фланель и искусственная овчина, рисунок «печенье». Размеры от 50 x 35 до 105 x 70 см.",
+      "specs": [
+        {
+          "k": "Model",
+          "v": "PTH-1203"
+        },
+        {
+          "k": "Color",
+          "v": "Yellow"
+        },
+        {
+          "k": "Size",
+          "v": "M / L / XL"
+        },
+        {
+          "k": "Material",
+          "v": "Flannel + Faux Lambswool"
+        },
+        {
+          "k": "Size detail",
+          "v": "M(50×35cm) / L(70×50cm) / XL(105×70cm)"
+        }
+      ],
+      "moq": "",
+      "img": "assets/products/pth-1203.jpg",
+      "images": [
+        "assets/products/pth-1203.jpg"
+      ],
+      "featured": false
+    },
+    {
+      "id": "pth-1301",
+      "sku": "PTH-1301",
+      "cat": "fences",
+      "name_en": "Pet Retractable Fence",
+      "name_zh": "可伸缩宠物围栏",
+      "name_ru": "Выдвижной заборчик для питомцев",
+      "short_en": "White PVC retractable fence, 100 cm high x 200 cm wide.",
+      "short_zh": "白色 PVC 可伸缩围栏，高100cm×宽200cm。",
+      "short_ru": "Белый выдвижной заборчик из ПВХ, 100 см x 200 см.",
+      "description_en": "A retractable PVC pet fence that pulls out to 200 cm wide and stands 100 cm high, then rolls back into a compact 12 x 9 x 143 cm package. Sizes can be changed to order.",
+      "description_zh": "PVC 可伸缩围栏，展开宽 200cm、高 100cm，收回后包装仅 12×9×143cm；尺寸可按要求定制。",
+      "description_ru": "Выдвижной заборчик из ПВХ: 200 см в ширину, 100 см в высоту, упаковка 12 x 9 x 143 см. Размеры на заказ.",
+      "specs": [
+        {
+          "k": "Model",
+          "v": "PTH-1301"
+        },
+        {
+          "k": "Color",
+          "v": "White"
+        },
+        {
+          "k": "Material",
+          "v": "PVC"
+        },
+        {
+          "k": "Size",
+          "v": "100cm(height) 200cm(width)"
+        },
+        {
+          "k": "Package size",
+          "v": "12×9×143cm"
+        },
+        {
+          "k": "Note",
+          "v": "size can be changed"
+        }
+      ],
+      "moq": "",
+      "img": "assets/products/pth-1301.jpg",
+      "images": [
+        "assets/products/pth-1301.jpg"
+      ],
+      "featured": false
+    },
+    {
+      "id": "pth-1401",
+      "sku": "PTH-1401",
+      "cat": "fences",
+      "name_en": "Heavy Duty Dog Leash",
+      "name_zh": "重型牵引绳",
+      "name_ru": "Усиленный поводок для собак",
+      "short_en": "Red and black braided nylon leash with alloy hardware.",
+      "short_zh": "红黑编织尼龙重型牵引绳，配合金扣件。",
+      "short_ru": "Усиленный плетёный нейлоновый поводок красно-чёрный с фурнитурой из сплава.",
+      "description_en": "A heavy duty braided leash in nylon with alloy fittings, 1.2 m long and 1.5 cm thick, with a 30–40 cm collar loop. Built for dogs from 7 to 17 kg.",
+      "description_zh": "尼龙编织+合金扣件，长 1.2m、绳径 1.5cm，颈圈 30–40cm，适用 7–17kg 犬只。",
+      "description_ru": "Плетёный нейлоновый поводок с фурнитурой из сплава: 1,2 м, толщина 1,5 см, петля 30–40 см. Для собак 7–17 кг.",
+      "specs": [
+        {
+          "k": "Model",
+          "v": "PTH-1401"
+        },
+        {
+          "k": "Color",
+          "v": "Red+black"
+        },
+        {
+          "k": "Size",
+          "v": "M / L / XL"
+        },
+        {
+          "k": "Material",
+          "v": "Nylon+Alloy"
+        },
+        {
+          "k": "Length",
+          "v": "1.2m"
+        },
+        {
+          "k": "Rope thickness",
+          "v": "1.5cm"
+        },
+        {
+          "k": "Collar",
+          "v": "30-40cm"
+        },
+        {
+          "k": "Dog weight",
+          "v": "7KG-17KG"
+        }
+      ],
+      "moq": "",
+      "img": "assets/products/pth-1401.jpg",
+      "images": [
+        "assets/products/pth-1401.jpg"
+      ],
+      "featured": true
+    },
+    {
+      "id": "pth-1402",
+      "sku": "PTH-1402",
+      "cat": "fences",
+      "name_en": "Pet Running Leash with Reflective Stripe",
+      "name_zh": "反光跑步牵引绳",
+      "name_ru": "Поводок для бега со светоотражателем",
+      "short_en": "Hands-free running leash with reflective stripe and waist belt.",
+      "short_zh": "带反光条的免手持跑步牵引绳，配腰包。",
+      "short_ru": "Поводок для бега со светоотражающей полосой и поясным ремнём.",
+      "description_en": "A hands-free running leash in polyester with a reflective stripe, an adjustable 78–98 cm waist belt and a bungee section extending from 1.3 m to 1.7 m. Weighs 205 g.",
+      "description_zh": "聚酯纤维免手持跑步牵引绳，带反光条、78–98cm 可调腰带，弹力段 1.3m 可延伸至 1.7m，重 205g。",
+      "description_ru": "Поводок для бега из полиэстера со светоотражателем, поясом 78–98 см и амортизатором 1,3–1,7 м. Вес 205 г.",
+      "specs": [
+        {
+          "k": "Model",
+          "v": "PTH-1402"
+        },
+        {
+          "k": "Color",
+          "v": "Black"
+        },
+        {
+          "k": "Size",
+          "v": "1"
+        },
+        {
+          "k": "Material",
+          "v": "Polyester"
+        },
+        {
+          "k": "Length",
+          "v": "1.3m, max 1.7m"
+        },
+        {
+          "k": "Belt size",
+          "v": "78-98cm"
+        },
+        {
+          "k": "Weight",
+          "v": "205g"
+        },
+        {
+          "k": "Package size",
+          "v": "18.5×14.5×5cm"
+        }
+      ],
+      "moq": "",
+      "img": "assets/products/pth-1402.jpg",
+      "images": [
+        "assets/products/pth-1402.jpg"
+      ],
+      "featured": false
+    },
+    {
+      "id": "pth-1501",
+      "sku": "PTH-1501",
+      "cat": "apparel",
+      "name_en": "Winter Waterproof Dog Coat with Granular Cotton",
+      "name_zh": "冬季防水颗粒棉狗衣",
+      "name_ru": "Зимняя водоотталкивающая куртка для собак",
+      "short_en": "Four-leg waterproof coat filled with granular cotton.",
+      "short_zh": "四脚防水狗衣，颗粒棉填充，四色可选。",
+      "short_ru": "Водоотталкивающий комбинезон на четыре лапы с гранулированным утеплителем.",
+      "description_en": "A full-coverage four-leg winter coat made from polyester with granular cotton padding. Four colours and sizes M through XXL cover most breeds.",
+      "description_zh": "聚酯纤维四脚连体冬衣，颗粒棉填充，防风保暖；四色可选，M–XXL 覆盖多数犬种。",
+      "description_ru": "Зимний комбинезон из полиэстера с гранулированным утеплителем. Четыре цвета, размеры M–XXL.",
+      "specs": [
+        {
+          "k": "Model",
+          "v": "PTH-1501"
+        },
+        {
+          "k": "Color",
+          "v": "Black / Red / Blue / Orange"
+        },
+        {
+          "k": "Size",
+          "v": "M / L / XL / XXL"
+        },
+        {
+          "k": "Material",
+          "v": "Polyester+granular cotton"
+        }
+      ],
+      "moq": "",
+      "img": "assets/products/pth-1501.jpg",
+      "images": [
+        "assets/products/pth-1501.jpg"
+      ],
+      "featured": false
+    },
+    {
+      "id": "pth-1502",
+      "sku": "PTH-1502",
+      "cat": "apparel",
+      "name_en": "Winter Jacket with PP Cotton",
+      "name_zh": "PP棉冬季夹克",
+      "name_ru": "Зимняя куртка с ПП-ватой",
+      "short_en": "Three-proof winter jacket with reflective strip and PP cotton.",
+      "short_zh": "三防面料冬季夹克，反光条+PP棉填充。",
+      "short_ru": "Зимняя куртка из трёхзащитной ткани со светоотражателем и ПП-ватой.",
+      "description_en": "A winter jacket built from three-proof fabric (waterproof, oil-proof and stain-proof) with environmental protection PP cotton, a reflective strip and a soft waterproof zipper.",
+      "description_zh": "三防面料（防水/防油/防污）配环保 PP 棉、反光条与柔软防水拉链，冬季遛狗安全保暖。",
+      "description_ru": "Куртка из трёхзащитной ткани (вода, масло, пятна) с экологичной ПП-ватой, светоотражателем и мягкой влагозащитной молнией.",
+      "specs": [
+        {
+          "k": "Model",
+          "v": "PTH-1502"
+        },
+        {
+          "k": "Color",
+          "v": "Gray / Green"
+        },
+        {
+          "k": "Size",
+          "v": "S / M / L / XL / XXL"
+        },
+        {
+          "k": "Material",
+          "v": "Three-proof Fabric (Waterproof, oil-proof and stain-proof)+Environmental Protection PP Cotton+Reflective Strip+Soft Waterproof Zipper"
+        }
+      ],
+      "moq": "",
+      "img": "assets/products/pth-1502.jpg",
+      "images": [
+        "assets/products/pth-1502.jpg"
+      ],
+      "featured": true
+    },
+    {
+      "id": "pth-1503",
+      "sku": "PTH-1503",
+      "cat": "apparel",
+      "name_en": "Pet Down Jacket",
+      "name_zh": "宠物羽绒服",
+      "name_ru": "Пуховик для питомца",
+      "short_en": "Pink or blue hooded down jacket for pets up to 7 kg.",
+      "short_zh": "粉/蓝连帽羽绒服，适用 7kg 以下宠物。",
+      "short_ru": "Розовый или голубой пуховик с капюшоном для питомцев до 7 кг.",
+      "description_en": "A hooded four-leg down jacket made from waterproof fabric filled with white duck down, with a grey quilted belly panel. Suitable for pets up to 7 kg.",
+      "description_zh": "防水面料+白鸭绒填充的连帽四脚羽绒服，腹部灰色绗缝拼接，适用 7kg 以下宠物。",
+      "description_ru": "Пуховик с капюшоном из водоотталкивающей ткани на белом утином пуху, с серой стёганой вставкой. До 7 кг.",
+      "specs": [
+        {
+          "k": "Model",
+          "v": "PTH-1503"
+        },
+        {
+          "k": "Color",
+          "v": "Pink / Blue"
+        },
+        {
+          "k": "Size",
+          "v": "S / M / L / XL"
+        },
+        {
+          "k": "Material",
+          "v": "Waterproof Fabric + White Duck Down"
+        },
+        {
+          "k": "Pet",
+          "v": "suitable for ≤7KG pet"
+        }
+      ],
+      "moq": "",
+      "img": "assets/products/pth-1503.jpg",
+      "images": [
+        "assets/products/pth-1503.jpg"
+      ],
+      "featured": false
+    },
+    {
+      "id": "pth-1601",
+      "sku": "PTH-1601",
+      "cat": "rehab",
+      "name_en": "Dog Leg Brace (Front)",
+      "name_zh": "犬用前腿护具",
+      "name_ru": "Бандаж на передние лапы собаки",
+      "short_en": "Front-leg brace with metal support bars, three sizes.",
+      "short_zh": "犬前腿护具，内含金属支撑条，三种尺码。",
+      "short_ru": "Бандаж на передние лапы с металлическими вставками, три размера.",
+      "description_en": "A front-leg rehabilitation brace made from SBR with metal support bars, for post-operative walking support and joint stability. Sizes S, M and L cover pets from 3 to 30 kg.",
+      "description_zh": "SBR 材质前腿康复护具，内置金属支撑条，用于术后行走辅助与关节稳定；S/M/L 覆盖 3–30kg 宠物。",
+      "description_ru": "Реабилитационный бандаж на передние лапы из SBR с металлическими вставками. Размеры S–L для питомцев 3–30 кг.",
+      "specs": [
+        {
+          "k": "Model",
+          "v": "PTH-1601"
+        },
+        {
+          "k": "Color",
+          "v": "Black / Blue / Red"
+        },
+        {
+          "k": "Size",
           "v": "S / M / L"
         },
         {
-          "k": "Load",
-          "v": "Up to 12 kg"
+          "k": "Material",
+          "v": "SBR+Metal support bar"
         },
         {
-          "k": "Feature",
-          "v": "Ventilated, quick-assembly shell"
+          "k": "S",
+          "v": "3KG-7KG pet"
         },
         {
-          "k": "Custom",
-          "v": "Color, logo, packaging"
+          "k": "M",
+          "v": "7KG-15KG pet"
         },
         {
-          "k": "Lead time",
-          "v": "20–30 days after sample"
+          "k": "L",
+          "v": "15KG-30KG pet"
         }
       ],
+      "moq": "",
+      "img": "assets/products/pth-1601.jpg",
       "images": [
-        "assets/products/pet-carrier-hardsided-07.jpg"
+        "assets/products/pth-1601.jpg"
       ],
-      "id": "carrier-hardsided-07",
-      "name_en": "Hard-Sided Pet Carrier"
+      "featured": true
     },
     {
-      "name_zh": "大号带轮硬壳宠物箱",
-      "name_es": "Transportín rígido grande con ruedas",
-      "img": "assets/products/pet-carrier-hardshell-08.jpg",
-      "short_ru": "Большой жёсткий корпус на колёсах для крупных питомцев.",
-      "description_ru": "Большая жёсткая переноска на колёсах для питомцев среднего размера. Усиленный корпус защищает в дороге, вентиляционные прорези обеспечивают циркуляцию воздуха, а телескопическая ручка и колёса снимают нагрузку со спины.",
-      "short_en": "Large wheeled hard shell for bigger pets.",
-      "description_en": "A large hard-shell carrier on wheels, sized for medium pets. The reinforced shell protects your pet in transit, ventilation slots keep air moving, and the telescopic handle and wheels take the strain off your back.",
-      "featured": true,
-      "moq": "10",
-      "short_zh": "大容量硬壳箱，带轮拖行。",
-      "description_zh": "大号硬壳带轮宠物箱，适合中型宠物。加厚壳体在途中提供保护，通风孔保持空气流通；伸缩拉杆配万向轮，拖着走不费腰。",
-      "short_es": "Carcasa rígida grande con ruedas para mascotas más grandes.",
-      "description_es": "Transportín rígido grande con ruedas, para mascotas medianas. La carcasa reforzada protege durante el viaje, las ranuras de ventilación mantienen el aire en movimiento y el asa telescópica con ruedas alivian la espalda.",
-      "cat": "bags",
-      "name_ru": "Большая жёсткая переноска на колёсах",
+      "id": "pth-1602",
+      "sku": "PTH-1602",
+      "cat": "rehab",
+      "name_en": "Dog Anti-Lick Sleeve",
+      "name_zh": "犬用防舔护袖",
+      "name_ru": "Защитный рукав от вылизывания",
+      "short_en": "Post-operative anti-lick leg sleeve with metal support.",
+      "short_zh": "术后防舔护腿袖，内含金属支撑条。",
+      "short_ru": "Послеоперационный защитный рукав с металлической вставкой.",
+      "description_en": "An anti-lick sleeve made from SBR with metal support bars, designed to protect a healing leg after surgery while allowing the dog to walk. Three sizes for pets from 8 to 32 kg.",
+      "description_zh": "SBR 材质防舔护袖，内置金属支撑条，保护术后患肢同时不妨碍行走；三种尺码覆盖 8–32kg。",
+      "description_ru": "Защитный рукав из SBR с металлическими вставками для послеоперационной защиты лапы. Три размера, 8–32 кг.",
       "specs": [
         {
+          "k": "Model",
+          "v": "PTH-1602"
+        },
+        {
+          "k": "Color",
+          "v": "Black / Blue / Red"
+        },
+        {
+          "k": "Size",
+          "v": "S / M / L"
+        },
+        {
           "k": "Material",
-          "v": "PP hard shell + steel mesh"
+          "v": "SBR+Metal support bar"
         },
         {
-          "k": "Wheels",
-          "v": "360° silent universal wheels"
+          "k": "S",
+          "v": "8KG-14KG pet"
         },
         {
-          "k": "Load",
-          "v": "Up to 15 kg"
+          "k": "M",
+          "v": "14KG-22KG pet"
         },
         {
-          "k": "Feature",
-          "v": "Reinforced shell, telescopic handle"
-        },
-        {
-          "k": "Custom",
-          "v": "Color, logo, packaging"
-        },
-        {
-          "k": "Lead time",
-          "v": "20–30 days after sample"
+          "k": "L",
+          "v": "23KG-32KG pet"
         }
       ],
+      "moq": "",
+      "img": "assets/products/pth-1602.jpg",
       "images": [
-        "assets/products/pet-carrier-hardshell-08.jpg"
+        "assets/products/pth-1602.jpg"
       ],
-      "id": "carrier-hardshell-08",
-      "name_en": "Large Hard Shell Pet Carrier with Wheels"
+      "featured": false
     },
     {
-      "name_zh": "熊头抱抱圆形宠物窝",
-      "name_es": "Cama redonda para mascotas con diseño de cabeza de oso",
-      "img": "assets/pet-bed.jpg",
-      "short_ru": "Круглая плюшевая лежанка с бортиком-медвежонком, на который можно положить голову.",
-      "description_ru": "Круглая плюшевая лежанка с бортиком в виде медвежонка: кошка или небольшая собака может положить на него голову. В центре — полосатый флис, основание с прошитым нескользящим краем, чехол можно стирать.",
-      "short_en": "A plush round bed with a bear-shaped bolster to lean on.",
-      "description_en": "A round plush bed with a bear-shaped bolster wrapped along one side, so cats and small dogs have something to rest their head against instead of the floor. The centre is striped sherpa-style fleece, the base is finished with a stitched, non-slip edge, and the cover can be washed.",
-      "featured": true,
-      "moq": "10",
-      "short_zh": "毛绒圆形宠物窝，熊形围边可以当枕头靠。",
-      "description_zh": "圆形毛绒宠物窝，一侧做成熊形围边，猫和小型犬可以把头枕在上面。中间是条纹绒面垫，底部缝线包边、不易打滑，外套可拆洗。",
-      "short_es": "Cama redonda y mullida para mascotas, con un borde en forma de oso que funciona también como almohada.",
-      "description_es": "Esta cama redonda y mullida para mascotas cuenta con un borde elevado en forma de oso a lo largo de uno de sus lados, lo que ofrece un apoyo ideal para la cabeza de gatos y perros pequeños. La parte central consiste en un cojín a rayas de textura suave, mientras que la base presenta bordes cosidos que ayudan a evitar que la cama se deslice. La funda es extraíble y apta para lavar a máquina.",
-      "cat": "bed",
-      "name_ru": "Круглая лежанка «Медвежонок»",
-      "specs": [],
-      "images": [
-        "assets/products/bed-bear.jpg"
+      "id": "pth-1603",
+      "sku": "PTH-1603",
+      "cat": "rehab",
+      "name_en": "Dog Leg Brace",
+      "name_zh": "犬用后腿护具",
+      "name_ru": "Бандаж на задние лапы собаки",
+      "short_en": "Hind-leg knee brace with a metal support bar.",
+      "short_zh": "犬后腿膝部护具，内含金属支撑条。",
+      "short_ru": "Бандаж на заднюю лапу с металлической вставкой.",
+      "description_en": "A hind-leg knee brace made from SBR with a metal support bar, giving walking assistance and knee joint stability during recovery. Sizes for pets from 8 to 32 kg.",
+      "description_zh": "SBR 材质后腿膝部护具，内置金属支撑条，为康复期提供行走辅助与膝关节稳定；适用 8–32kg。",
+      "description_ru": "Бандаж на коленный сустав из SBR с металлической вставкой для поддержки при ходьбе. Размеры для 8–32 кг.",
+      "specs": [
+        {
+          "k": "Model",
+          "v": "PTH-1603"
+        },
+        {
+          "k": "Color",
+          "v": "Black / Blue / Red"
+        },
+        {
+          "k": "Size",
+          "v": "S / M / L"
+        },
+        {
+          "k": "Material",
+          "v": "SBR+Metal support bar"
+        },
+        {
+          "k": "S",
+          "v": "8KG-14KG pet"
+        },
+        {
+          "k": "M",
+          "v": "14KG-22KG pet"
+        },
+        {
+          "k": "L",
+          "v": "23KG-32KG pet"
+        }
       ],
-      "id": "bed-bear",
-      "name_en": "Bear Hug Round Pet Bed"
+      "moq": "",
+      "img": "assets/products/pth-1603.jpg",
+      "images": [
+        "assets/products/pth-1603.jpg"
+      ],
+      "featured": false
     },
     {
-      "name_zh": "卡通法兰绒宠物垫",
-      "name_es": "Alfombrilla de franela para mascotas",
-      "img": "assets/pet-mat.jpg",
-      "short_ru": "Мягкий флисовый коврик для клетки, дивана и сиденья автомобиля.",
-      "description_ru": "Мягкий флисовый коврик со стёганой центральной частью и принтом с зайчиками и морковками. Подходит для клетки, дивана и сиденья автомобиля, а покрытие PU не даёт ему скользить по гладкому полу.",
-      "short_en": "A soft fleece mat for crates, sofas and car seats.",
-      "description_en": "A soft plush fleece mat with a quilted centre panel and a bunny-and-carrot print. It works as a crate liner, a sofa cover or a car-seat mat, and the PU backing keeps it from sliding on smooth floors.",
-      "featured": false,
-      "moq": "10",
-      "short_zh": "柔软绒面宠物垫，笼内、沙发、车座都能用。",
-      "description_zh": "绒面宠物垫，中间绗缝分区，印着兔子和胡萝卜图案。可以铺在笼子里、沙发上或车座上，背面 PU 防滑，不容易在光滑地面滑动。",
-      "short_es": "Alfombrilla suave y mullida para mascotas; ideal para usar en transportines, sofás o asientos de coche.",
-      "description_es": "Una suave alfombrilla de tejido polar que cuenta con una sección central acolchada y un estampado de conejitos y zanahorias. Es apta para usar en una jaula, sobre un sofá o en el asiento de un coche; su base de poliuretano (PU) evita que se deslice sobre superficies lisas.",
-      "cat": "bed",
-      "name_ru": "Фланелевый коврик для питомца",
-      "specs": [],
-      "images": [
-        "assets/products/bed-mat.jpg"
+      "id": "pth-1604",
+      "sku": "PTH-1604",
+      "cat": "rehab",
+      "name_en": "Blind Dog Halo Harness",
+      "name_zh": "盲犬光环胸背带",
+      "name_ru": "Гало-шлейка для слепой собаки",
+      "short_en": "Lightweight halo harness that protects blind dogs from bumps.",
+      "short_zh": "轻量光环胸背带，保护盲犬避免碰撞。",
+      "short_ru": "Лёгкая гало-шлейка, защищающая слепую собаку от ударов.",
+      "description_en": "A blind-dog halo harness made from nylon with an aluminium alloy ring. The hoop meets obstacles first so the dog can move around confidently without bumping its head.",
+      "description_zh": "尼龙+铝合金环盲犬光环胸背带，前伸光环先接触障碍物，让视障犬安心行走、避免撞头。",
+      "description_ru": "Гало-шлейка из нейлона с кольцом из алюминиевого сплава: обруч первым касается препятствий и защищает собаку.",
+      "specs": [
+        {
+          "k": "Model",
+          "v": "PTH-1604"
+        },
+        {
+          "k": "Color",
+          "v": "Red / Purple / Blue"
+        },
+        {
+          "k": "Size",
+          "v": "S / M / L"
+        },
+        {
+          "k": "Material",
+          "v": "Nylon+Alu Alloy"
+        },
+        {
+          "k": "S",
+          "v": "2KG-7KG pet"
+        },
+        {
+          "k": "M",
+          "v": "7KG-17KG pet"
+        },
+        {
+          "k": "L",
+          "v": "18KG-27KG pet"
+        }
       ],
-      "id": "bed-mat",
-      "name_en": "Flannel Pet Mat"
-    },
-    {
-      "name_zh": "手工绳编猫窝",
-      "name_es": "Cesta de cuerda tejida para mascotas, cama para mascotas",
-      "img": "assets/pet-bed.jpg",
-      "short_ru": "Плетёная корзина с двумя ручками и подвесной игрушкой.",
-      "description_ru": "Корзина ручной работы из хлопкового шнура с двухцветным краем и кожаной биркой. Две ручки позволяют легко переносить её из комнаты в комнату, а плетёный шарик на шнуре займёт кошку. Подушка внутри двусторонняя.",
-      "short_en": "A hand-woven rope basket with two handles and a hanging toy.",
-      "description_en": "A hand-woven cotton-rope basket with a two-tone rim and a leather label on the front. Two side handles make it easy to move from room to room, and the knotted ball on a cord gives cats something to bat at. The cushion inside is reversible.",
-      "featured": true,
-      "moq": "10",
-      "short_zh": "手工绳编猫窝，两侧提手，附悬挂逗猫球。",
-      "description_zh": "棉绳手工编织猫窝，双色围边，正面一块皮质标牌。两侧提手方便搬动，绳子末端系着编织球，猫可以拨着玩。内垫可翻面使用。",
-      "short_es": "Cama para gatos tejida a mano con cuerda, que cuenta con asas laterales y una bola de juego colgante incorporada.",
-      "description_es": "Cama para gatos hecha de cuerda de algodón tejida a mano, con un borde bicolor y una etiqueta de aspecto de cuero en la parte frontal. Cuenta con asas a ambos lados que facilitan su traslado, además de una bola tejida sujeta a un cordón, que sirve como un divertido juguete para que tu gato golpee y juegue. El cojín interior es reversible.",
-      "cat": "bed",
-      "name_ru": "Плетёная корзина-лежанка для кошек",
-      "specs": [],
+      "moq": "",
+      "img": "assets/products/pth-1604.jpg",
       "images": [
-        "assets/products/bed-rattan.jpg"
+        "assets/products/pth-1604.jpg"
       ],
-      "id": "bed-rattan",
-      "name_en": "Woven Rope Pet Basket Pet Bed"
+      "featured": false
     }
   ]
 }

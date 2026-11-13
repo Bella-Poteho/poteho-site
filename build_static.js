@@ -18,7 +18,7 @@ const fs = require("fs");
 const path = require("path");
 
 const ROOT = __dirname;
-const SITE = "https://www.poteho.com";
+const SITE = "https://poteho.com";
 const BRAND = "Poteho";
 
 /* GA4 measurement ID (provided by site owner) */
@@ -108,7 +108,7 @@ function header(lang, active, langSwitchHtml) {
 }
 
 function footer(lang) {
-  const cats = ["bags", "bed", "apparel", "leashes", "feeding", "others"];
+  const cats = ["carriers", "beds", "fences", "apparel", "rehab"];
   const catLinks = cats
     .map(
       (c) =>

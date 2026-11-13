@@ -60,7 +60,7 @@ collections:
             summary: "{{fields.name_en}} ({{fields.cat}})"
             fields:
               - { name: id, label: "ID (no spaces)", widget: string }
-              - { name: cat, label: "Category", widget: select, options: ["bags", "bed", "apparel", "leashes", "feeding", "others"] }
+              - { name: cat, label: "Category", widget: select, options: ["carriers", "beds", "fences", "apparel", "rehab"] }
               - { name: moq, label: "MOQ quantity (number only, e.g. 10)", widget: string, default: "10" }
               - { name: img, label: "Cover image (upload or path)", widget: image, hint: "Upload a photo, or type assets/placeholder.svg" }
               - { name: featured, label: "Show on homepage?", widget: boolean, default: false }
