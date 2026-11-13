@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <script src="/js/lang-router.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Winter walks are the best walks (yes, really) — Poteho</title>
   <link rel="icon" href="/assets/favicon.svg" />
@@ -50,17 +51,17 @@
   <header class="site-header">
     <div class="container nav">
       <a href="/index.html" class="brand brand-img"><img src="/assets/poteho-logo.png" alt="Poteho" /></a>
-      <nav class="nav-links" id="navLinks"><a href="/index.html" class="">Home</a><a href="/products.html" class="">Products</a><a href="/blog.html" class="active">Blog</a><a href="/about.html" class="">About</a><a href="/contact.html" class="">Contact</a></nav>
+      <nav class="nav-links" id="navLinks"><a href="/index.html" class="" data-i18n="nav.home">Home</a><a href="/products.html" class="" data-i18n="nav.products">Products</a><a href="/blog.html" class="active" data-i18n="nav.blog">Blog</a><a href="/about.html" class="" data-i18n="nav.about">About</a><a href="/contact.html" class="" data-i18n="nav.contact">Contact</a></nav>
       <div class="nav-cta">
-        <div class="lang-switch" id="langSwitch"><a href="/blog/winter-walks.html" class="on" hreflang="en">EN</a><a href="/index.html" hreflang="ru">RU</a><a href="/index.html" hreflang="zh">中文</a></div>
-        <a href="/contact.html" class="btn btn-primary">Get a Quote</a>
+        <div class="lang-switch" id="langSwitch"><a href="/blog/winter-walks.html" class="on" data-lang="en">EN</a><a href="/blog/winter-walks.html" class="" data-lang="ru">RU</a><a href="/blog/winter-walks.html" class="" data-lang="zh">中文</a></div>
+        <a href="/contact.html" class="btn btn-primary" data-i18n="nav.quote">Get a Quote</a>
         <button class="nav-toggle" id="navToggle" aria-label="Menu"><span></span><span></span><span></span></button>
       </div>
     </div>
   </header>
   <main class="section">
     <div class="container article">
-<nav class="breadcrumb"><a href="/index.html">Home</a> / <a href="/blog.html">Blog</a> / <span>Winter walks are the best walks (yes, really)</span></nav>
+<nav class="breadcrumb"><a href="/index.html" data-i18n="bc.home">Home</a> / <a href="/blog.html" data-i18n="nav.blog">Blog</a> / <span>Winter walks are the best walks (yes, really)</span></nav>
     <span class="eyebrow" style="margin-top:18px">Daily life · 4 min read · December 9, 2020</span>
     <h1>Winter walks are the best walks (yes, really)</h1>
     <div id="postBody"><img class="post-hero" src="/assets/blog/blog-05.jpg" alt="Winter walks are the best walks (yes, really)" loading="lazy" /><p>Somewhere around the second week of December, every year, a certain kind of dog owner decides walks are a summer activity and the yard will do. I used to be that owner. Then I got a dog who disagreed, loudly, at 6:40 every morning.</p><h2>What winter gives you</h2><p>Empty streets, for one. In summer the park is chaos of strollers and scooters. In winter you get the whole place, and a dog on a quiet trail sniffing frost is a different animal than the same dog navigating summer crowds.</p><p>Cold also sharpens scent. Many dogs are simply more engaged in cold air. Mine will spend ten minutes on one frozen grass patch, reading the neighborhood news, while in August he gives it a two-second glance and moves on.</p><h2>The gear part, briefly</h2><p>You do not need much. Paws are the weak point for most dogs, not the body. Salt and ice are the actual enemies: they sting, they crack pads, and city salt is mildly toxic when licked off.</p><p>A thin paw wax or a simple bootie solves most of it. Short-coated dogs, seniors, and small breeds often do want a jacket. Watch the dog, not the thermometer. Shivering, paw-lifting, and a hunched back mean it is time to head home.</p><p>For reflective gear, winter is when it earns its price. Dark mornings and dark evenings mean your dog is far less visible than you think. A stitch of reflective thread on a harness catches headlights from much further away than a bright color does. We learned this the hard way in our early samples and now it is a standard detail on everything we make for winter markets.</p><p>Give winter walks one honest try. Pick the coldest, clearest morning you can, take a thermos, and let the dog set the pace. You might find, as I did, that it becomes the best part of the day.</p></div>
@@ -71,34 +72,35 @@
       </div>
       <div class="faq-list"><div class="faq-item"><h3 class="faq-q">Is it safe to walk my dog in winter?</h3><div class="faq-a">Yes with the right gear. Protect paws from salt and ice with wax or booties, watch for shivering and paw-lifting, and add a jacket for short-coated, senior or small dogs.</div></div><div class="faq-item"><h3 class="faq-q">What should my dog wear in cold weather?</h3><div class="faq-a">Short-coated, senior and small breeds often need a jacket; most dogs need paw protection from salt and ice. Use reflective gear on dark winter mornings and evenings.</div></div></div>
     </section>
-    <p style="margin-top:34px"><a href="/blog.html" class="btn btn-outline">← Back to all articles</a></p>
+    <p style="margin-top:34px"><a href="/blog.html" class="btn btn-outline" data-i18n="bl.back">← Back to all articles</a></p>
     </div>
   </main>
   <footer class="site-footer">
     <div class="container footer-grid">
       <div class="footer-brand">
         <a href="/index.html" class="brand brand-img"><img src="/assets/poteho-logo-white.png" alt="Poteho" /></a>
-        <p>Poteho supplies pet carriers, beds &amp; mats, fences &amp; leashes, apparel and rehabilitation products. Wholesale worldwide with low MOQ, custom branding and reliable shipping.</p>
+        <p data-i18n="footer.desc">Poteho supplies pet carriers, beds &amp; mats, fences &amp; leashes, apparel and rehabilitation products. Wholesale worldwide with low MOQ, custom branding and reliable shipping.</p>
       </div>
-      <div><h4>Products</h4><a href="/category.html?cat=carriers">Pet Carriers</a><a href="/category.html?cat=beds">Pet Beds &amp; Mats</a><a href="/category.html?cat=fences">Pet Fences &amp; Leashes</a><a href="/category.html?cat=apparel">Pet Apparel</a><a href="/category.html?cat=rehab">Pet Rehabilitation</a></div>
-      <div><h4>Company</h4>
-        <a href="/about.html">About us</a>
-        <a href="/blog.html">Blog</a>
-        <a href="/contact.html">Contact</a>
-        <a href="/contact.html">Get a quote</a>
-        <a href="/cookie.html">Cookie Policy</a>
+      <div><h4 data-i18n="footer.products">Products</h4><a href="/category.html?cat=carriers" data-i18n="cat.carriers">Pet Carriers</a><a href="/category.html?cat=beds" data-i18n="cat.beds">Pet Beds &amp; Mats</a><a href="/category.html?cat=fences" data-i18n="cat.fences">Pet Fences &amp; Leashes</a><a href="/category.html?cat=apparel" data-i18n="cat.apparel">Pet Apparel</a><a href="/category.html?cat=rehab" data-i18n="cat.rehab">Pet Rehabilitation</a></div>
+      <div><h4 data-i18n="footer.company">Company</h4>
+        <a href="/about.html" data-i18n="footer.aboutus">About us</a>
+        <a href="/blog.html" data-i18n="footer.blog">Blog</a>
+        <a href="/contact.html" data-i18n="footer.contact">Contact</a>
+        <a href="/contact.html" data-i18n="footer.getquote">Get a quote</a>
+        <a href="/cookie.html" data-i18n="footer.cookie">Cookie Policy</a>
       </div>
-      <div><h4>Contact</h4>
+      <div><h4 data-i18n="footer.connect">Contact</h4>
         <a href="mailto:info@poteho.com">info@poteho.com</a>
-        <a href="https://wa.me/8618910404220">WhatsApp / WeChat</a>
+        <a href="https://wa.me/8618910404220" data-i18n="footer.whatsapp">WhatsApp / WeChat</a>
         <a href="https://www.linkedin.com/company/poteho" target="_blank" rel="noopener">LinkedIn</a>
       </div>
     </div>
     <div class="container footer-bottom">
-      <span>© 2026 Poteho. All rights reserved.</span>
-      <span>Poteho — your pet&#39;s best friend</span>
+      <span>© 2026 <span data-i18n="footer.rights">Poteho. All rights reserved.</span></span>
+      <span data-i18n="footer.slogan">Poteho — your pet&#39;s best friend</span>
     </div>
   </footer>
+  <script src="/js/i18n.js"></script>
   <script src="/js/static-chrome.js"></script>
 </body>
 </html>

@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <script src="/js/lang-router.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>The daily walk matters more than you think — Poteho</title>
   <link rel="icon" href="/assets/favicon.svg" />
@@ -50,17 +51,17 @@
   <header class="site-header">
     <div class="container nav">
       <a href="/index.html" class="brand brand-img"><img src="/assets/poteho-logo.png" alt="Poteho" /></a>
-      <nav class="nav-links" id="navLinks"><a href="/index.html" class="">Home</a><a href="/products.html" class="">Products</a><a href="/blog.html" class="active">Blog</a><a href="/about.html" class="">About</a><a href="/contact.html" class="">Contact</a></nav>
+      <nav class="nav-links" id="navLinks"><a href="/index.html" class="" data-i18n="nav.home">Home</a><a href="/products.html" class="" data-i18n="nav.products">Products</a><a href="/blog.html" class="active" data-i18n="nav.blog">Blog</a><a href="/about.html" class="" data-i18n="nav.about">About</a><a href="/contact.html" class="" data-i18n="nav.contact">Contact</a></nav>
       <div class="nav-cta">
-        <div class="lang-switch" id="langSwitch"><a href="/blog/daily-walk-matters.html" class="on" hreflang="en">EN</a><a href="/index.html" hreflang="ru">RU</a><a href="/index.html" hreflang="zh">中文</a></div>
-        <a href="/contact.html" class="btn btn-primary">Get a Quote</a>
+        <div class="lang-switch" id="langSwitch"><a href="/blog/daily-walk-matters.html" class="on" data-lang="en">EN</a><a href="/blog/daily-walk-matters.html" class="" data-lang="ru">RU</a><a href="/blog/daily-walk-matters.html" class="" data-lang="zh">中文</a></div>
+        <a href="/contact.html" class="btn btn-primary" data-i18n="nav.quote">Get a Quote</a>
         <button class="nav-toggle" id="navToggle" aria-label="Menu"><span></span><span></span><span></span></button>
       </div>
     </div>
   </header>
   <main class="section">
     <div class="container article">
-<nav class="breadcrumb"><a href="/index.html">Home</a> / <a href="/blog.html">Blog</a> / <span>The daily walk matters more than you think</span></nav>
+<nav class="breadcrumb"><a href="/index.html" data-i18n="bc.home">Home</a> / <a href="/blog.html" data-i18n="nav.blog">Blog</a> / <span>The daily walk matters more than you think</span></nav>
     <span class="eyebrow" style="margin-top:18px">Behavior · 5 min read · July 6, 2021</span>
     <h1>The daily walk matters more than you think</h1>
     <div id="postBody"><img class="post-hero" src="/assets/blog/blog-08.jpg" alt="The daily walk matters more than you think" loading="lazy" /><p>A friend of mine has a big yard and a border collie, and for years he told himself the yard was enough. The dog had space. The dog ran around. Then the dog started barking at nothing, digging up the iris bed, and pacing at the window every afternoon at four.</p><p>The vet asked one question: how often do you walk him?</p><h2>The walk is not really about walking</h2><p>To us, a walk is exercise. To a dog, it is the whole sensory world. Twenty minutes on a street is reading the paper, checking social media, hearing the gossip, and marking the neighborhood bulletin board, literally.</p><p>A yard is the same view every day. A walk is a changing feed. Dogs need novelty the way we need conversation, and sniffing is how they get it. Studies on scent work keep finding the same thing: dogs that are allowed to sniff freely on walks come home measurably calmer and more optimistic in how they approach new things.</p><h2>The shape of a good walk</h2><p>Not every walk needs to be a march. Give the dog some decisions. Let it choose the route sometimes. Build in one sniff-spot where the leash goes loose and the nose goes down. Ten minutes of free sniffing beats forty minutes of heel at human pace.</p><p>The other half of the walk is yours. It is the one fixed ritual most dogs share with their person, the same time, the same streets, together. Dogs are routine animals, and routine shared with a favorite human reads as safety.</p><p>My friend started walking the collie twice a day, mostly to prove the vet wrong. The barking stopped in about two weeks. The iris bed recovered by spring.</p><p>When we talk to retail buyers about why a simple leash still sells year after year, this is the reason. Nothing fancy replaces the daily ritual. The walk is the product the dog is actually buying. The leash just comes with it.</p></div>
@@ -71,34 +72,35 @@
       </div>
       <div class="faq-list"><div class="faq-item"><h3 class="faq-q">Why are daily dog walks important?</h3><div class="faq-a">Walks give dogs sensory novelty, sniffing time and routine bonding that a yard alone cannot replace. Even short, sniff-friendly walks reduce boredom and anxiety.</div></div><div class="faq-item"><h3 class="faq-q">How long should a dog walk be?</h3><div class="faq-a">It varies by breed, age and energy, but most dogs benefit from at least one or two walks daily with time to sniff freely, not just marching at your pace.</div></div></div>
     </section>
-    <p style="margin-top:34px"><a href="/blog.html" class="btn btn-outline">← Back to all articles</a></p>
+    <p style="margin-top:34px"><a href="/blog.html" class="btn btn-outline" data-i18n="bl.back">← Back to all articles</a></p>
     </div>
   </main>
   <footer class="site-footer">
     <div class="container footer-grid">
       <div class="footer-brand">
         <a href="/index.html" class="brand brand-img"><img src="/assets/poteho-logo-white.png" alt="Poteho" /></a>
-        <p>Poteho supplies pet carriers, beds &amp; mats, fences &amp; leashes, apparel and rehabilitation products. Wholesale worldwide with low MOQ, custom branding and reliable shipping.</p>
+        <p data-i18n="footer.desc">Poteho supplies pet carriers, beds &amp; mats, fences &amp; leashes, apparel and rehabilitation products. Wholesale worldwide with low MOQ, custom branding and reliable shipping.</p>
       </div>
-      <div><h4>Products</h4><a href="/category.html?cat=carriers">Pet Carriers</a><a href="/category.html?cat=beds">Pet Beds &amp; Mats</a><a href="/category.html?cat=fences">Pet Fences &amp; Leashes</a><a href="/category.html?cat=apparel">Pet Apparel</a><a href="/category.html?cat=rehab">Pet Rehabilitation</a></div>
-      <div><h4>Company</h4>
-        <a href="/about.html">About us</a>
-        <a href="/blog.html">Blog</a>
-        <a href="/contact.html">Contact</a>
-        <a href="/contact.html">Get a quote</a>
-        <a href="/cookie.html">Cookie Policy</a>
+      <div><h4 data-i18n="footer.products">Products</h4><a href="/category.html?cat=carriers" data-i18n="cat.carriers">Pet Carriers</a><a href="/category.html?cat=beds" data-i18n="cat.beds">Pet Beds &amp; Mats</a><a href="/category.html?cat=fences" data-i18n="cat.fences">Pet Fences &amp; Leashes</a><a href="/category.html?cat=apparel" data-i18n="cat.apparel">Pet Apparel</a><a href="/category.html?cat=rehab" data-i18n="cat.rehab">Pet Rehabilitation</a></div>
+      <div><h4 data-i18n="footer.company">Company</h4>
+        <a href="/about.html" data-i18n="footer.aboutus">About us</a>
+        <a href="/blog.html" data-i18n="footer.blog">Blog</a>
+        <a href="/contact.html" data-i18n="footer.contact">Contact</a>
+        <a href="/contact.html" data-i18n="footer.getquote">Get a quote</a>
+        <a href="/cookie.html" data-i18n="footer.cookie">Cookie Policy</a>
       </div>
-      <div><h4>Contact</h4>
+      <div><h4 data-i18n="footer.connect">Contact</h4>
         <a href="mailto:info@poteho.com">info@poteho.com</a>
-        <a href="https://wa.me/8618910404220">WhatsApp / WeChat</a>
+        <a href="https://wa.me/8618910404220" data-i18n="footer.whatsapp">WhatsApp / WeChat</a>
         <a href="https://www.linkedin.com/company/poteho" target="_blank" rel="noopener">LinkedIn</a>
       </div>
     </div>
     <div class="container footer-bottom">
-      <span>© 2026 Poteho. All rights reserved.</span>
-      <span>Poteho — your pet&#39;s best friend</span>
+      <span>© 2026 <span data-i18n="footer.rights">Poteho. All rights reserved.</span></span>
+      <span data-i18n="footer.slogan">Poteho — your pet&#39;s best friend</span>
     </div>
   </footer>
+  <script src="/js/i18n.js"></script>
   <script src="/js/static-chrome.js"></script>
 </body>
 </html>

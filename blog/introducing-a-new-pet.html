@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <script src="/js/lang-router.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Introducing a new pet to the family (slowly) — Poteho</title>
   <link rel="icon" href="/assets/favicon.svg" />
@@ -50,17 +51,17 @@
   <header class="site-header">
     <div class="container nav">
       <a href="/index.html" class="brand brand-img"><img src="/assets/poteho-logo.png" alt="Poteho" /></a>
-      <nav class="nav-links" id="navLinks"><a href="/index.html" class="">Home</a><a href="/products.html" class="">Products</a><a href="/blog.html" class="active">Blog</a><a href="/about.html" class="">About</a><a href="/contact.html" class="">Contact</a></nav>
+      <nav class="nav-links" id="navLinks"><a href="/index.html" class="" data-i18n="nav.home">Home</a><a href="/products.html" class="" data-i18n="nav.products">Products</a><a href="/blog.html" class="active" data-i18n="nav.blog">Blog</a><a href="/about.html" class="" data-i18n="nav.about">About</a><a href="/contact.html" class="" data-i18n="nav.contact">Contact</a></nav>
       <div class="nav-cta">
-        <div class="lang-switch" id="langSwitch"><a href="/blog/introducing-a-new-pet.html" class="on" hreflang="en">EN</a><a href="/index.html" hreflang="ru">RU</a><a href="/index.html" hreflang="zh">中文</a></div>
-        <a href="/contact.html" class="btn btn-primary">Get a Quote</a>
+        <div class="lang-switch" id="langSwitch"><a href="/blog/introducing-a-new-pet.html" class="on" data-lang="en">EN</a><a href="/blog/introducing-a-new-pet.html" class="" data-lang="ru">RU</a><a href="/blog/introducing-a-new-pet.html" class="" data-lang="zh">中文</a></div>
+        <a href="/contact.html" class="btn btn-primary" data-i18n="nav.quote">Get a Quote</a>
         <button class="nav-toggle" id="navToggle" aria-label="Menu"><span></span><span></span><span></span></button>
       </div>
     </div>
   </header>
   <main class="section">
     <div class="container article">
-<nav class="breadcrumb"><a href="/index.html">Home</a> / <a href="/blog.html">Blog</a> / <span>Introducing a new pet to the family (slowly)</span></nav>
+<nav class="breadcrumb"><a href="/index.html" data-i18n="bc.home">Home</a> / <a href="/blog.html" data-i18n="nav.blog">Blog</a> / <span>Introducing a new pet to the family (slowly)</span></nav>
     <span class="eyebrow" style="margin-top:18px">Companionship · 6 min read · July 1, 2025</span>
     <h1>Introducing a new pet to the family (slowly)</h1>
     <div id="postBody"><img class="post-hero" src="/assets/blog/blog-28.jpg" alt="Introducing a new pet to the family (slowly)" loading="lazy" /><p>The movies have lied to us about this for a hundred years. In the film, the new puppy and the old dog sniff once, chase each other around a tree, and are friends for life by the fade-out. In real houses, the fade-out takes three to eight weeks, and the speed at which you go is the single biggest factor in whether it works.</p><h2>The principle</h2><p>Your resident pet did not agree to this. From its point of view, a stranger has arrived claiming resources it spent years securing. The goal of every good introduction is to make the stranger boring before it makes it close. Fear fades with repetition; that is the entire trick, and there is no shortcut around it.</p><h2>Dog to dog</h2><p>First meeting on neutral ground, a park neither dog considers home, both on loose leashes, walks parallel with distance. Let them arc past each other a few times over days. Home meetings come after, in the yard if there is one, short and calm, ending before anyone gets stiff or pushy. Feed separately, always, forever if needed. Resource guarders exist, and food is the usual court.</p><p>Supervise everything for the first weeks. Separate when you leave the house. Give the resident dog its own retreat, and honor it. The most common mistake is lavishing attention on the newcomer to reassure ourselves. Reassure the resident instead.</p><h2>Cat into a dog household, or the reverse</h2><p>This one runs on geography more than friendship. The cat needs vertical space the dog cannot reach, and every early meeting happens with the cat above the dog&#39;s nose or behind a barrier. Baby gates are the best invention this process has. Scent goes first, traded blankets, meals on opposite sides of a door. Face-to-face comes weeks later, dog on leash, calm, brief, and rewarded.</p><p>Some pairs become friends. Many become tolerant colleagues. A few will always need management. All three outcomes are successes if nobody is stressed.</p><h2>The honest expectations</h2><p>Watch for the good signs: parallel napping, play with role swaps, relaxed eating in shared space. Watch for the bad ones: the resident pet eating less, hiding more, or guarding spots it never guarded. Those mean slow down, not give up.</p><p>Time does the rest. The introduction is not an event you attend. It is a season you get through, and the reward for going slowly is a household that settles for good.</p></div>
@@ -71,34 +72,35 @@
       </div>
       <div class="faq-list"><div class="faq-item"><h3 class="faq-q">How do I introduce a new pet to my current pet?</h3><div class="faq-a">Go slow: separate spaces first, swap scents, then short supervised meetings that end well. Species and personalities matter, so let relationships build over weeks.</div></div><div class="faq-item"><h3 class="faq-q">What if my pets don&#39;t get along?</h3><div class="faq-a">Do not force it. Separate and restart the scent-swap process more gradually, keep resources (food, beds, litter) separate, and consider a professional trainer if tension persists.</div></div></div>
     </section>
-    <p style="margin-top:34px"><a href="/blog.html" class="btn btn-outline">← Back to all articles</a></p>
+    <p style="margin-top:34px"><a href="/blog.html" class="btn btn-outline" data-i18n="bl.back">← Back to all articles</a></p>
     </div>
   </main>
   <footer class="site-footer">
     <div class="container footer-grid">
       <div class="footer-brand">
         <a href="/index.html" class="brand brand-img"><img src="/assets/poteho-logo-white.png" alt="Poteho" /></a>
-        <p>Poteho supplies pet carriers, beds &amp; mats, fences &amp; leashes, apparel and rehabilitation products. Wholesale worldwide with low MOQ, custom branding and reliable shipping.</p>
+        <p data-i18n="footer.desc">Poteho supplies pet carriers, beds &amp; mats, fences &amp; leashes, apparel and rehabilitation products. Wholesale worldwide with low MOQ, custom branding and reliable shipping.</p>
       </div>
-      <div><h4>Products</h4><a href="/category.html?cat=carriers">Pet Carriers</a><a href="/category.html?cat=beds">Pet Beds &amp; Mats</a><a href="/category.html?cat=fences">Pet Fences &amp; Leashes</a><a href="/category.html?cat=apparel">Pet Apparel</a><a href="/category.html?cat=rehab">Pet Rehabilitation</a></div>
-      <div><h4>Company</h4>
-        <a href="/about.html">About us</a>
-        <a href="/blog.html">Blog</a>
-        <a href="/contact.html">Contact</a>
-        <a href="/contact.html">Get a quote</a>
-        <a href="/cookie.html">Cookie Policy</a>
+      <div><h4 data-i18n="footer.products">Products</h4><a href="/category.html?cat=carriers" data-i18n="cat.carriers">Pet Carriers</a><a href="/category.html?cat=beds" data-i18n="cat.beds">Pet Beds &amp; Mats</a><a href="/category.html?cat=fences" data-i18n="cat.fences">Pet Fences &amp; Leashes</a><a href="/category.html?cat=apparel" data-i18n="cat.apparel">Pet Apparel</a><a href="/category.html?cat=rehab" data-i18n="cat.rehab">Pet Rehabilitation</a></div>
+      <div><h4 data-i18n="footer.company">Company</h4>
+        <a href="/about.html" data-i18n="footer.aboutus">About us</a>
+        <a href="/blog.html" data-i18n="footer.blog">Blog</a>
+        <a href="/contact.html" data-i18n="footer.contact">Contact</a>
+        <a href="/contact.html" data-i18n="footer.getquote">Get a quote</a>
+        <a href="/cookie.html" data-i18n="footer.cookie">Cookie Policy</a>
       </div>
-      <div><h4>Contact</h4>
+      <div><h4 data-i18n="footer.connect">Contact</h4>
         <a href="mailto:info@poteho.com">info@poteho.com</a>
-        <a href="https://wa.me/8618910404220">WhatsApp / WeChat</a>
+        <a href="https://wa.me/8618910404220" data-i18n="footer.whatsapp">WhatsApp / WeChat</a>
         <a href="https://www.linkedin.com/company/poteho" target="_blank" rel="noopener">LinkedIn</a>
       </div>
     </div>
     <div class="container footer-bottom">
-      <span>© 2026 Poteho. All rights reserved.</span>
-      <span>Poteho — your pet&#39;s best friend</span>
+      <span>© 2026 <span data-i18n="footer.rights">Poteho. All rights reserved.</span></span>
+      <span data-i18n="footer.slogan">Poteho — your pet&#39;s best friend</span>
     </div>
   </footer>
+  <script src="/js/i18n.js"></script>
   <script src="/js/static-chrome.js"></script>
 </body>
 </html>

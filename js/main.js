@@ -114,7 +114,7 @@ function productImages(p) {
 function cardHTML(p) {
   return `
     <div class="product-card">
-      <a class="pc-link" href="/products/${p.id}.html">
+      <a class="pc-link" href="/products/${p.id}${langUrlSuffix()}.html">
         <div class="thumb"><img src="${productImages(p)[0]}" alt="${pName(p)}" loading="lazy" /></div>
         <div class="body">
           <span class="cat">${catName(p.cat)}</span>
@@ -140,7 +140,7 @@ function catProdBits(p) {
   const thumb = hasPhoto
     ? `<span class="cp-thumb"><img src="${src}" alt="${pName(p)}" loading="lazy" /></span>`
     : `<span class="cp-thumb">${PAW_SVG}</span>`;
-  return `<a class="cat-prod" href="/products/${p.id}.html">${thumb}<span>${pName(p)}</span></a>`;
+  return `<a class="cat-prod" href="/products/${p.id}${langUrlSuffix()}.html">${thumb}<span>${pName(p)}</span></a>`;
 }
 
 /* Fills every .cat-products[data-cat] container with up to 3 products. */

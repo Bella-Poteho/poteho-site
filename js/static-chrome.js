@@ -21,6 +21,47 @@
     document.querySelectorAll("#year").forEach(function (el) {
       el.textContent = new Date().getFullYear();
     });
+    bindLangSwitch();
+  }
+
+  /* ---------- Whole-site language consistency ----------
+     Static detail pages are pre-rendered per language for SEO, but the
+     header / footer / breadcrumb are shared chrome. Keep the visitor's
+     chosen language in localStorage so every subsequent page (including
+     the JS-driven catalog pages) renders in the same language. */
+  function currentLang() {
+    if (typeof window.PT_getLang === "function") return window.PT_getLang();
+    try { return localStorage.getItem("poteho-lang") || "en"; }
+    catch (e) { return "en"; }
+  }
+  function saveLang(lang) {
+    if (typeof window.PT_setLang === "function") window.PT_setLang(lang);
+    else { try { localStorage.setItem("poteho-lang", lang); } catch (e) {} }
+  }
+  function bindLangSwitch() {
+    var box = document.getElementById("langSwitch");
+    if (box) {
+      box.addEventListener("click", function (e) {
+        var a = e.target.closest("a[data-lang]");
+        if (!a) return;
+        saveLang(a.getAttribute("data-lang"));
+        // Blog pages have no per-language URL: switching reloads the same
+        // article with translated chrome. Product pages navigate to their
+        // .ru.html / .zh.html counterpart.
+        var same =
+          a.href === location.href ||
+          a.pathname + a.search === location.pathname + location.search;
+        if (same) {
+          e.preventDefault();
+          location.reload();
+        }
+      });
+      box.querySelectorAll("a[data-lang]").forEach(function (a) {
+        a.classList.toggle("on", a.getAttribute("data-lang") === currentLang());
+      });
+    }
+    // Translate shared chrome (data-i18n) using the saved language.
+    if (typeof window.i18nApply === "function") window.i18nApply();
   }
 
   // Default delivery: Netlify Forms (same-page POST). Set FORM_ENDPOINT

@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <script src="/js/lang-router.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Pet Retractable Fence — Poteho</title>
   <link rel="icon" href="/assets/favicon.svg" />
@@ -39,10 +40,10 @@
   <header class="site-header">
     <div class="container nav">
       <a href="/index.html" class="brand brand-img"><img src="/assets/poteho-logo.png" alt="Poteho" /></a>
-      <nav class="nav-links" id="navLinks"><a href="/index.html" class="">Home</a><a href="/products.html" class="active">Products</a><a href="/blog.html" class="">Blog</a><a href="/about.html" class="">About</a><a href="/contact.html" class="">Contact</a></nav>
+      <nav class="nav-links" id="navLinks"><a href="/index.html" class="" data-i18n="nav.home">Home</a><a href="/products.html" class="active" data-i18n="nav.products">Products</a><a href="/blog.html" class="" data-i18n="nav.blog">Blog</a><a href="/about.html" class="" data-i18n="nav.about">About</a><a href="/contact.html" class="" data-i18n="nav.contact">Contact</a></nav>
       <div class="nav-cta">
-        <div class="lang-switch" id="langSwitch"><a href="/products/pth-1301.html" class="on" hreflang="en">EN</a><a href="/products/pth-1301.ru.html" class="" hreflang="ru">RU</a><a href="/products/pth-1301.zh.html" class="" hreflang="zh">中文</a></div>
-        <a href="/contact.html" class="btn btn-primary">Get a Quote</a>
+        <div class="lang-switch" id="langSwitch"><a href="/products/pth-1301.html" class="on" data-lang="en" hreflang="en">EN</a><a href="/products/pth-1301.ru.html" class="" data-lang="ru" hreflang="ru">RU</a><a href="/products/pth-1301.zh.html" class="" data-lang="zh" hreflang="zh">中文</a></div>
+        <a href="/contact.html" class="btn btn-primary" data-i18n="nav.quote">Get a Quote</a>
         <button class="nav-toggle" id="navToggle" aria-label="Menu"><span></span><span></span><span></span></button>
       </div>
     </div>
@@ -84,27 +85,28 @@
     <div class="container footer-grid">
       <div class="footer-brand">
         <a href="/index.html" class="brand brand-img"><img src="/assets/poteho-logo-white.png" alt="Poteho" /></a>
-        <p>Poteho supplies pet carriers, beds &amp; mats, fences &amp; leashes, apparel and rehabilitation products. Wholesale worldwide with low MOQ, custom branding and reliable shipping.</p>
+        <p data-i18n="footer.desc">Poteho supplies pet carriers, beds &amp; mats, fences &amp; leashes, apparel and rehabilitation products. Wholesale worldwide with low MOQ, custom branding and reliable shipping.</p>
       </div>
-      <div><h4>Products</h4><a href="/category.html?cat=carriers">Pet Carriers</a><a href="/category.html?cat=beds">Pet Beds &amp; Mats</a><a href="/category.html?cat=fences">Pet Fences &amp; Leashes</a><a href="/category.html?cat=apparel">Pet Apparel</a><a href="/category.html?cat=rehab">Pet Rehabilitation</a></div>
-      <div><h4>Company</h4>
-        <a href="/about.html">About us</a>
-        <a href="/blog.html">Blog</a>
-        <a href="/contact.html">Contact</a>
-        <a href="/contact.html">Get a quote</a>
-        <a href="/cookie.html">Cookie Policy</a>
+      <div><h4 data-i18n="footer.products">Products</h4><a href="/category.html?cat=carriers" data-i18n="cat.carriers">Pet Carriers</a><a href="/category.html?cat=beds" data-i18n="cat.beds">Pet Beds &amp; Mats</a><a href="/category.html?cat=fences" data-i18n="cat.fences">Pet Fences &amp; Leashes</a><a href="/category.html?cat=apparel" data-i18n="cat.apparel">Pet Apparel</a><a href="/category.html?cat=rehab" data-i18n="cat.rehab">Pet Rehabilitation</a></div>
+      <div><h4 data-i18n="footer.company">Company</h4>
+        <a href="/about.html" data-i18n="footer.aboutus">About us</a>
+        <a href="/blog.html" data-i18n="footer.blog">Blog</a>
+        <a href="/contact.html" data-i18n="footer.contact">Contact</a>
+        <a href="/contact.html" data-i18n="footer.getquote">Get a quote</a>
+        <a href="/cookie.html" data-i18n="footer.cookie">Cookie Policy</a>
       </div>
-      <div><h4>Contact</h4>
+      <div><h4 data-i18n="footer.connect">Contact</h4>
         <a href="mailto:info@poteho.com">info@poteho.com</a>
-        <a href="https://wa.me/8618910404220">WhatsApp / WeChat</a>
+        <a href="https://wa.me/8618910404220" data-i18n="footer.whatsapp">WhatsApp / WeChat</a>
         <a href="https://www.linkedin.com/company/poteho" target="_blank" rel="noopener">LinkedIn</a>
       </div>
     </div>
     <div class="container footer-bottom">
-      <span>© 2026 Poteho. All rights reserved.</span>
-      <span>Poteho — your pet&#39;s best friend</span>
+      <span>© 2026 <span data-i18n="footer.rights">Poteho. All rights reserved.</span></span>
+      <span data-i18n="footer.slogan">Poteho — your pet&#39;s best friend</span>
     </div>
   </footer>
+  <script src="/js/i18n.js"></script>
   <script src="/js/static-chrome.js"></script>
 </body>
 </html>

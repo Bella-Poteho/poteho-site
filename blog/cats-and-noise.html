@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <script src="/js/lang-router.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>A quiet home is a happy home — Poteho</title>
   <link rel="icon" href="/assets/favicon.svg" />
@@ -50,17 +51,17 @@
   <header class="site-header">
     <div class="container nav">
       <a href="/index.html" class="brand brand-img"><img src="/assets/poteho-logo.png" alt="Poteho" /></a>
-      <nav class="nav-links" id="navLinks"><a href="/index.html" class="">Home</a><a href="/products.html" class="">Products</a><a href="/blog.html" class="active">Blog</a><a href="/about.html" class="">About</a><a href="/contact.html" class="">Contact</a></nav>
+      <nav class="nav-links" id="navLinks"><a href="/index.html" class="" data-i18n="nav.home">Home</a><a href="/products.html" class="" data-i18n="nav.products">Products</a><a href="/blog.html" class="active" data-i18n="nav.blog">Blog</a><a href="/about.html" class="" data-i18n="nav.about">About</a><a href="/contact.html" class="" data-i18n="nav.contact">Contact</a></nav>
       <div class="nav-cta">
-        <div class="lang-switch" id="langSwitch"><a href="/blog/cats-and-noise.html" class="on" hreflang="en">EN</a><a href="/index.html" hreflang="ru">RU</a><a href="/index.html" hreflang="zh">中文</a></div>
-        <a href="/contact.html" class="btn btn-primary">Get a Quote</a>
+        <div class="lang-switch" id="langSwitch"><a href="/blog/cats-and-noise.html" class="on" data-lang="en">EN</a><a href="/blog/cats-and-noise.html" class="" data-lang="ru">RU</a><a href="/blog/cats-and-noise.html" class="" data-lang="zh">中文</a></div>
+        <a href="/contact.html" class="btn btn-primary" data-i18n="nav.quote">Get a Quote</a>
         <button class="nav-toggle" id="navToggle" aria-label="Menu"><span></span><span></span><span></span></button>
       </div>
     </div>
   </header>
   <main class="section">
     <div class="container article">
-<nav class="breadcrumb"><a href="/index.html">Home</a> / <a href="/blog.html">Blog</a> / <span>A quiet home is a happy home</span></nav>
+<nav class="breadcrumb"><a href="/index.html" data-i18n="bc.home">Home</a> / <a href="/blog.html" data-i18n="nav.blog">Blog</a> / <span>A quiet home is a happy home</span></nav>
     <span class="eyebrow" style="margin-top:18px">Health · 4 min read · April 5, 2022</span>
     <h1>A quiet home is a happy home</h1>
     <div id="postBody"><img class="post-hero" src="/assets/blog/blog-12.jpg" alt="A quiet home is a happy home" loading="lazy" /><p>People are usually surprised to learn that a cat&#39;s hearing runs roughly two octaves above ours. That vacuum you hate is worse for the cat. The TV you fell asleep to, the speaker on the fridge, the blender, the door slam. All of it arrives louder, and some of it arrives in ranges we simply cannot perceive.</p><h2>What noise does to a cat</h2><p>Cats rarely show fear the way dogs do. What they show is avoidance. A cat living with constant background noise does not necessarily hide all day. It picks worse real estate: behind the sofa instead of the windowsill, under the bed instead of the middle of the room. Over time, a noisy home quietly shrinks a cat&#39;s map of it.</p><p>Loud sudden noise is worse than steady noise, and unpredictability is the worst of all. A cat can adapt to a city street outside the window. It never fully adapts to random explosions from the kitchen appliance.</p><h2>The cheap fixes</h2><p>Give the cat one genuinely quiet room, or at least one quiet zone with covered escape routes. Put the litter box far from the laundry machines; imagine doing your business next to a jet engine. Run the loud appliances when the cat is out of the room or has somewhere high and enclosed to go. Rug and curtains do more than people expect; hard floors bounce sound around a room like a squash court.</p><p>Watch where the cat chooses to sleep. That spot is data about your home&#39;s acoustics from the resident expert.</p><p>This sensitivity shaped more of our product line than almost anything else. The quietest wheel on our cat tree samples, the felt pads under every platform, the decision to skip bells on most toys, all trace back to watching cats avoid the loud versions. A quiet product is a used product. The louder alternative ends up in a closet, and the cat ends up in the box it shipped in, which is at least silent.</p></div>
@@ -71,34 +72,35 @@
       </div>
       <div class="faq-list"><div class="faq-item"><h3 class="faq-q">Are cats bothered by noise?</h3><div class="faq-a">Yes. Cats hear roughly two octaves above humans, so household noise arrives louder and can shrink their safe territory. Give them a quiet zone and soft furnishings.</div></div><div class="faq-item"><h3 class="faq-q">How do I make my home calmer for a cat?</h3><div class="faq-a">Offer one quiet, enclosed space, keep the litter box away from loud appliances, add rugs and curtains to absorb sound, and run loud appliances when the cat is elsewhere.</div></div></div>
     </section>
-    <p style="margin-top:34px"><a href="/blog.html" class="btn btn-outline">← Back to all articles</a></p>
+    <p style="margin-top:34px"><a href="/blog.html" class="btn btn-outline" data-i18n="bl.back">← Back to all articles</a></p>
     </div>
   </main>
   <footer class="site-footer">
     <div class="container footer-grid">
       <div class="footer-brand">
         <a href="/index.html" class="brand brand-img"><img src="/assets/poteho-logo-white.png" alt="Poteho" /></a>
-        <p>Poteho supplies pet carriers, beds &amp; mats, fences &amp; leashes, apparel and rehabilitation products. Wholesale worldwide with low MOQ, custom branding and reliable shipping.</p>
+        <p data-i18n="footer.desc">Poteho supplies pet carriers, beds &amp; mats, fences &amp; leashes, apparel and rehabilitation products. Wholesale worldwide with low MOQ, custom branding and reliable shipping.</p>
       </div>
-      <div><h4>Products</h4><a href="/category.html?cat=carriers">Pet Carriers</a><a href="/category.html?cat=beds">Pet Beds &amp; Mats</a><a href="/category.html?cat=fences">Pet Fences &amp; Leashes</a><a href="/category.html?cat=apparel">Pet Apparel</a><a href="/category.html?cat=rehab">Pet Rehabilitation</a></div>
-      <div><h4>Company</h4>
-        <a href="/about.html">About us</a>
-        <a href="/blog.html">Blog</a>
-        <a href="/contact.html">Contact</a>
-        <a href="/contact.html">Get a quote</a>
-        <a href="/cookie.html">Cookie Policy</a>
+      <div><h4 data-i18n="footer.products">Products</h4><a href="/category.html?cat=carriers" data-i18n="cat.carriers">Pet Carriers</a><a href="/category.html?cat=beds" data-i18n="cat.beds">Pet Beds &amp; Mats</a><a href="/category.html?cat=fences" data-i18n="cat.fences">Pet Fences &amp; Leashes</a><a href="/category.html?cat=apparel" data-i18n="cat.apparel">Pet Apparel</a><a href="/category.html?cat=rehab" data-i18n="cat.rehab">Pet Rehabilitation</a></div>
+      <div><h4 data-i18n="footer.company">Company</h4>
+        <a href="/about.html" data-i18n="footer.aboutus">About us</a>
+        <a href="/blog.html" data-i18n="footer.blog">Blog</a>
+        <a href="/contact.html" data-i18n="footer.contact">Contact</a>
+        <a href="/contact.html" data-i18n="footer.getquote">Get a quote</a>
+        <a href="/cookie.html" data-i18n="footer.cookie">Cookie Policy</a>
       </div>
-      <div><h4>Contact</h4>
+      <div><h4 data-i18n="footer.connect">Contact</h4>
         <a href="mailto:info@poteho.com">info@poteho.com</a>
-        <a href="https://wa.me/8618910404220">WhatsApp / WeChat</a>
+        <a href="https://wa.me/8618910404220" data-i18n="footer.whatsapp">WhatsApp / WeChat</a>
         <a href="https://www.linkedin.com/company/poteho" target="_blank" rel="noopener">LinkedIn</a>
       </div>
     </div>
     <div class="container footer-bottom">
-      <span>© 2026 Poteho. All rights reserved.</span>
-      <span>Poteho — your pet&#39;s best friend</span>
+      <span>© 2026 <span data-i18n="footer.rights">Poteho. All rights reserved.</span></span>
+      <span data-i18n="footer.slogan">Poteho — your pet&#39;s best friend</span>
     </div>
   </footer>
+  <script src="/js/i18n.js"></script>
   <script src="/js/static-chrome.js"></script>
 </body>
 </html>

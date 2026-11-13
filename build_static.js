@@ -7,7 +7,7 @@
    Run:  node build_static.js
    Output:
      products/<id>.html            (EN, canonical)
-     products/<id>.<ru|es|zh>.html (RU / ES / ZH)
+     products/<id>.<ru|zh>.html    (RU / ZH)
      blog/<slug>.html             (EN; blog is EN-only)
      sitemap.xml                   (rebuilt with all URLs + hreflang)
 
@@ -38,7 +38,7 @@ const i18n = new Function(
   i18nCode + "\n;return {I18N, FAQ, I18N_LANGS, I18N_LABELS};"
 )();
 const { I18N, I18N_LANGS, I18N_LABELS } = i18n;
-const LANGS = I18N_LANGS; // ["en","ru","es","zh"]
+const LANGS = I18N_LANGS; // ["en","ru","zh"]
 
 /* ---------- load data ---------- */
 const products = JSON.parse(
@@ -87,7 +87,7 @@ function header(lang, active, langSwitchHtml) {
   ]
     .map(
       ([k, href]) =>
-        `<a href="${href}" class="${k === active ? "active" : ""}">${esc(
+        `<a href="${href}" class="${k === active ? "active" : ""}" data-i18n="nav.${k}">${esc(
           t(lang, "nav." + k)
         )}</a>`
     )
@@ -98,7 +98,7 @@ function header(lang, active, langSwitchHtml) {
       <nav class="nav-links" id="navLinks">${nav}</nav>
       <div class="nav-cta">
         <div class="lang-switch" id="langSwitch">${langSwitchHtml}</div>
-        <a href="/contact.html" class="btn btn-primary">${esc(
+        <a href="/contact.html" class="btn btn-primary" data-i18n="nav.quote">${esc(
           t(lang, "nav.quote")
         )}</a>
         <button class="nav-toggle" id="navToggle" aria-label="Menu"><span></span><span></span><span></span></button>
@@ -112,32 +112,32 @@ function footer(lang) {
   const catLinks = cats
     .map(
       (c) =>
-        `<a href="/category.html?cat=${c}">${esc(t(lang, "cat." + c))}</a>`
+        `<a href="/category.html?cat=${c}" data-i18n="cat.${c}">${esc(t(lang, "cat." + c))}</a>`
     )
     .join("");
   return `  <footer class="site-footer">
     <div class="container footer-grid">
       <div class="footer-brand">
         <a href="/index.html" class="brand brand-img"><img src="/assets/poteho-logo-white.png" alt="Poteho" /></a>
-        <p>${esc(t(lang, "footer.desc"))}</p>
+        <p data-i18n="footer.desc">${esc(t(lang, "footer.desc"))}</p>
       </div>
-      <div><h4>${esc(t(lang, "footer.products"))}</h4>${catLinks}</div>
-      <div><h4>${esc(t(lang, "footer.company"))}</h4>
-        <a href="/about.html">${esc(t(lang, "footer.aboutus"))}</a>
-        <a href="/blog.html">${esc(t(lang, "footer.blog"))}</a>
-        <a href="/contact.html">${esc(t(lang, "footer.contact"))}</a>
-        <a href="/contact.html">${esc(t(lang, "footer.getquote"))}</a>
-        <a href="/cookie.html">${esc(t(lang, "footer.cookie"))}</a>
+      <div><h4 data-i18n="footer.products">${esc(t(lang, "footer.products"))}</h4>${catLinks}</div>
+      <div><h4 data-i18n="footer.company">${esc(t(lang, "footer.company"))}</h4>
+        <a href="/about.html" data-i18n="footer.aboutus">${esc(t(lang, "footer.aboutus"))}</a>
+        <a href="/blog.html" data-i18n="footer.blog">${esc(t(lang, "footer.blog"))}</a>
+        <a href="/contact.html" data-i18n="footer.contact">${esc(t(lang, "footer.contact"))}</a>
+        <a href="/contact.html" data-i18n="footer.getquote">${esc(t(lang, "footer.getquote"))}</a>
+        <a href="/cookie.html" data-i18n="footer.cookie">${esc(t(lang, "footer.cookie"))}</a>
       </div>
-      <div><h4>${esc(t(lang, "footer.connect"))}</h4>
+      <div><h4 data-i18n="footer.connect">${esc(t(lang, "footer.connect"))}</h4>
         <a href="mailto:${esc(site.email)}">${esc(site.email)}</a>
-        <a href="${esc(site.whatsappLink)}">${esc(t(lang, "footer.whatsapp"))}</a>
+        <a href="${esc(site.whatsappLink)}" data-i18n="footer.whatsapp">${esc(t(lang, "footer.whatsapp"))}</a>
         <a href="${esc(site.linkedin)}" target="_blank" rel="noopener">LinkedIn</a>
       </div>
     </div>
     <div class="container footer-bottom">
-      <span>© ${new Date().getFullYear()} ${esc(t(lang, "footer.rights"))}</span>
-      <span>${esc(t(lang, "footer.slogan"))}</span>
+      <span>© ${new Date().getFullYear()} <span data-i18n="footer.rights">${esc(t(lang, "footer.rights"))}</span></span>
+      <span data-i18n="footer.slogan">${esc(t(lang, "footer.slogan"))}</span>
     </div>
   </footer>`;
 }
@@ -148,7 +148,7 @@ function productLangSwitch(p, lang) {
     const href = `/products/${p.id}${L === "en" ? "" : "." + L}.html`;
     return `<a href="${href}" class="${
       L === lang ? "on" : ""
-    }" hreflang="${L}">${I18N_LABELS[L]}</a>`;
+    }" data-lang="${L}" hreflang="${L}">${I18N_LABELS[L]}</a>`;
   }).join("");
 }
 
@@ -290,12 +290,13 @@ function renderProduct(p, lang) {
 }
 
 /* ---------- blog page (EN only) ---------- */
+/* Blog articles are written in English only. Switching language here
+   keeps the article but translates the shared chrome, and the choice
+   persists so the rest of the site stays in that language. */
 function blogLangSwitch(slug) {
-  return (
-    `<a href="/blog/${slug}.html" class="on" hreflang="en">EN</a>` +
-    `<a href="/index.html" hreflang="ru">RU</a>` +
-    `<a href="/index.html" hreflang="zh">中文</a>`
-  );
+  return LANGS.map((L) =>
+    `<a href="/blog/${slug}.html" class="${L === "en" ? "on" : ""}" data-lang="${L}">${I18N_LABELS[L]}</a>`
+  ).join("");
 }
 
 function renderBlog(post) {
@@ -335,16 +336,16 @@ function renderBlog(post) {
     </section>`
     : "";
 
-  const main = `<nav class="breadcrumb"><a href="/index.html">${esc(
+  const main = `<nav class="breadcrumb"><a href="/index.html" data-i18n="bc.home">${esc(
     t("en", "bc.home")
-  )}</a> / <a href="/blog.html">${esc(t("en", "nav.blog"))}</a> / <span>${esc(
+  )}</a> / <a href="/blog.html" data-i18n="nav.blog">${esc(t("en", "nav.blog"))}</a> / <span>${esc(
     title
   )}</span></nav>
     <span class="eyebrow" style="margin-top:18px">${esc(meta)}</span>
     <h1>${esc(title)}</h1>
     <div id="postBody">${bodyHtml}</div>
     ${faqBlock}
-    <p style="margin-top:34px"><a href="/blog.html" class="btn btn-outline">${esc(
+    <p style="margin-top:34px"><a href="/blog.html" class="btn btn-outline" data-i18n="bl.back">${esc(
       t("en", "bl.back")
     )}</a></p>`;
 
@@ -422,6 +423,7 @@ function PAGE(lang, active, headInner, mainInner, langSwitchHtml, jsonldArr) {
 <html lang="${htmlLang}">
 <head>
   <meta charset="UTF-8" />
+  <script src="/js/lang-router.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 ${headInner}
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -439,6 +441,7 @@ ${mainInner}
     </div>
   </main>
 ${footer(lang)}
+  <script src="/js/i18n.js"></script>
   <script src="/js/static-chrome.js"></script>
 </body>
 </html>

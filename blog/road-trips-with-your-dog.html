@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <script src="/js/lang-router.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Road trips with your dog, minus the chaos — Poteho</title>
   <link rel="icon" href="/assets/favicon.svg" />
@@ -50,17 +51,17 @@
   <header class="site-header">
     <div class="container nav">
       <a href="/index.html" class="brand brand-img"><img src="/assets/poteho-logo.png" alt="Poteho" /></a>
-      <nav class="nav-links" id="navLinks"><a href="/index.html" class="">Home</a><a href="/products.html" class="">Products</a><a href="/blog.html" class="active">Blog</a><a href="/about.html" class="">About</a><a href="/contact.html" class="">Contact</a></nav>
+      <nav class="nav-links" id="navLinks"><a href="/index.html" class="" data-i18n="nav.home">Home</a><a href="/products.html" class="" data-i18n="nav.products">Products</a><a href="/blog.html" class="active" data-i18n="nav.blog">Blog</a><a href="/about.html" class="" data-i18n="nav.about">About</a><a href="/contact.html" class="" data-i18n="nav.contact">Contact</a></nav>
       <div class="nav-cta">
-        <div class="lang-switch" id="langSwitch"><a href="/blog/road-trips-with-your-dog.html" class="on" hreflang="en">EN</a><a href="/index.html" hreflang="ru">RU</a><a href="/index.html" hreflang="zh">中文</a></div>
-        <a href="/contact.html" class="btn btn-primary">Get a Quote</a>
+        <div class="lang-switch" id="langSwitch"><a href="/blog/road-trips-with-your-dog.html" class="on" data-lang="en">EN</a><a href="/blog/road-trips-with-your-dog.html" class="" data-lang="ru">RU</a><a href="/blog/road-trips-with-your-dog.html" class="" data-lang="zh">中文</a></div>
+        <a href="/contact.html" class="btn btn-primary" data-i18n="nav.quote">Get a Quote</a>
         <button class="nav-toggle" id="navToggle" aria-label="Menu"><span></span><span></span><span></span></button>
       </div>
     </div>
   </header>
   <main class="section">
     <div class="container article">
-<nav class="breadcrumb"><a href="/index.html">Home</a> / <a href="/blog.html">Blog</a> / <span>Road trips with your dog, minus the chaos</span></nav>
+<nav class="breadcrumb"><a href="/index.html" data-i18n="bc.home">Home</a> / <a href="/blog.html" data-i18n="nav.blog">Blog</a> / <span>Road trips with your dog, minus the chaos</span></nav>
     <span class="eyebrow" style="margin-top:18px">Travel · 6 min read · June 21, 2022</span>
     <h1>Road trips with your dog, minus the chaos</h1>
     <div id="postBody"><img class="post-hero" src="/assets/blog/blog-13.jpg" alt="Road trips with your dog, minus the chaos" loading="lazy" /><p>Our first road trip with the dog was four hours of crossed fingers. He paced between seats, drooled on the console, and barked at a motorcycle once per hour, like a sad alarm. The second trip, a month later, was different, and the difference was almost entirely preparation.</p><h2>Before the trip</h2><p>Short drives first. A dog that only ever rides to the vet learns that the car means the vet. Two-minute trips to nowhere that end in a walk or a game rewrite that association fast.</p><p>Book dog-friendly stays and confirm, twice. Check that your dog&#39;s microchip registration has your current phone number. Pack a real bag for the dog: food, bowl, water bottles, towel, leash, poop bags, a copy of vaccinations, and any medication plus one spare day of it.</p><h2>In the car</h2><p>A dog loose in a cabin is a projectile in a hard brake and a distraction the rest of the time. A crash-tested harness clipped to the belt, or a secured carrier or barrier for smaller dogs, is the single upgrade that matters most. Seat covers save the interior; a familiar blanket saves the dog&#39;s nerves.</p><p>Stop every two to three hours. Water at every stop, a short walk, and no big meals right before driving, which is the main cure for drooling. Windows cracked for smell, never fully open at speed.</p><p>Never, ever leave a dog in a parked car in warm weather. The twenty-second version of this rule is: cars heat up in minutes even on mild days.</p><h2>At the destination</h2><p>First hour sets the tone. Walk the dog on leash around the new place, let it sniff the room, put down water, set up its bed in a corner before anything else happens. A dog that has a den inside a strange place settles within the evening.</p><p>Keep feeding times identical to home. Keep one walk ritual identical too. Dogs do not need the vacation to be exciting. They need it to be familiar, in a different place.</p><p>By the third trip ours slept from the first minute of driving. Now the hard part of road trips is that the dog gets in the car every time we do, hopeful, for weeks afterward.</p></div>
@@ -71,34 +72,35 @@
       </div>
       <div class="faq-list"><div class="faq-item"><h3 class="faq-q">How do I travel with a dog by car?</h3><div class="faq-a">Use a crash-tested harness or secured carrier, take water breaks every two to three hours, never leave a dog in a parked car, and keep feeding times consistent at your destination.</div></div><div class="faq-item"><h3 class="faq-q">How do I prepare a dog for a road trip?</h3><div class="faq-a">Do short practice drives first, pack food, water, a leash, a vaccination copy and any medication, and book dog-friendly stays in advance.</div></div></div>
     </section>
-    <p style="margin-top:34px"><a href="/blog.html" class="btn btn-outline">← Back to all articles</a></p>
+    <p style="margin-top:34px"><a href="/blog.html" class="btn btn-outline" data-i18n="bl.back">← Back to all articles</a></p>
     </div>
   </main>
   <footer class="site-footer">
     <div class="container footer-grid">
       <div class="footer-brand">
         <a href="/index.html" class="brand brand-img"><img src="/assets/poteho-logo-white.png" alt="Poteho" /></a>
-        <p>Poteho supplies pet carriers, beds &amp; mats, fences &amp; leashes, apparel and rehabilitation products. Wholesale worldwide with low MOQ, custom branding and reliable shipping.</p>
+        <p data-i18n="footer.desc">Poteho supplies pet carriers, beds &amp; mats, fences &amp; leashes, apparel and rehabilitation products. Wholesale worldwide with low MOQ, custom branding and reliable shipping.</p>
       </div>
-      <div><h4>Products</h4><a href="/category.html?cat=carriers">Pet Carriers</a><a href="/category.html?cat=beds">Pet Beds &amp; Mats</a><a href="/category.html?cat=fences">Pet Fences &amp; Leashes</a><a href="/category.html?cat=apparel">Pet Apparel</a><a href="/category.html?cat=rehab">Pet Rehabilitation</a></div>
-      <div><h4>Company</h4>
-        <a href="/about.html">About us</a>
-        <a href="/blog.html">Blog</a>
-        <a href="/contact.html">Contact</a>
-        <a href="/contact.html">Get a quote</a>
-        <a href="/cookie.html">Cookie Policy</a>
+      <div><h4 data-i18n="footer.products">Products</h4><a href="/category.html?cat=carriers" data-i18n="cat.carriers">Pet Carriers</a><a href="/category.html?cat=beds" data-i18n="cat.beds">Pet Beds &amp; Mats</a><a href="/category.html?cat=fences" data-i18n="cat.fences">Pet Fences &amp; Leashes</a><a href="/category.html?cat=apparel" data-i18n="cat.apparel">Pet Apparel</a><a href="/category.html?cat=rehab" data-i18n="cat.rehab">Pet Rehabilitation</a></div>
+      <div><h4 data-i18n="footer.company">Company</h4>
+        <a href="/about.html" data-i18n="footer.aboutus">About us</a>
+        <a href="/blog.html" data-i18n="footer.blog">Blog</a>
+        <a href="/contact.html" data-i18n="footer.contact">Contact</a>
+        <a href="/contact.html" data-i18n="footer.getquote">Get a quote</a>
+        <a href="/cookie.html" data-i18n="footer.cookie">Cookie Policy</a>
       </div>
-      <div><h4>Contact</h4>
+      <div><h4 data-i18n="footer.connect">Contact</h4>
         <a href="mailto:info@poteho.com">info@poteho.com</a>
-        <a href="https://wa.me/8618910404220">WhatsApp / WeChat</a>
+        <a href="https://wa.me/8618910404220" data-i18n="footer.whatsapp">WhatsApp / WeChat</a>
         <a href="https://www.linkedin.com/company/poteho" target="_blank" rel="noopener">LinkedIn</a>
       </div>
     </div>
     <div class="container footer-bottom">
-      <span>© 2026 Poteho. All rights reserved.</span>
-      <span>Poteho — your pet&#39;s best friend</span>
+      <span>© 2026 <span data-i18n="footer.rights">Poteho. All rights reserved.</span></span>
+      <span data-i18n="footer.slogan">Poteho — your pet&#39;s best friend</span>
     </div>
   </footer>
+  <script src="/js/i18n.js"></script>
   <script src="/js/static-chrome.js"></script>
 </body>
 </html>

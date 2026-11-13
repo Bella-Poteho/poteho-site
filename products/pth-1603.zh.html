@@ -2,6 +2,7 @@
 <html lang="zh-CN">
 <head>
   <meta charset="UTF-8" />
+  <script src="/js/lang-router.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>犬用后腿护具 — Poteho</title>
   <link rel="icon" href="/assets/favicon.svg" />
@@ -39,10 +40,10 @@
   <header class="site-header">
     <div class="container nav">
       <a href="/index.html" class="brand brand-img"><img src="/assets/poteho-logo.png" alt="Poteho" /></a>
-      <nav class="nav-links" id="navLinks"><a href="/index.html" class="">首页</a><a href="/products.html" class="active">产品中心</a><a href="/blog.html" class="">博客</a><a href="/about.html" class="">关于我们</a><a href="/contact.html" class="">联系我们</a></nav>
+      <nav class="nav-links" id="navLinks"><a href="/index.html" class="" data-i18n="nav.home">首页</a><a href="/products.html" class="active" data-i18n="nav.products">产品中心</a><a href="/blog.html" class="" data-i18n="nav.blog">博客</a><a href="/about.html" class="" data-i18n="nav.about">关于我们</a><a href="/contact.html" class="" data-i18n="nav.contact">联系我们</a></nav>
       <div class="nav-cta">
-        <div class="lang-switch" id="langSwitch"><a href="/products/pth-1603.html" class="" hreflang="en">EN</a><a href="/products/pth-1603.ru.html" class="" hreflang="ru">RU</a><a href="/products/pth-1603.zh.html" class="on" hreflang="zh">中文</a></div>
-        <a href="/contact.html" class="btn btn-primary">获取报价</a>
+        <div class="lang-switch" id="langSwitch"><a href="/products/pth-1603.html" class="" data-lang="en" hreflang="en">EN</a><a href="/products/pth-1603.ru.html" class="" data-lang="ru" hreflang="ru">RU</a><a href="/products/pth-1603.zh.html" class="on" data-lang="zh" hreflang="zh">中文</a></div>
+        <a href="/contact.html" class="btn btn-primary" data-i18n="nav.quote">获取报价</a>
         <button class="nav-toggle" id="navToggle" aria-label="Menu"><span></span><span></span><span></span></button>
       </div>
     </div>
@@ -84,27 +85,28 @@
     <div class="container footer-grid">
       <div class="footer-brand">
         <a href="/index.html" class="brand brand-img"><img src="/assets/poteho-logo-white.png" alt="Poteho" /></a>
-        <p>优质宠物外出包与宠物用品，面向全球零售商和品牌批发。低起订量、支持定制品牌、发货可靠。</p>
+        <p data-i18n="footer.desc">优质宠物外出包与宠物用品，面向全球零售商和品牌批发。低起订量、支持定制品牌、发货可靠。</p>
       </div>
-      <div><h4>产品分类</h4><a href="/category.html?cat=carriers">宠物外出包</a><a href="/category.html?cat=beds">宠物窝垫</a><a href="/category.html?cat=fences">围栏与牵引</a><a href="/category.html?cat=apparel">宠物服饰</a><a href="/category.html?cat=rehab">宠物康复</a></div>
-      <div><h4>公司</h4>
-        <a href="/about.html">关于我们</a>
-        <a href="/blog.html">博客</a>
-        <a href="/contact.html">联系我们</a>
-        <a href="/contact.html">获取报价</a>
-        <a href="/cookie.html">Cookie 政策</a>
+      <div><h4 data-i18n="footer.products">产品分类</h4><a href="/category.html?cat=carriers" data-i18n="cat.carriers">宠物外出包</a><a href="/category.html?cat=beds" data-i18n="cat.beds">宠物窝垫</a><a href="/category.html?cat=fences" data-i18n="cat.fences">围栏与牵引</a><a href="/category.html?cat=apparel" data-i18n="cat.apparel">宠物服饰</a><a href="/category.html?cat=rehab" data-i18n="cat.rehab">宠物康复</a></div>
+      <div><h4 data-i18n="footer.company">公司</h4>
+        <a href="/about.html" data-i18n="footer.aboutus">关于我们</a>
+        <a href="/blog.html" data-i18n="footer.blog">博客</a>
+        <a href="/contact.html" data-i18n="footer.contact">联系我们</a>
+        <a href="/contact.html" data-i18n="footer.getquote">获取报价</a>
+        <a href="/cookie.html" data-i18n="footer.cookie">Cookie 政策</a>
       </div>
-      <div><h4>联系方式</h4>
+      <div><h4 data-i18n="footer.connect">联系方式</h4>
         <a href="mailto:info@poteho.com">info@poteho.com</a>
-        <a href="https://wa.me/8618910404220">WhatsApp / 微信</a>
+        <a href="https://wa.me/8618910404220" data-i18n="footer.whatsapp">WhatsApp / 微信</a>
         <a href="https://www.linkedin.com/company/poteho" target="_blank" rel="noopener">LinkedIn</a>
       </div>
     </div>
     <div class="container footer-bottom">
-      <span>© 2026 Poteho 版权所有。</span>
-      <span>Poteho — 您宠物的最佳伙伴</span>
+      <span>© 2026 <span data-i18n="footer.rights">Poteho 版权所有。</span></span>
+      <span data-i18n="footer.slogan">Poteho — 您宠物的最佳伙伴</span>
     </div>
   </footer>
+  <script src="/js/i18n.js"></script>
   <script src="/js/static-chrome.js"></script>
 </body>
 </html>

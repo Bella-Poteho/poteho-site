@@ -631,8 +631,20 @@ const FAQ = {
 
 /* ---------- Runtime helpers (shared with main.js) ---------- */
 function i18nGetLang() {
+  // lang-router.js is the single source of truth (loaded in <head>).
+  // Fall back to a direct read so i18n still works if the router is absent.
+  if (typeof window.PT_getLang === "function") return window.PT_getLang();
   const saved = localStorage.getItem("poteho-lang");
   return I18N_LANGS.includes(saved) ? saved : "en";
+}
+function i18nSetLang(lang) {
+  if (typeof window.PT_setLang === "function") window.PT_setLang(lang);
+  else localStorage.setItem("poteho-lang", lang);
+}
+/* Suffix for product detail URLs: EN has no suffix, RU/ZH use .ru / .zh */
+function langUrlSuffix() {
+  const l = i18nGetLang();
+  return l === "en" ? "" : "." + l;
 }
 function t(key) {
   const lang = i18nGetLang();
@@ -681,9 +693,11 @@ function i18nInitSwitcher() {
   box.addEventListener("click", e => {
     const btn = e.target.closest("button[data-lang]");
     if (!btn) return;
-    localStorage.setItem("poteho-lang", btn.dataset.lang);
+    i18nSetLang(btn.dataset.lang);
     i18nApply();
-    if (typeof renderAll === "function") renderAll(); // re-render dynamic content
+    // Re-render so every product card link now points at the right
+    // language URL; the choice persists across all pages via localStorage.
+    if (typeof renderAll === "function") renderAll();
   });
   i18nApply();
 }
