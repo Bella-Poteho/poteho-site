@@ -21,6 +21,10 @@ const ROOT = __dirname;
 const SITE = "https://poteho.com";
 const BRAND = "Poteho";
 
+/* Build date — embedded as <meta name="poteho-build"> so a redeploy is
+   easy to confirm live (and it forces Netlify to refresh every page). */
+const BUILD_DATE = new Date().toISOString().slice(0, 10);
+
 /* GA4 measurement ID (provided by site owner) */
 const GA4_ID = "G-3SR90925J9";
 const GA4 = `  <!-- Google Analytics (GA4) -->
@@ -424,6 +428,7 @@ function PAGE(lang, active, headInner, mainInner, langSwitchHtml, jsonldArr) {
 <head>
   <meta charset="UTF-8" />
   <script src="/js/lang-router.js"></script>
+  <meta name="poteho-build" content="${BUILD_DATE}" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 ${headInner}
   <link rel="preconnect" href="https://fonts.googleapis.com" />
