@@ -47,7 +47,7 @@
         saveLang(a.getAttribute("data-lang"));
         // Blog pages have no per-language URL: switching reloads the same
         // article with translated chrome. Product pages navigate to their
-        // .ru.html / .zh.html counterpart.
+        // .zh.html counterpart.
         var same =
           a.href === location.href ||
           a.pathname + a.search === location.pathname + location.search;

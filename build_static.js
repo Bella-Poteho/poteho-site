@@ -7,7 +7,7 @@
    Run:  node build_static.js
    Output:
      products/<id>.html            (EN, canonical)
-     products/<id>.<ru|zh>.html    (RU / ZH)
+     products/<id>.zh.html         (ZH)
      blog/<slug>.html             (EN; blog is EN-only)
      sitemap.xml                   (rebuilt with all URLs + hreflang)
 
@@ -42,7 +42,7 @@ const i18n = new Function(
   i18nCode + "\n;return {I18N, FAQ, I18N_LANGS, I18N_LABELS};"
 )();
 const { I18N, I18N_LANGS, I18N_LABELS } = i18n;
-const LANGS = I18N_LANGS; // ["en","ru","zh"]
+const LANGS = I18N_LANGS; // ["en","zh"]
 
 /* ---------- load data ---------- */
 const products = JSON.parse(
@@ -283,7 +283,6 @@ function renderProduct(p, lang) {
   <meta property="og:image" content="${esc(imgAbs)}" />
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="alternate" hreflang="en" href="${SITE}/products/${p.id}.html" />
-  <link rel="alternate" hreflang="ru" href="${SITE}/products/${p.id}.ru.html" />
   <link rel="alternate" hreflang="zh" href="${SITE}/products/${p.id}.zh.html" />
   <link rel="alternate" hreflang="x-default" href="${SITE}/products/${p.id}.html" />`;
 

@@ -4,8 +4,8 @@
 
    - The visitor's language lives in localStorage["poteho-lang"].
    - Product detail pages have real per-language URLs for SEO
-     (/products/<id>.html, .ru.html, .zh.html). If a visitor with
-     a saved non-EN preference lands on the EN product URL, we send
+     (/products/<id>.html, .zh.html). If a visitor with
+     a saved ZH preference lands on the EN product URL, we send
      them to their own language version so the whole site stays in
      one language.
    - Bots are NEVER redirected, so canonical / hreflang / indexing
@@ -14,7 +14,7 @@
      from the same saved preference.
    ========================================================= */
 (function () {
-  var LANGS = ["en", "ru", "zh"];
+  var LANGS = ["en", "zh"];
   var KEY = "poteho-lang";
   var LS = window.localStorage;
 
@@ -34,13 +34,13 @@
 
   var lang = read();
 
-  // /products/pth-1101.html | /products/pth-1101.ru.html | ...zh.html
-  var m = location.pathname.match(/^\/products\/([A-Za-z0-9_-]+?)(?:\.(ru|zh))?\.html$/);
+  // /products/pth-1101.html | /products/pth-1101.zh.html
+  var m = location.pathname.match(/^\/products\/([A-Za-z0-9_-]+?)(?:\.(zh))?\.html$/);
   var pageLang = m ? (m[2] || "en") : null;
 
   // An explicit language URL wins: adopt it as this visitor's preference.
   // We deliberately do NOT flag this as an explicit user choice, so a
-  // crawler that loads .ru.html can never cause a later EN page to redirect.
+  // crawler that loads .zh.html can never cause a later EN page to redirect.
   if (pageLang && pageLang !== "en" && lang !== pageLang) {
     write(pageLang);
     lang = pageLang;

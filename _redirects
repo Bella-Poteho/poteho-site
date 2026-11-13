@@ -88,5 +88,9 @@
 /products/bed-rattan.ru.html  /products.html  301
 /products/bed-rattan.zh.html  /products.html  301
 
-# Legacy Spanish variants (site is EN / RU / ZH only)
+# Legacy Spanish variants (site is EN / ZH only)
 /products/*.es.html  /products.html  301
+
+# Legacy Russian variants (site is EN / ZH only) — covers both the old
+# product slugs and any previously-indexed /products/<id>.ru.html URLs.
+/products/*.ru.html  /products.html  301
