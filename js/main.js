@@ -92,10 +92,12 @@ function injectSiteInfo() {
   if (SITE.linkedin) setHref("fLinkedin", SITE.linkedin);
 }
 
-/* ---------- Product helpers ---------- */
-function pName(p) { return tf(p.name_en || p.name || p); }
-function pShort(p) { return tf(p.short_en || p.short || ""); }
-function pDesc(p) { return tf(p.description_en || p.description || ""); }
+/* ---------- Product helpers (language-aware) ----------
+   The product data uses flat keys name_en / name_ru / name_zh (etc).
+   Return the field for the CURRENT language, falling back to English. */
+function pName(p) { const l = i18nGetLang(); return (p["name_" + l] || p.name_en || p.name || ""); }
+function pShort(p) { const l = i18nGetLang(); return (p["short_" + l] || p.short_en || p.short || ""); }
+function pDesc(p) { const l = i18nGetLang(); return (p["description_" + l] || p.description_en || p.description || ""); }
 function catName(id) { return t("cat." + id); }
 
 /* Detail gallery: always show exactly 8 image slots.
