@@ -89,8 +89,59 @@
 /products/bed-rattan.zh.html  /products.html  301
 
 # Legacy Spanish variants (site is EN / ZH only)
-/products/*.es.html  /products.html  301
 
 # Legacy Russian variants (site is EN / ZH only) — covers both the old
 # product slugs and any previously-indexed /products/<id>.ru.html URLs.
-/products/*.ru.html  /products.html  301
+
+# Current catalogue products — legacy RU / ES variants (site is EN / ZH only)
+# Netlify splats cannot be followed by a literal suffix, so list explicitly.
+/products/pth-1101.ru.html  /products.html  301
+/products/pth-1101.es.html  /products.html  301
+/products/pth-1102.ru.html  /products.html  301
+/products/pth-1102.es.html  /products.html  301
+/products/pth-1103.ru.html  /products.html  301
+/products/pth-1103.es.html  /products.html  301
+/products/pth-1104.ru.html  /products.html  301
+/products/pth-1104.es.html  /products.html  301
+/products/pth-1105.ru.html  /products.html  301
+/products/pth-1105.es.html  /products.html  301
+/products/pth-1106.ru.html  /products.html  301
+/products/pth-1106.es.html  /products.html  301
+/products/pth-1107.ru.html  /products.html  301
+/products/pth-1107.es.html  /products.html  301
+/products/pth-1108.ru.html  /products.html  301
+/products/pth-1108.es.html  /products.html  301
+/products/pth-1109.ru.html  /products.html  301
+/products/pth-1109.es.html  /products.html  301
+/products/pth-1110.ru.html  /products.html  301
+/products/pth-1110.es.html  /products.html  301
+/products/pth-1111.ru.html  /products.html  301
+/products/pth-1111.es.html  /products.html  301
+/products/pth-1112.ru.html  /products.html  301
+/products/pth-1112.es.html  /products.html  301
+/products/pth-1201.ru.html  /products.html  301
+/products/pth-1201.es.html  /products.html  301
+/products/pth-1202.ru.html  /products.html  301
+/products/pth-1202.es.html  /products.html  301
+/products/pth-1203.ru.html  /products.html  301
+/products/pth-1203.es.html  /products.html  301
+/products/pth-1301.ru.html  /products.html  301
+/products/pth-1301.es.html  /products.html  301
+/products/pth-1401.ru.html  /products.html  301
+/products/pth-1401.es.html  /products.html  301
+/products/pth-1402.ru.html  /products.html  301
+/products/pth-1402.es.html  /products.html  301
+/products/pth-1501.ru.html  /products.html  301
+/products/pth-1501.es.html  /products.html  301
+/products/pth-1502.ru.html  /products.html  301
+/products/pth-1502.es.html  /products.html  301
+/products/pth-1503.ru.html  /products.html  301
+/products/pth-1503.es.html  /products.html  301
+/products/pth-1601.ru.html  /products.html  301
+/products/pth-1601.es.html  /products.html  301
+/products/pth-1602.ru.html  /products.html  301
+/products/pth-1602.es.html  /products.html  301
+/products/pth-1603.ru.html  /products.html  301
+/products/pth-1603.es.html  /products.html  301
+/products/pth-1604.ru.html  /products.html  301
+/products/pth-1604.es.html  /products.html  301
