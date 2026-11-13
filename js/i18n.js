@@ -48,7 +48,7 @@ const I18N = {
     "lead.privacy": "We never share your information.",
 
     "prod.eyebrow": "Catalog", "prod.h2": "Pet supplies catalog",
-    "prod.p": "Browse our most popular SKUs. Every item supports custom branding and flexible MOQs.",
+    "prod.p": "25 products in five categories from the Poteho catalogue: carriers, beds and mats, fences and leashes, apparel and rehabilitation.",
     "prod.ctaH2": "Can't find what you need?",
     "prod.ctaP": "Send us your spec or idea — we develop custom pet products every week.",
     "prod.ctaBtn": "Start a Custom Project",
@@ -158,7 +158,7 @@ const I18N = {
     "lead.privacy": "Мы не передаём ваши данные третьим лицам.",
 
     "prod.eyebrow": "Каталог", "prod.h2": "Каталог товаров для животных",
-    "prod.p": "Самые востребованные позиции. Каждая — с возможностью брендирования и гибким MOQ.",
+    "prod.p": "25 товаров в пяти разделах каталога Poteho: переноски, лежанки и коврики, ограждения и поводки, одежда и реабилитация.",
     "prod.ctaH2": "Не нашли нужное?",
     "prod.ctaP": "Пришлите спецификацию или идею — мы разрабатываем новые товары каждую неделю.",
     "prod.ctaBtn": "Обсудить индивидуальный проект",
@@ -268,7 +268,7 @@ const I18N = {
     "lead.privacy": "Nunca compartimos tu información.",
 
     "prod.eyebrow": "Catálogo", "prod.h2": "Catálogo de artículos para mascotas",
-    "prod.p": "Nuestros artículos más solicitados. Todos admiten marca personalizada y MOQ flexibles.",
+    "prod.p": "25 productos en cinco categorías del catálogo Poteho: transportines, camas y alfombrillas, vallas y correas, ropa y rehabilitación.",
     "prod.ctaH2": "¿No encuentras lo que buscas?",
     "prod.ctaP": "Envíanos tu especificación o idea — desarrollamos nuevos productos cada semana.",
     "prod.ctaBtn": "Iniciar un proyecto personalizado",
@@ -378,7 +378,7 @@ const I18N = {
     "lead.privacy": "我们绝不泄露您的信息。",
 
     "prod.eyebrow": "产品目录", "prod.h2": "宠物用品产品目录",
-    "prod.p": "浏览我们最热销的产品，全部支持定制品牌与灵活起订量。",
+    "prod.p": "Poteho 画册共 25 款产品，分五大类：宠物外出包、窝垫、围栏与牵引、宠物服饰、宠物康复。",
     "prod.ctaH2": "没有找到想要的产品？",
     "prod.ctaP": "把您的规格或想法发给我们 — 我们每周都在开发新的宠物产品。",
     "prod.ctaBtn": "启动定制项目",
