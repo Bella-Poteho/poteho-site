@@ -510,6 +510,7 @@ async function submitForm(form, successId) {
         body: JSON.stringify(Object.fromEntries(fd.entries()))
       });
       if (!res.ok) throw new Error("Network response was not ok");
+      if (typeof window.PT_trackLead === "function") window.PT_trackLead(formName);
       if (success) success.classList.add("show");
       form.reset();
     } catch (e) {
@@ -526,6 +527,7 @@ async function submitForm(form, successId) {
         body: new URLSearchParams(fd).toString()
       });
       if (!res.ok) throw new Error("Form submit returned " + res.status);
+      if (typeof window.PT_trackLead === "function") window.PT_trackLead(formName);
       if (success) success.classList.add("show");
       form.reset();
     } catch (e) {

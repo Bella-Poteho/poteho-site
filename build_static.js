@@ -445,8 +445,8 @@ ${mainInner}
     </div>
   </main>
 ${footer(lang)}
-  <script src="/js/i18n.js"></script>
-  <script src="/js/static-chrome.js"></script>
+  <script src="/js/i18n.js?v=20261116"></script>
+  <script src="/js/static-chrome.js?v=20261116"></script>
 </body>
 </html>
 `;

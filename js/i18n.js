@@ -549,3 +549,25 @@ function i18nInitSwitcher() {
   });
   i18nApply();
 }
+
+/* ---------- GA4 conversion tracking for inquiry forms ----------
+   Called after a Netlify form is successfully submitted (both the SPA
+   pages via main.js and the static product pages via static-chrome.js).
+   Sends the recommended `generate_lead` event to GA4, tagged with which
+   form was used (lead = product inquiry, contact = contact page).
+   Guarded so nothing throws if GA4 hasn't loaded or is blocked. */
+if (typeof window !== "undefined") {
+  window.PT_trackLead = function (formName) {
+    try {
+      var name = formName || "lead";
+      var payload = { form_name: name, page_path: window.location && window.location.pathname };
+      if (typeof window.gtag === "function") {
+        window.gtag("event", "generate_lead", payload);
+      } else if (Array.isArray(window.dataLayer)) {
+        window.dataLayer.push({ event: "generate_lead" });
+      }
+    } catch (e) {
+      /* tracking must never break a successful form submission */
+    }
+  };
+}

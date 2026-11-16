@@ -74,6 +74,7 @@
     var fd = new FormData(form);
     fd.set("form-name", formName);
     var done = function () {
+      if (typeof window.PT_trackLead === "function") window.PT_trackLead(formName);
       if (success) success.classList.add("show");
       if (form) form.reset();
       return false;
