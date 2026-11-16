@@ -1,8 +1,11 @@
-# Netlify 构建设置（纯静态站点，无需构建命令）
+# Netlify 构建设置
 [build]
   publish = "."
+  command = "node build_static.js"
 
 # 说明：
 # - publish = "." 表示网站根目录就是发布目录（index.html 直接在根）
-# - 因为是纯静态页面，Build command 留空即可
-# - 部署方式改为「从 Git 部署」后，本文件会自动被 Netlify 读取，无需手动设目录
+# - command 会在每次部署时先跑 build_static.js：把 data/posts.json /
+#   products.json 重新生成为 blog/*.html、products/*.html 和 sitemap.xml。
+#   这样在 /admin 后台发文章（Git Gateway 提交到 GitHub）后会自动重建静态页并上线。
+# - build_static.js 只用 Node 内置模块，无 npm 依赖，无需 package.json。

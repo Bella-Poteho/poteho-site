@@ -118,3 +118,40 @@ collections:
                     widget: select
                     options: ["Material", "Sizes", "Size", "Cover", "Care", "Custom", "Lead time", "Hardware", "Capacity", "Filter", "Set", "Length", "Wheels", "Load", "Fabric", "Feature"]
                   - { name: v, label: "Value", widget: string }
+
+  # ---- Blog articles (SEO) ----
+  # Articles live in data/posts.json as a single list. Netlify runs
+  # `node build_static.js` on every save, which turns each post into
+  # blog/<slug>.html and rebuilds sitemap.xml automatically.
+  - name: "blog"
+    label: "Blog / SEO Articles"
+    files:
+      - name: "post-list"
+        label: "Articles"
+        file: "data/posts.json"
+        fields:
+          - { name: thumb, label: "Default thumbnail path", widget: string }
+          - name: posts
+            label: "Articles"
+            widget: list
+            summary: "{{fields.title}}"
+            fields:
+              - { name: slug, label: "URL slug (lowercase, hyphens, no spaces)", widget: string, hint: "e.g. how-to-travel-with-a-cat — becomes /blog/how-to-travel-with-a-cat.html" }
+              - { name: title, label: "Title", widget: string }
+              - { name: date, label: "Publish date", widget: date }
+              - { name: category, label: "Category", widget: select, options: ["Companionship", "Daily life", "Behavior", "Health", "Training", "Travel", "Product notes", "Poteho notes"] }
+              - { name: minutes, label: "Read time (minutes)", widget: number, value_type: int, min: 1, default: 5 }
+              - { name: excerpt, label: "Excerpt / short intro", widget: text }
+              - { name: image, label: "Cover image", widget: image, required: false, hint: "Optional. Leave empty to use the default thumbnail." }
+              - name: body
+                label: "Body (one paragraph per line)"
+                widget: list
+                hint: "Add each paragraph as its own item. Start a line with ## to make it a heading."
+                field: { name: p, label: "Paragraph", widget: text }
+              - name: faq
+                label: "FAQ (optional)"
+                widget: list
+                summary: "{{fields.q}}"
+                fields:
+                  - { name: q, label: "Question", widget: string }
+                  - { name: a, label: "Answer", widget: text }
