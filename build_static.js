@@ -67,6 +67,23 @@ function esc(s) {
     .replace(/"/g, "&quot;")
     .replace(/'/g, "&#39;");
 }
+/* Escape a paragraph but turn safe internal markdown links [text](/path)
+   into real anchors. Only same-site paths starting with / are allowed, so
+   no untrusted protocol can slip through. Used for blog bodies and FAQs. */
+function escMD(s) {
+  const tok = [];
+  let out = String(s == null ? "" : s).replace(
+    /\[([^\]]{1,120})\]\((\/(?:[A-Za-z0-9_\-\.\/\?=]+))\)/g,
+    (m, txt, href) => {
+      tok.push(
+        `<a href="${href}">${esc(txt)}</a>`
+      );
+      return `\u0000${tok.length - 1}\u0000`;
+    }
+  );
+  out = esc(out);
+  return out.replace(/\u0000(\d+)\u0000/g, (m, i) => tok[Number(i)]);
+}
 function t(lang, key) {
   return (I18N[lang] && I18N[lang][key]) || I18N.en[key] || key;
 }
@@ -286,7 +303,34 @@ function renderProduct(p, lang) {
   <link rel="alternate" hreflang="zh" href="${SITE}/products/${p.id}.zh.html" />
   <link rel="alternate" hreflang="x-default" href="${SITE}/products/${p.id}.html" />`;
 
-  return PAGE(lang, "products", head, breadcrumb + detail, productLangSwitch(p, lang), [
+  /* Reading links: articles that mention this exact product first, then
+     same-category articles as a fallback. Keeps product pages from being
+     dead ends and passes link equity back to the blog. */
+  const ownPosts = posts.filter(
+    (b) => b.productId && b.productId.toLowerCase() === p.id.toLowerCase()
+  );
+  /* Categories that have no keyword articles fall back to the closest
+     related range so no product page is a dead end. */
+  const CAT_FALLBACK = { beds: "carriers" };
+  const fallbackCat = CAT_FALLBACK[p.cat] || p.cat;
+  const catPosts = posts.filter(
+    (b) => b.productCat && b.productCat === fallbackCat && !ownPosts.includes(b)
+  );
+  const reading = [...ownPosts, ...catPosts].slice(0, 3);
+  const readingHtml = reading.length
+    ? `<section class="reading-block"><h2 class="reading-title">${esc(
+        t(lang, "reading.title") !== "reading.title" ? t(lang, "reading.title") : "From our journal"
+      )}</h2><ul class="reading-list">` +
+      reading
+        .map(
+          (b) =>
+            `<li><a href="/blog/${b.slug}.html">${esc(b.title)}</a></li>`
+        )
+        .join("") +
+      `</ul></section>`
+    : "";
+
+  return PAGE(lang, "products", head, breadcrumb + detail + readingHtml, productLangSwitch(p, lang), [
     productJSONLD,
     breadcrumbJSONLD
   ]);
@@ -318,13 +362,13 @@ function renderBlog(post) {
     title
   )}" loading="lazy" />` +
     post.body
-      .map((b) => (b.startsWith("## ") ? `<h2>${esc(b.slice(3))}</h2>` : `<p>${esc(b)}</p>`))
+      .map((b) => (b.startsWith("## ") ? `<h2>${escMD(b.slice(3))}</h2>` : `<p>${escMD(b)}</p>`))
       .join("");
 
   const faqHtml = (post.faq || [])
     .map(
       (f) =>
-        `<div class="faq-item"><h3 class="faq-q">${esc(f.q)}</h3><div class="faq-a">${esc(
+        `<div class="faq-item"><h3 class="faq-q">${escMD(f.q)}</h3><div class="faq-a">${escMD(
           f.a
         )}</div></div>`
     )
