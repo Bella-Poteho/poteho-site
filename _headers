@@ -1,0 +1,11 @@
+# Netlify custom response headers — security hardening (2026-11-20)
+# Note: Google Analytics, Netlify Identity, Decap CMS (unpkg.com) and Google
+# Fonts are loaded on this site. The CSP below is deliberately Report-Only so
+# it cannot break analytics or the /admin CMS; tighten to enforcing once any
+# reported violations have been reviewed.
+/*
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: SAMEORIGIN
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=()
+  Content-Security-Policy-Report-Only: default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://identity.netlify.com https://unpkg.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' data: https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https:; object-src 'none'; base-uri 'self'; form-action 'self'
